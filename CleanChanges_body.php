@@ -432,9 +432,9 @@ class NCL extends EnhancedChangesList {
 			$items[] = $this->skin->blockLink( $userId, $userText );
 		}
 		if( $userId && $wgUser->isAllowed( 'userrights' ) ) {
-			$targetPage = SpecialPage::getTitleFor( 'Userrights' );
+			$targetPage = SpecialPage::getTitleFor( 'Userrights', $userText );
 			$items[] = $this->skin->makeKnownLinkObj( $targetPage,
-				wfMsgHtml( 'cleanchanges-changerightslink' ), "user-editname=$userText" );
+				wfMsgHtml( 'cleanchanges-changerightslink' ) );
 		}
 
 		if( $items ) {
