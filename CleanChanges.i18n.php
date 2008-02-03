@@ -8,9 +8,10 @@
 $messages = array();
 
 $messages['en'] = array(
-	'cc-changerightslink' => 'change groups',
+	'cleanchanges-changerightslink' => 'change groups',
+	'cleanchanges-desc'             => 'More compact display of [[Special:RecentChanges|recent changes list]]',
 );
 
 $messages['fi'] = array(
-	'cc-changerightslink' => 'muokkaa ryhmiä',
+	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
 );

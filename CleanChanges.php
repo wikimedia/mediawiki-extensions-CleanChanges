@@ -13,7 +13,6 @@ $wgExtensionCredits['other'][] = array(
 	'name' => 'Clean Changes',
 	'version' => '1.1',
 	'author' => 'Niklas Laxström',
-	'description' => 'More compact display of changes list'
+	'descriptionmsg' => 'cleanchanges-desc',
+	'url' => 'http://www.mediawiki.org/wiki/Extension:CleanChanges',
 );
-
-/* Done! */

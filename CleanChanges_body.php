@@ -273,7 +273,7 @@ class NCL extends EnhancedChangesList {
 			# Character difference
 			$size = $rcObj->getCharacterDifference( $block[ count( $block ) - 1 ]->mAttribs['rc_old_len'],
 					$block[0]->mAttribs['rc_new_len'] );
-			
+
 			# History link
 			$hist = $block[0]->_histLink;
 
@@ -282,7 +282,7 @@ class NCL extends EnhancedChangesList {
 			} else {
 				$items[] = "($changes; $hist)";
 			}
-			
+
 		}
 
 		$items[] = $this->userSeparator;
@@ -318,7 +318,7 @@ class NCL extends EnhancedChangesList {
 
 			$info = $this->getFlags( $rcObj ) . ' ' . $time;
 			$items[] = $this->spacerArrow() . Xml::tags( 'tt', null, $info );
-			
+
 			if ( $rcObj->getAttribute( 'rc_type' ) != RC_LOG ) {
 				$cur  = $rcObj->_curLink;
 				$last = $rcObj->_lastLink;
@@ -409,7 +409,7 @@ class NCL extends EnhancedChangesList {
 			$users[] = $userText;
 			$userindex = count( $users ) -1;
 		}
-			
+
 
 		$rci = 'RCUI' . $userindex;
 		$rcl = 'RCUL' . $linkindex;
@@ -434,12 +434,12 @@ class NCL extends EnhancedChangesList {
 		if( $userId && $wgUser->isAllowed( 'userrights' ) ) {
 			$targetPage = SpecialPage::getTitleFor( 'Userrights' );
 			$items[] = $this->skin->makeKnownLinkObj( $targetPage,
-				wfMsgHtml( 'cc-changerightslink' ), "user-editname=$userText" );
+				wfMsgHtml( 'cleanchanges-changerightslink' ), "user-editname=$userText" );
 		}
 
 		if( $items ) {
 			$data = array( "wgUserInfo$rci" => '(' . implode( ' | ', $items ) . ')' );
-			
+
 			return array($tl, $data);
 		} else {
 			return '';
@@ -493,6 +493,4 @@ class NCL extends EnhancedChangesList {
 		$f .= $patrolled ? Xml::element( 'span', array( 'class' => 'unpatrolled' ), '!' ) : $nothing;
 		return $nothing.  Xml::tags( 'span', $this->infoStyle, $f );
 	}
-
-
 }
