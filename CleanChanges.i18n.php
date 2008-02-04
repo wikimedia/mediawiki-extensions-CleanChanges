@@ -12,6 +12,14 @@ $messages['en'] = array(
 	'cleanchanges-desc'             => 'More compact display of [[Special:RecentChanges|recent changes list]]',
 );
 
+/** Asturian (Asturianu)
+ * @author Esbardu
+ */
+$messages['ast'] = array(
+	'cleanchanges-changerightslink' => 'camudar grupos',
+	'cleanchanges-desc'             => 'Vísualización más compacta de la [[Special:RecentChanges|llista de cambeos recientes]]',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
@@ -31,6 +39,13 @@ $messages['fr'] = array(
 	'cleanchanges-desc'             => "Plus d'affichage compact de la [[Special:RecentChanges|liste des modifications récentes]]",
 );
 
+/** Galician (Galego)
+ * @author Alma
+ */
+$messages['gl'] = array(
+	'cleanchanges-changerightslink' => 'mudar grupos',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -45,6 +60,14 @@ $messages['hsb'] = array(
 $messages['nl'] = array(
 	'cleanchanges-changerightslink' => 'groepen wijzigen',
 	'cleanchanges-desc'             => 'Meer compacte weergave van de [[Special:RecentChanges|lijst met recente wijzigingen]]',
+);
+
+/** Portuguese (Português)
+ * @author Malafaya
+ */
+$messages['pt'] = array(
+	'cleanchanges-changerightslink' => 'alterar grupos',
+	'cleanchanges-desc'             => 'Apresentação mais compacta da [[{{ns:special}}:RecentChanges|lista de mudanças recentes]]',
 );
 
 /** Slovak (Slovenčina)
