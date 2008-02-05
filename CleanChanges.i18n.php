@@ -62,6 +62,14 @@ $messages['nl'] = array(
 	'cleanchanges-desc'             => 'Meer compacte weergave van de [[Special:RecentChanges|lijst met recente wijzigingen]]',
 );
 
+/** Norwegian (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['no'] = array(
+	'cleanchanges-changerightslink' => 'endre grupper',
+	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:Recentchanges|siste endringer]]',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  */
@@ -76,5 +84,13 @@ $messages['pt'] = array(
 $messages['sk'] = array(
 	'cleanchanges-changerightslink' => 'zmeniť skupiny',
 	'cleanchanges-desc'             => 'Kompaktnejšie zobrazenie [[Special:RecentChanges|zoznamu posledných úprav]]',
+);
+
+/** ћирилица (ћирилица)
+ * @author Sasa Stefanovic
+ */
+$messages['sr-ec'] = array(
+	'cleanchanges-changerightslink' => 'промени групе',
+	'cleanchanges-desc'             => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
 );
 
