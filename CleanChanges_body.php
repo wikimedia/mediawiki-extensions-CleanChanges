@@ -107,7 +107,7 @@ class NCL extends EnhancedChangesList {
 		# Should patrol-related stuff be shown?
 		$rc->unpatrolled =  $this->usePatrol() ? !$rc->getAttribute( 'rc_patrolled' ) : false;
 
-		if( $rc->getAttribute( 'rc_namespace' ) === NS_SPECIAL ) {
+		if( $rc->getAttribute( 'rc_namespace' ) == NS_SPECIAL ) {
 			list( $specialName, $logtype ) = SpecialPage::resolveAliasWithSubpage(
 				$rc->getAttribute( 'rc_title' )
 			);
@@ -119,7 +119,7 @@ class NCL extends EnhancedChangesList {
 				wfDebug( "Unknown special page name $specialName, Log expected" );
 				return '';
 			}
-		} elseif( $rc->unpatrolled && $rc->getAttribute( 'rc_type' ) === RC_NEW ) {
+		} elseif( $rc->unpatrolled && $rc->getAttribute( 'rc_type' ) == RC_NEW ) {
 			# Unpatrolled new page, give rc_id in query
 			$clink = $this->skin->makeKnownLinkObj( $titleObj, '', "rcid={$rc_id}" );
 		} else {
