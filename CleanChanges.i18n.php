@@ -12,6 +12,14 @@ $messages['en'] = array(
 	'cleanchanges-desc'             => 'More compact display of [[Special:RecentChanges|recent changes list]]',
 );
 
+/** Arabic (العربية)
+ * @author Meno25
+ */
+$messages['ar'] = array(
+	'cleanchanges-changerightslink' => 'تغيير المجموعات',
+	'cleanchanges-desc'             => 'عرض أكثر ضغطا ل [[Special:RecentChanges|قائمة أحدث التغييرات]]',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  */
@@ -92,5 +100,12 @@ $messages['sk'] = array(
 $messages['sr-ec'] = array(
 	'cleanchanges-changerightslink' => 'промени групе',
 	'cleanchanges-desc'             => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
+);
+
+/** Swedish (Svenska)
+ * @author Max sonnelid
+ */
+$messages['sv'] = array(
+	'cleanchanges-changerightslink' => 'ändra grupper',
 );
 
