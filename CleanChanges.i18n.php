@@ -35,6 +35,14 @@ $messages['bg'] = array(
 	'cleanchanges-desc' => 'По-компактно показване на [[Special:RecentChanges|списъка с последните промени]]',
 );
 
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'cleanchanges-changerightslink' => 'kemmañ a ra ar strolladoù',
+	'cleanchanges-desc'             => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
+);
+
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
 );
