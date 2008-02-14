@@ -43,6 +43,14 @@ $messages['br'] = array(
 	'cleanchanges-desc'             => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
 );
 
+/** German (Deutsch)
+ * @author Raimond Spekking
+*/
+$messages['de'] = array(
+	'cleanchanges-changerightslink' => 'Benutzerrechte',
+	'cleanchanges-desc'             => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
+);
+
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
 );
