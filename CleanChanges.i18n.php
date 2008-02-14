@@ -43,6 +43,13 @@ $messages['br'] = array(
 	'cleanchanges-desc'             => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
 );
 
+/** Czech (Česky)
+ * @author Matěj Grabovský
+ */
+$messages['cs'] = array(
+	'cleanchanges-desc' => 'Kompaktnější zobrazení [[Special:RecentChanges|seznamu posledních změn]]',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
 */
@@ -92,6 +99,14 @@ $messages['nl'] = array(
 $messages['no'] = array(
 	'cleanchanges-changerightslink' => 'endre grupper',
 	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:Recentchanges|siste endringer]]',
+);
+
+/** Occitan (Occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'cleanchanges-changerightslink' => 'cambia los gropes',
+	'cleanchanges-desc'             => "Mai d'afichatge compact de la [[Special:RecentChanges|lista de las modificacions recentas]]",
 );
 
 /** Portuguese (Português)
