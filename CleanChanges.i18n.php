@@ -58,6 +58,14 @@ $messages['de'] = array(
 	'cleanchanges-desc'             => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'cleanchanges-changerightslink' => 'kupki změniś',
+	'cleanchanges-desc'             => 'Kompaktnejše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
+);
+
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
 );
@@ -83,6 +91,14 @@ $messages['gl'] = array(
 $messages['hsb'] = array(
 	'cleanchanges-changerightslink' => 'skupiny změnić',
 	'cleanchanges-desc'             => 'Kompaktniše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
+);
+
+/** Japanese (日本語)
+ * @author JtFuruhata
+ */
+$messages['ja'] = array(
+	'cleanchanges-changerightslink' => '権限の変更',
+	'cleanchanges-desc'             => '[[{{ns:Special}}:RecentChanges|最近更新したページ]]をコンパクトな表示にします',
 );
 
 /** Dutch (Nederlands)
