@@ -35,6 +35,14 @@ $messages['bg'] = array(
 	'cleanchanges-desc' => 'По-компактно показване на [[Special:RecentChanges|списъка с последните промени]]',
 );
 
+/** Bengali (বাংলা)
+ * @author Zaheen
+ */
+$messages['bn'] = array(
+	'cleanchanges-changerightslink' => 'দল পরিবর্তন করুন',
+	'cleanchanges-desc'             => '[[Special:RecentChanges|সাম্প্রতিক পরিবর্তনসমূহের তালিকার]] আরও সংহত প্রদর্শন',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
