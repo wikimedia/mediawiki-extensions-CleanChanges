@@ -106,7 +106,14 @@ $messages['hsb'] = array(
  */
 $messages['ja'] = array(
 	'cleanchanges-changerightslink' => '権限の変更',
-	'cleanchanges-desc'             => '[[{{ns:Special}}:RecentChanges|最近更新したページ]]をコンパクトな表示にします',
+	'cleanchanges-desc'             => '[[{{ns:Special}}:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'cleanchanges-changerightslink' => "ännert d'Gruppen",
 );
 
 /** Dutch (Nederlands)
