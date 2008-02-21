@@ -166,10 +166,11 @@ $messages['sr-ec'] = array(
 
 /** Swedish (Svenska)
  * @author M.M.S.
+ * @author Lejonel
  * @author Max sonnelid
  */
 $messages['sv'] = array(
 	'cleanchanges-changerightslink' => 'ändra grupper',
-	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:RecentChanges|senaste ändrings listan]]',
+	'cleanchanges-desc'             => 'Visar [[Special:RecentChanges|senaste ändringarna]] på ett mer kompakt sätt',
 );
 
