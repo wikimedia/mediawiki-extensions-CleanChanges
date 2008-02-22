@@ -55,7 +55,8 @@ $messages['br'] = array(
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
-	'cleanchanges-desc' => 'Kompaktnější zobrazení [[Special:RecentChanges|seznamu posledních změn]]',
+	'cleanchanges-changerightslink' => 'změnit skupiny',
+	'cleanchanges-desc'             => 'Kompaktnější zobrazení [[Special:RecentChanges|seznamu posledních změn]]',
 );
 
 /** German (Deutsch)
@@ -146,6 +147,14 @@ $messages['oc'] = array(
 $messages['pt'] = array(
 	'cleanchanges-changerightslink' => 'alterar grupos',
 	'cleanchanges-desc'             => 'Apresentação mais compacta da [[{{ns:special}}:RecentChanges|lista de mudanças recentes]]',
+);
+
+/** Russian (Русский)
+ * @author .:Ajvol:.
+ */
+$messages['ru'] = array(
+	'cleanchanges-changerightslink' => 'изменить группы',
+	'cleanchanges-desc'             => 'Более сжатое представление [[Special:RecentChanges|списка свежих правок]]',
 );
 
 /** Slovak (Slovenčina)
