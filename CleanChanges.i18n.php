@@ -115,6 +115,7 @@ $messages['ja'] = array(
  */
 $messages['lb'] = array(
 	'cleanchanges-changerightslink' => "ännert d'Gruppen",
+	'cleanchanges-desc'             => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
 );
 
 /** Dutch (Nederlands)
