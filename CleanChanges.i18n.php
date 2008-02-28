@@ -110,6 +110,13 @@ $messages['ja'] = array(
 	'cleanchanges-desc'             => '[[{{ns:Special}}:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរ ក្រុម',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
