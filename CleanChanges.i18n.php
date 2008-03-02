@@ -181,6 +181,14 @@ $messages['sr-ec'] = array(
 	'cleanchanges-desc'             => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
 );
 
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'cleanchanges-changerightslink' => 'Benutsergjuchte',
+	'cleanchanges-desc'             => 'Kompaktere Anwiesenge fon do [[Special:RecentChanges|lääste Annerengen]]',
+);
+
 /** Swedish (Svenska)
  * @author M.M.S.
  * @author Lejonel
