@@ -149,6 +149,13 @@ $messages['oc'] = array(
 	'cleanchanges-desc'             => "Mai d'afichatge compact de la [[Special:RecentChanges|lista de las modificacions recentas]]",
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'cleanchanges-changerightslink' => 'ډلې بدلول',
+);
+
 /** Portuguese (Português)
  * @author Malafaya
  */
