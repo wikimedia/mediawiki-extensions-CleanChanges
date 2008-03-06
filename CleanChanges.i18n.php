@@ -83,7 +83,7 @@ $messages['fi'] = array(
  * @author Grondin
  */
 $messages['fr'] = array(
-	'cleanchanges-changerightslink' => 'change les groupes',
+	'cleanchanges-changerightslink' => 'Changer les groupes',
 	'cleanchanges-desc'             => "Plus d'affichage compact de la [[Special:RecentChanges|liste des modifications récentes]]",
 );
 
