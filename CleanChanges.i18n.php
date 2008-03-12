@@ -150,10 +150,12 @@ $messages['oc'] = array(
 );
 
 /** Polish (Polski)
+ * @author Masti
  * @author McMonster
  */
 $messages['pl'] = array(
 	'cleanchanges-changerightslink' => 'zmień grupy',
+	'cleanchanges-desc'             => 'Bardziej zwarta wersja [[Special:RecentChanges|"Ostatnich zmian"]]',
 );
 
 /** Pashto (پښتو)
@@ -206,10 +208,17 @@ $messages['stq'] = array(
 /** Swedish (Svenska)
  * @author M.M.S.
  * @author Lejonel
- * @author Max sonnelid
+ * @author M.M.S.
  */
 $messages['sv'] = array(
 	'cleanchanges-changerightslink' => 'ändra grupper',
 	'cleanchanges-desc'             => 'Visar [[Special:RecentChanges|senaste ändringarna]] på ett mer kompakt sätt',
+);
+
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'cleanchanges-changerightslink' => 'గుంపులను మార్చండి',
 );
 
