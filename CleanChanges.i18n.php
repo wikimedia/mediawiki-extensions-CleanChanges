@@ -9,7 +9,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'cleanchanges-changerightslink' => 'change groups',
-	'cleanchanges-desc'             => 'More compact display of [[Special:RecentChanges|recent changes list]]',
+	'cleanchanges-desc'             => 'More compact display of the [[Special:RecentChanges|recent changes list]]',
 );
 
 /** Arabic (العربية)
