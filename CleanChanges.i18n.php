@@ -125,6 +125,14 @@ $messages['lb'] = array(
 	'cleanchanges-desc'             => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
 );
 
+/** Marathi (मराठी)
+ * @author Kaustubh
+ */
+$messages['mr'] = array(
+	'cleanchanges-changerightslink' => 'गट बदला',
+	'cleanchanges-desc'             => '[[Special:RecentChanges|अलीकडील बदल यादीचे]] संक्षिप्त रुपात दर्शन',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
