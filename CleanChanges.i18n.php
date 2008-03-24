@@ -75,6 +75,13 @@ $messages['dsb'] = array(
 	'cleanchanges-desc'             => 'Kompaktnejše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
 );
 
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'cleanchanges-changerightslink' => 'ŝanĝu grupojn',
+);
+
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
 );
