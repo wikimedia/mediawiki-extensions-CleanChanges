@@ -91,7 +91,7 @@ class NCL extends EnhancedChangesList {
 	 * Format a line for enhanced recentchange (aka with javascript and block of lines).
 	 */
 	function recentChangesLine( &$baseRC, $watched = false ) {
-		global $wgLang, $wgContLang;
+		global $wgLang;
 
 		# Create a specialised object
 		$rc = RCCacheEntry::newFromParent( $baseRC );
@@ -209,7 +209,7 @@ class NCL extends EnhancedChangesList {
 	 * Enhanced RC group
 	 */
 	function recentChangesBlockGroup( $block ) {
-		global $wgLang, $wgRCShowChangedSize;
+		global $wgLang;
 
 		# Collate list of users
 		$isnew = false;
@@ -304,8 +304,6 @@ class NCL extends EnhancedChangesList {
 	}
 
 	function subEntries( $block ) {
-		global $wgRCShowChangedSize;
-
 		$lines = '';
 		foreach( $block as $rcObj ) {
 			$items = array();
@@ -328,8 +326,8 @@ class NCL extends EnhancedChangesList {
 					$cur = $this->message['cur'];
 				}
 
-				if ( $wgRCShowChangedSize && $rcObj->getCharacterDifference() != '' ) {
-					$size = $rcObj->getCharacterDifference();
+				$size = $rcObj->getCharacterDifference();
+				if ( $size ) {
 					$items[] = "($cur; $last $size)";
 				} else {
 					$items[] = "($cur; $last)";
@@ -351,8 +349,6 @@ class NCL extends EnhancedChangesList {
 	 * @return string a HTML formated line
 	 */
 	function recentChangesBlockLine( $rcObj ) {
-		global $wgContLang, $wgRCShowChangedSize;
-
 		# Flag and Timestamp
 		$info = $this->getFlags( $rcObj ) . ' ' . $rcObj->timestamp;
 		$items[] = $this->spacerArrow() . Xml::tags( 'tt', null, $info );
@@ -365,8 +361,8 @@ class NCL extends EnhancedChangesList {
 			$hist = $rcObj->_histLink;
 
 			# Character diff
-			if ( $wgRCShowChangedSize ) {
-				$size = $rcObj->getCharacterDifference();
+			$size = $rcObj->getCharacterDifference();
+			if ( $size ) {
 				$items[] = "($diff; $hist $size)";
 			} else {
 				$items[] = "($diff; $hist)";
