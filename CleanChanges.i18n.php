@@ -237,3 +237,10 @@ $messages['te'] = array(
 	'cleanchanges-changerightslink' => 'గుంపులను మార్చండి',
 );
 
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+ * @author Ibrahim
+ */
+$messages['tg-cyrl'] = array(
+	'cleanchanges-changerightslink' => 'тағйири гурӯҳҳо',
+);
+
