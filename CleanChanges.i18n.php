@@ -101,6 +101,14 @@ $messages['gl'] = array(
 	'cleanchanges-changerightslink' => 'mudar grupos',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'cleanchanges-changerightslink' => 'ग्रुप बदलें',
+	'cleanchanges-desc'             => '[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -242,5 +250,13 @@ $messages['te'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'cleanchanges-changerightslink' => 'тағйири гурӯҳҳо',
+);
+
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'cleanchanges-changerightslink' => 'змінити групи',
+	'cleanchanges-desc'             => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
 );
 
