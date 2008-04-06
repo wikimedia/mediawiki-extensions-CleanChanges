@@ -377,7 +377,7 @@ class NCL extends EnhancedChangesList {
 	}
 
 	protected function changeInfo( $diff, $hist, $size ) {
-		if ( $size ) {
+		if ( is_int($size) ) {
 			$size = $this->wrapCharacterDifference( $size );
 			return "($diff; $hist; $size)";
 		} else {
