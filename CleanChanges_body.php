@@ -54,11 +54,6 @@ class NCL extends EnhancedChangesList {
 	 */
 	protected $direction = true;
 
-	/**
-	 * Style for flags.
-	 */
-	private $infoStyle = array( 'style' => 'letter-spacing: 0.5em;' );
-
 	public function __construct( $skin ) {
 		wfLoadExtensionMessages( 'CleanChanges' );
 		global $wgLang;
@@ -530,7 +525,7 @@ class NCL extends EnhancedChangesList {
 			$items[] = $this->XMLwrapper( $data[1], $bool ? $data[2] : $nothing );
 		}
 
-		return Xml::tags( 'span', $this->infoStyle, implode( '', $items ) );
+		return Xml::tags( 'span', null, implode( '', $items ) );
 	}
 
 	protected function getCharacterDifference( $new, $old = null ) {
