@@ -569,4 +569,13 @@ class NCL extends EnhancedChangesList {
 		}
 	}
 
+	protected static function usePatrol() {
+		global $wgUser, $wgUseRCPatrol;
+		if ( is_callable(array($wgUser,'useRCPatrol')) ) {
+			return $wgUser->useRCPatrol();
+		} else {
+			return $wgUseRCPatrol && ($wgUser->isAllowed('patrol') || $wgUser->isAllowed('patrolmarks'));
+		}
+	}
+
 }
