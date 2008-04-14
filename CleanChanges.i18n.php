@@ -32,7 +32,8 @@ $messages['ast'] = array(
  * @author DCLXVI
  */
 $messages['bg'] = array(
-	'cleanchanges-desc' => 'По-компактно показване на [[Special:RecentChanges|списъка с последните промени]]',
+	'cleanchanges-changerightslink' => 'промяна на групите',
+	'cleanchanges-desc'             => 'По-компактно показване на [[Special:RecentChanges|списъка с последните промени]]',
 );
 
 /** Bengali (বাংলা)
@@ -174,11 +175,12 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Masti
+ * @author Sp5uhe
  * @author McMonster
  */
 $messages['pl'] = array(
 	'cleanchanges-changerightslink' => 'zmień grupy',
-	'cleanchanges-desc'             => 'Bardziej zwarta wersja [[Special:RecentChanges|"Ostatnich zmian"]]',
+	'cleanchanges-desc'             => 'Bardziej zwarta wersja „[[Special:RecentChanges|Ostatnich zmian]]”',
 );
 
 /** Pashto (پښتو)
