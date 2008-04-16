@@ -170,7 +170,7 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'cleanchanges-changerightslink' => 'cambia los gropes',
-	'cleanchanges-desc'             => "Mai d'afichatge compact de la [[Special:RecentChanges|lista de las modificacions recentas]]",
+	'cleanchanges-desc'             => "Mai d'afichatge compacte de la [[Special:RecentChanges|tièra dels darrièrs cambiaments]]",
 );
 
 /** Polish (Polski)
