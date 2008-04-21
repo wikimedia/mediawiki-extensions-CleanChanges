@@ -81,6 +81,7 @@ $messages['dsb'] = array(
  */
 $messages['eo'] = array(
 	'cleanchanges-changerightslink' => 'ŝanĝu grupojn',
+	'cleanchanges-desc'             => 'Pli kompakta versio de la [[Special:RecentChanges|listo de lastaj ŝanĝoj]]',
 );
 
 $messages['fi'] = array(
