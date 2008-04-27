@@ -263,3 +263,10 @@ $messages['uk'] = array(
 	'cleanchanges-desc'             => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
 );
 
+/** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
+ */
+$messages['vi'] = array(
+	'cleanchanges-changerightslink' => 'thay đổi nhóm',
+);
+
