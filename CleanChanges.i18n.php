@@ -264,9 +264,11 @@ $messages['uk'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
  * @author Minh Nguyen
  */
 $messages['vi'] = array(
 	'cleanchanges-changerightslink' => 'thay đổi nhóm',
+	'cleanchanges-desc'             => 'Hiển thị [[Special:RecentChanges|danh sách thay đổi gần đây]] ngắn gọn hơn',
 );
 
