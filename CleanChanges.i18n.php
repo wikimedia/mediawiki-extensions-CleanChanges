@@ -127,6 +127,13 @@ $messages['ja'] = array(
 	'cleanchanges-desc'             => '[[{{ns:Special}}:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'cleanchanges-changerightslink' => 'owahana grup',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  */
