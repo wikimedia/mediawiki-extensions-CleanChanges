@@ -149,6 +149,14 @@ $messages['lb'] = array(
 	'cleanchanges-desc'             => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'cleanchanges-changerightslink' => 'ഗ്രൂപ്പുകള്‍ മാറ്റുക',
+	'cleanchanges-desc'             => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]]ഒതുക്കമുള്ള പ്രദര്‍ശനം',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  */
