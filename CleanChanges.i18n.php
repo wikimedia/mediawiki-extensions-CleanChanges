@@ -119,6 +119,13 @@ $messages['hsb'] = array(
 	'cleanchanges-desc'             => 'Kompaktniše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
+$messages['id'] = array(
+	'cleanchanges-desc' => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  */
@@ -246,6 +253,13 @@ $messages['stq'] = array(
 	'cleanchanges-desc'             => 'Kompaktere Anwiesenge fon do [[Special:RecentChanges|lääste Annerengen]]',
 );
 
+/** Sundanese (Basa Sunda)
+ * @author Irwangatot
+ */
+$messages['su'] = array(
+	'cleanchanges-desc' => 'Pamidang leuwih basajan ti [[Special:RecentChanges|Nu anyar robah]]',
+);
+
 /** Swedish (Svenska)
  * @author M.M.S.
  * @author Lejonel
@@ -276,6 +290,14 @@ $messages['tg-cyrl'] = array(
 $messages['uk'] = array(
 	'cleanchanges-changerightslink' => 'змінити групи',
 	'cleanchanges-desc'             => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
+);
+
+/** Vèneto (Vèneto)
+ * @author Candalua
+ */
+$messages['vec'] = array(
+	'cleanchanges-changerightslink' => 'canbia grupi',
+	'cleanchanges-desc'             => 'Visualixassion pi conpatta de la [[Special:RecentChanges|lista dei canbiamenti reçenti]]',
 );
 
 /** Vietnamese (Tiếng Việt)
