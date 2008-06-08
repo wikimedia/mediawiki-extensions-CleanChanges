@@ -2,8 +2,9 @@
 
 class CCFilters {
 
-	public static function user( &$conds, &$tables, &$join_conds, $opts ) {
+	public static function user( &$conds, &$tables, &$join_conds, &$opts ) {
 		global $wgRequest;
+		$opts->add( 'users', '' );
 		$users = $wgRequest->getVal( 'users' );
 		if ( $users === null ) return true;
 
@@ -18,37 +19,41 @@ class CCFilters {
 		if ( count($idfilters) ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$conds[] = 'rc_user IN (' . $dbr->makeList( $idfilters ) . ')';
-			$opts->add( 'users', '' );
 			$opts->setValue( 'users', $users );
 		}
 
 		return true;
 	}
 
-	public static function userForm( &$items ) {
+	public static function userForm( &$items, &$opts ) {
 		wfLoadExtensionMessages( 'CleanChanges' );
+		$opts->consumeValue( 'users' );
 		global $wgRequest;
+
 		$default = $wgRequest->getVal( 'users', '' );
-		$items[] = Xml::inputLabel( wfMsg( 'cleanchanges-users') , 'users',
-			'mw-users', 40, $default  ) . '<br />';
+		$items['users'] = Xml::inputLabelSep( wfMsg( 'cleanchanges-users') , 'users',
+			'mw-users', 40, $default  );
 		return true;
 	}
 
-	public static function trailer( &$conds, &$tables, &$join_conds, $opts ) {
+	public static function trailer( &$conds, &$tables, &$join_conds, &$opts ) {
 		global $wgRequest;
+		$opts->add( 'trailer', '' );
 		$trailer = $wgRequest->getVal( 'trailer' );
 		if ( $trailer === null ) return true;
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$conds[] = 'rc_title LIKE \'%%' . $dbr->escapeLike( $trailer ) . '\'';
-		$opts->add( 'trailer', '' );
 		$opts->setValue( 'trailer', $trailer );
 
 		return true;
 	}
 
-	public static function trailerForm( &$items ) {
+	public static function trailerForm( &$items, &$opts ) {
 		wfLoadExtensionMessages( 'CleanChanges' );
+
+		$opts->consumeValue( 'trailer' );
+
 		global $wgRequest;
 		$default = $wgRequest->getVal( 'trailer', '' );
 		global $wgLang;
@@ -66,7 +71,7 @@ class CCFilters {
 			$selected = ("/$code" === $default);
 			$options .= Xml::option( "$code - $name", "/$code", $selected ) . "\n";
 		}
-		$str = wfMsgHtml( 'cleanchanges-language' ) . " " .
+		$str =
 		Xml::openElement( 'select', array(
 			'name' => 'trailer',
 			'class' => 'mw-language-selector',
@@ -75,7 +80,7 @@ class CCFilters {
 		$options .
 		Xml::closeElement( 'select' );
 
-		$items[] = $str  . '<br />';
+		$items['tailer'] = array( wfMsgHtml( 'cleanchanges-language' ), $str );
 		return true;
 	}
 
