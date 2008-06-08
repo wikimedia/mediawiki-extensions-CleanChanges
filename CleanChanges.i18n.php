@@ -317,7 +317,9 @@ $messages['vi'] = array(
 	'cleanchanges-desc'             => 'Hiển thị [[Special:RecentChanges|danh sách thay đổi gần đây]] ngắn gọn hơn',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Alexsh
+ */
 $messages['zh-hant'] = array(
 	'cleanchanges-changerightslink' => '更改群組',
 	'cleanchanges-desc'             => '更簡潔的顯示[[Special:RecentChanges|最近更改清單]]',
