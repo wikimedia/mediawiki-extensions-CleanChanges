@@ -16,3 +16,22 @@ $wgExtensionCredits['other'][] = array(
 	'descriptionmsg' => 'cleanchanges-desc',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CleanChanges',
 );
+
+$wgCCUserFilter = filter;
+$wgCCTrailerFilter = filter;
+
+$wgExtensionFunctions[] = 'ccSetupFilters';
+$wgAutoloadClasses['CCFilters'] = $dir . 'Filters.php';
+
+function ccSetupFilters() {
+	global $wgCCUserFilter, $wgCCTrailerFilter, $wgHooks;
+
+	if ( $wgCCUserFilter ) {
+		$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::user';
+		$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
+	}
+	if ( $wgCCTrailerFilter ) {
+		$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::trailer';
+		$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
+	}
+}

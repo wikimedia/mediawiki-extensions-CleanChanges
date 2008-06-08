@@ -10,6 +10,9 @@ $messages = array();
 $messages['en'] = array(
 	'cleanchanges-changerightslink' => 'change groups',
 	'cleanchanges-desc'             => 'More compact display of the [[Special:RecentChanges|recent changes list]]',
+	'cleanchanges-language'         => 'Language:',
+	'cleanchanges-language-na'      => 'N/A',
+	'cleanchanges-users'            => 'Users (Sep: |):',
 );
 
 /** Arabic (العربية)
