@@ -11,7 +11,7 @@ $messages['en'] = array(
 	'cleanchanges-changerightslink' => 'change groups',
 	'cleanchanges-desc'             => 'More compact display of the [[Special:RecentChanges|recent changes list]]',
 	'cleanchanges-language'         => 'Language:',
-	'cleanchanges-language-na'      => 'N/A',
+	'cleanchanges-language-na'      => 'All',
 	'cleanchanges-users'            => 'Users (Sep: |):',
 );
 
