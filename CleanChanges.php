@@ -17,8 +17,8 @@ $wgExtensionCredits['other'][] = array(
 	'url' => 'http://www.mediawiki.org/wiki/Extension:CleanChanges',
 );
 
-$wgCCUserFilter = filter;
-$wgCCTrailerFilter = filter;
+$wgCCUserFilter = false;
+$wgCCTrailerFilter = false;
 
 $wgExtensionFunctions[] = 'ccSetupFilters';
 $wgAutoloadClasses['CCFilters'] = $dir . 'Filters.php';
