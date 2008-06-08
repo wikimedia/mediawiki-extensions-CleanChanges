@@ -157,6 +157,8 @@ $messages['km'] = array(
 $messages['lb'] = array(
 	'cleanchanges-changerightslink' => "ännert d'Gruppen",
 	'cleanchanges-desc'             => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
+	'cleanchanges-language'         => 'Sprooch:',
+	'cleanchanges-users'            => 'Benotzer (Sep: |):',
 );
 
 /** Malayalam (മലയാളം)
@@ -181,6 +183,9 @@ $messages['mr'] = array(
 $messages['nl'] = array(
 	'cleanchanges-changerightslink' => 'groepen wijzigen',
 	'cleanchanges-desc'             => 'Meer compacte weergave van de [[Special:RecentChanges|lijst met recente wijzigingen]]',
+	'cleanchanges-language'         => 'Taal:',
+	'cleanchanges-language-na'      => 'Niet beschikbaar',
+	'cleanchanges-users'            => 'Gebruikers (scheidingsteken "|"):',
 );
 
 /** Norwegian (‪Norsk (bokmål)‬)
@@ -310,5 +315,11 @@ $messages['vec'] = array(
 $messages['vi'] = array(
 	'cleanchanges-changerightslink' => 'thay đổi nhóm',
 	'cleanchanges-desc'             => 'Hiển thị [[Special:RecentChanges|danh sách thay đổi gần đây]] ngắn gọn hơn',
+);
+
+/** Traditional Chinese (‪中文(繁體)‬) */
+$messages['zh-hant'] = array(
+	'cleanchanges-changerightslink' => '更改群組',
+	'cleanchanges-desc'             => '更簡潔的顯示[[Special:RecentChanges|最近更改清單]]',
 );
 
