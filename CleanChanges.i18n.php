@@ -67,8 +67,11 @@ $messages['cs'] = array(
  * @author Raimond Spekking
 */
 $messages['de'] = array(
-	'cleanchanges-changerightslink' => 'Benutzerrechte',
+	'cleanchanges-changerightslink' => 'Gruppen ändern',
 	'cleanchanges-desc'             => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
+	'cleanchanges-language'         => 'Sprache:',
+	'cleanchanges-language-na'      => 'alle',
+	'cleanchanges-users'            => 'Benutzer (Trennzeichen: |):',
 );
 
 /** Lower Sorbian (Dolnoserbski)
