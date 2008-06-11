@@ -21,6 +21,9 @@ $messages['en'] = array(
 $messages['ar'] = array(
 	'cleanchanges-changerightslink' => 'تغيير المجموعات',
 	'cleanchanges-desc'             => 'عرض أكثر ضغطا ل [[Special:RecentChanges|قائمة أحدث التغييرات]]',
+	'cleanchanges-language'         => 'اللغة:',
+	'cleanchanges-language-na'      => 'الكل',
+	'cleanchanges-users'            => 'المستخدمون (للفصل: |):',
 );
 
 /** Asturian (Asturianu)
@@ -91,6 +94,8 @@ $messages['dsb'] = array(
 $messages['eo'] = array(
 	'cleanchanges-changerightslink' => 'ŝanĝu grupojn',
 	'cleanchanges-desc'             => 'Pli kompakta versio de la [[Special:RecentChanges|listo de lastaj ŝanĝoj]]',
+	'cleanchanges-language'         => 'Lingvo:',
+	'cleanchanges-language-na'      => 'Ĉiuj',
 );
 
 $messages['fi'] = array(
@@ -221,14 +226,15 @@ $messages['oc'] = array(
 /** Polish (Polski)
  * @author Masti
  * @author Sp5uhe
+ * @author Wpedzich
  * @author McMonster
  */
 $messages['pl'] = array(
 	'cleanchanges-changerightslink' => 'zmień grupy',
 	'cleanchanges-desc'             => 'Bardziej zwarta wersja „[[Special:RecentChanges|Ostatnich zmian]]”',
-	'cleanchanges-language'         => 'Język:',
+	'cleanchanges-language'         => 'Język',
 	'cleanchanges-language-na'      => 'Wszystkie',
-	'cleanchanges-users'            => 'Użytkownicy (poszczególne wpisy oddzielona znakiem "|"):',
+	'cleanchanges-users'            => 'Użytkownicy (rozdziel znakiem „|”):',
 );
 
 /** Pashto (پښتو)
