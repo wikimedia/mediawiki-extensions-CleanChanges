@@ -221,6 +221,9 @@ $messages['no'] = array(
 $messages['oc'] = array(
 	'cleanchanges-changerightslink' => 'cambia los gropes',
 	'cleanchanges-desc'             => "Mai d'afichatge compacte de la [[Special:RecentChanges|tièra dels darrièrs cambiaments]]",
+	'cleanchanges-language'         => 'Lenga :',
+	'cleanchanges-language-na'      => 'Totes',
+	'cleanchanges-users'            => 'Utilizaires (sep. per |) :',
 );
 
 /** Polish (Polski)
