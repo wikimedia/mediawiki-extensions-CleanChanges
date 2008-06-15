@@ -207,12 +207,15 @@ $messages['nl'] = array(
 	'cleanchanges-users'            => 'Gebruikers (scheidingsteken "|"):',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
 	'cleanchanges-changerightslink' => 'endre grupper',
 	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:Recentchanges|siste endringer]]',
+	'cleanchanges-language'         => 'Språk:',
+	'cleanchanges-language-na'      => 'Alle',
+	'cleanchanges-users'            => 'Brukere (separer med |):',
 );
 
 /** Occitan (Occitan)
@@ -326,6 +329,14 @@ $messages['te'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'cleanchanges-changerightslink' => 'тағйири гурӯҳҳо',
+);
+
+/** Turkish (Türkçe)
+ * @author Karduelis
+ */
+$messages['tr'] = array(
+	'cleanchanges-language'    => 'Dil:',
+	'cleanchanges-language-na' => 'Hepsi',
 );
 
 /** Ukrainian (Українська)
