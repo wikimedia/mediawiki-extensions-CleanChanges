@@ -189,11 +189,14 @@ $messages['ml'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Mahitgar
  * @author Kaustubh
  */
 $messages['mr'] = array(
 	'cleanchanges-changerightslink' => 'गट बदला',
 	'cleanchanges-desc'             => '[[Special:RecentChanges|अलीकडील बदल यादीचे]] संक्षिप्त रुपात दर्शन',
+	'cleanchanges-language'         => 'भाषा:',
+	'cleanchanges-language-na'      => 'सर्व',
 );
 
 /** Dutch (Nederlands)
@@ -248,6 +251,7 @@ $messages['pl'] = array(
  */
 $messages['ps'] = array(
 	'cleanchanges-changerightslink' => 'ډلې بدلول',
+	'cleanchanges-language'         => 'ژبه:',
 );
 
 /** Portuguese (Português)
@@ -260,10 +264,12 @@ $messages['pt'] = array(
 
 /** Russian (Русский)
  * @author Александр Сигачёв
+ * @author Innv
  */
 $messages['ru'] = array(
 	'cleanchanges-changerightslink' => 'изменить группы',
 	'cleanchanges-desc'             => 'Более сжатое представление [[Special:RecentChanges|списка свежих правок]]',
+	'cleanchanges-language'         => 'Язык:',
 );
 
 /** Slovak (Slovenčina)
