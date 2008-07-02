@@ -15,6 +15,13 @@ $messages['en'] = array(
 	'cleanchanges-users'            => 'Users (Sep: |):',
 );
 
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'cleanchanges-language-na' => 'Maṛṛa',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -371,6 +378,13 @@ $messages['vi'] = array(
 	'cleanchanges-language'         => 'Ngôn ngữ:',
 	'cleanchanges-language-na'      => 'Tất cả',
 	'cleanchanges-users'            => 'Các thành viên (Phân cách: |):',
+);
+
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Chenzw
+ */
+$messages['zh-hans'] = array(
+	'cleanchanges-language' => '语言：',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
