@@ -154,6 +154,17 @@ $messages['id'] = array(
 	'cleanchanges-desc' => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
 );
 
+/** Italian (Italiano)
+ * @author Darth Kule
+ */
+$messages['it'] = array(
+	'cleanchanges-changerightslink' => 'modifica gruppi',
+	'cleanchanges-desc'             => 'Presentazione più compatta della [[Special:RecentChanges|lista delle ultime modifiche]]',
+	'cleanchanges-language'         => 'Lingua:',
+	'cleanchanges-language-na'      => 'Tutte',
+	'cleanchanges-users'            => 'Utenti (Sep: |):',
+);
+
 /** Japanese (日本語)
  * @author JtFuruhata
  */
