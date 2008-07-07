@@ -15,13 +15,6 @@ $messages['en'] = array(
 	'cleanchanges-users'            => 'Users (Sep: |):',
 );
 
-/** Tarifit (Tarifit)
- * @author Jose77
- */
-$messages['rif'] = array(
-	'cleanchanges-language-na' => 'Maṛṛa',
-);
-
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -111,6 +104,7 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'cleanchanges-changerightslink' => 'Changer les groupes',
@@ -122,6 +116,7 @@ $messages['fr'] = array(
 
 /** Galician (Galego)
  * @author Alma
+ * @author Toliño
  */
 $messages['gl'] = array(
 	'cleanchanges-changerightslink' => 'mudar grupos',
@@ -280,6 +275,13 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'cleanchanges-changerightslink' => 'alterar grupos',
 	'cleanchanges-desc'             => 'Apresentação mais compacta da [[{{ns:special}}:RecentChanges|lista de mudanças recentes]]',
+);
+
+/** Tarifit (Tarifit)
+ * @author Jose77
+ */
+$messages['rif'] = array(
+	'cleanchanges-language-na' => 'Maṛṛa',
 );
 
 /** Russian (Русский)
