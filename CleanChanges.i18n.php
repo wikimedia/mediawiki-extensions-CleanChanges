@@ -270,6 +270,8 @@ $messages['pl'] = array(
 $messages['ps'] = array(
 	'cleanchanges-changerightslink' => 'ډلې بدلول',
 	'cleanchanges-language'         => 'ژبه:',
+	'cleanchanges-language-na'      => 'ټول',
+	'cleanchanges-users'            => 'کارونکي (Sep: |):',
 );
 
 /** Portuguese (Português)
@@ -369,6 +371,7 @@ $messages['tr'] = array(
 $messages['uk'] = array(
 	'cleanchanges-changerightslink' => 'змінити групи',
 	'cleanchanges-desc'             => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
+	'cleanchanges-language'         => 'Мова:',
 );
 
 /** Vèneto (Vèneto)
