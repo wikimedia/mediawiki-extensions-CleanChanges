@@ -71,7 +71,7 @@ $messages['cs'] = array(
 
 /** German (Deutsch)
  * @author Raimond Spekking
-*/
+ */
 $messages['de'] = array(
 	'cleanchanges-changerightslink' => 'Gruppen ändern',
 	'cleanchanges-desc'             => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
@@ -86,6 +86,9 @@ $messages['de'] = array(
 $messages['dsb'] = array(
 	'cleanchanges-changerightslink' => 'kupki změniś',
 	'cleanchanges-desc'             => 'Kompaktnejše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
+	'cleanchanges-language'         => 'Rěc:',
+	'cleanchanges-language-na'      => 'Wšykne',
+	'cleanchanges-users'            => 'Wužywarje (źěleńske znamješko: |);',
 );
 
 /** Esperanto (Esperanto)
@@ -98,6 +101,7 @@ $messages['eo'] = array(
 	'cleanchanges-language-na'      => 'Ĉiuj',
 );
 
+/** Finnish (Suomi) */
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
 );
@@ -140,6 +144,9 @@ $messages['hi'] = array(
 $messages['hsb'] = array(
 	'cleanchanges-changerightslink' => 'skupiny změnić',
 	'cleanchanges-desc'             => 'Kompaktniše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
+	'cleanchanges-language'         => 'Rěč:',
+	'cleanchanges-language-na'      => 'Wšě',
+	'cleanchanges-users'            => 'Wužiwarjo (dźělenske znamješko: |):',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -177,9 +184,12 @@ $messages['jv'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
-	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរ ក្រុម',
+	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរក្រុម',
+	'cleanchanges-language'         => 'ភាសា:',
+	'cleanchanges-language-na'      => 'ទាំងអស់',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -292,6 +302,8 @@ $messages['ru'] = array(
 	'cleanchanges-changerightslink' => 'изменить группы',
 	'cleanchanges-desc'             => 'Более сжатое представление [[Special:RecentChanges|списка свежих правок]]',
 	'cleanchanges-language'         => 'Язык:',
+	'cleanchanges-language-na'      => 'Все',
+	'cleanchanges-users'            => 'Участники (разделитель: |):',
 );
 
 /** Slovak (Slovenčina)
@@ -305,7 +317,7 @@ $messages['sk'] = array(
 	'cleanchanges-users'            => 'Používatelia (Oddeľ: „|”):',
 );
 
-/** ћирилица (ћирилица)
+/** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
  */
 $messages['sr-ec'] = array(
