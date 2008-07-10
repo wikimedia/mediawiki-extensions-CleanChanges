@@ -101,9 +101,15 @@ $messages['eo'] = array(
 	'cleanchanges-language-na'      => 'Ĉiuj',
 );
 
-/** Finnish (Suomi) */
+/** Finnish (Suomi)
+ * @author Nike
+ */
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
+	'cleanchanges-desc'             => 'Tiivistetymmät [[Special:Recentchanges|muutoslistaukset]].',
+	'cleanchanges-language'         => 'Kieli',
+	'cleanchanges-language-na'      => 'Kaikki',
+	'cleanchanges-users'            => 'Käyttäjät (erotin: |)',
 );
 
 /** French (Français)
