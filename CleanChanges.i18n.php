@@ -155,6 +155,13 @@ $messages['hsb'] = array(
 	'cleanchanges-users'            => 'Wužiwarjo (dźělenske znamješko: |):',
 );
 
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'cleanchanges-language-na' => 'Totes',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
  */
@@ -280,6 +287,7 @@ $messages['pl'] = array(
  */
 $messages['ps'] = array(
 	'cleanchanges-changerightslink' => 'ډلې بدلول',
+	'cleanchanges-desc'             => 'د [[Special:RecentChanges|وروستي بدلونونو لړليک]] په ډېره وړوکې بڼه ښکاره کوي.',
 	'cleanchanges-language'         => 'ژبه:',
 	'cleanchanges-language-na'      => 'ټول',
 	'cleanchanges-users'            => 'کارونکي (Sep: |):',
