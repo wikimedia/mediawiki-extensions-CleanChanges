@@ -400,6 +400,8 @@ $messages['uk'] = array(
 	'cleanchanges-changerightslink' => 'змінити групи',
 	'cleanchanges-desc'             => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
 	'cleanchanges-language'         => 'Мова:',
+	'cleanchanges-language-na'      => 'Усі',
+	'cleanchanges-users'            => 'Користувачі (розділювач: |):',
 );
 
 /** Vèneto (Vèneto)
