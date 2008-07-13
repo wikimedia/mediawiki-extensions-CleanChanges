@@ -15,6 +15,13 @@ $messages['en'] = array(
 	'cleanchanges-users'            => 'Users (Sep: |):',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'cleanchanges-language' => 'Taal:',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
