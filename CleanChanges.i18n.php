@@ -143,6 +143,13 @@ $messages['gl'] = array(
 	'cleanchanges-users'            => 'Usuarios (separados por: |):',
 );
 
+/** Hawaiian (Hawai`i)
+ * @author Kalani
+ */
+$messages['haw'] = array(
+	'cleanchanges-language-na' => 'Apau',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
