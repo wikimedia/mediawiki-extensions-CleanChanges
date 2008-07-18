@@ -113,7 +113,7 @@ $messages['eo'] = array(
  */
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
-	'cleanchanges-desc'             => 'Tiivistetymmät [[Special:Recentchanges|muutoslistaukset]].',
+	'cleanchanges-desc'             => 'Tiivistetymmät [[Special:RecentChanges|muutoslistaukset]].',
 	'cleanchanges-language'         => 'Kieli',
 	'cleanchanges-language-na'      => 'Kaikki',
 	'cleanchanges-users'            => 'Käyttäjät (erotin: |)',
@@ -199,7 +199,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'cleanchanges-changerightslink' => '権限の変更',
-	'cleanchanges-desc'             => '[[{{ns:Special}}:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
+	'cleanchanges-desc'             => '[[Special:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
 );
 
 /** Javanese (Basa Jawa)
@@ -265,7 +265,7 @@ $messages['nl'] = array(
  */
 $messages['no'] = array(
 	'cleanchanges-changerightslink' => 'endre grupper',
-	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:Recentchanges|siste endringer]]',
+	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:RecentChanges|siste endringer]]',
 	'cleanchanges-language'         => 'Språk:',
 	'cleanchanges-language-na'      => 'Alle',
 	'cleanchanges-users'            => 'Brukere (separer med |):',
@@ -312,7 +312,7 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'cleanchanges-changerightslink' => 'alterar grupos',
-	'cleanchanges-desc'             => 'Apresentação mais compacta da [[{{ns:special}}:RecentChanges|lista de mudanças recentes]]',
+	'cleanchanges-desc'             => 'Apresentação mais compacta da [[Special:RecentChanges|lista de mudanças recentes]]',
 );
 
 /** Tarifit (Tarifit)
