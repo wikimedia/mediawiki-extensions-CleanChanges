@@ -19,7 +19,11 @@ $messages['en'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
-	'cleanchanges-language' => 'Taal:',
+	'cleanchanges-changerightslink' => 'verander groepe',
+	'cleanchanges-desc'             => 'Meer kompakte weergawe van die [[Special:RecentChanges|lys van onlangse wysigings]]',
+	'cleanchanges-language'         => 'Taal:',
+	'cleanchanges-language-na'      => 'Alle tale',
+	'cleanchanges-users'            => 'Gebruikers (geskei deur "|"):',
 );
 
 /** Arabic (العربية)
@@ -180,7 +184,11 @@ $messages['ia'] = array(
  * @author Rex
  */
 $messages['id'] = array(
-	'cleanchanges-desc' => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
+	'cleanchanges-changerightslink' => 'ubah grup',
+	'cleanchanges-desc'             => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
+	'cleanchanges-language'         => 'Bahasa:',
+	'cleanchanges-language-na'      => 'Semua',
+	'cleanchanges-users'            => 'Pengguna (pemisah: |):',
 );
 
 /** Italian (Italiano)
