@@ -257,6 +257,14 @@ $messages['mr'] = array(
 	'cleanchanges-language-na'      => 'सर्व',
 );
 
+/** Nahuatl (Nahuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'cleanchanges-language'    => 'Tlahtōlli:',
+	'cleanchanges-language-na' => 'Mochīntīn',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -328,6 +336,14 @@ $messages['pt'] = array(
  */
 $messages['rif'] = array(
 	'cleanchanges-language-na' => 'Maṛṛa',
+);
+
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'cleanchanges-language' => 'Limbă:',
+	'cleanchanges-users'    => 'Utilizatori (Sep: |):',
 );
 
 /** Russian (Русский)
