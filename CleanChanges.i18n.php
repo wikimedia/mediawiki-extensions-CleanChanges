@@ -135,6 +135,13 @@ $messages['fr'] = array(
 	'cleanchanges-users'            => 'Utilisateurs (sép. par |) :',
 );
 
+/** Western Frisian (Frysk)
+ * @author Snakesteuben
+ */
+$messages['fy'] = array(
+	'cleanchanges-language-na' => 'Alle',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Toliño
