@@ -200,6 +200,7 @@ $messages['id'] = array(
 
 /** Italian (Italiano)
  * @author Darth Kule
+ * @author Nemo bis
  */
 $messages['it'] = array(
 	'cleanchanges-changerightslink' => 'modifica gruppi',
