@@ -306,6 +306,13 @@ $messages['oc'] = array(
 	'cleanchanges-users'            => 'Utilizaires (sep. per |) :',
 );
 
+/** Punjabi (ਪੰਜਾਬੀ)
+ * @author Gman124
+ */
+$messages['pa'] = array(
+	'cleanchanges-language-na' => 'ਸਬ ਕੁਝ',
+);
+
 /** Polish (Polski)
  * @author Masti
  * @author Sp5uhe
