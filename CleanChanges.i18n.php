@@ -299,7 +299,7 @@ $messages['no'] = array(
  * @author Cedric31
  */
 $messages['oc'] = array(
-	'cleanchanges-changerightslink' => 'cambia los gropes',
+	'cleanchanges-changerightslink' => 'càmbia los gropes',
 	'cleanchanges-desc'             => "Mai d'afichatge compacte de la [[Special:RecentChanges|tièra dels darrièrs cambiaments]]",
 	'cleanchanges-language'         => 'Lenga :',
 	'cleanchanges-language-na'      => 'Totes',
@@ -310,7 +310,7 @@ $messages['oc'] = array(
  * @author Gman124
  */
 $messages['pa'] = array(
-	'cleanchanges-language-na' => 'ਸਬ ਕੁਝ',
+	'cleanchanges-language-na' => 'ਸਭ',
 );
 
 /** Polish (Polski)
