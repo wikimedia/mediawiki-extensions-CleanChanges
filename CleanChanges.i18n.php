@@ -265,6 +265,13 @@ $messages['mr'] = array(
 	'cleanchanges-language-na'      => 'सर्व',
 );
 
+/** Maltese (Malti)
+ * @author Roderick Mallia
+ */
+$messages['mt'] = array(
+	'cleanchanges-language' => 'Lingwa:',
+);
+
 /** Nahuatl (Nahuatl)
  * @author Fluence
  */
