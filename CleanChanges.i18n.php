@@ -161,6 +161,17 @@ $messages['haw'] = array(
 	'cleanchanges-language-na' => 'Apau',
 );
 
+/** Hebrew (עברית)
+ * @author Agbad
+ * @author Rotemliss
+ */
+$messages['he'] = array(
+	'cleanchanges-changerightslink' => 'שינוי קבוצות',
+	'cleanchanges-language'         => 'שפה:',
+	'cleanchanges-language-na'      => 'הכול',
+	'cleanchanges-users'            => 'משתמשים (הפרדה: |):',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
@@ -184,7 +195,11 @@ $messages['hsb'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'cleanchanges-language-na' => 'Totes',
+	'cleanchanges-changerightslink' => 'cambiar gruppos',
+	'cleanchanges-desc'             => 'Presentation plus compacte del [[Special:RecentChanges|lista de modificationes recente]]',
+	'cleanchanges-language'         => 'Lingua:',
+	'cleanchanges-language-na'      => 'Totes',
+	'cleanchanges-users'            => 'Usatores (Sep: |):',
 );
 
 /** Indonesian (Bahasa Indonesia)
