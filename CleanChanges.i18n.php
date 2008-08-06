@@ -167,6 +167,7 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'cleanchanges-changerightslink' => 'שינוי קבוצות',
+	'cleanchanges-desc'             => 'הצגה מרוכזת יותר של [[Special:RecentChanges|רשימת השינויים האחרונים]]',
 	'cleanchanges-language'         => 'שפה:',
 	'cleanchanges-language-na'      => 'הכול',
 	'cleanchanges-users'            => 'משתמשים (הפרדה: |):',
