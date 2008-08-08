@@ -102,6 +102,13 @@ $messages['dsb'] = array(
 	'cleanchanges-users'            => 'Wužywarje (źěleńske znamješko: |);',
 );
 
+/** Greek (Ελληνικά)
+ * @author Consta
+ */
+$messages['el'] = array(
+	'cleanchanges-language' => 'Γλώσσα:',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
