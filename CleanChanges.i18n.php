@@ -15,15 +15,25 @@ $messages['en'] = array(
 	'cleanchanges-users'            => 'Users (Sep: |):',
 );
 
+/** Message documentation (Message documentation)
+ * @author Meno25
+ */
+$messages['qqq'] = array(
+	'cleanchanges-language' => '{{Identical|Language}}',
+	'cleanchanges-language-na' => 'Used in the trailer selection of [[Special:RecentChanges]] to not filter on any trailer.
+
+{{Identical|All}}',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
 $messages['af'] = array(
 	'cleanchanges-changerightslink' => 'verander groepe',
-	'cleanchanges-desc'             => 'Meer kompakte weergawe van die [[Special:RecentChanges|lys van onlangse wysigings]]',
-	'cleanchanges-language'         => 'Taal:',
-	'cleanchanges-language-na'      => 'Alle tale',
-	'cleanchanges-users'            => 'Gebruikers (geskei deur "|"):',
+	'cleanchanges-desc' => 'Meer kompakte weergawe van die [[Special:RecentChanges|lys van onlangse wysigings]]',
+	'cleanchanges-language' => 'Taal:',
+	'cleanchanges-language-na' => 'Alle tale',
+	'cleanchanges-users' => 'Gebruikers (geskei deur "|"):',
 );
 
 /** Arabic (العربية)
@@ -31,10 +41,10 @@ $messages['af'] = array(
  */
 $messages['ar'] = array(
 	'cleanchanges-changerightslink' => 'تغيير المجموعات',
-	'cleanchanges-desc'             => 'عرض أكثر ضغطا ل [[Special:RecentChanges|قائمة أحدث التغييرات]]',
-	'cleanchanges-language'         => 'اللغة:',
-	'cleanchanges-language-na'      => 'الكل',
-	'cleanchanges-users'            => 'المستخدمون (للفصل: |):',
+	'cleanchanges-desc' => 'عرض أكثر ضغطا ل [[Special:RecentChanges|قائمة أحدث التغييرات]]',
+	'cleanchanges-language' => 'اللغة:',
+	'cleanchanges-language-na' => 'الكل',
+	'cleanchanges-users' => 'المستخدمون (للفصل: |):',
 );
 
 /** Asturian (Asturianu)
@@ -42,7 +52,7 @@ $messages['ar'] = array(
  */
 $messages['ast'] = array(
 	'cleanchanges-changerightslink' => 'camudar grupos',
-	'cleanchanges-desc'             => 'Vísualización más compacta de la [[Special:RecentChanges|llista de cambeos recientes]]',
+	'cleanchanges-desc' => 'Vísualización más compacta de la [[Special:RecentChanges|llista de cambeos recientes]]',
 );
 
 /** Bulgarian (Български)
@@ -50,10 +60,10 @@ $messages['ast'] = array(
  */
 $messages['bg'] = array(
 	'cleanchanges-changerightslink' => 'промяна на групите',
-	'cleanchanges-desc'             => 'По-компактно показване на [[Special:RecentChanges|списъка с последните промени]]',
-	'cleanchanges-language'         => 'Език:',
-	'cleanchanges-language-na'      => 'Всички',
-	'cleanchanges-users'            => 'Потребители (Разд: |):',
+	'cleanchanges-desc' => 'По-компактно показване на [[Special:RecentChanges|списъка с последните промени]]',
+	'cleanchanges-language' => 'Език:',
+	'cleanchanges-language-na' => 'Всички',
+	'cleanchanges-users' => 'Потребители (Разд: |):',
 );
 
 /** Bengali (বাংলা)
@@ -61,7 +71,7 @@ $messages['bg'] = array(
  */
 $messages['bn'] = array(
 	'cleanchanges-changerightslink' => 'দল পরিবর্তন করুন',
-	'cleanchanges-desc'             => '[[Special:RecentChanges|সাম্প্রতিক পরিবর্তনসমূহের তালিকার]] আরও সংহত প্রদর্শন',
+	'cleanchanges-desc' => '[[Special:RecentChanges|সাম্প্রতিক পরিবর্তনসমূহের তালিকার]] আরও সংহত প্রদর্শন',
 );
 
 /** Breton (Brezhoneg)
@@ -69,7 +79,7 @@ $messages['bn'] = array(
  */
 $messages['br'] = array(
 	'cleanchanges-changerightslink' => 'kemmañ a ra ar strolladoù',
-	'cleanchanges-desc'             => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
+	'cleanchanges-desc' => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
 );
 
 /** Czech (Česky)
@@ -77,7 +87,7 @@ $messages['br'] = array(
  */
 $messages['cs'] = array(
 	'cleanchanges-changerightslink' => 'změnit skupiny',
-	'cleanchanges-desc'             => 'Kompaktnější zobrazení [[Special:RecentChanges|seznamu posledních změn]]',
+	'cleanchanges-desc' => 'Kompaktnější zobrazení [[Special:RecentChanges|seznamu posledních změn]]',
 );
 
 /** German (Deutsch)
@@ -85,10 +95,10 @@ $messages['cs'] = array(
  */
 $messages['de'] = array(
 	'cleanchanges-changerightslink' => 'Gruppen ändern',
-	'cleanchanges-desc'             => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
-	'cleanchanges-language'         => 'Sprache:',
-	'cleanchanges-language-na'      => 'alle',
-	'cleanchanges-users'            => 'Benutzer (Trennzeichen: |):',
+	'cleanchanges-desc' => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
+	'cleanchanges-language' => 'Sprache:',
+	'cleanchanges-language-na' => 'alle',
+	'cleanchanges-users' => 'Benutzer (Trennzeichen: |):',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -96,10 +106,10 @@ $messages['de'] = array(
  */
 $messages['dsb'] = array(
 	'cleanchanges-changerightslink' => 'kupki změniś',
-	'cleanchanges-desc'             => 'Kompaktnejše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
-	'cleanchanges-language'         => 'Rěc:',
-	'cleanchanges-language-na'      => 'Wšykne',
-	'cleanchanges-users'            => 'Wužywarje (źěleńske znamješko: |);',
+	'cleanchanges-desc' => 'Kompaktnejše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
+	'cleanchanges-language' => 'Rěc:',
+	'cleanchanges-language-na' => 'Wšykne',
+	'cleanchanges-users' => 'Wužywarje (źěleńske znamješko: |);',
 );
 
 /** Greek (Ελληνικά)
@@ -114,9 +124,9 @@ $messages['el'] = array(
  */
 $messages['eo'] = array(
 	'cleanchanges-changerightslink' => 'ŝanĝu grupojn',
-	'cleanchanges-desc'             => 'Pli kompakta versio de la [[Special:RecentChanges|listo de lastaj ŝanĝoj]]',
-	'cleanchanges-language'         => 'Lingvo:',
-	'cleanchanges-language-na'      => 'Ĉiuj',
+	'cleanchanges-desc' => 'Pli kompakta versio de la [[Special:RecentChanges|listo de lastaj ŝanĝoj]]',
+	'cleanchanges-language' => 'Lingvo:',
+	'cleanchanges-language-na' => 'Ĉiuj',
 );
 
 /** Finnish (Suomi)
@@ -124,10 +134,10 @@ $messages['eo'] = array(
  */
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
-	'cleanchanges-desc'             => 'Tiivistetymmät [[Special:RecentChanges|muutoslistaukset]].',
-	'cleanchanges-language'         => 'Kieli',
-	'cleanchanges-language-na'      => 'Kaikki',
-	'cleanchanges-users'            => 'Käyttäjät (erotin: |)',
+	'cleanchanges-desc' => 'Tiivistetymmät [[Special:RecentChanges|muutoslistaukset]].',
+	'cleanchanges-language' => 'Kieli',
+	'cleanchanges-language-na' => 'Kaikki',
+	'cleanchanges-users' => 'Käyttäjät (erotin: |)',
 );
 
 /** French (Français)
@@ -136,10 +146,10 @@ $messages['fi'] = array(
  */
 $messages['fr'] = array(
 	'cleanchanges-changerightslink' => 'Changer les groupes',
-	'cleanchanges-desc'             => "Plus d'affichage compact de la [[Special:RecentChanges|liste des modifications récentes]]",
-	'cleanchanges-language'         => 'Langue :',
-	'cleanchanges-language-na'      => 'Tous',
-	'cleanchanges-users'            => 'Utilisateurs (sép. par |) :',
+	'cleanchanges-desc' => "Plus d'affichage compact de la [[Special:RecentChanges|liste des modifications récentes]]",
+	'cleanchanges-language' => 'Langue :',
+	'cleanchanges-language-na' => 'Tous',
+	'cleanchanges-users' => 'Utilisateurs (sép. par |) :',
 );
 
 /** Western Frisian (Frysk)
@@ -155,10 +165,10 @@ $messages['fy'] = array(
  */
 $messages['gl'] = array(
 	'cleanchanges-changerightslink' => 'mudar grupos',
-	'cleanchanges-desc'             => 'Unha mostra máis compacta da [[Special:RecentChanges|listaxe de cambios recentes]]',
-	'cleanchanges-language'         => 'Lingua:',
-	'cleanchanges-language-na'      => 'Todo',
-	'cleanchanges-users'            => 'Usuarios (separados por: |):',
+	'cleanchanges-desc' => 'Unha mostra máis compacta da [[Special:RecentChanges|listaxe de cambios recentes]]',
+	'cleanchanges-language' => 'Lingua:',
+	'cleanchanges-language-na' => 'Todo',
+	'cleanchanges-users' => 'Usuarios (separados por: |):',
 );
 
 /** Hawaiian (Hawai`i)
@@ -174,10 +184,10 @@ $messages['haw'] = array(
  */
 $messages['he'] = array(
 	'cleanchanges-changerightslink' => 'שינוי קבוצות',
-	'cleanchanges-desc'             => 'הצגה מרוכזת יותר של [[Special:RecentChanges|רשימת השינויים האחרונים]]',
-	'cleanchanges-language'         => 'שפה:',
-	'cleanchanges-language-na'      => 'הכול',
-	'cleanchanges-users'            => 'משתמשים (הפרדה: |):',
+	'cleanchanges-desc' => 'הצגה מרוכזת יותר של [[Special:RecentChanges|רשימת השינויים האחרונים]]',
+	'cleanchanges-language' => 'שפה:',
+	'cleanchanges-language-na' => 'הכול',
+	'cleanchanges-users' => 'משתמשים (הפרדה: |):',
 );
 
 /** Hindi (हिन्दी)
@@ -185,7 +195,7 @@ $messages['he'] = array(
  */
 $messages['hi'] = array(
 	'cleanchanges-changerightslink' => 'ग्रुप बदलें',
-	'cleanchanges-desc'             => '[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें',
+	'cleanchanges-desc' => '[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें',
 );
 
 /** Upper Sorbian (Hornjoserbsce)
@@ -193,10 +203,10 @@ $messages['hi'] = array(
  */
 $messages['hsb'] = array(
 	'cleanchanges-changerightslink' => 'skupiny změnić',
-	'cleanchanges-desc'             => 'Kompaktniše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
-	'cleanchanges-language'         => 'Rěč:',
-	'cleanchanges-language-na'      => 'Wšě',
-	'cleanchanges-users'            => 'Wužiwarjo (dźělenske znamješko: |):',
+	'cleanchanges-desc' => 'Kompaktniše zwobraznjenje [[Special:RecentChanges|lisćiny aktualnych změnow]]',
+	'cleanchanges-language' => 'Rěč:',
+	'cleanchanges-language-na' => 'Wšě',
+	'cleanchanges-users' => 'Wužiwarjo (dźělenske znamješko: |):',
 );
 
 /** Interlingua (Interlingua)
@@ -204,10 +214,10 @@ $messages['hsb'] = array(
  */
 $messages['ia'] = array(
 	'cleanchanges-changerightslink' => 'cambiar gruppos',
-	'cleanchanges-desc'             => 'Presentation plus compacte del [[Special:RecentChanges|lista de modificationes recente]]',
-	'cleanchanges-language'         => 'Lingua:',
-	'cleanchanges-language-na'      => 'Totes',
-	'cleanchanges-users'            => 'Usatores (Sep: |):',
+	'cleanchanges-desc' => 'Presentation plus compacte del [[Special:RecentChanges|lista de modificationes recente]]',
+	'cleanchanges-language' => 'Lingua:',
+	'cleanchanges-language-na' => 'Totes',
+	'cleanchanges-users' => 'Usatores (Sep: |):',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -215,10 +225,10 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'cleanchanges-changerightslink' => 'ubah grup',
-	'cleanchanges-desc'             => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
-	'cleanchanges-language'         => 'Bahasa:',
-	'cleanchanges-language-na'      => 'Semua',
-	'cleanchanges-users'            => 'Pengguna (pemisah: |):',
+	'cleanchanges-desc' => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
+	'cleanchanges-language' => 'Bahasa:',
+	'cleanchanges-language-na' => 'Semua',
+	'cleanchanges-users' => 'Pengguna (pemisah: |):',
 );
 
 /** Italian (Italiano)
@@ -227,10 +237,10 @@ $messages['id'] = array(
  */
 $messages['it'] = array(
 	'cleanchanges-changerightslink' => 'modifica gruppi',
-	'cleanchanges-desc'             => 'Presentazione più compatta della [[Special:RecentChanges|lista delle ultime modifiche]]',
-	'cleanchanges-language'         => 'Lingua:',
-	'cleanchanges-language-na'      => 'Tutte',
-	'cleanchanges-users'            => 'Utenti (Sep: |):',
+	'cleanchanges-desc' => 'Presentazione più compatta della [[Special:RecentChanges|lista delle ultime modifiche]]',
+	'cleanchanges-language' => 'Lingua:',
+	'cleanchanges-language-na' => 'Tutte',
+	'cleanchanges-users' => 'Utenti (Sep: |):',
 );
 
 /** Japanese (日本語)
@@ -238,7 +248,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'cleanchanges-changerightslink' => '権限の変更',
-	'cleanchanges-desc'             => '[[Special:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
+	'cleanchanges-desc' => '[[Special:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
 );
 
 /** Javanese (Basa Jawa)
@@ -254,8 +264,8 @@ $messages['jv'] = array(
  */
 $messages['km'] = array(
 	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរក្រុម',
-	'cleanchanges-language'         => 'ភាសា:',
-	'cleanchanges-language-na'      => 'ទាំងអស់',
+	'cleanchanges-language' => 'ភាសា:',
+	'cleanchanges-language-na' => 'ទាំងអស់',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -263,10 +273,10 @@ $messages['km'] = array(
  */
 $messages['lb'] = array(
 	'cleanchanges-changerightslink' => "ännert d'Gruppen",
-	'cleanchanges-desc'             => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
-	'cleanchanges-language'         => 'Sprooch:',
-	'cleanchanges-language-na'      => 'All',
-	'cleanchanges-users'            => 'Benotzer (Sep: |):',
+	'cleanchanges-desc' => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
+	'cleanchanges-language' => 'Sprooch:',
+	'cleanchanges-language-na' => 'All',
+	'cleanchanges-users' => 'Benotzer (Sep: |):',
 );
 
 /** Malayalam (മലയാളം)
@@ -274,18 +284,18 @@ $messages['lb'] = array(
  */
 $messages['ml'] = array(
 	'cleanchanges-changerightslink' => 'ഗ്രൂപ്പുകള്‍ മാറ്റുക',
-	'cleanchanges-desc'             => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]]ഒതുക്കമുള്ള പ്രദര്‍ശനം',
+	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]]ഒതുക്കമുള്ള പ്രദര്‍ശനം',
 );
 
 /** Marathi (मराठी)
- * @author Mahitgar
  * @author Kaustubh
+ * @author Mahitgar
  */
 $messages['mr'] = array(
 	'cleanchanges-changerightslink' => 'गट बदला',
-	'cleanchanges-desc'             => '[[Special:RecentChanges|अलीकडील बदल यादीचे]] संक्षिप्त रुपात दर्शन',
-	'cleanchanges-language'         => 'भाषा:',
-	'cleanchanges-language-na'      => 'सर्व',
+	'cleanchanges-desc' => '[[Special:RecentChanges|अलीकडील बदल यादीचे]] संक्षिप्त रुपात दर्शन',
+	'cleanchanges-language' => 'भाषा:',
+	'cleanchanges-language-na' => 'सर्व',
 );
 
 /** Maltese (Malti)
@@ -295,11 +305,11 @@ $messages['mt'] = array(
 	'cleanchanges-language' => 'Lingwa:',
 );
 
-/** Nahuatl (Nahuatl)
+/** Nahuatl (Nāhuatl)
  * @author Fluence
  */
 $messages['nah'] = array(
-	'cleanchanges-language'    => 'Tlahtōlli:',
+	'cleanchanges-language' => 'Tlahtōlli:',
 	'cleanchanges-language-na' => 'Mochīntīn',
 );
 
@@ -308,10 +318,10 @@ $messages['nah'] = array(
  */
 $messages['nl'] = array(
 	'cleanchanges-changerightslink' => 'groepen wijzigen',
-	'cleanchanges-desc'             => 'Meer compacte weergave van de [[Special:RecentChanges|lijst met recente wijzigingen]]',
-	'cleanchanges-language'         => 'Taal:',
-	'cleanchanges-language-na'      => 'Alle talen',
-	'cleanchanges-users'            => 'Gebruikers (scheidingsteken "|"):',
+	'cleanchanges-desc' => 'Meer compacte weergave van de [[Special:RecentChanges|lijst met recente wijzigingen]]',
+	'cleanchanges-language' => 'Taal:',
+	'cleanchanges-language-na' => 'Alle talen',
+	'cleanchanges-users' => 'Gebruikers (scheidingsteken "|"):',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -319,10 +329,10 @@ $messages['nl'] = array(
  */
 $messages['no'] = array(
 	'cleanchanges-changerightslink' => 'endre grupper',
-	'cleanchanges-desc'             => 'Mer kompakt visning av [[Special:RecentChanges|siste endringer]]',
-	'cleanchanges-language'         => 'Språk:',
-	'cleanchanges-language-na'      => 'Alle',
-	'cleanchanges-users'            => 'Brukere (separer med |):',
+	'cleanchanges-desc' => 'Mer kompakt visning av [[Special:RecentChanges|siste endringer]]',
+	'cleanchanges-language' => 'Språk:',
+	'cleanchanges-language-na' => 'Alle',
+	'cleanchanges-users' => 'Brukere (separer med |):',
 );
 
 /** Occitan (Occitan)
@@ -330,10 +340,10 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'cleanchanges-changerightslink' => 'càmbia los gropes',
-	'cleanchanges-desc'             => "Mai d'afichatge compacte de la [[Special:RecentChanges|tièra dels darrièrs cambiaments]]",
-	'cleanchanges-language'         => 'Lenga :',
-	'cleanchanges-language-na'      => 'Totes',
-	'cleanchanges-users'            => 'Utilizaires (sep. per |) :',
+	'cleanchanges-desc' => "Mai d'afichatge compacte de la [[Special:RecentChanges|tièra dels darrièrs cambiaments]]",
+	'cleanchanges-language' => 'Lenga :',
+	'cleanchanges-language-na' => 'Totes',
+	'cleanchanges-users' => 'Utilizaires (sep. per |) :',
 );
 
 /** Punjabi (ਪੰਜਾਬੀ)
@@ -345,16 +355,16 @@ $messages['pa'] = array(
 
 /** Polish (Polski)
  * @author Masti
+ * @author McMonster
  * @author Sp5uhe
  * @author Wpedzich
- * @author McMonster
  */
 $messages['pl'] = array(
 	'cleanchanges-changerightslink' => 'zmień grupy',
-	'cleanchanges-desc'             => 'Bardziej zwarta wersja „[[Special:RecentChanges|Ostatnich zmian]]”',
-	'cleanchanges-language'         => 'Język',
-	'cleanchanges-language-na'      => 'Wszystkie',
-	'cleanchanges-users'            => 'Użytkownicy (rozdziel znakiem „|”):',
+	'cleanchanges-desc' => 'Bardziej zwarta wersja „[[Special:RecentChanges|Ostatnich zmian]]”',
+	'cleanchanges-language' => 'Język',
+	'cleanchanges-language-na' => 'Wszystkie',
+	'cleanchanges-users' => 'Użytkownicy (rozdziel znakiem „|”):',
 );
 
 /** Pashto (پښتو)
@@ -362,10 +372,10 @@ $messages['pl'] = array(
  */
 $messages['ps'] = array(
 	'cleanchanges-changerightslink' => 'ډلې بدلول',
-	'cleanchanges-desc'             => 'د [[Special:RecentChanges|وروستي بدلونونو لړليک]] په ډېره وړوکې بڼه ښکاره کوي.',
-	'cleanchanges-language'         => 'ژبه:',
-	'cleanchanges-language-na'      => 'ټول',
-	'cleanchanges-users'            => 'کارونکي (Sep: |):',
+	'cleanchanges-desc' => 'د [[Special:RecentChanges|وروستي بدلونونو لړليک]] په ډېره وړوکې بڼه ښکاره کوي.',
+	'cleanchanges-language' => 'ژبه:',
+	'cleanchanges-language-na' => 'ټول',
+	'cleanchanges-users' => 'کارونکي (Sep: |):',
 );
 
 /** Portuguese (Português)
@@ -373,7 +383,7 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'cleanchanges-changerightslink' => 'alterar grupos',
-	'cleanchanges-desc'             => 'Apresentação mais compacta da [[Special:RecentChanges|lista de mudanças recentes]]',
+	'cleanchanges-desc' => 'Apresentação mais compacta da [[Special:RecentChanges|lista de mudanças recentes]]',
 );
 
 /** Tarifit (Tarifit)
@@ -388,19 +398,19 @@ $messages['rif'] = array(
  */
 $messages['ro'] = array(
 	'cleanchanges-language' => 'Limbă:',
-	'cleanchanges-users'    => 'Utilizatori (Sep: |):',
+	'cleanchanges-users' => 'Utilizatori (Sep: |):',
 );
 
 /** Russian (Русский)
- * @author Александр Сигачёв
  * @author Innv
+ * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'cleanchanges-changerightslink' => 'изменить группы',
-	'cleanchanges-desc'             => 'Более сжатое представление [[Special:RecentChanges|списка свежих правок]]',
-	'cleanchanges-language'         => 'Язык:',
-	'cleanchanges-language-na'      => 'Все',
-	'cleanchanges-users'            => 'Участники (разделитель: |):',
+	'cleanchanges-desc' => 'Более сжатое представление [[Special:RecentChanges|списка свежих правок]]',
+	'cleanchanges-language' => 'Язык:',
+	'cleanchanges-language-na' => 'Все',
+	'cleanchanges-users' => 'Участники (разделитель: |):',
 );
 
 /** Slovak (Slovenčina)
@@ -408,10 +418,10 @@ $messages['ru'] = array(
  */
 $messages['sk'] = array(
 	'cleanchanges-changerightslink' => 'zmeniť skupiny',
-	'cleanchanges-desc'             => 'Kompaktnejšie zobrazenie [[Special:RecentChanges|zoznamu posledných úprav]]',
-	'cleanchanges-language'         => 'Jazyk:',
-	'cleanchanges-language-na'      => 'Všetky',
-	'cleanchanges-users'            => 'Používatelia (Oddeľ: „|”):',
+	'cleanchanges-desc' => 'Kompaktnejšie zobrazenie [[Special:RecentChanges|zoznamu posledných úprav]]',
+	'cleanchanges-language' => 'Jazyk:',
+	'cleanchanges-language-na' => 'Všetky',
+	'cleanchanges-users' => 'Používatelia (Oddeľ: „|”):',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -419,7 +429,7 @@ $messages['sk'] = array(
  */
 $messages['sr-ec'] = array(
 	'cleanchanges-changerightslink' => 'промени групе',
-	'cleanchanges-desc'             => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
+	'cleanchanges-desc' => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
 );
 
 /** Seeltersk (Seeltersk)
@@ -427,29 +437,29 @@ $messages['sr-ec'] = array(
  */
 $messages['stq'] = array(
 	'cleanchanges-changerightslink' => 'Benutsergjuchte',
-	'cleanchanges-desc'             => 'Kompaktere Anwiesenge fon do [[Special:RecentChanges|lääste Annerengen]]',
+	'cleanchanges-desc' => 'Kompaktere Anwiesenge fon do [[Special:RecentChanges|lääste Annerengen]]',
 );
 
 /** Sundanese (Basa Sunda)
  * @author Irwangatot
  */
 $messages['su'] = array(
-	'cleanchanges-desc'        => 'Pamidang leuwih basajan ti [[Special:RecentChanges|Nu anyar robah]]',
-	'cleanchanges-language'    => 'Basa:',
+	'cleanchanges-desc' => 'Pamidang leuwih basajan ti [[Special:RecentChanges|Nu anyar robah]]',
+	'cleanchanges-language' => 'Basa:',
 	'cleanchanges-language-na' => 'Kabéh',
-	'cleanchanges-users'       => 'Pamaké (Pisah: |):',
+	'cleanchanges-users' => 'Pamaké (Pisah: |):',
 );
 
 /** Swedish (Svenska)
- * @author M.M.S.
  * @author Lejonel
+ * @author M.M.S.
  */
 $messages['sv'] = array(
 	'cleanchanges-changerightslink' => 'ändra grupper',
-	'cleanchanges-desc'             => 'Visar [[Special:RecentChanges|senaste ändringarna]] på ett mer kompakt sätt',
-	'cleanchanges-language'         => 'Språk:',
-	'cleanchanges-language-na'      => 'Alla',
-	'cleanchanges-users'            => 'Användare (Separera med: |):',
+	'cleanchanges-desc' => 'Visar [[Special:RecentChanges|senaste ändringarna]] på ett mer kompakt sätt',
+	'cleanchanges-language' => 'Språk:',
+	'cleanchanges-language-na' => 'Alla',
+	'cleanchanges-users' => 'Användare (Separera med: |):',
 );
 
 /** Telugu (తెలుగు)
@@ -457,11 +467,11 @@ $messages['sv'] = array(
  */
 $messages['te'] = array(
 	'cleanchanges-changerightslink' => 'గుంపులను మార్చండి',
-	'cleanchanges-language'         => 'భాష:',
-	'cleanchanges-language-na'      => 'అన్నీ',
+	'cleanchanges-language' => 'భాష:',
+	'cleanchanges-language-na' => 'అన్నీ',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -472,7 +482,7 @@ $messages['tg-cyrl'] = array(
  * @author Karduelis
  */
 $messages['tr'] = array(
-	'cleanchanges-language'    => 'Dil:',
+	'cleanchanges-language' => 'Dil:',
 	'cleanchanges-language-na' => 'Hepsi',
 );
 
@@ -481,10 +491,10 @@ $messages['tr'] = array(
  */
 $messages['uk'] = array(
 	'cleanchanges-changerightslink' => 'змінити групи',
-	'cleanchanges-desc'             => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
-	'cleanchanges-language'         => 'Мова:',
-	'cleanchanges-language-na'      => 'Усі',
-	'cleanchanges-users'            => 'Користувачі (розділювач: |):',
+	'cleanchanges-desc' => 'Більш стисле відображення [[Special:RecentChanges|списку останніх змін]]',
+	'cleanchanges-language' => 'Мова:',
+	'cleanchanges-language-na' => 'Усі',
+	'cleanchanges-users' => 'Користувачі (розділювач: |):',
 );
 
 /** Vèneto (Vèneto)
@@ -492,19 +502,19 @@ $messages['uk'] = array(
  */
 $messages['vec'] = array(
 	'cleanchanges-changerightslink' => 'canbia grupi',
-	'cleanchanges-desc'             => 'Visualixassion pi conpatta de la [[Special:RecentChanges|lista dei canbiamenti reçenti]]',
+	'cleanchanges-desc' => 'Visualixassion pi conpatta de la [[Special:RecentChanges|lista dei canbiamenti reçenti]]',
 );
 
 /** Vietnamese (Tiếng Việt)
- * @author Vinhtantran
  * @author Minh Nguyen
+ * @author Vinhtantran
  */
 $messages['vi'] = array(
 	'cleanchanges-changerightslink' => 'thay đổi nhóm',
-	'cleanchanges-desc'             => 'Hiển thị [[Special:RecentChanges|danh sách thay đổi gần đây]] ngắn gọn hơn',
-	'cleanchanges-language'         => 'Ngôn ngữ:',
-	'cleanchanges-language-na'      => 'Tất cả',
-	'cleanchanges-users'            => 'Các thành viên (Phân cách: |):',
+	'cleanchanges-desc' => 'Hiển thị [[Special:RecentChanges|danh sách thay đổi gần đây]] ngắn gọn hơn',
+	'cleanchanges-language' => 'Ngôn ngữ:',
+	'cleanchanges-language-na' => 'Tất cả',
+	'cleanchanges-users' => 'Các thành viên (Phân cách: |):',
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
@@ -519,6 +529,6 @@ $messages['zh-hans'] = array(
  */
 $messages['zh-hant'] = array(
 	'cleanchanges-changerightslink' => '更改群組',
-	'cleanchanges-desc'             => '更簡潔的顯示[[Special:RecentChanges|最近更改清單]]',
+	'cleanchanges-desc' => '更簡潔的顯示[[Special:RecentChanges|最近更改清單]]',
 );
 
