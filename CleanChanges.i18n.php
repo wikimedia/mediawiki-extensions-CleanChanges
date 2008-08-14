@@ -18,8 +18,10 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
  * @author Meno25
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'cleanchanges-desc' => 'Shown in [[Special:Version]]',
 	'cleanchanges-language' => '{{Identical|Language}}',
 	'cleanchanges-language-na' => 'Used in the trailer selection of [[Special:RecentChanges]] to not filter on any trailer.
 
@@ -267,6 +269,17 @@ $messages['km'] = array(
 	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរក្រុម',
 	'cleanchanges-language' => 'ភាសា:',
 	'cleanchanges-language-na' => 'ទាំងអស់',
+);
+
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'cleanchanges-changerightslink' => 'Jruppe aanpasse',
+	'cleanchanges-desc' => 'Määt en köötere [[Special:RecentChanges|Leß met de {{lcfirst:{{int:Recentchanges}}}}]].',
+	'cleanchanges-language' => 'Shprooch:',
+	'cleanchanges-language-na' => 'all',
+	'cleanchanges-users' => 'Metmaacher (donn | dozwesche, wann et zwei udder mieh sen):',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
