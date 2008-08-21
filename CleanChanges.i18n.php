@@ -56,6 +56,7 @@ $messages['ar'] = array(
 $messages['ast'] = array(
 	'cleanchanges-changerightslink' => 'camudar grupos',
 	'cleanchanges-desc' => 'Vísualización más compacta de la [[Special:RecentChanges|llista de cambeos recientes]]',
+	'cleanchanges-language' => 'Llingua:',
 );
 
 /** Bulgarian (Български)
