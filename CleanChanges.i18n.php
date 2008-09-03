@@ -270,6 +270,7 @@ $messages['km'] = array(
 	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរក្រុម',
 	'cleanchanges-language' => 'ភាសា:',
 	'cleanchanges-language-na' => 'ទាំងអស់',
+	'cleanchanges-users' => 'អ្នកប្រើប្រាស់​(ខ័ណ្ណដោយ |)៖',
 );
 
 /** Ripoarisch (Ripoarisch)
@@ -318,6 +319,13 @@ $messages['mr'] = array(
  */
 $messages['mt'] = array(
 	'cleanchanges-language' => 'Lingwa:',
+);
+
+/** Erzya (Эрзянь)
+ * @author Botuzhaleny-sodamo
+ */
+$messages['myv'] = array(
+	'cleanchanges-language-na' => 'Весе',
 );
 
 /** Nahuatl (Nāhuatl)
@@ -399,6 +407,9 @@ $messages['ps'] = array(
 $messages['pt'] = array(
 	'cleanchanges-changerightslink' => 'alterar grupos',
 	'cleanchanges-desc' => 'Apresentação mais compacta da [[Special:RecentChanges|lista de mudanças recentes]]',
+	'cleanchanges-language' => 'Língua:',
+	'cleanchanges-language-na' => 'Todas',
+	'cleanchanges-users' => 'Utilizadores (Sep: |):',
 );
 
 /** Tarifit (Tarifit)
@@ -491,6 +502,13 @@ $messages['te'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'cleanchanges-changerightslink' => 'тағйири гурӯҳҳо',
+);
+
+/** Thai (ไทย)
+ * @author Octahedron80
+ */
+$messages['th'] = array(
+	'cleanchanges-language-na' => 'ทั้งหมด',
 );
 
 /** Turkish (Türkçe)
