@@ -50,6 +50,17 @@ $messages['ar'] = array(
 	'cleanchanges-users' => 'المستخدمون (للفصل: |):',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
+$messages['arz'] = array(
+	'cleanchanges-changerightslink' => 'تغيير المجموعات',
+	'cleanchanges-desc' => 'عرض أكثر ضغطا ل [[Special:RecentChanges|قائمة أحدث التغييرات]]',
+	'cleanchanges-language' => 'اللغة:',
+	'cleanchanges-language-na' => 'الكل',
+	'cleanchanges-users' => 'المستخدمون (للفصل: |):',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  */
