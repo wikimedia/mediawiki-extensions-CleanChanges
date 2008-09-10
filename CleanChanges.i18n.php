@@ -325,6 +325,14 @@ $messages['mr'] = array(
 	'cleanchanges-language-na' => 'सर्व',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Emrrans
+ */
+$messages['ms'] = array(
+	'cleanchanges-language' => 'Bahasa:',
+	'cleanchanges-users' => 'Pengguna (Sep: |):',
+);
+
 /** Maltese (Malti)
  * @author Roderick Mallia
  */
