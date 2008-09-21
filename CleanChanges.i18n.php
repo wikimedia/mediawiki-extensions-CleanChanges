@@ -186,6 +186,13 @@ $messages['gl'] = array(
 	'cleanchanges-users' => 'Usuarios (separados por: |):',
 );
 
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Crazymadlover
+ */
+$messages['grc'] = array(
+	'cleanchanges-language' => 'Γλῶττα',
+);
+
 /** Hawaiian (Hawai`i)
  * @author Kalani
  */
@@ -483,6 +490,9 @@ $messages['sr-ec'] = array(
 $messages['stq'] = array(
 	'cleanchanges-changerightslink' => 'Benutsergjuchte',
 	'cleanchanges-desc' => 'Kompaktere Anwiesenge fon do [[Special:RecentChanges|lääste Annerengen]]',
+	'cleanchanges-language' => 'Sproake:',
+	'cleanchanges-language-na' => 'aal',
+	'cleanchanges-users' => 'Benutsere (Tränteeken: |):',
 );
 
 /** Sundanese (Basa Sunda)
@@ -505,6 +515,13 @@ $messages['sv'] = array(
 	'cleanchanges-language' => 'Språk:',
 	'cleanchanges-language-na' => 'Alla',
 	'cleanchanges-users' => 'Användare (Separera med: |):',
+);
+
+/** Silesian (Ślůnski)
+ * @author Ozi64
+ */
+$messages['szl'] = array(
+	'cleanchanges-language-na' => 'Wšyjske',
 );
 
 /** Telugu (తెలుగు)
