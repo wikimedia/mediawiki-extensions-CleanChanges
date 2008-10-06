@@ -531,6 +531,7 @@ $messages['te'] = array(
 	'cleanchanges-changerightslink' => 'గుంపులను మార్చండి',
 	'cleanchanges-language' => 'భాష:',
 	'cleanchanges-language-na' => 'అన్నీ',
+	'cleanchanges-users' => 'వాడుకరులు (| తో వేరుపరచి):',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
