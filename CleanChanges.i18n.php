@@ -351,6 +351,7 @@ $messages['mt'] = array(
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
+	'cleanchanges-language' => 'Келесь:',
 	'cleanchanges-language-na' => 'Весе',
 );
 
