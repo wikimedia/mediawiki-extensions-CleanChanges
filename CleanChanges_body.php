@@ -550,14 +550,15 @@ class NCL extends EnhancedChangesList {
 			);
 		}
 
-		if( $szdiff < $wgRCChangedSizeThreshold ) {
-			return $this->XMLwrapper( 'mw-plusminus-neg', $cache[$szdiff], 'strong' );
-		} elseif( $szdiff === 0 ) {
-			return $this->XMLwrapper( 'mw-plusminus-null', $cache[$szdiff] );
+		$tag = 'span';
+		if ( abs($szdiff) > abs($wgRCChangedSizeThreshold) ) $tag = 'strong';
+
+		if( $szdiff === 0 ) {
+			return $this->XMLwrapper( 'mw-plusminus-null', $cache[$szdiff], $tag );
 		} elseif( $szdiff > 0 ) {
-			return $this->XMLwrapper( 'mw-plusminus-pos', $cache[$szdiff] );
+			return $this->XMLwrapper( 'mw-plusminus-pos', $cache[$szdiff], $tag );
 		} else {
-			return $this->XMLwrapper( 'mw-plusminus-neg', $cache[$szdiff] );
+			return $this->XMLwrapper( 'mw-plusminus-neg', $cache[$szdiff], $tag );
 		}
 	}
 
