@@ -188,9 +188,19 @@ $messages['gl'] = array(
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
  * @author Crazymadlover
+ * @author Omnipaedista
  */
 $messages['grc'] = array(
+	'cleanchanges-changerightslink' => 'ἀλλάττειν ὁμάδας',
 	'cleanchanges-language' => 'Γλῶττα',
+	'cleanchanges-language-na' => 'Ἅπασαι',
+);
+
+/** Manx (Gaelg)
+ * @author MacTire02
+ */
+$messages['gv'] = array(
+	'cleanchanges-language' => 'Çhengey:',
 );
 
 /** Hawaiian (Hawai`i)
