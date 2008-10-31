@@ -97,6 +97,13 @@ $messages['br'] = array(
 	'cleanchanges-desc' => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'cleanchanges-language' => 'Jezik:',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
