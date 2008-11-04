@@ -102,6 +102,7 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'cleanchanges-language' => 'Jezik:',
+	'cleanchanges-language-na' => 'Sve',
 );
 
 /** Czech (Česky)
