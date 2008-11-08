@@ -304,7 +304,7 @@ $messages['jv'] = array(
  */
 $messages['km'] = array(
 	'cleanchanges-changerightslink' => 'ផ្លាស់ប្តូរក្រុម',
-	'cleanchanges-language' => 'ភាសា:',
+	'cleanchanges-language' => 'ភាសា៖',
 	'cleanchanges-language-na' => 'ទាំងអស់',
 	'cleanchanges-users' => 'អ្នកប្រើប្រាស់​(ខ័ណ្ណដោយ |)៖',
 );
