@@ -165,11 +165,12 @@ $messages['fi'] = array(
 
 /** French (Français)
  * @author Grondin
+ * @author IAlex
  * @author Verdy p
  */
 $messages['fr'] = array(
 	'cleanchanges-changerightslink' => 'Changer les groupes',
-	'cleanchanges-desc' => "Plus d'affichage compact de la [[Special:RecentChanges|liste des modifications récentes]]",
+	'cleanchanges-desc' => 'Affichage plus compact de la [[Special:RecentChanges|liste des modifications récentes]]',
 	'cleanchanges-language' => 'Langue :',
 	'cleanchanges-language-na' => 'Tous',
 	'cleanchanges-users' => 'Utilisateurs (sép. par |) :',
