@@ -152,6 +152,13 @@ $messages['eo'] = array(
 	'cleanchanges-language-na' => 'Ĉiuj',
 );
 
+/** Spanish (Español)
+ * @author Sanbec
+ */
+$messages['es'] = array(
+	'cleanchanges-language' => 'Idioma:',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  */
