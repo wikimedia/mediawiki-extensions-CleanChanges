@@ -13,6 +13,7 @@ $messages['en'] = array(
 	'cleanchanges-language'         => 'Language:',
 	'cleanchanges-language-na'      => 'All',
 	'cleanchanges-users'            => 'Users (Sep: |):',
+	'cleanchanges-showuserlinks'    => 'Show user links',
 );
 
 /** Message documentation (Message documentation)
