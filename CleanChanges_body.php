@@ -437,8 +437,11 @@ class NCL extends EnhancedChangesList {
 
 
 		global $wgStylePath;
-		$image = Xml::element( 'img', array( 'height' => '12',
-			'src' => $wgStylePath . '/common/images/magnify-clip.png' )
+		$image = Xml::element( 'img', array(
+			'src' => $wgStylePath . '/common/images/magnify-clip.png',
+			'alt' => '',
+		  'height' => '12'
+			)
 		);
 
 
