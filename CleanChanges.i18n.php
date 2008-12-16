@@ -134,6 +134,7 @@ $messages['dsb'] = array(
 	'cleanchanges-language' => 'Rěc:',
 	'cleanchanges-language-na' => 'Wšykne',
 	'cleanchanges-users' => 'Wužywarje (źěleńske znamješko: |);',
+	'cleanchanges-showuserlinks' => 'Wužywarske wótkaze pokazaś',
 );
 
 /** Greek (Ελληνικά)
@@ -189,6 +190,15 @@ $messages['fr'] = array(
  */
 $messages['fy'] = array(
 	'cleanchanges-language-na' => 'Alle',
+);
+
+/** Irish (Gaeilge)
+ * @author Alison
+ */
+$messages['ga'] = array(
+	'cleanchanges-language' => 'Teanga:',
+	'cleanchanges-language-na' => 'An t-iomlán',
+	'cleanchanges-users' => 'Úsáideoirí (Sep: |):',
 );
 
 /** Galician (Galego)
@@ -256,6 +266,7 @@ $messages['hsb'] = array(
 	'cleanchanges-language' => 'Rěč:',
 	'cleanchanges-language-na' => 'Wšě',
 	'cleanchanges-users' => 'Wužiwarjo (dźělenske znamješko: |):',
+	'cleanchanges-showuserlinks' => 'Wužiwarske wotkazy pokazać',
 );
 
 /** Interlingua (Interlingua)
@@ -294,6 +305,7 @@ $messages['it'] = array(
 
 /** Japanese (日本語)
  * @author Aotake
+ * @author Fryed-peach
  * @author JtFuruhata
  */
 $messages['ja'] = array(
@@ -302,6 +314,7 @@ $messages['ja'] = array(
 	'cleanchanges-language' => '言語:',
 	'cleanchanges-language-na' => 'すべて',
 	'cleanchanges-users' => '利用者 (|で区切る):',
+	'cleanchanges-showuserlinks' => '利用者リンクを表示',
 );
 
 /** Javanese (Basa Jawa)
@@ -507,6 +520,7 @@ $messages['sk'] = array(
 	'cleanchanges-language' => 'Jazyk:',
 	'cleanchanges-language-na' => 'Všetky',
 	'cleanchanges-users' => 'Používatelia (Oddeľ: „|”):',
+	'cleanchanges-showuserlinks' => 'Zobrazovať používateľské odkazy',
 );
 
 /** Serbian Cyrillic ekavian (ћирилица)
@@ -530,17 +544,21 @@ $messages['stq'] = array(
 
 /** Sundanese (Basa Sunda)
  * @author Irwangatot
+ * @author Kandar
  */
 $messages['su'] = array(
+	'cleanchanges-changerightslink' => 'Ganti grup',
 	'cleanchanges-desc' => 'Pamidang leuwih basajan ti [[Special:RecentChanges|Nu anyar robah]]',
 	'cleanchanges-language' => 'Basa:',
 	'cleanchanges-language-na' => 'Kabéh',
 	'cleanchanges-users' => 'Pamaké (Pisah: |):',
+	'cleanchanges-showuserlinks' => 'Témbongkeun tumbu pamaké',
 );
 
 /** Swedish (Svenska)
  * @author Lejonel
  * @author M.M.S.
+ * @author Najami
  */
 $messages['sv'] = array(
 	'cleanchanges-changerightslink' => 'ändra grupper',
@@ -548,6 +566,7 @@ $messages['sv'] = array(
 	'cleanchanges-language' => 'Språk:',
 	'cleanchanges-language-na' => 'Alla',
 	'cleanchanges-users' => 'Användare (Separera med: |):',
+	'cleanchanges-showuserlinks' => 'Visa användarlänkar',
 );
 
 /** Silesian (Ślůnski)
