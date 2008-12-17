@@ -234,6 +234,7 @@ $messages['gv'] = array(
  * @author Kalani
  */
 $messages['haw'] = array(
+	'cleanchanges-language' => 'ʻŌlelo:',
 	'cleanchanges-language-na' => 'Apau',
 );
 
