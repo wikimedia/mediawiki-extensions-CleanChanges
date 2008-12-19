@@ -219,8 +219,11 @@ $messages['gl'] = array(
  */
 $messages['grc'] = array(
 	'cleanchanges-changerightslink' => 'ἀλλάττειν ὁμάδας',
+	'cleanchanges-desc' => 'Ἔτι συμπεπυκνωμένη δεῖξις τῆς [[Special:RecentChanges|καταλογῆς προσφάτων μεταβολῶν]]',
 	'cleanchanges-language' => 'Γλῶττα',
 	'cleanchanges-language-na' => 'Ἅπασαι',
+	'cleanchanges-users' => 'Χρώμενοι (Διαχ: |):',
+	'cleanchanges-showuserlinks' => 'Δεικνύναι συνδέσμους χρωμένου',
 );
 
 /** Manx (Gaelg)
