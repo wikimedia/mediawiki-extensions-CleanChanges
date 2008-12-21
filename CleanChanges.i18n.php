@@ -360,6 +360,7 @@ $messages['lb'] = array(
 	'cleanchanges-language' => 'Sprooch:',
 	'cleanchanges-language-na' => 'All',
 	'cleanchanges-users' => 'Benotzer (Sep: |):',
+	'cleanchanges-showuserlinks' => "D'Linke vun dësem Benotzer weisen",
 );
 
 /** Malayalam (മലയാളം)
