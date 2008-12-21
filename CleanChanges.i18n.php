@@ -107,11 +107,16 @@ $messages['bs'] = array(
 );
 
 /** Czech (Česky)
+ * @author Danny B.
  * @author Matěj Grabovský
  */
 $messages['cs'] = array(
 	'cleanchanges-changerightslink' => 'změnit skupiny',
 	'cleanchanges-desc' => 'Kompaktnější zobrazení [[Special:RecentChanges|seznamu posledních změn]]',
+	'cleanchanges-language' => 'Jazyk:',
+	'cleanchanges-language-na' => 'Všechny',
+	'cleanchanges-users' => 'Uživatelé (oddělovač |):',
+	'cleanchanges-showuserlinks' => 'Ukázat uživatelské odkazy',
 );
 
 /** German (Deutsch)
@@ -123,6 +128,7 @@ $messages['de'] = array(
 	'cleanchanges-language' => 'Sprache:',
 	'cleanchanges-language-na' => 'alle',
 	'cleanchanges-users' => 'Benutzer (Trennzeichen: |):',
+	'cleanchanges-showuserlinks' => 'Zeige Benutzer-Links',
 );
 
 /** Lower Sorbian (Dolnoserbski)
@@ -183,6 +189,7 @@ $messages['fr'] = array(
 	'cleanchanges-language' => 'Langue :',
 	'cleanchanges-language-na' => 'Tous',
 	'cleanchanges-users' => 'Utilisateurs (sép. par |) :',
+	'cleanchanges-showuserlinks' => 'Afficher les liens de cet utilisateur',
 );
 
 /** Western Frisian (Frysk)
@@ -211,6 +218,7 @@ $messages['gl'] = array(
 	'cleanchanges-language' => 'Lingua:',
 	'cleanchanges-language-na' => 'Todo',
 	'cleanchanges-users' => 'Usuarios (separados por: |):',
+	'cleanchanges-showuserlinks' => 'Mostrar as ligazóns de usuario',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -422,6 +430,7 @@ $messages['nl'] = array(
 	'cleanchanges-language' => 'Taal:',
 	'cleanchanges-language-na' => 'Alle talen',
 	'cleanchanges-users' => 'Gebruikers (scheidingsteken "|"):',
+	'cleanchanges-showuserlinks' => 'Gebruikersverwijzingen weergeven',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
@@ -444,6 +453,7 @@ $messages['oc'] = array(
 	'cleanchanges-language' => 'Lenga :',
 	'cleanchanges-language-na' => 'Totes',
 	'cleanchanges-users' => 'Utilizaires (sep. per |) :',
+	'cleanchanges-showuserlinks' => "Afichar los ligams d'aqueste utilizaire",
 );
 
 /** Punjabi (ਪੰਜਾਬੀ)
