@@ -346,6 +346,7 @@ $messages['km'] = array(
 	'cleanchanges-language' => 'ភាសា៖',
 	'cleanchanges-language-na' => 'ទាំងអស់',
 	'cleanchanges-users' => 'អ្នកប្រើប្រាស់​(ខណ្ឌដោយ |)៖',
+	'cleanchanges-showuserlinks' => 'បង្ហាញ​តំណ​អ្នកប្រើប្រាស់',
 );
 
 /** Ripoarisch (Ripoarisch)
@@ -431,6 +432,18 @@ $messages['nl'] = array(
 	'cleanchanges-language-na' => 'Alle talen',
 	'cleanchanges-users' => 'Gebruikers (scheidingsteken "|"):',
 	'cleanchanges-showuserlinks' => 'Gebruikersverwijzingen weergeven',
+);
+
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Harald Khan
+ */
+$messages['nn'] = array(
+	'cleanchanges-changerightslink' => 'endra grupper',
+	'cleanchanges-desc' => 'Meir kompakt vising av [[Special:RecentChanges|siste endringar]]',
+	'cleanchanges-language' => 'Språk:',
+	'cleanchanges-language-na' => 'Alle',
+	'cleanchanges-users' => "Brukarar (separer med '|'):",
+	'cleanchanges-showuserlinks' => 'Vis brukarlenkjer',
 );
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
