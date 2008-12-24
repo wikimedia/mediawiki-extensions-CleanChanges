@@ -358,6 +358,7 @@ $messages['ksh'] = array(
 	'cleanchanges-language' => 'Shprooch:',
 	'cleanchanges-language-na' => 'all',
 	'cleanchanges-users' => 'Metmaacher (donn | dozwesche, wann et zwei udder mieh sen):',
+	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
