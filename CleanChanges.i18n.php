@@ -666,6 +666,10 @@ $messages['uk'] = array(
 $messages['vec'] = array(
 	'cleanchanges-changerightslink' => 'canbia grupi',
 	'cleanchanges-desc' => 'Visualixassion pi conpatta de la [[Special:RecentChanges|lista dei canbiamenti reçenti]]',
+	'cleanchanges-language' => 'Lengua:',
+	'cleanchanges-language-na' => 'Tute',
+	'cleanchanges-users' => 'Utenti (separà da |):',
+	'cleanchanges-showuserlinks' => 'Mostra colegamenti utente',
 );
 
 /** Vietnamese (Tiếng Việt)
