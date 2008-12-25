@@ -281,6 +281,18 @@ $messages['hsb'] = array(
 	'cleanchanges-showuserlinks' => 'Wužiwarske wotkazy pokazać',
 );
 
+/** Hungarian (Magyar)
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'cleanchanges-changerightslink' => 'csoportok megváltoztatása',
+	'cleanchanges-desc' => 'A [[Special:RecentChanges|friss változtatások listájának]] tömörebb változata',
+	'cleanchanges-language' => 'Nyelv:',
+	'cleanchanges-language-na' => 'összes',
+	'cleanchanges-users' => 'Szerkesztők (elválasztó: |):',
+	'cleanchanges-showuserlinks' => 'Szerkesztőlinkek megjelenítése',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
