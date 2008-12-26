@@ -49,6 +49,7 @@ $messages['am'] = array(
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'cleanchanges-changerightslink' => 'تغيير المجموعات',
@@ -56,6 +57,7 @@ $messages['ar'] = array(
 	'cleanchanges-language' => 'اللغة:',
 	'cleanchanges-language-na' => 'الكل',
 	'cleanchanges-users' => 'المستخدمون (للفصل: |):',
+	'cleanchanges-showuserlinks' => 'إظهار وصلات المستخدم',
 );
 
 /** Egyptian Spoken Arabic (مصرى)
@@ -184,6 +186,7 @@ $messages['es'] = array(
 
 /** Finnish (Suomi)
  * @author Nike
+ * @author Vililikku
  */
 $messages['fi'] = array(
 	'cleanchanges-changerightslink' => 'muokkaa ryhmiä',
@@ -191,6 +194,7 @@ $messages['fi'] = array(
 	'cleanchanges-language' => 'Kieli',
 	'cleanchanges-language-na' => 'Kaikki',
 	'cleanchanges-users' => 'Käyttäjät (erotin: |)',
+	'cleanchanges-showuserlinks' => 'Näytä käyttäjälinkit',
 );
 
 /** French (Français)
