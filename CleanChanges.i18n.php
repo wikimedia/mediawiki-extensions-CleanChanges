@@ -40,6 +40,13 @@ $messages['af'] = array(
 	'cleanchanges-users' => 'Gebruikers (geskei deur "|"):',
 );
 
+/** Amharic (አማርኛ)
+ * @author Codex Sinaiticus
+ */
+$messages['am'] = array(
+	'cleanchanges-language-na' => 'ሁሉ',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  */
@@ -151,6 +158,7 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author Melancholie
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -158,13 +166,20 @@ $messages['eo'] = array(
 	'cleanchanges-desc' => 'Pli kompakta versio de la [[Special:RecentChanges|listo de lastaj ŝanĝoj]]',
 	'cleanchanges-language' => 'Lingvo:',
 	'cleanchanges-language-na' => 'Ĉiuj',
+	'cleanchanges-users' => 'Uzantoj (disigilo: |):',
+	'cleanchanges-showuserlinks' => 'Vidi uzantoj ligiloj',
 );
 
 /** Spanish (Español)
  * @author Sanbec
  */
 $messages['es'] = array(
+	'cleanchanges-changerightslink' => 'cambiar grupos',
+	'cleanchanges-desc' => 'Visualización más compacta de la [[Special:RecentChanges|lista de cambios recientes]]',
 	'cleanchanges-language' => 'Idioma:',
+	'cleanchanges-language-na' => 'Todos',
+	'cleanchanges-users' => 'Usuarios (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Mostrar enlaces de usuario',
 );
 
 /** Finnish (Suomi)
