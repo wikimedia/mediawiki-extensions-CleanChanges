@@ -44,6 +44,7 @@ $messages['af'] = array(
  * @author Codex Sinaiticus
  */
 $messages['am'] = array(
+	'cleanchanges-language' => 'ቋንቋ፦',
 	'cleanchanges-language-na' => 'ሁሉ',
 );
 
@@ -644,6 +645,13 @@ $messages['te'] = array(
 	'cleanchanges-language' => 'భాష:',
 	'cleanchanges-language-na' => 'అన్నీ',
 	'cleanchanges-users' => 'వాడుకరులు (| తో వేరుపరచి):',
+);
+
+/** Tetum (Tetun)
+ * @author MF-Warburg
+ */
+$messages['tet'] = array(
+	'cleanchanges-language' => 'Lian:',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
