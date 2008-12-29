@@ -185,6 +185,15 @@ $messages['es'] = array(
 	'cleanchanges-showuserlinks' => 'Mostrar enlaces de usuario',
 );
 
+/** Estonian (Eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'cleanchanges-changerightslink' => 'muuda gruppe',
+	'cleanchanges-language' => 'Keel:',
+	'cleanchanges-language-na' => 'Kõik',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Vililikku
@@ -510,6 +519,7 @@ $messages['pa'] = array(
 );
 
 /** Polish (Polski)
+ * @author Leinad
  * @author Masti
  * @author McMonster
  * @author Sp5uhe
@@ -521,6 +531,7 @@ $messages['pl'] = array(
 	'cleanchanges-language' => 'Język',
 	'cleanchanges-language-na' => 'Wszystkie',
 	'cleanchanges-users' => 'Użytkownicy (rozdziel znakiem „|”):',
+	'cleanchanges-showuserlinks' => 'Pokaż linki użytkownika',
 );
 
 /** Pashto (پښتو)
@@ -659,6 +670,8 @@ $messages['tet'] = array(
  */
 $messages['tg-cyrl'] = array(
 	'cleanchanges-changerightslink' => 'тағйири гурӯҳҳо',
+	'cleanchanges-language' => 'Забон:',
+	'cleanchanges-language-na' => 'Ҳама',
 );
 
 /** Thai (ไทย)
