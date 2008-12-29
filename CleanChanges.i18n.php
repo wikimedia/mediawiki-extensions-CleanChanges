@@ -663,6 +663,7 @@ $messages['te'] = array(
  */
 $messages['tet'] = array(
 	'cleanchanges-language' => 'Lian:',
+	'cleanchanges-language-na' => 'Hotu',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
