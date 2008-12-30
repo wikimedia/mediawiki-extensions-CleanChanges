@@ -63,6 +63,7 @@ $messages['ar'] = array(
 
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
+ * @author Ouda
  */
 $messages['arz'] = array(
 	'cleanchanges-changerightslink' => 'تغيير المجموعات',
@@ -70,6 +71,7 @@ $messages['arz'] = array(
 	'cleanchanges-language' => 'اللغة:',
 	'cleanchanges-language-na' => 'الكل',
 	'cleanchanges-users' => 'المستخدمون (للفصل: |):',
+	'cleanchanges-showuserlinks' => 'إظهار وصلات المستخدم',
 );
 
 /** Asturian (Asturianu)
