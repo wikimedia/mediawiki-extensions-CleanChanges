@@ -727,6 +727,18 @@ $messages['vi'] = array(
 	'cleanchanges-users' => 'Các thành viên (Phân cách: |):',
 );
 
+/** Volapük (Volapük)
+ * @author Smeira
+ */
+$messages['vo'] = array(
+	'cleanchanges-changerightslink' => 'votükön grupis',
+	'cleanchanges-desc' => 'Jonön ma fomät brefikum [[Special:RecentChanges|lisedi votükamas nulik]]',
+	'cleanchanges-language' => 'Pük:',
+	'cleanchanges-language-na' => 'Valiks',
+	'cleanchanges-users' => 'Gebans (teilamal: |):',
+	'cleanchanges-showuserlinks' => 'Jonön gebanayümis',
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenzw
  */
