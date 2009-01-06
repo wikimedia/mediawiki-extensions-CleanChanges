@@ -556,6 +556,7 @@ $messages['pt'] = array(
 	'cleanchanges-language' => 'Língua:',
 	'cleanchanges-language-na' => 'Todas',
 	'cleanchanges-users' => 'Utilizadores (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Mostrar ligações de utilizador',
 );
 
 /** Tarifit (Tarifit)
