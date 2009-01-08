@@ -196,6 +196,17 @@ $messages['et'] = array(
 	'cleanchanges-language-na' => 'Kõik',
 );
 
+/** Basque (Euskara)
+ * @author Kobazulo
+ */
+$messages['eu'] = array(
+	'cleanchanges-changerightslink' => 'taldeak aldatu',
+	'cleanchanges-language' => 'Hizkuntza:',
+	'cleanchanges-language-na' => 'Guztiak',
+	'cleanchanges-users' => 'Erabiltzaileak ("|" ikurrarekin bereizirik)',
+	'cleanchanges-showuserlinks' => 'Erabiltzaileen estekak erakutsi',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Vililikku
