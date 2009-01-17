@@ -83,6 +83,13 @@ $messages['ast'] = array(
 	'cleanchanges-language' => 'Llingua:',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'cleanchanges-language' => 'Мова:',
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
@@ -114,8 +121,12 @@ $messages['br'] = array(
  * @author CERminator
  */
 $messages['bs'] = array(
+	'cleanchanges-changerightslink' => 'promijeni grupe',
+	'cleanchanges-desc' => 'Kompaktniji prikaz [[Special:RecentChanges|spiska nedavnih promjena]]',
 	'cleanchanges-language' => 'Jezik:',
 	'cleanchanges-language-na' => 'Sve',
+	'cleanchanges-users' => 'Korisnici: (Razdv: |):',
+	'cleanchanges-showuserlinks' => 'Prikaži korisničke linkove',
 );
 
 /** Czech (Česky)
@@ -427,6 +438,18 @@ $messages['lb'] = array(
 	'cleanchanges-showuserlinks' => "D'Linke vun dësem Benotzer weisen",
 );
 
+/** Macedonian (Македонски)
+ * @author Brest
+ */
+$messages['mk'] = array(
+	'cleanchanges-changerightslink' => 'промена на групи',
+	'cleanchanges-desc' => 'Компактен приказ на [[Special:RecentChanges|скорешни промени]]',
+	'cleanchanges-language' => 'Јазик:',
+	'cleanchanges-language-na' => 'Сите',
+	'cleanchanges-users' => 'Корисници (граничник: |):',
+	'cleanchanges-showuserlinks' => 'Прикажи кориснички врски',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
@@ -626,6 +649,7 @@ $messages['stq'] = array(
 	'cleanchanges-language' => 'Sproake:',
 	'cleanchanges-language-na' => 'aal',
 	'cleanchanges-users' => 'Benutsere (Tränteeken: |):',
+	'cleanchanges-showuserlinks' => 'Wies Benutser-Linke',
 );
 
 /** Sundanese (Basa Sunda)
