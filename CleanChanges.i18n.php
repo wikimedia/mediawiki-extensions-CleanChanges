@@ -305,6 +305,7 @@ $messages['haw'] = array(
 /** Hebrew (עברית)
  * @author Agbad
  * @author Rotemliss
+ * @author YaronSh
  */
 $messages['he'] = array(
 	'cleanchanges-changerightslink' => 'שינוי קבוצות',
@@ -312,6 +313,7 @@ $messages['he'] = array(
 	'cleanchanges-language' => 'שפה:',
 	'cleanchanges-language-na' => 'הכול',
 	'cleanchanges-users' => 'משתמשים (הפרדה: |):',
+	'cleanchanges-showuserlinks' => 'הצגת קישורי המשתמש',
 );
 
 /** Hindi (हिन्दी)
