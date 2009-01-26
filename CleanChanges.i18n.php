@@ -208,10 +208,12 @@ $messages['et'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Kobazulo
  */
 $messages['eu'] = array(
 	'cleanchanges-changerightslink' => 'taldeak aldatu',
+	'cleanchanges-desc' => 'Bistaratze trinkoagoa [[Special:RecentChanges|aldaketa berrien zerrendarako]]',
 	'cleanchanges-language' => 'Hizkuntza:',
 	'cleanchanges-language-na' => 'Guztiak',
 	'cleanchanges-users' => 'Erabiltzaileak ("|" ikurrarekin bereizirik)',
