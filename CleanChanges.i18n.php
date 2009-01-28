@@ -612,6 +612,18 @@ $messages['ro'] = array(
 	'cleanchanges-users' => 'Utilizatori (Sep: |):',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'cleanchanges-changerightslink' => 'cange le gruppe',
+	'cleanchanges-desc' => "Fa vedè cchiù combatte 'a [[Special:RecentChanges|liste de le cangiaminde recende]]",
+	'cleanchanges-language' => 'Lènghe:',
+	'cleanchanges-language-na' => 'Tutte',
+	'cleanchanges-users' => 'Utinde (Sep: |):',
+	'cleanchanges-showuserlinks' => "Fa vedè le collagaminde de l'utende",
+);
+
 /** Russian (Русский)
  * @author Innv
  * @author Александр Сигачёв
