@@ -736,6 +736,18 @@ $messages['th'] = array(
 	'cleanchanges-language-na' => 'ทั้งหมด',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'cleanchanges-changerightslink' => 'baguhin ang mga pangkat',
+	'cleanchanges-desc' => 'Mas masinsing pagpapalitaw ng [[Special:RecentChanges|talaan ng kamakailang mga pagbabago]]',
+	'cleanchanges-language' => 'Wika:',
+	'cleanchanges-language-na' => 'Lahat',
+	'cleanchanges-users' => 'Mga tagagamit (Panghiwalay: |):',
+	'cleanchanges-showuserlinks' => 'Ipakita ang mga kawing ng tagagamit',
+);
+
 /** Turkish (Türkçe)
  * @author Karduelis
  */
