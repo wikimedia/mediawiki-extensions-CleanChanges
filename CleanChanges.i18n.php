@@ -289,6 +289,18 @@ $messages['grc'] = array(
 	'cleanchanges-showuserlinks' => 'Δεικνύναι συνδέσμους χρωμένου',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'cleanchanges-changerightslink' => 'Gruppen ändere',
+	'cleanchanges-desc' => 'Kompakteri Aazeig vu dr [[Special:RecentChanges|letschten Änderige]]',
+	'cleanchanges-language' => 'Sproch:',
+	'cleanchanges-language-na' => 'Alli',
+	'cleanchanges-users' => 'Benutzer (Trännzeiche: |):',
+	'cleanchanges-showuserlinks' => 'Zeig Benutzer-Gleicher',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */
