@@ -609,6 +609,18 @@ $messages['pt'] = array(
 	'cleanchanges-showuserlinks' => 'Mostrar ligações de utilizador',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'cleanchanges-changerightslink' => 'alterar grupos',
+	'cleanchanges-desc' => 'Apresentação mais compacta da [[Special:RecentChanges|lista de mudanças recentes]]',
+	'cleanchanges-language' => 'Língua:',
+	'cleanchanges-language-na' => 'Todas',
+	'cleanchanges-users' => 'Utilizadores (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Mostrar ligações de utilizador',
+);
+
 /** Tarifit (Tarifit)
  * @author Jose77
  */
@@ -801,6 +813,7 @@ $messages['vi'] = array(
 	'cleanchanges-language' => 'Ngôn ngữ:',
 	'cleanchanges-language-na' => 'Tất cả',
 	'cleanchanges-users' => 'Các thành viên (Phân cách: |):',
+	'cleanchanges-showuserlinks' => 'Hiện liên kết người dùng',
 );
 
 /** Volapük (Volapük)
