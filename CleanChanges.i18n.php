@@ -338,6 +338,18 @@ $messages['hi'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें',
 );
 
+/** Croatian (Hrvatski)
+ * @author Suradnik13
+ */
+$messages['hr'] = array(
+	'cleanchanges-changerightslink' => 'promijeni grupe',
+	'cleanchanges-desc' => 'Kompaktniji prikaz [[Special:RecentChanges|nedavnih promjena]]',
+	'cleanchanges-language' => 'Jezik:',
+	'cleanchanges-language-na' => 'Svi',
+	'cleanchanges-users' => 'Suradnici (Raz: |):',
+	'cleanchanges-showuserlinks' => 'Prikaži poveznice suradnika',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
