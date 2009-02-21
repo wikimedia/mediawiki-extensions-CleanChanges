@@ -269,7 +269,7 @@ $messages['ga'] = array(
  */
 $messages['gl'] = array(
 	'cleanchanges-changerightslink' => 'mudar grupos',
-	'cleanchanges-desc' => 'Unha mostra máis compacta da [[Special:RecentChanges|listaxe de cambios recentes]]',
+	'cleanchanges-desc' => 'Unha mostra máis compacta da [[Special:RecentChanges|lista de cambios recentes]]',
 	'cleanchanges-language' => 'Lingua:',
 	'cleanchanges-language-na' => 'Todo',
 	'cleanchanges-users' => 'Usuarios (separados por: |):',
@@ -440,6 +440,15 @@ $messages['km'] = array(
 	'cleanchanges-language-na' => 'ទាំងអស់',
 	'cleanchanges-users' => 'អ្នកប្រើប្រាស់​(ខណ្ឌដោយ |)៖',
 	'cleanchanges-showuserlinks' => 'បង្ហាញ​តំណ​អ្នកប្រើប្រាស់',
+);
+
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'cleanchanges-language' => '언어:',
+	'cleanchanges-language-na' => '모두',
+	'cleanchanges-users' => '사용자 (구분선: |):',
 );
 
 /** Ripoarisch (Ripoarisch)
@@ -790,6 +799,13 @@ $messages['tl'] = array(
 $messages['tr'] = array(
 	'cleanchanges-language' => 'Dil:',
 	'cleanchanges-language-na' => 'Hepsi',
+);
+
+/** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
+ * @author Jose77
+ */
+$messages['ug-latn'] = array(
+	'cleanchanges-language' => 'Til:',
 );
 
 /** Ukrainian (Українська)
