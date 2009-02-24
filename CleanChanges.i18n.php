@@ -799,6 +799,7 @@ $messages['tl'] = array(
 $messages['tr'] = array(
 	'cleanchanges-language' => 'Dil:',
 	'cleanchanges-language-na' => 'Hepsi',
+	'cleanchanges-showuserlinks' => 'Kullanıcı bağlantılarını göster',
 );
 
 /** Uighur (Latin) (Uyghurche‎ / ئۇيغۇرچە (Latin))
