@@ -383,6 +383,7 @@ $messages['ia'] = array(
 	'cleanchanges-language' => 'Lingua:',
 	'cleanchanges-language-na' => 'Totes',
 	'cleanchanges-users' => 'Usatores (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Monstrar ligamines de usator',
 );
 
 /** Indonesian (Bahasa Indonesia)
