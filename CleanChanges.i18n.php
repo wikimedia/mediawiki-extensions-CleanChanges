@@ -464,6 +464,14 @@ $messages['ksh'] = array(
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
+/** Cornish (Kernewek)
+ * @author Kw-Moon
+ */
+$messages['kw'] = array(
+	'cleanchanges-language' => 'Yeth:',
+	'cleanchanges-language-na' => 'Oll',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
