@@ -398,6 +398,7 @@ $messages['id'] = array(
 );
 
 /** Italian (Italiano)
+ * @author BrokenArrow
  * @author Darth Kule
  * @author Nemo bis
  */
@@ -407,6 +408,7 @@ $messages['it'] = array(
 	'cleanchanges-language' => 'Lingua:',
 	'cleanchanges-language-na' => 'Tutte',
 	'cleanchanges-users' => 'Utenti (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Mostra collegamenti utente',
 );
 
 /** Japanese (日本語)
