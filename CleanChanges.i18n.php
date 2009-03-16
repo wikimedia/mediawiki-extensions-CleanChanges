@@ -805,11 +805,15 @@ $messages['tl'] = array(
 );
 
 /** Turkish (Türkçe)
+ * @author Joseph
  * @author Karduelis
  */
 $messages['tr'] = array(
+	'cleanchanges-changerightslink' => 'grupları değiştir',
+	'cleanchanges-desc' => '[[Special:RecentChanges|Son değişiklikler listesinin]] daha kompakt görünümü',
 	'cleanchanges-language' => 'Dil:',
 	'cleanchanges-language-na' => 'Hepsi',
+	'cleanchanges-users' => 'Kullanıcılar (Ayr: |):',
 	'cleanchanges-showuserlinks' => 'Kullanıcı bağlantılarını göster',
 );
 
