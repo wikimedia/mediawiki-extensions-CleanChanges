@@ -706,10 +706,13 @@ $messages['sk'] = array(
 
 /** Serbian Cyrillic ekavian (ћирилица)
  * @author Sasa Stefanovic
+ * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'cleanchanges-changerightslink' => 'промени групе',
 	'cleanchanges-desc' => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
+	'cleanchanges-language' => 'Језик:',
+	'cleanchanges-language-na' => 'Све',
 );
 
 /** Seeltersk (Seeltersk)
