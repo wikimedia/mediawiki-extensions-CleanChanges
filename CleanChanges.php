@@ -22,6 +22,7 @@ $wgHooks['FetchChangesList'][] = 'NCL::hook' ;
 
 /* Extension information */
 $wgExtensionCredits['other'][] = array(
+	'path' => __FILE__,
 	'name' => 'Clean Changes',
 	'version' => '2008-10-16',
 	'author' => 'Niklas Laxström',
