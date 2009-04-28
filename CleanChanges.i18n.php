@@ -713,6 +713,8 @@ $messages['sr-ec'] = array(
 	'cleanchanges-desc' => 'Компактнији приказ списка [[Special:RecentChanges|скорашњих измена]]',
 	'cleanchanges-language' => 'Језик:',
 	'cleanchanges-language-na' => 'Све',
+	'cleanchanges-users' => 'Корисници (Раздв: |):',
+	'cleanchanges-showuserlinks' => 'Покажи корисничке линкове',
 );
 
 /** Seeltersk (Seeltersk)
