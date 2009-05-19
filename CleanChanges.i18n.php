@@ -574,6 +574,7 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'cleanchanges-changerightslink' => 'endre grupper',
@@ -581,6 +582,7 @@ $messages['no'] = array(
 	'cleanchanges-language' => 'Språk:',
 	'cleanchanges-language-na' => 'Alle',
 	'cleanchanges-users' => 'Brukere (separer med |):',
+	'cleanchanges-showuserlinks' => 'Vis brukerlenker',
 );
 
 /** Occitan (Occitan)
