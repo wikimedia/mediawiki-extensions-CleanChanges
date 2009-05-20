@@ -886,6 +886,14 @@ $messages['vo'] = array(
 	'cleanchanges-showuserlinks' => 'Jonön gebanayümis',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'cleanchanges-language' => 'שפראך:',
+	'cleanchanges-language-na' => 'אלע',
+);
+
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenzw
  */
