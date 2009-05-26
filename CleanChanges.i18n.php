@@ -129,6 +129,16 @@ $messages['bs'] = array(
 	'cleanchanges-showuserlinks' => 'Prikaži korisničke linkove',
 );
 
+/** Catalan (Català)
+ * @author Solde
+ */
+$messages['ca'] = array(
+	'cleanchanges-changerightslink' => 'canvia els grups',
+	'cleanchanges-language' => 'Idioma:',
+	'cleanchanges-language-na' => 'Tot',
+	'cleanchanges-users' => 'Usuaris (Set: |):',
+);
+
 /** Czech (Česky)
  * @author Danny B.
  * @author Matěj Grabovský
