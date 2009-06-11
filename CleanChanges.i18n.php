@@ -693,6 +693,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Ferrer
  * @author Innv
  * @author Александр Сигачёв
  */
@@ -702,6 +703,7 @@ $messages['ru'] = array(
 	'cleanchanges-language' => 'Язык:',
 	'cleanchanges-language-na' => 'Все',
 	'cleanchanges-users' => 'Участники (разделитель: |):',
+	'cleanchanges-showuserlinks' => 'Показывать ссылки участников',
 );
 
 /** Slovak (Slovenčina)
