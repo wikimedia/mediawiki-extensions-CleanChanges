@@ -614,6 +614,14 @@ $messages['pa'] = array(
 	'cleanchanges-language-na' => 'ਸਭ',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'cleanchanges-language' => 'Schprooch:',
+	'cleanchanges-language-na' => 'all',
+);
+
 /** Polish (Polski)
  * @author Leinad
  * @author Masti
