@@ -130,13 +130,14 @@ $messages['bs'] = array(
 );
 
 /** Catalan (Català)
+ * @author SMP
  * @author Solde
  */
 $messages['ca'] = array(
 	'cleanchanges-changerightslink' => 'canvia els grups',
 	'cleanchanges-language' => 'Idioma:',
 	'cleanchanges-language-na' => 'Tot',
-	'cleanchanges-users' => 'Usuaris (Set: |):',
+	'cleanchanges-users' => 'Usuaris (Separador: |):',
 );
 
 /** Czech (Česky)
