@@ -429,7 +429,7 @@ $messages['it'] = array(
  */
 $messages['ja'] = array(
 	'cleanchanges-changerightslink' => '権限の変更',
-	'cleanchanges-desc' => '[[Special:RecentChanges|最近更新したページ]]をコンパクトな表示にする',
+	'cleanchanges-desc' => '[[Special:RecentChanges|最近の更新一覧]]をよりコンパクトに表示する',
 	'cleanchanges-language' => '言語:',
 	'cleanchanges-language-na' => 'すべて',
 	'cleanchanges-users' => '利用者 (|で区切る):',
