@@ -398,14 +398,16 @@ $messages['ia'] = array(
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author Bennylin
  * @author Rex
  */
 $messages['id'] = array(
-	'cleanchanges-changerightslink' => 'ubah grup',
-	'cleanchanges-desc' => 'Tampilan lebih sederhana dari [[Special:RecentChanges|daftar perubahan terbaru]]',
+	'cleanchanges-changerightslink' => 'ubah kelompok',
+	'cleanchanges-desc' => 'Tampilan lebih padat dari [[Special:RecentChanges|daftar perubahan terbaru]]',
 	'cleanchanges-language' => 'Bahasa:',
 	'cleanchanges-language-na' => 'Semua',
-	'cleanchanges-users' => 'Pengguna (pemisah: |):',
+	'cleanchanges-users' => 'Pengguna (Pemisah: |):',
+	'cleanchanges-showuserlinks' => 'Tunjukkan pranala pengguna',
 );
 
 /** Italian (Italiano)
