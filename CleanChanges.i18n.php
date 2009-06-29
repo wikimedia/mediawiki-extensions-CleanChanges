@@ -512,11 +512,12 @@ $messages['mk'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
 	'cleanchanges-changerightslink' => 'ഗ്രൂപ്പുകള്‍ മാറ്റുക',
-	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]]ഒതുക്കമുള്ള പ്രദര്‍ശനം',
+	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]] ഒതുക്കമുള്ള പ്രദര്‍ശനം',
 );
 
 /** Marathi (मराठी)
