@@ -61,6 +61,14 @@ $messages['ar'] = array(
 	'cleanchanges-showuserlinks' => 'إظهار وصلات المستخدم',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'cleanchanges-language-na' => 'ܟܠ',
+	'cleanchanges-showuserlinks' => 'ܚܘܝ ܐܣܘܪ̈ܐ ܕܡܦܠܚܢܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Meno25
  * @author Ouda
