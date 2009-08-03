@@ -537,25 +537,25 @@ class NCL extends EnhancedChangesList {
 	function getFlags( $rc, Array $overrides = null ) {
 		// TODO: we assume all characters are of equal width, which they may be not
 		$map = array(
-			# item  =>        field           class      letter
-			'new'   => array( 'rc_new',       'newpage', $this->message['newpageletter'] ),
-			'minor' => array( 'rc_minor',     'minor',   $this->message['minoreditletter'] ),
-			'bot'   => array( 'rc_bot',       'bot',     $this->message['boteditletter'] ),
+			# item  =>        field       letter-or-something
+			'new'   => array( 'rc_new',   self::flag( 'newpage' ) ),
+			'minor' => array( 'rc_minor', self::flag( 'minor' ) ),
+			'bot'   => array( 'rc_bot',   self::flag( 'bot' ) ),
 		);
 		if ( self::usePatrol() ) {
-			$map['patrol'] = array( 'rc_patrolled', 'unpatrolled', '!' );
+			$map['patrol'] = array( 'rc_patrolled', self::flag( 'unpatrolled' ) );
 		}
-
 
 		static $nothing = "\xc2\xa0";
 
 		$items = array();
 		foreach ( $map as $item => $data ) {
-			$bool = isset($overrides[$item]) ? $overrides[$item] : $rc->getAttribute( $data[0] );
-			$items[] = $this->XMLwrapper( $data[1], $bool ? $data[2] : $nothing );
+			list( $field, $flag ) = $data;
+			$bool = isset($overrides[$item]) ? $overrides[$item] : $rc->getAttribute( $field );
+			$items[] = $bool ? $flag : $nothing;
 		}
 
-		return Xml::tags( 'span', null, implode( '', $items ) );
+		return implode( '', $items );
 	}
 
 	protected function getCharacterDifference( $new, $old = null ) {
