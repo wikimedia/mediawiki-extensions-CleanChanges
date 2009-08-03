@@ -114,10 +114,15 @@ class NCL extends EnhancedChangesList {
 	}
 
 	protected function getLogAction( $rc ) {
-		if ( $this->isDeleted($rc, LogPage::DELETED_ACTION) ) {
+		global $wgUser;
+
+		$priviledged = $wgUser->isAllowed('deleterevision');
+		$deleted = $this->isDeleted($rc, LogPage::DELETED_ACTION);
+
+		if ( $deleted && !$priviledged ) {
 			return $this->XMLwrapper( 'history-deleted', wfMsg('rev-deleted-event') );
 		} else {
-			return LogPage::actionText(
+			$action = LogPage::actionText(
 				$rc->getAttribute('rc_log_type'),
 				$rc->getAttribute('rc_log_action'),
 				$rc->getTitle(),
@@ -126,6 +131,11 @@ class NCL extends EnhancedChangesList {
 				true,
 				true
 			);
+			if ( $deleted ) {
+				$class = array( 'class' => 'history-deleted' );
+				$action = Xml::tags( 'span', $class, $action );
+			}
+			return $action;
 		}
 	}
 
@@ -176,12 +186,7 @@ class NCL extends EnhancedChangesList {
 			$rc->getAttribute( 'rc_user_text' ) );
 		$rc->_userInfo = $stuff[0];
 
-		$rc->_comment = $this->skin->commentBlock(
-			$rc->getAttribute( 'rc_comment' ), $titleObj );
-
-		if ( $logEntry ) {
-			$rc->_comment = $this->getLogAction( $rc ) . ' ' . $rc->_comment;
-		}
+		$rc->_comment = $this->getComment( $rc );
 
 		$rc->_watching = $this->numberofWatchingusers( $baseRC->numberofWatchingusers );
 
@@ -406,6 +411,26 @@ class NCL extends EnhancedChangesList {
 
 		return '<div>' . implode( " {$this->dir}", $items ) . "</div>\n";
 
+	}
+
+	public function getComment( $rc ) {
+		global $wgUser;
+		$comment = $rc->getAttribute( 'rc_comment' );
+		$action = '';
+		if ( $this->isLog($rc) ) $action = $this->getLogAction( $rc );
+
+		if ( $comment === '' ) {
+			return $action;
+		} elseif ( $this->isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
+			$priviledged = $wgUser->isAllowed('deleterevision');
+			if ( $priviledged ) {
+				return $action . ' <span class="history-deleted">' . $comment . '</span>';
+			} else {
+				return $action . ' <span class="history-deleted">' . wfMsgHtml( 'rev-deleted-comment' ) . '</span>';
+			}
+		} else {
+			return $action . $this->skin->commentBlock( $comment, $rc->getTitle() );
+		}
 	}
 
 	/**
