@@ -466,6 +466,13 @@ $messages['km'] = array(
 	'cleanchanges-showuserlinks' => 'បង្ហាញ​តំណ​អ្នកប្រើប្រាស់',
 );
 
+/** Kannada (ಕನ್ನಡ)
+ * @author Nayvik
+ */
+$messages['kn'] = array(
+	'cleanchanges-language' => 'ಭಾಷೆ:',
+);
+
 /** Korean (한국어)
  * @author Kwj2772
  */
