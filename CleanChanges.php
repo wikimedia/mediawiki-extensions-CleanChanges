@@ -16,6 +16,7 @@ if (!defined('MEDIAWIKI')) die();
 $dir = dirname(__FILE__) . '/';
 $wgExtensionMessagesFiles['CleanChanges'] = $dir . 'CleanChanges.i18n.php';
 $wgAutoloadClasses['NCL'] =  $dir . 'CleanChanges_body.php';
+$wgJSAutoloadClasses['CleanChanges'] = "extensions/CleanChanges/cleanchanges.js"; 
 
 /* Hook into code */
 $wgHooks['FetchChangesList'][] = 'NCL::hook' ;
