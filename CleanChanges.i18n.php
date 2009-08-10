@@ -219,11 +219,13 @@ $messages['es'] = array(
 
 /** Estonian (Eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
 	'cleanchanges-changerightslink' => 'muuda gruppe',
 	'cleanchanges-language' => 'Keel:',
 	'cleanchanges-language-na' => 'Kõik',
+	'cleanchanges-users' => 'Kasutajad (erald: |):',
 );
 
 /** Basque (Euskara)
@@ -514,6 +516,18 @@ $messages['lb'] = array(
 	'cleanchanges-showuserlinks' => "D'Linke vun dësem Benotzer weisen",
 );
 
+/** Limburgish (Limburgs)
+ * @author Pahles
+ */
+$messages['li'] = array(
+	'cleanchanges-changerightslink' => 'gróppe verangere',
+	'cleanchanges-desc' => 'Mier compacte weergave van de [[Special:RecentChanges|lies mit recènte verangeringe]]',
+	'cleanchanges-language' => 'Sjpraok:',
+	'cleanchanges-language-na' => 'Alle sjpraoke',
+	'cleanchanges-users' => 'Gebroekers (sjeijingsteike "|"):',
+	'cleanchanges-showuserlinks' => 'Gebroekersverwiezinge betrachte',
+);
+
 /** Macedonian (Македонски)
  * @author Brest
  */
@@ -756,6 +770,18 @@ $messages['sr-ec'] = array(
 	'cleanchanges-language-na' => 'Све',
 	'cleanchanges-users' => 'Корисници (Раздв: |):',
 	'cleanchanges-showuserlinks' => 'Покажи корисничке линкове',
+);
+
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'cleanchanges-changerightslink' => 'promeni grupe',
+	'cleanchanges-desc' => 'Kompaktniji prikaz spiska [[Special:RecentChanges|skorašnjih izmena]]',
+	'cleanchanges-language' => 'Jezik:',
+	'cleanchanges-language-na' => 'Sve',
+	'cleanchanges-users' => 'Korisnici (Razdv: |):',
+	'cleanchanges-showuserlinks' => 'Pokaži korisničke linkove',
 );
 
 /** Seeltersk (Seeltersk)
