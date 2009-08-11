@@ -225,7 +225,7 @@ $messages['et'] = array(
 	'cleanchanges-changerightslink' => 'muuda gruppe',
 	'cleanchanges-language' => 'Keel:',
 	'cleanchanges-language-na' => 'Kõik',
-	'cleanchanges-users' => 'Kasutajad (erald: |):',
+	'cleanchanges-users' => 'Kasutajad (erald:&nbsp;|):',
 );
 
 /** Basque (Euskara)
