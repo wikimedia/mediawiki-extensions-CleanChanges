@@ -269,10 +269,16 @@ $messages['fr'] = array(
 );
 
 /** Western Frisian (Frysk)
+ * @author SK-luuut
  * @author Snakesteuben
  */
 $messages['fy'] = array(
-	'cleanchanges-language-na' => 'Alle',
+	'cleanchanges-changerightslink' => 'feroarje groepen',
+	'cleanchanges-desc' => 'Kompaktere werjefte fan de [[Special:RecentChanges|list mei lêste feroarings]]',
+	'cleanchanges-language' => 'Taal:',
+	'cleanchanges-language-na' => 'Alle talen',
+	'cleanchanges-users' => 'Meidoggers (Skiedingsteken: |):',
+	'cleanchanges-showuserlinks' => 'Meidoggerskeppelingen sjen litte',
 );
 
 /** Irish (Gaeilge)
@@ -831,13 +837,16 @@ $messages['szl'] = array(
 );
 
 /** Telugu (తెలుగు)
+ * @author Kiranmayee
  * @author Veeven
  */
 $messages['te'] = array(
 	'cleanchanges-changerightslink' => 'గుంపులను మార్చండి',
+	'cleanchanges-desc' => '[[Special:RecentChanges|ఇటీవలి మార్పుల]]ని సంక్షిప్తముగా చూపుము',
 	'cleanchanges-language' => 'భాష:',
 	'cleanchanges-language-na' => 'అన్నీ',
 	'cleanchanges-users' => 'వాడుకరులు (| తో వేరుపరచి):',
+	'cleanchanges-showuserlinks' => 'వాడుకరి లింకులను చూపుము',
 );
 
 /** Tetum (Tetun)
