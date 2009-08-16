@@ -487,10 +487,13 @@ class NCL extends EnhancedChangesList {
 		if( $blockable && $wgUser->isAllowed( 'block' ) ) {
 			$items[] = $this->skin->blockLink( $userId, $userText );
 		}
-		if( $userId && $wgUser->isAllowed( 'userrights' ) ) {
-			$targetPage = SpecialPage::getTitleFor( 'Userrights', $userText );
-			$items[] = $this->skin->makeKnownLinkObj( $targetPage,
-				wfMsgHtml( 'cleanchanges-changerightslink' ) );
+		if( $userId ) {
+			$userrightsPage = new UserrightsPage();
+			if( $userrightsPage->userCanChangeRights( User::newFromId( $id ) ) ) {
+				$targetPage = SpecialPage::getTitleFor( 'Userrights', $userText );
+				$items[] = $this->skin->makeKnownLinkObj( $targetPage,
+					wfMsgHtml( 'cleanchanges-changerightslink' ) );
+			}
 		}
 
 		if( $items ) {
