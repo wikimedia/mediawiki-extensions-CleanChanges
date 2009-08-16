@@ -17,11 +17,14 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Byrial
  * @author Jon Harald Søby
  * @author Meno25
  * @author Purodha
  */
 $messages['qqq'] = array(
+	'cleanchanges-changerightslink' => 'Link text for a link in the recent changes page to manage user rights for a user.
+It is shown after clicking on the "Show user links"-picture if you are allowed to manage user rights.',
 	'cleanchanges-desc' => 'Shown in [[Special:Version]]',
 	'cleanchanges-language' => '{{Identical|Language}}',
 	'cleanchanges-language-na' => 'Used in the trailer selection of [[Special:RecentChanges]] to not filter on any trailer.
@@ -159,6 +162,18 @@ $messages['cs'] = array(
 	'cleanchanges-language-na' => 'Všechny',
 	'cleanchanges-users' => 'Uživatelé (oddělovač |):',
 	'cleanchanges-showuserlinks' => 'Ukázat uživatelské odkazy',
+);
+
+/** Danish (Dansk)
+ * @author Byrial
+ */
+$messages['da'] = array(
+	'cleanchanges-changerightslink' => 'rettigheder',
+	'cleanchanges-desc' => 'Mere kompakt visning af [[Special:RecentChanges|seneste ændringer]]',
+	'cleanchanges-language' => 'Sprog:',
+	'cleanchanges-language-na' => 'Alle',
+	'cleanchanges-users' => 'Brugere (adskil med |)',
+	'cleanchanges-showuserlinks' => 'Vis brugerhenvisninger',
 );
 
 /** German (Deutsch)
@@ -450,7 +465,7 @@ $messages['ja'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|最近の更新一覧]]をよりコンパクトに表示する',
 	'cleanchanges-language' => '言語:',
 	'cleanchanges-language-na' => 'すべて',
-	'cleanchanges-users' => '利用者 (|で区切る):',
+	'cleanchanges-users' => '利用者 （|で区切る）:',
 	'cleanchanges-showuserlinks' => '利用者リンクを表示',
 );
 
