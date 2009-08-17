@@ -489,7 +489,7 @@ class NCL extends EnhancedChangesList {
 		}
 		if( $userId ) {
 			$userrightsPage = new UserrightsPage();
-			if( $userrightsPage->userCanChangeRights( User::newFromId( $id ) ) ) {
+			if( $userrightsPage->userCanChangeRights( User::newFromId( $userId ) ) ) {
 				$targetPage = SpecialPage::getTitleFor( 'Userrights', $userText );
 				$items[] = $this->skin->makeKnownLinkObj( $targetPage,
 					wfMsgHtml( 'cleanchanges-changerightslink' ) );
