@@ -557,7 +557,7 @@ $messages['mk'] = array(
 	'cleanchanges-desc' => 'Компактен приказ на [[Special:RecentChanges|скорешни промени]]',
 	'cleanchanges-language' => 'Јазик:',
 	'cleanchanges-language-na' => 'Сите',
-	'cleanchanges-users' => 'Корисници (граничник: |):',
+	'cleanchanges-users' => 'Корисници (разделник: |):',
 	'cleanchanges-showuserlinks' => 'Прикажи кориснички врски',
 );
 
