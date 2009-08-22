@@ -126,6 +126,10 @@ $messages['bn'] = array(
 $messages['br'] = array(
 	'cleanchanges-changerightslink' => 'kemmañ a ra ar strolladoù',
 	'cleanchanges-desc' => "Doare diskouez krennoc'h evit [[Special:RecentChanges|roll ar c'hemmoù diwezhañ]]",
+	'cleanchanges-language' => 'Yezh :',
+	'cleanchanges-language-na' => 'An holl',
+	'cleanchanges-users' => 'Implijerien (Dispart. gant |) :',
+	'cleanchanges-showuserlinks' => 'Diskwel liammoù an implijer-mañ',
 );
 
 /** Bosnian (Bosanski)
