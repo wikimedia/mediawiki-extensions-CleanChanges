@@ -784,7 +784,7 @@ $messages['sk'] = array(
 	'cleanchanges-showuserlinks' => 'Zobrazovať používateľské odkazy',
 );
 
-/** Serbian Cyrillic ekavian (ћирилица)
+/** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
@@ -797,7 +797,7 @@ $messages['sr-ec'] = array(
 	'cleanchanges-showuserlinks' => 'Покажи корисничке линкове',
 );
 
-/** latinica (latinica)
+/** Serbian Latin ekavian (Srpski (latinica))
  * @author Michaello
  */
 $messages['sr-el'] = array(
