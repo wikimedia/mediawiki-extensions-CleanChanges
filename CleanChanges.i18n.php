@@ -41,6 +41,7 @@ $messages['af'] = array(
 	'cleanchanges-language' => 'Taal:',
 	'cleanchanges-language-na' => 'Alle tale',
 	'cleanchanges-users' => 'Gebruikers (geskei deur "|"):',
+	'cleanchanges-showuserlinks' => 'Wys gebruiker se skakels',
 );
 
 /** Amharic (አማርኛ)
