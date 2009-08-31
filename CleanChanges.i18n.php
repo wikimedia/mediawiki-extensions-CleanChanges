@@ -207,9 +207,13 @@ $messages['dsb'] = array(
 
 /** Greek (Ελληνικά)
  * @author Consta
+ * @author Crazymadlover
+ * @author Omnipaedista
  */
 $messages['el'] = array(
 	'cleanchanges-language' => 'Γλώσσα:',
+	'cleanchanges-language-na' => 'Όλες',
+	'cleanchanges-users' => 'Χρήστες (Διαχωρ.: |):',
 );
 
 /** Esperanto (Esperanto)
@@ -695,6 +699,18 @@ $messages['pl'] = array(
 	'cleanchanges-language-na' => 'Wszystkie',
 	'cleanchanges-users' => 'Użytkownicy (rozdziel znakiem „|”):',
 	'cleanchanges-showuserlinks' => 'Pokaż linki użytkownika',
+);
+
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'cleanchanges-changerightslink' => 'cambia ij grup',
+	'cleanchanges-desc' => 'Visualisassion pì s-ciassa dla [[Special:RecentChanges|lista dij cambe ressent]]',
+	'cleanchanges-language' => 'Lenga:',
+	'cleanchanges-language-na' => 'Tùit',
+	'cleanchanges-users' => 'Utent (Sep: |):',
+	'cleanchanges-showuserlinks' => "Mosta colegament ëd l'utent",
 );
 
 /** Pashto (پښتو)
