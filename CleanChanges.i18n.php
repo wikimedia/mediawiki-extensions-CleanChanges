@@ -173,7 +173,7 @@ $messages['cs'] = array(
  * @author Byrial
  */
 $messages['da'] = array(
-	'cleanchanges-changerightslink' => 'rettigheder',
+	'cleanchanges-changerightslink' => 'ændr grupper',
 	'cleanchanges-desc' => 'Mere kompakt visning af [[Special:RecentChanges|seneste ændringer]]',
 	'cleanchanges-language' => 'Sprog:',
 	'cleanchanges-language-na' => 'Alle',
