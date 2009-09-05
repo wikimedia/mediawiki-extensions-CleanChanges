@@ -211,9 +211,12 @@ $messages['dsb'] = array(
  * @author Omnipaedista
  */
 $messages['el'] = array(
+	'cleanchanges-changerightslink' => 'αλλαγή ομάδων',
+	'cleanchanges-desc' => 'Πιο συμπαγής προβολή της [[Special:RecentChanges|λίστας προσφάτων αλλαγών]]',
 	'cleanchanges-language' => 'Γλώσσα:',
 	'cleanchanges-language-na' => 'Όλες',
 	'cleanchanges-users' => 'Χρήστες (Διαχωρ.: |):',
+	'cleanchanges-showuserlinks' => 'Προβολή συνδέσμων χρήστη',
 );
 
 /** Esperanto (Esperanto)
