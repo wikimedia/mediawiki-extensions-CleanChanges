@@ -97,9 +97,15 @@ $messages['ast'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Jim-by
  */
 $messages['be-tarask'] = array(
+	'cleanchanges-changerightslink' => 'зьмяніць групы',
+	'cleanchanges-desc' => 'Болей кампактны паказ [[Special:RecentChanges|сьпісу апошніх зьменаў]]',
 	'cleanchanges-language' => 'Мова:',
+	'cleanchanges-language-na' => 'Усе',
+	'cleanchanges-users' => 'Удзельнікі (разьдзяляльнік: |):',
+	'cleanchanges-showuserlinks' => 'Паказваць спасылкі ўдзельнікаў',
 );
 
 /** Bulgarian (Български)
@@ -477,7 +483,7 @@ $messages['ja'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|最近の更新一覧]]をよりコンパクトに表示する',
 	'cleanchanges-language' => '言語:',
 	'cleanchanges-language-na' => 'すべて',
-	'cleanchanges-users' => '利用者 （|で区切る）:',
+	'cleanchanges-users' => '利用者 (|で区切る):',
 	'cleanchanges-showuserlinks' => '利用者リンクを表示',
 );
 
