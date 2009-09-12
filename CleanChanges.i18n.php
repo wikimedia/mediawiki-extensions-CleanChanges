@@ -943,6 +943,18 @@ $messages['tr'] = array(
 	'cleanchanges-showuserlinks' => 'Kullanıcı bağlantılarını göster',
 );
 
+/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+ * @author Yildiz
+ */
+$messages['tt-cyrl'] = array(
+	'cleanchanges-changerightslink' => 'төркемнәрне төзәтергә',
+	'cleanchanges-desc' => '[[Special:RecentChanges|Баягы төзәтмәләрнең]] тыгызлау',
+	'cleanchanges-language' => 'Тел:',
+	'cleanchanges-language-na' => 'Барысы',
+	'cleanchanges-users' => 'Катнашучылар (бүлү: |):',
+	'cleanchanges-showuserlinks' => 'Катнашучылар сылтамаларын күрсәтү',
+);
+
 /** ئۇيغۇرچە (ئۇيغۇرچە)
  * @author Alfredie
  */
