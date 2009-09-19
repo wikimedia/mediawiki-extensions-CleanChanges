@@ -992,6 +992,15 @@ $messages['vec'] = array(
 	'cleanchanges-showuserlinks' => 'Mostra colegamenti utente',
 );
 
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'cleanchanges-language' => "Kel':",
+	'cleanchanges-language-na' => 'Kaik',
+	'cleanchanges-users' => 'Kävutajad (erigoitim: |)',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author Minh Nguyen
  * @author Vinhtantran
