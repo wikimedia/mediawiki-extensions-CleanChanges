@@ -175,6 +175,17 @@ $messages['cs'] = array(
 	'cleanchanges-showuserlinks' => 'Ukázat uživatelské odkazy',
 );
 
+/** Welsh (Cymraeg)
+ * @author Lloffiwr
+ */
+$messages['cy'] = array(
+	'cleanchanges-changerightslink' => 'newid grwpiau',
+	'cleanchanges-language' => 'Iaith:',
+	'cleanchanges-language-na' => 'Oll',
+	'cleanchanges-users' => 'Defnyddwyr (Gwah: |):',
+	'cleanchanges-showuserlinks' => 'Dangos cysylltiadau at ddefnyddwyr',
+);
+
 /** Danish (Dansk)
  * @author Byrial
  */
