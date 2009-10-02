@@ -578,6 +578,13 @@ $messages['li'] = array(
 	'cleanchanges-showuserlinks' => 'Gebroekersverwiezinge betrachte',
 );
 
+/** Eastern Mari (Олык Марий)
+ * @author Сай
+ */
+$messages['mhr'] = array(
+	'cleanchanges-language-na' => 'Чыла',
+);
+
 /** Macedonian (Македонски)
  * @author Brest
  */
