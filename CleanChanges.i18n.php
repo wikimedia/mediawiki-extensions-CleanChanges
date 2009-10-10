@@ -180,6 +180,7 @@ $messages['cs'] = array(
  */
 $messages['cy'] = array(
 	'cleanchanges-changerightslink' => 'newid grwpiau',
+	'cleanchanges-desc' => 'Dangos manylion cryno yn unig ar y [[Special:RecentChanges|rhestr newidiadau diweddar]]',
 	'cleanchanges-language' => 'Iaith:',
 	'cleanchanges-language-na' => 'Oll',
 	'cleanchanges-users' => 'Defnyddwyr (Gwah: |):',
