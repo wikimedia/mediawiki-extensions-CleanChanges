@@ -547,7 +547,7 @@ $messages['ksh'] = array(
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
-/** Cornish (Kernewek)
+/** Cornish (Kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -963,7 +963,7 @@ $messages['tr'] = array(
 );
 
 /** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
- * @author Yildiz
+ * @author Рашат Якупов
  */
 $messages['tt-cyrl'] = array(
 	'cleanchanges-changerightslink' => 'төркемнәрне төзәтергә',
