@@ -990,6 +990,7 @@ $messages['ug-latn'] = array(
 
 /** Ukrainian (Українська)
  * @author Ahonc
+ * @author Prima klasy4na
  */
 $messages['uk'] = array(
 	'cleanchanges-changerightslink' => 'змінити групи',
@@ -997,6 +998,7 @@ $messages['uk'] = array(
 	'cleanchanges-language' => 'Мова:',
 	'cleanchanges-language-na' => 'Усі',
 	'cleanchanges-users' => 'Користувачі (розділювач: |):',
+	'cleanchanges-showuserlinks' => 'Показувати посилання користувачів',
 );
 
 /** Vèneto (Vèneto)
