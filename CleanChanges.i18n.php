@@ -506,6 +506,13 @@ $messages['jv'] = array(
 	'cleanchanges-changerightslink' => 'owahana grup',
 );
 
+/** Kalaallisut (Kalaallisut)
+ * @author Piivaat
+ */
+$messages['kl'] = array(
+	'cleanchanges-language' => 'Oqaatsit:',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
