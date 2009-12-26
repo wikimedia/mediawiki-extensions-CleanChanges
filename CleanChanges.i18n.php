@@ -1064,16 +1064,21 @@ $messages['yi'] = array(
 
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Chenzw
+ * @author Liangent
  */
 $messages['zh-hans'] = array(
+	'cleanchanges-changerightslink' => '更改群组',
+	'cleanchanges-desc' => '更简洁的显示[[Special:RecentChanges|最近更改清单]]',
 	'cleanchanges-language' => '语言：',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
+ * @author Liangent
  */
 $messages['zh-hant'] = array(
 	'cleanchanges-changerightslink' => '更改群組',
 	'cleanchanges-desc' => '更簡潔的顯示[[Special:RecentChanges|最近更改清單]]',
+	'cleanchanges-language' => '語言：',
 );
 
