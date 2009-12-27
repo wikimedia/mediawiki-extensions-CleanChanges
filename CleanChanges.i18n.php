@@ -937,6 +937,15 @@ $messages['tg-cyrl'] = array(
 	'cleanchanges-language-na' => 'Ҳама',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'cleanchanges-changerightslink' => 'taƣjiri gurūhho',
+	'cleanchanges-language' => 'Zabon:',
+	'cleanchanges-language-na' => 'Hama',
+);
+
 /** Thai (ไทย)
  * @author Octahedron80
  */
