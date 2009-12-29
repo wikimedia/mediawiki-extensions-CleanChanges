@@ -824,6 +824,18 @@ $messages['ru'] = array(
 	'cleanchanges-showuserlinks' => 'Показывать ссылки участников',
 );
 
+/** Yakut (Саха тыла)
+ * @author HalanTul
+ */
+$messages['sah'] = array(
+	'cleanchanges-changerightslink' => 'бөлөхтөрү уларытыы',
+	'cleanchanges-desc' => '[[Special:RecentChanges|Кэнники уларытыылары]] арыый дьаһамырдык көрдөрүү',
+	'cleanchanges-language' => 'Тыла:',
+	'cleanchanges-language-na' => 'Бары',
+	'cleanchanges-users' => 'Кыттааччылар (араарыы: |):',
+	'cleanchanges-showuserlinks' => 'Кыттааччылар сигэлэрин көрдөр',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
@@ -951,6 +963,14 @@ $messages['tg-latn'] = array(
  */
 $messages['th'] = array(
 	'cleanchanges-language-na' => 'ทั้งหมด',
+);
+
+/** Turkmen (Türkmençe)
+ * @author Hanberke
+ */
+$messages['tk'] = array(
+	'cleanchanges-language' => 'Dil:',
+	'cleanchanges-language-na' => 'Ählisi',
 );
 
 /** Tagalog (Tagalog)
