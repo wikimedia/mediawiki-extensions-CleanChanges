@@ -757,6 +757,7 @@ $messages['ps'] = array(
 	'cleanchanges-language' => 'ژبه:',
 	'cleanchanges-language-na' => 'ټول',
 	'cleanchanges-users' => 'کارونکي (Sep: |):',
+	'cleanchanges-showuserlinks' => 'د کارن تړنې ښکاره کول',
 );
 
 /** Portuguese (Português)
