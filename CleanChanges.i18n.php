@@ -110,6 +110,7 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Spiritia
  */
 $messages['bg'] = array(
 	'cleanchanges-changerightslink' => 'промяна на групите',
@@ -117,6 +118,7 @@ $messages['bg'] = array(
 	'cleanchanges-language' => 'Език:',
 	'cleanchanges-language-na' => 'Всички',
 	'cleanchanges-users' => 'Потребители (Разд: |):',
+	'cleanchanges-showuserlinks' => 'Показване на потребителските връзки',
 );
 
 /** Bengali (বাংলা)
