@@ -413,7 +413,7 @@ $messages['hi'] = array(
 );
 
 /** Croatian (Hrvatski)
- * @author Suradnik13
+ * @author Ex13
  */
 $messages['hr'] = array(
 	'cleanchanges-changerightslink' => 'promijeni grupe',
@@ -509,7 +509,7 @@ $messages['jv'] = array(
 );
 
 /** Kalaallisut (Kalaallisut)
- * @author Piivaat
+ * @author Qaqqalik
  */
 $messages['kl'] = array(
 	'cleanchanges-language' => 'Oqaatsit:',
@@ -787,10 +787,12 @@ $messages['pt-br'] = array(
 );
 
 /** Tarifit (Tarifit)
+ * @author Aryaz
  * @author Jose77
  */
 $messages['rif'] = array(
-	'cleanchanges-language-na' => 'Maṛṛa',
+	'cleanchanges-language' => 'Tutlayt:',
+	'cleanchanges-language-na' => 'Marra',
 );
 
 /** Romanian (Română)
