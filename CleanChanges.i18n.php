@@ -636,10 +636,12 @@ $messages['ms'] = array(
 );
 
 /** Maltese (Malti)
+ * @author Chrisportelli
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
 	'cleanchanges-language' => 'Lingwa:',
+	'cleanchanges-showuserlinks' => 'Uri l-ħoloq tal-utent',
 );
 
 /** Erzya (Эрзянь)
