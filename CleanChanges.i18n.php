@@ -307,7 +307,7 @@ $messages['fi'] = array(
  * @author Verdy p
  */
 $messages['fr'] = array(
-	'cleanchanges-changerightslink' => 'Changer les groupes',
+	'cleanchanges-changerightslink' => 'changer les groupes',
 	'cleanchanges-desc' => 'Affichage plus compact de la [[Special:RecentChanges|liste des modifications récentes]]',
 	'cleanchanges-language' => 'Langue :',
 	'cleanchanges-language-na' => 'Tous',
