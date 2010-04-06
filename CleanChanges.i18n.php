@@ -765,6 +765,7 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Hamilton Abreu
  * @author Malafaya
  */
 $messages['pt'] = array(
@@ -773,7 +774,7 @@ $messages['pt'] = array(
 	'cleanchanges-language' => 'Língua:',
 	'cleanchanges-language-na' => 'Todas',
 	'cleanchanges-users' => 'Utilizadores (Sep: |):',
-	'cleanchanges-showuserlinks' => 'Mostrar ligações de utilizador',
+	'cleanchanges-showuserlinks' => 'Mostrar links de utilizador',
 );
 
 /** Brazilian Portuguese (Português do Brasil)
