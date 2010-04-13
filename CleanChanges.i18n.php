@@ -856,6 +856,18 @@ $messages['sk'] = array(
 	'cleanchanges-showuserlinks' => 'Zobrazovať používateľské odkazy',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'cleanchanges-changerightslink' => 'spremeni skupine',
+	'cleanchanges-desc' => 'Bolj strjen prikaz [[Special:RecentChanges|seznama zadnjih sprememb]]',
+	'cleanchanges-language' => 'Jezik:',
+	'cleanchanges-language-na' => 'Vse',
+	'cleanchanges-users' => 'Uporabniki (ločilo: |):',
+	'cleanchanges-showuserlinks' => 'Prikaži uporabniške povezave',
+);
+
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
