@@ -544,7 +544,7 @@ $messages['ko'] = array(
 	'cleanchanges-users' => '사용자 (구분선: |):',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -556,7 +556,7 @@ $messages['ksh'] = array(
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (Kernewek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
