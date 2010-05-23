@@ -19,6 +19,7 @@ $wgAutoloadClasses['NCL'] =  $dir . 'CleanChanges_body.php';
 
 /* Hook into code */
 $wgHooks['FetchChangesList'][] = 'NCL::hook';
+$wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
 
 /* Extension information */
 $wgExtensionCredits['other'][] = array(

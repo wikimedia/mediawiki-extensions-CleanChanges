@@ -28,8 +28,8 @@ class NCL extends EnhancedChangesList {
 		}
 
 		if ( $list instanceof NCL ) {
-			global $wgOut, $wgScriptPath;
-			$wgOut->addScriptFile( "$wgScriptPath/extensions/CleanChanges/cleanchanges.js" );
+			global $wgOut, $wgExtensionAssetsPath;
+			$wgOut->addScriptFile( "$wgExtensionAssetsPath/CleanChanges/cleanchanges.js" );
 		}
 
 		/* If some list was specified, stop processing */
@@ -37,13 +37,18 @@ class NCL extends EnhancedChangesList {
 
 	}
 
+	protected static $userinfo = array();
+
+	public static function addScriptVariables( &$vars ) {
+		$vars += self::$userinfo;
+		return true;
+	}
 
 	/**
 	 * String that comes between page details and the user details. By default
 	 * only larger space.
 	 */
 	protected $userSeparator = "\xc2\xa0 \xc2\xa0";
-	protected $userinfo = array();
 
 	/**
 	 * Text direction, true for ltr and false for rtl
@@ -69,11 +74,6 @@ class NCL extends EnhancedChangesList {
 	}
 
 	function endRecentChangesList() {
-	/*
-	 * Have to output the accumulated javascript stuff before any output is send.
-	 */
-		global $wgOut;
-		$wgOut->addScript( Skin::makeVariablesScript( $this->userinfo ) );
 		return parent::endRecentChangesList() . '</div>';
 	}
 
@@ -176,7 +176,7 @@ class NCL extends EnhancedChangesList {
 
 		$stuff = $this->userToolLinks( $rc->getAttribute( 'rc_user' ),
 			$rc->getAttribute( 'rc_user_text' ) );
-		$this->userinfo += $stuff[1];
+		self::$userinfo += $stuff[1];
 
 		$rc->_user = $this->skin->userLink( $rc->getAttribute( 'rc_user' ),
 			$rc->getAttribute( 'rc_user_text' ) );
