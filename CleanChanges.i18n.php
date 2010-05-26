@@ -52,6 +52,13 @@ $messages['am'] = array(
 	'cleanchanges-language-na' => 'ሁሉ',
 );
 
+/** Aragonese (Aragonés)
+ * @author Juanpabl
+ */
+$messages['an'] = array(
+	'cleanchanges-language-na' => 'Totz',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  * @author OsamaK
