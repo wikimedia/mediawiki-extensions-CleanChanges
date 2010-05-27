@@ -56,6 +56,7 @@ class NCL extends EnhancedChangesList {
 	protected $direction = true;
 
 	public function __construct( $skin ) {
+		wfLoadExtensionMessages( 'CleanChanges' );
 		global $wgLang;
 		parent::__construct( $skin );
 		$this->direction = !$wgLang->isRTL();
