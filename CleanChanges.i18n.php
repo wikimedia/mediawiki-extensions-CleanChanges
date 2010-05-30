@@ -171,6 +171,13 @@ $messages['ca'] = array(
 	'cleanchanges-users' => 'Usuaris (Separador: |):',
 );
 
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'cleanchanges-language-na' => 'Массо',
+);
+
 /** Czech (Česky)
  * @author Danny B.
  * @author Matěj Grabovský
