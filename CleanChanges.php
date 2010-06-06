@@ -4,7 +4,8 @@ if (!defined('MEDIAWIKI')) die();
  * An extension to show a nice compact changes list and few extra filters for
  * Special:RecentChanges.php
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  *
  * @author Niklas Laxström
  * @copyright Copyright © 2008, Niklas Laxström

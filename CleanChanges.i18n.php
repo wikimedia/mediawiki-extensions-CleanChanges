@@ -2,8 +2,9 @@
 /**
  * Internationalisation file for CleanChanges extension.
  *
- * @addtogroup Extensions
-*/
+ * @file
+ * @ingroup Extensions
+ */
 
 $messages = array();
 
