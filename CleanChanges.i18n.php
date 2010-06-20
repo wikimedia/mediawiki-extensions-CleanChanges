@@ -847,6 +847,14 @@ $messages['ru'] = array(
 	'cleanchanges-showuserlinks' => 'Показывать ссылки участников',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'cleanchanges-language' => 'Язык:',
+	'cleanchanges-language-na' => 'Вшыткы',
+);
+
 /** Yakut (Саха тыла)
  * @author HalanTul
  */
