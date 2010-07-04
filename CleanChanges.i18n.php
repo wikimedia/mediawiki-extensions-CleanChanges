@@ -240,6 +240,15 @@ $messages['dsb'] = array(
 	'cleanchanges-showuserlinks' => 'Wužywarske wótkaze pokazaś',
 );
 
+/** Ewe (Eʋegbe)
+ * @author Natsubee
+ */
+$messages['ee'] = array(
+	'cleanchanges-changerightslink' => 'ɖɔli hamewo',
+	'cleanchanges-language' => 'Gbe:',
+	'cleanchanges-language-na' => 'Wokatã',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
