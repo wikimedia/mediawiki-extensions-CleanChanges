@@ -294,9 +294,11 @@ $messages['es'] = array(
  */
 $messages['et'] = array(
 	'cleanchanges-changerightslink' => 'muuda gruppe',
+	'cleanchanges-desc' => 'Kompaktsem ülevaade [[Special:RecentChanges|viimastest muudatustest]]',
 	'cleanchanges-language' => 'Keel:',
 	'cleanchanges-language-na' => 'Kõik',
 	'cleanchanges-users' => 'Kasutajad (erald:&nbsp;|):',
+	'cleanchanges-showuserlinks' => 'Näita kasutajalinke',
 );
 
 /** Basque (Euskara)
