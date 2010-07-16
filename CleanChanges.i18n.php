@@ -786,7 +786,7 @@ $messages['ps'] = array(
 	'cleanchanges-desc' => 'د [[Special:RecentChanges|وروستي بدلونونو لړليک]] په ډېره وړوکې بڼه ښکاره کوي.',
 	'cleanchanges-language' => 'ژبه:',
 	'cleanchanges-language-na' => 'ټول',
-	'cleanchanges-users' => 'کارن (Sep: |):',
+	'cleanchanges-users' => 'کارن (بېلول: |):',
 	'cleanchanges-showuserlinks' => 'د کارن تړنې ښکاره کول',
 );
 
