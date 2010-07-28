@@ -36,7 +36,7 @@ class CCFilters {
 		return true;
 	}
 
-	public static function trailer( &$conds, &$tables, &$join_conds, &$opts ) {
+	public static function trailer( &$conds, &$tables, &$join_conds, $opts ) {
 		global $wgRequest;
 		$opts->add( 'trailer', '' );
 		$trailer = $wgRequest->getVal( 'trailer' );
@@ -49,7 +49,7 @@ class CCFilters {
 		return true;
 	}
 
-	public static function trailerForm( &$items, &$opts ) {
+	public static function trailerForm( &$items, $opts ) {
 		wfLoadExtensionMessages( 'CleanChanges' );
 
 		$opts->consumeValue( 'trailer' );
