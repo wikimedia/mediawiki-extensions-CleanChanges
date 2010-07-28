@@ -499,6 +499,13 @@ $messages['id'] = array(
 	'cleanchanges-showuserlinks' => 'Tunjukkan pranala pengguna',
 );
 
+/** Igbo (Igbo)
+ * @author Ukabia
+ */
+$messages['ig'] = array(
+	'cleanchanges-language-na' => 'Nke nílé',
+);
+
 /** Italian (Italiano)
  * @author BrokenArrow
  * @author Darth Kule
