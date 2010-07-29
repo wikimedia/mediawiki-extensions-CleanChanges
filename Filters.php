@@ -43,7 +43,7 @@ class CCFilters {
 		if ( $trailer === null ) return true;
 
 		$dbr = wfGetDB( DB_SLAVE );
-		$conds[] = 'rc_title LIKE \'%%' . $dbr->escapeLike( $trailer ) . '\'';
+		$conds[] = 'rc_title ' . $dbr->buildLike( $dbr->anyString(), $trailer );
 		$opts->setValue( 'trailer', $trailer );
 
 		return true;
