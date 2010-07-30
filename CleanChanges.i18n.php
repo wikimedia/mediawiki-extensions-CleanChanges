@@ -833,10 +833,11 @@ $messages['rif'] = array(
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Minisarm
  */
 $messages['ro'] = array(
 	'cleanchanges-language' => 'Limbă:',
-	'cleanchanges-users' => 'Utilizatori (Sep: |):',
+	'cleanchanges-users' => 'Utilizatori (sep. prin |):',
 );
 
 /** Tarandíne (Tarandíne)
