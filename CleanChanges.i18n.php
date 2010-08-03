@@ -506,7 +506,7 @@ $messages['ig'] = array(
 	'cleanchanges-changerightslink' => 'gbánwe ọtú',
 	'cleanchanges-desc' => 'Nke ílé gí dí ntà nke [[Special:RecentChanges|ndétu ihe gbanwere na ógè nso]]',
 	'cleanchanges-language' => 'Asụsụ:',
-	'cleanchanges-language-na' => 'Nke nílé',
+	'cleanchanges-language-na' => 'Haníle',
 	'cleanchanges-users' => "Ọ'bànifé (Sep: |):",
 	'cleanchanges-showuserlinks' => "Zí jikodo ọ'bànifé",
 );
