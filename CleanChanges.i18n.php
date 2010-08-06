@@ -408,6 +408,11 @@ $messages['gv'] = array(
 	'cleanchanges-language' => 'Çhengey:',
 );
 
+/** Hausa (هَوُسَ) */
+$messages['ha'] = array(
+	'cleanchanges-language-na' => 'Duka',
+);
+
 /** Hawaiian (Hawai`i)
  * @author Kalani
  */
