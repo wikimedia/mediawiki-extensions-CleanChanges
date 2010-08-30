@@ -612,7 +612,7 @@ $messages['kw'] = array(
  */
 $messages['lb'] = array(
 	'cleanchanges-changerightslink' => "ännert d'Gruppen",
-	'cleanchanges-desc' => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt uweisen',
+	'cleanchanges-desc' => '[[Special:RecentChanges|Lëscht vun de rezenten Ännerunge]] méi kompakt weisen',
 	'cleanchanges-language' => 'Sprooch:',
 	'cleanchanges-language-na' => 'All',
 	'cleanchanges-users' => 'Benotzer (Sep: |):',
