@@ -1171,6 +1171,7 @@ $messages['zh-hans'] = array(
 	'cleanchanges-changerightslink' => '更改群组',
 	'cleanchanges-desc' => '更简洁的显示[[Special:RecentChanges|最近更改清单]]',
 	'cleanchanges-language' => '语言：',
+	'cleanchanges-language-na' => '全部',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
