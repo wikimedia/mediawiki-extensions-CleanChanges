@@ -876,7 +876,7 @@ $messages['ru'] = array(
 	'cleanchanges-showuserlinks' => 'Показывать ссылки участников',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
