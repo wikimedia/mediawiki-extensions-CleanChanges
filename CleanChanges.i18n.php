@@ -217,11 +217,12 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Raimond Spekking
  */
 $messages['de'] = array(
 	'cleanchanges-changerightslink' => 'Gruppen ändern',
-	'cleanchanges-desc' => 'Kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
+	'cleanchanges-desc' => 'Ermöglicht eine kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
 	'cleanchanges-language' => 'Sprache:',
 	'cleanchanges-language-na' => 'alle',
 	'cleanchanges-users' => 'Benutzer (Trennzeichen: |):',
