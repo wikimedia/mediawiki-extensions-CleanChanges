@@ -992,6 +992,14 @@ $messages['szl'] = array(
 	'cleanchanges-language-na' => 'Wšyjske',
 );
 
+/** Tamil (தமிழ்)
+ * @author TRYPPN
+ */
+$messages['ta'] = array(
+	'cleanchanges-language' => 'மொழி:',
+	'cleanchanges-language-na' => 'அனைத்தும்',
+);
+
 /** Telugu (తెలుగు)
  * @author Kiranmayee
  * @author Veeven
