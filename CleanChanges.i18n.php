@@ -1173,6 +1173,7 @@ $messages['yi'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Chenxiaoqino
  * @author Chenzw
  * @author Liangent
  */
@@ -1181,6 +1182,8 @@ $messages['zh-hans'] = array(
 	'cleanchanges-desc' => '更简洁的显示[[Special:RecentChanges|最近更改清单]]',
 	'cleanchanges-language' => '语言：',
 	'cleanchanges-language-na' => '全部',
+	'cleanchanges-users' => '用户 (Sep: |):',
+	'cleanchanges-showuserlinks' => '显示用户链接',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
