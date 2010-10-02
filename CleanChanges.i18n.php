@@ -342,6 +342,17 @@ $messages['fr'] = array(
 	'cleanchanges-showuserlinks' => 'Afficher les liens de cet utilisateur',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'cleanchanges-changerightslink' => 'changiér les tropes',
+	'cleanchanges-language' => 'Lengoua :',
+	'cleanchanges-language-na' => 'Tôs',
+	'cleanchanges-users' => 'Utilisators (sèp. per |) :',
+	'cleanchanges-showuserlinks' => 'Fâre vêre los lims a l’utilisator',
+);
+
 /** Western Frisian (Frysk)
  * @author SK-luuut
  * @author Snakesteuben
