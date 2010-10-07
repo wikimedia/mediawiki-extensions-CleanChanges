@@ -1009,6 +1009,7 @@ $messages['szl'] = array(
 $messages['ta'] = array(
 	'cleanchanges-language' => 'மொழி:',
 	'cleanchanges-language-na' => 'அனைத்தும்',
+	'cleanchanges-users' => 'பயனர்கள் (Sep: |):',
 	'cleanchanges-showuserlinks' => 'பயனரின் இணைப்புக்களைக் காட்டவும்',
 );
 
