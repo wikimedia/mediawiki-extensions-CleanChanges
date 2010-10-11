@@ -1007,6 +1007,7 @@ $messages['szl'] = array(
  * @author TRYPPN
  */
 $messages['ta'] = array(
+	'cleanchanges-changerightslink' => 'குழுக்களை மாற்று',
 	'cleanchanges-desc' => '[[Special:RecentChanges|அண்மைய மாற்றங்களின் பட்டியல்]] மிகச் சுருக்கமாக காட்டப்பட்டுள்ளது',
 	'cleanchanges-language' => 'மொழி:',
 	'cleanchanges-language-na' => 'அனைத்தும்',
