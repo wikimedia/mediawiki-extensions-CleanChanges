@@ -588,6 +588,7 @@ $messages['km'] = array(
  */
 $messages['kn'] = array(
 	'cleanchanges-language' => 'ಭಾಷೆ:',
+	'cleanchanges-language-na' => 'ಎಲ್ಲಾ',
 );
 
 /** Korean (한국어)
@@ -856,10 +857,13 @@ $messages['rif'] = array(
 /** Romanian (Română)
  * @author KlaudiuMihaila
  * @author Minisarm
+ * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'cleanchanges-changerightslink' => 'schimbă grupurile',
 	'cleanchanges-language' => 'Limbă:',
 	'cleanchanges-users' => 'Utilizatori (sep. prin |):',
+	'cleanchanges-showuserlinks' => 'Arată legăturile utilizatorului',
 );
 
 /** Tarandíne (Tarandíne)
@@ -906,6 +910,13 @@ $messages['sah'] = array(
 	'cleanchanges-language-na' => 'Бары',
 	'cleanchanges-users' => 'Кыттааччылар (араарыы: |):',
 	'cleanchanges-showuserlinks' => 'Кыттааччылар сигэлэрин көрдөр',
+);
+
+/** Sicilian (Sicilianu)
+ * @author Aushulz
+ */
+$messages['scn'] = array(
+	'cleanchanges-language-na' => 'Tutti',
 );
 
 /** Slovak (Slovenčina)
