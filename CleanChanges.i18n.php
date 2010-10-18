@@ -672,6 +672,13 @@ $messages['ml'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]] ഒതുക്കമുള്ള പ്രദർശനം',
 );
 
+/** Mongolian (Монгол)
+ * @author Chinneeb
+ */
+$messages['mn'] = array(
+	'cleanchanges-language' => 'Хэл:',
+);
+
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
@@ -862,6 +869,7 @@ $messages['rif'] = array(
 $messages['ro'] = array(
 	'cleanchanges-changerightslink' => 'schimbă grupurile',
 	'cleanchanges-language' => 'Limbă:',
+	'cleanchanges-language-na' => 'Toate',
 	'cleanchanges-users' => 'Utilizatori (sep. prin |):',
 	'cleanchanges-showuserlinks' => 'Arată legăturile utilizatorului',
 );
