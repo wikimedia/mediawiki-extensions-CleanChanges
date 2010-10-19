@@ -677,6 +677,7 @@ $messages['ml'] = array(
  */
 $messages['mn'] = array(
 	'cleanchanges-language' => 'Хэл:',
+	'cleanchanges-language-na' => 'Бүгдийг',
 );
 
 /** Marathi (मराठी)
