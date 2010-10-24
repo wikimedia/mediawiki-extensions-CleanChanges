@@ -670,6 +670,10 @@ $messages['mk'] = array(
 $messages['ml'] = array(
 	'cleanchanges-changerightslink' => 'ഗ്രൂപ്പുകൾ മാറ്റുക',
 	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]] ഒതുക്കമുള്ള പ്രദർശനം',
+	'cleanchanges-language' => 'ഭാഷ:',
+	'cleanchanges-language-na' => 'എല്ലാം',
+	'cleanchanges-users' => 'ഉപയോക്താക്കൾ (Sep: |)',
+	'cleanchanges-showuserlinks' => 'ഉപയോക്തൃ കണ്ണികൾ പ്രദർശിപ്പിക്കുക',
 );
 
 /** Mongolian (Монгол)
