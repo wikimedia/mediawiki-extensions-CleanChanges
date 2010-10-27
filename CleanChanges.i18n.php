@@ -103,6 +103,18 @@ $messages['ast'] = array(
 	'cleanchanges-language' => 'Llingua:',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'cleanchanges-changerightslink' => 'төркөмдәрҙе үҙгәртергә',
+	'cleanchanges-desc' => '[[Special:RecentChanges|Һуңғы үҙгәртеүҙәр исемлегенең]] ҡыҫылған күренеше',
+	'cleanchanges-language' => 'Тел:',
+	'cleanchanges-language-na' => 'Барыһы ла',
+	'cleanchanges-users' => 'Ҡатнашыусылар (Бүлгес: |):',
+	'cleanchanges-showuserlinks' => 'Ҡатнашыусы һылтанмаларын күрһәтергә',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
