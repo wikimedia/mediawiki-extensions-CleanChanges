@@ -75,8 +75,10 @@ $messages['ar'] = array(
 
 /** Aramaic (ܐܪܡܝܐ)
  * @author Basharh
+ * @author Michaelovic
  */
 $messages['arc'] = array(
+	'cleanchanges-desc' => 'More compact display of the [[Special:RecentChanges|recent changes list]]',
 	'cleanchanges-language-na' => 'ܟܠ',
 	'cleanchanges-showuserlinks' => 'ܚܘܝ ܐܣܘܪ̈ܐ ܕܡܦܠܚܢܐ',
 );
