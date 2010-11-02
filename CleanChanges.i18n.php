@@ -78,7 +78,7 @@ $messages['ar'] = array(
  * @author Michaelovic
  */
 $messages['arc'] = array(
-	'cleanchanges-desc' => 'More compact display of the [[Special:RecentChanges|recent changes list]]',
+	'cleanchanges-desc' => '[[Special:RecentChanges|ܫܘܚܠܦ̈ܐ ܚܕ̈ܬܐ]]ܚܙܝܬܐ ܙܥܘܪܬܐ ܕ',
 	'cleanchanges-language-na' => 'ܟܠ',
 	'cleanchanges-showuserlinks' => 'ܚܘܝ ܐܣܘܪ̈ܐ ܕܡܦܠܚܢܐ',
 );
