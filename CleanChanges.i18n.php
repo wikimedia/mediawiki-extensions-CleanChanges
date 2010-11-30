@@ -329,6 +329,13 @@ $messages['eu'] = array(
 	'cleanchanges-showuserlinks' => 'Erabiltzaileen estekak erakutsi',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'cleanchanges-language-na' => 'همه',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Vililikku
