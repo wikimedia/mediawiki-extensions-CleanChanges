@@ -26,7 +26,6 @@ class CCFilters {
 	}
 
 	public static function userForm( &$items, $opts ) {
-		wfLoadExtensionMessages( 'CleanChanges' );
 		$opts->consumeValue( 'users' );
 		global $wgRequest;
 
@@ -50,8 +49,6 @@ class CCFilters {
 	}
 
 	public static function trailerForm( &$items, $opts ) {
-		wfLoadExtensionMessages( 'CleanChanges' );
-
 		$opts->consumeValue( 'trailer' );
 
 		global $wgRequest;
