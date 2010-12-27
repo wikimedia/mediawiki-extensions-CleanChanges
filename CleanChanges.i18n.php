@@ -176,6 +176,7 @@ $messages['bs'] = array(
 );
 
 /** Catalan (Català)
+ * @author El libre
  * @author SMP
  * @author Solde
  */
@@ -184,6 +185,7 @@ $messages['ca'] = array(
 	'cleanchanges-language' => 'Idioma:',
 	'cleanchanges-language-na' => 'Tot',
 	'cleanchanges-users' => 'Usuaris (Separador: |):',
+	'cleanchanges-showuserlinks' => "Mostra els enllaços de l'usuari/a",
 );
 
 /** Chechen (Нохчийн)
