@@ -667,6 +667,13 @@ $messages['li'] = array(
 	'cleanchanges-showuserlinks' => 'Gebroekersverwiezinge betrachte',
 );
 
+/** Latgalian (Latgaļu)
+ * @author Dark Eagle
+ */
+$messages['ltg'] = array(
+	'cleanchanges-language-na' => 'Vysi',
+);
+
 /** Eastern Mari (Олык Марий)
  * @author Сай
  */
