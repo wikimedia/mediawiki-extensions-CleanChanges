@@ -1258,10 +1258,14 @@ $messages['zh-hans'] = array(
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Alexsh
  * @author Liangent
+ * @author Mark85296341
  */
 $messages['zh-hant'] = array(
 	'cleanchanges-changerightslink' => '更改群組',
 	'cleanchanges-desc' => '更簡潔的顯示[[Special:RecentChanges|最近更改清單]]',
 	'cleanchanges-language' => '語言：',
+	'cleanchanges-language-na' => '全部',
+	'cleanchanges-users' => '用戶 (Sep: |):',
+	'cleanchanges-showuserlinks' => '顯示用戶連結',
 );
 
