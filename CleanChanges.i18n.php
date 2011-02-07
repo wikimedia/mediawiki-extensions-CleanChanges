@@ -635,6 +635,15 @@ $messages['ksh'] = array(
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'cleanchanges-language' => 'Ziman:',
+	'cleanchanges-language-na' => 'Hemû',
+	'cleanchanges-showuserlinks' => 'Lînkên bikarhêneran nîşan bide',
+);
+
 /** Cornish (Kernowek)
  * @author Kw-Moon
  */
