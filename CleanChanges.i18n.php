@@ -641,6 +641,7 @@ $messages['ksh'] = array(
 $messages['ku-latn'] = array(
 	'cleanchanges-language' => 'Ziman:',
 	'cleanchanges-language-na' => 'Hemû',
+	'cleanchanges-users' => 'Bikarhêner (Sep: |):',
 	'cleanchanges-showuserlinks' => 'Lînkên bikarhêneran nîşan bide',
 );
 
