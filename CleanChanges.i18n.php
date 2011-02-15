@@ -762,10 +762,13 @@ $messages['myv'] = array(
 
 /** Nahuatl (Nāhuatl)
  * @author Fluence
+ * @author Teòtlalili
  */
 $messages['nah'] = array(
-	'cleanchanges-language' => 'Tlahtōlli:',
+	'cleanchanges-changerightslink' => 'tlatlasèntlàlìlpátlalòs',
+	'cleanchanges-language' => 'Tlâtòlli:',
 	'cleanchanges-language-na' => 'Mochīntīn',
+	'cleanchanges-users' => 'Motekìuhtiànimë ( |):',
 );
 
 /** Dutch (Nederlands)
