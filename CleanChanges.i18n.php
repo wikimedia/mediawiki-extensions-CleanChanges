@@ -765,10 +765,12 @@ $messages['myv'] = array(
  * @author Teòtlalili
  */
 $messages['nah'] = array(
-	'cleanchanges-changerightslink' => 'tlatlasèntlàlìlpátlalòs',
+	'cleanchanges-changerightslink' => 'tlátlasèntlàlìlpátlalòs',
+	'cleanchanges-desc' => 'Monèxtìs okachi tepitòn in [[Special:RecentChanges|welok tlapátlalli pàmitl]]',
 	'cleanchanges-language' => 'Tlâtòlli:',
-	'cleanchanges-language-na' => 'Mochīntīn',
-	'cleanchanges-users' => 'Motekìuhtiànimë ( |):',
+	'cleanchanges-language-na' => 'Mochtìn',
+	'cleanchanges-users' => 'Motekìuhtiànimë (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Mà monèxti ìnetzòwìlwàn in motekìuhtiàni',
 );
 
 /** Dutch (Nederlands)
