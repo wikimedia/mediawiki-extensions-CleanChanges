@@ -432,9 +432,8 @@ class NCL extends EnhancedChangesList {
 	 * Enhanced user tool links, with javascript functionality.
 	 */
 	public function userToolLinks( $userId, $userText ) {
-		global $wgUser, $wgDisableAnonTalk, $wgSysopUserBans;
+		global $wgUser, $wgDisableAnonTalk;
 		$talkable = !( $wgDisableAnonTalk && 0 == $userId );
-		$blockable = ( $wgSysopUserBans || 0 == $userId );
 
 		/*
 		 * Assign each different user a running id. This is used to show user tool
@@ -483,7 +482,7 @@ class NCL extends EnhancedChangesList {
 			$items[] = $this->skin->makeKnownLinkObj( $targetPage,
 				wfMsgHtml( 'contribslink' ) );
 		}
-		if( $blockable && $wgUser->isAllowed( 'block' ) ) {
+		if( $wgUser->isAllowed( 'block' ) ) {
 			$items[] = $this->skin->blockLink( $userId, $userText );
 		}
 		if( $userId ) {
