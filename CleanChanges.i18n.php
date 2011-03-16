@@ -182,6 +182,7 @@ $messages['bs'] = array(
  */
 $messages['ca'] = array(
 	'cleanchanges-changerightslink' => 'canvia els grups',
+	'cleanchanges-desc' => 'Versió més compacta de la [[Special:RecentChanges|llista de canvis recents]]',
 	'cleanchanges-language' => 'Idioma:',
 	'cleanchanges-language-na' => 'Tot',
 	'cleanchanges-users' => 'Usuaris (Separador: |):',
