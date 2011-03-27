@@ -98,11 +98,15 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
 	'cleanchanges-changerightslink' => 'camudar grupos',
 	'cleanchanges-desc' => 'Vísualización más compacta de la [[Special:RecentChanges|llista de cambeos recientes]]',
 	'cleanchanges-language' => 'Llingua:',
+	'cleanchanges-language-na' => 'Toos',
+	'cleanchanges-users' => 'Usuarios (Sep: |):',
+	'cleanchanges-showuserlinks' => "Amosar enllaces d'usuariu",
 );
 
 /** Bashkir (Башҡортса)
