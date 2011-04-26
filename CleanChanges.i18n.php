@@ -148,11 +148,16 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Wikitanvir
  * @author Zaheen
  */
 $messages['bn'] = array(
 	'cleanchanges-changerightslink' => 'দল পরিবর্তন করুন',
 	'cleanchanges-desc' => '[[Special:RecentChanges|সাম্প্রতিক পরিবর্তনসমূহের তালিকার]] আরও সংহত প্রদর্শন',
+	'cleanchanges-language' => 'ভাষা:',
+	'cleanchanges-language-na' => 'সকল',
+	'cleanchanges-users' => 'ব্যবহারকারী (পার্থক্যকারী: |):',
+	'cleanchanges-showuserlinks' => 'ব্যবহারকারী লিংকগুলো দেখাও',
 );
 
 /** Breton (Brezhoneg)
