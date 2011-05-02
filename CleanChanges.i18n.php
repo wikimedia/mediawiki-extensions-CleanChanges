@@ -109,6 +109,13 @@ $messages['ast'] = array(
 	'cleanchanges-showuserlinks' => "Amosar enllaces d'usuariu",
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Cekli829
+ */
+$messages['az'] = array(
+	'cleanchanges-language-na' => 'Hamısı',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  */
