@@ -839,6 +839,14 @@ $messages['oc'] = array(
 	'cleanchanges-showuserlinks' => "Afichar los ligams d'aqueste utilizaire",
 );
 
+/** Oriya (ଓଡ଼ିଆ)
+ * @author Odisha1
+ */
+$messages['or'] = array(
+	'cleanchanges-language' => 'ଭାଷା:',
+	'cleanchanges-language-na' => 'ସବୁ',
+);
+
 /** Punjabi (ਪੰਜਾਬੀ)
  * @author Gman124
  */
