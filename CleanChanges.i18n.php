@@ -753,10 +753,13 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Emrrans
  */
 $messages['ms'] = array(
+	'cleanchanges-changerightslink' => 'tukar kumpulan',
 	'cleanchanges-language' => 'Bahasa:',
+	'cleanchanges-language-na' => 'Semua',
 	'cleanchanges-users' => 'Pengguna (Sep: |):',
 );
 
