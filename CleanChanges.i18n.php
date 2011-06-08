@@ -850,6 +850,13 @@ $messages['or'] = array(
 	'cleanchanges-language-na' => 'ସବୁ',
 );
 
+/** Ossetic (Иронау)
+ * @author Amikeco
+ */
+$messages['os'] = array(
+	'cleanchanges-language' => 'Æвзаг:',
+);
+
 /** Punjabi (ਪੰਜਾਬੀ)
  * @author Gman124
  */
