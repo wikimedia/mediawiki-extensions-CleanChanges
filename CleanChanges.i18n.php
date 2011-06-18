@@ -694,6 +694,15 @@ $messages['li'] = array(
 	'cleanchanges-showuserlinks' => 'Gebroekersverwiezinge betrachte',
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Eitvys200
+ */
+$messages['lt'] = array(
+	'cleanchanges-changerightslink' => 'pakeisti grupes',
+	'cleanchanges-language' => 'Kalba:',
+	'cleanchanges-language-na' => 'Visi',
+);
+
 /** Latgalian (Latgaļu)
  * @author Dark Eagle
  */
