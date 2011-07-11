@@ -767,9 +767,11 @@ $messages['mr'] = array(
  */
 $messages['ms'] = array(
 	'cleanchanges-changerightslink' => 'tukar kumpulan',
+	'cleanchanges-desc' => 'Pemaparan [[Special:RecentChanges|senarai perubahan terkini]] yang lebih padat',
 	'cleanchanges-language' => 'Bahasa:',
 	'cleanchanges-language-na' => 'Semua',
 	'cleanchanges-users' => 'Pengguna (Sep: |):',
+	'cleanchanges-showuserlinks' => 'Tunjukkan pautan pengguna',
 );
 
 /** Maltese (Malti)
