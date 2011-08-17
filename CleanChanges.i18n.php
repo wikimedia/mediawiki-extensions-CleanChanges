@@ -861,7 +861,7 @@ $messages['or'] = array(
 	'cleanchanges-language-na' => 'ସବୁ',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -1004,7 +1004,7 @@ $messages['rue'] = array(
 	'cleanchanges-language-na' => 'Вшыткы',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
