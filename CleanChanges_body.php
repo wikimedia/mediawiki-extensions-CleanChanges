@@ -108,11 +108,6 @@ class NCL extends EnhancedChangesList {
 		}
 	}
 
-	protected function getLogAction( $rc ) {
-		$formatter = LogFormatter::newFromRow( $rc->mAttribs );
-		return $formatter->getActionText();
-	}
-
 	/**
 	 * Format a line for enhanced recentchange (aka with javascript and block of lines).
 	 */
@@ -345,7 +340,7 @@ class NCL extends EnhancedChangesList {
 			$items[] = $this->userSeparator;
 
 			if ( $this->isLog( $rcObj ) ) {
-				$items[] = $this->getLogAction( $rcObj );
+				$items[] = $this->insertLogEntry( $rcObj );
 			} else {
 				$items[] = $rcObj->_user;
 				$items[] = $rcObj->_userInfo;
@@ -387,7 +382,7 @@ class NCL extends EnhancedChangesList {
 		$items[] = $this->userSeparator;
 
 		if ( $this->isLog( $rcObj ) ) {
-			$items[] = $this->getLogAction( $rcObj );
+			$items[] = $this->insertLogEntry( $rcObj );
 		} else {
 			$items[] = $rcObj->_user;
 			$items[] = $rcObj->_userInfo;
