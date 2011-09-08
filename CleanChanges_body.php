@@ -109,29 +109,8 @@ class NCL extends EnhancedChangesList {
 	}
 
 	protected function getLogAction( $rc ) {
-		global $wgUser;
-
-		$priviledged = $wgUser->isAllowed('deleterevision');
-		$deleted = $this->isDeleted($rc, LogPage::DELETED_ACTION);
-
-		if ( $deleted && !$priviledged ) {
-			return $this->XMLwrapper( 'history-deleted', wfMsg('rev-deleted-event') );
-		} else {
-			$action = LogPage::actionText(
-				$rc->getAttribute('rc_log_type'),
-				$rc->getAttribute('rc_log_action'),
-				$rc->getTitle(),
-				$this->skin,
-				LogPage::extractParams( $rc->getAttribute('rc_params') ),
-				true,
-				true
-			);
-			if ( $deleted ) {
-				$class = array( 'class' => 'history-deleted' );
-				$action = Xml::tags( 'span', $class, $action );
-			}
-			return $action;
-		}
+		$formatter = LogFormatter::newFromRow( $rc->mAttribs );
+		return $formatter->getActionText();
 	}
 
 	/**
@@ -181,7 +160,9 @@ class NCL extends EnhancedChangesList {
 			$rc->getAttribute( 'rc_user_text' ) );
 		$rc->_userInfo = $stuff[0];
 
-		$rc->_comment = $this->getComment( $rc );
+		if ( !$this->isLog( $rc ) ) {
+			$rc->_comment = $this->getComment( $rc );
+		}
 
 		$rc->_watching = $this->numberofWatchingusers( $baseRC->numberofWatchingusers );
 
@@ -362,9 +343,14 @@ class NCL extends EnhancedChangesList {
 			}
 
 			$items[] = $this->userSeparator;
-			$items[] = $rcObj->_user;
-			$items[] = $rcObj->_userInfo;
-			$items[] = $rcObj->_comment;
+
+			if ( $this->isLog( $rcObj ) ) {
+				$items[] = $this->getLogAction( $rcObj );
+			} else {
+				$items[] = $rcObj->_user;
+				$items[] = $rcObj->_userInfo;
+				$items[] = $rcObj->_comment;
+			}
 
 			$lines .= '<div>' . implode( " {$this->dir}", $items ) . "</div>\n";
 		}
@@ -399,10 +385,15 @@ class NCL extends EnhancedChangesList {
 		}
 
 		$items[] = $this->userSeparator;
-		$items[] = $rcObj->_user;
-		$items[] = $rcObj->_userInfo;
-		$items[] = $rcObj->_comment;
-		$items[] = $rcObj->_watching;
+
+		if ( $this->isLog( $rcObj ) ) {
+			$items[] = $this->getLogAction( $rcObj );
+		} else {
+			$items[] = $rcObj->_user;
+			$items[] = $rcObj->_userInfo;
+			$items[] = $rcObj->_comment;
+			$items[] = $rcObj->_watching;
+		}
 
 		return '<div>' . implode( " {$this->dir}", $items ) . "</div>\n";
 
@@ -412,8 +403,6 @@ class NCL extends EnhancedChangesList {
 		global $wgUser;
 		$comment = $rc->getAttribute( 'rc_comment' );
 		$action = '';
-		if ( $this->isLog($rc) ) $action = $this->getLogAction( $rc );
-
 		if ( $comment === '' ) {
 			return $action;
 		} elseif ( $this->isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
