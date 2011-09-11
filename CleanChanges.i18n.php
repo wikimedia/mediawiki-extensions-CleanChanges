@@ -1000,8 +1000,11 @@ $messages['ru'] = array(
  * @author Gazeb
  */
 $messages['rue'] = array(
+	'cleanchanges-changerightslink' => 'змінити ґрупы',
 	'cleanchanges-language' => 'Язык:',
 	'cleanchanges-language-na' => 'Вшыткы',
+	'cleanchanges-users' => 'Хоснователї (Оддїлёвач |):',
+	'cleanchanges-showuserlinks' => 'Указати одказы хоснователя',
 );
 
 /** Sakha (Саха тыла)
