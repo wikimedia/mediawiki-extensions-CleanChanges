@@ -79,6 +79,7 @@ $messages['ar'] = array(
  */
 $messages['arc'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|ܫܘܚܠܦ̈ܐ ܚܕ̈ܬܐ]]ܚܙܝܬܐ ܙܥܘܪܬܐ ܕ',
+	'cleanchanges-language' => 'ܠܫܢܐ:',
 	'cleanchanges-language-na' => 'ܟܠ',
 	'cleanchanges-showuserlinks' => 'ܚܘܝ ܐܣܘܪ̈ܐ ܕܡܦܠܚܢܐ',
 );
