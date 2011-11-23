@@ -653,7 +653,7 @@ $messages['ksh'] = array(
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -1051,7 +1051,7 @@ $messages['sl'] = array(
 	'cleanchanges-showuserlinks' => 'Prikaži uporabniške povezave',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -1065,7 +1065,7 @@ $messages['sr-ec'] = array(
 	'cleanchanges-showuserlinks' => 'Покажи корисничке линкове',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1156,7 +1156,7 @@ $messages['tet'] = array(
 	'cleanchanges-language-na' => 'Hotu',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1165,7 +1165,7 @@ $messages['tg-cyrl'] = array(
 	'cleanchanges-language-na' => 'Ҳама',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1214,7 +1214,7 @@ $messages['tr'] = array(
 	'cleanchanges-showuserlinks' => 'Kullanıcı bağlantılarını göster',
 );
 
-/** Tatar (Cyrillic) (Татарча/Tatarça (Cyrillic))
+/** Tatar (Cyrillic script) (Татарча)
  * @author Рашат Якупов
  */
 $messages['tt-cyrl'] = array(
@@ -1226,14 +1226,14 @@ $messages['tt-cyrl'] = array(
 	'cleanchanges-showuserlinks' => 'Катнашучылар сылтамаларын күрсәтү',
 );
 
-/** ئۇيغۇرچە (ئۇيغۇرچە)
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
  * @author Alfredie
  */
 $messages['ug-arab'] = array(
 	'cleanchanges-language' => 'تىل:',
 );
 
-/** Uighur (Latin) (ئۇيغۇرچە / Uyghurche‎ (Latin))
+/** Uyghur (Latin script) (Uyghurche‎)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
