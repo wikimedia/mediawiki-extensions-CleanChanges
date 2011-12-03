@@ -391,7 +391,7 @@ $messages['frp'] = array(
 	'cleanchanges-language' => 'Lengoua :',
 	'cleanchanges-language-na' => 'Tôs',
 	'cleanchanges-users' => 'Utilisators (sèp. per |) :',
-	'cleanchanges-showuserlinks' => 'Fâre vêre los lims a l’utilisator',
+	'cleanchanges-showuserlinks' => 'Fâre vêre los lims a l’usanciér',
 );
 
 /** Western Frisian (Frysk)
