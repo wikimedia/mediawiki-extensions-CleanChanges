@@ -819,13 +819,14 @@ $messages['nl'] = array(
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'cleanchanges-changerightslink' => 'endra grupper',
 	'cleanchanges-desc' => 'Meir kompakt vising av [[Special:RecentChanges|siste endringar]]',
 	'cleanchanges-language' => 'Språk:',
 	'cleanchanges-language-na' => 'Alle',
-	'cleanchanges-users' => "Brukarar (separer med '|'):",
+	'cleanchanges-users' => 'Brukarar (separer med |):',
 	'cleanchanges-showuserlinks' => 'Vis brukarlenkjer',
 );
 
