@@ -29,7 +29,7 @@ $wgExtensionCredits['other'][] = array(
 	'version' => '2008-10-16',
 	'author' => 'Niklas Laxström',
 	'descriptionmsg' => 'cleanchanges-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:CleanChanges',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:CleanChanges',
 );
 
 $wgCCUserFilter = true;
