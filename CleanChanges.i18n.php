@@ -702,6 +702,7 @@ $messages['lt'] = array(
 	'cleanchanges-changerightslink' => 'pakeisti grupes',
 	'cleanchanges-language' => 'Kalba:',
 	'cleanchanges-language-na' => 'Visi',
+	'cleanchanges-showuserlinks' => 'Rodyti vartotojo nuorodas',
 );
 
 /** Latgalian (Latgaļu)
@@ -805,6 +806,19 @@ $messages['nah'] = array(
 	'cleanchanges-showuserlinks' => 'Mà monèxti ìnetzòwìlwàn in motekìuhtiàni',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'cleanchanges-changerightslink' => 'endre grupper',
+	'cleanchanges-desc' => 'Mer kompakt visning av [[Special:RecentChanges|siste endringer]]',
+	'cleanchanges-language' => 'Språk:',
+	'cleanchanges-language-na' => 'Alle',
+	'cleanchanges-users' => 'Brukere (separer med |):',
+	'cleanchanges-showuserlinks' => 'Vis brukerlenker',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
@@ -828,19 +842,6 @@ $messages['nn'] = array(
 	'cleanchanges-language-na' => 'Alle',
 	'cleanchanges-users' => 'Brukarar (separer med |):',
 	'cleanchanges-showuserlinks' => 'Vis brukarlenkjer',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'cleanchanges-changerightslink' => 'endre grupper',
-	'cleanchanges-desc' => 'Mer kompakt visning av [[Special:RecentChanges|siste endringer]]',
-	'cleanchanges-language' => 'Språk:',
-	'cleanchanges-language-na' => 'Alle',
-	'cleanchanges-users' => 'Brukere (separer med |):',
-	'cleanchanges-showuserlinks' => 'Vis brukerlenker',
 );
 
 /** Occitan (Occitan)
@@ -1068,13 +1069,14 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  */
 $messages['sr-el'] = array(
 	'cleanchanges-changerightslink' => 'promeni grupe',
 	'cleanchanges-desc' => 'Kompaktniji prikaz spiska [[Special:RecentChanges|skorašnjih izmena]]',
 	'cleanchanges-language' => 'Jezik:',
 	'cleanchanges-language-na' => 'Sve',
-	'cleanchanges-users' => 'Korisnici (Razdv: |):',
+	'cleanchanges-users' => 'Korisnici (razdv. |):',
 	'cleanchanges-showuserlinks' => 'Pokaži korisničke linkove',
 );
 
