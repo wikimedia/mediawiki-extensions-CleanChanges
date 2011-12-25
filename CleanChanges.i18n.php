@@ -834,7 +834,7 @@ $messages['nn'] = array(
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'cleanchanges-changerightslink' => 'endre grupper',
 	'cleanchanges-desc' => 'Mer kompakt visning av [[Special:RecentChanges|siste endringer]]',
 	'cleanchanges-language' => 'Språk:',
