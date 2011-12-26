@@ -857,11 +857,13 @@ $messages['oc'] = array(
 );
 
 /** Oriya (ଓଡ଼ିଆ)
+ * @author Jnanaranjan Sahu
  * @author Odisha1
  */
 $messages['or'] = array(
 	'cleanchanges-language' => 'ଭାଷା:',
 	'cleanchanges-language-na' => 'ସବୁ',
+	'cleanchanges-showuserlinks' => 'ବ୍ୟବହାରକାରୀ ଲିଙ୍କ ଦେଖାନ୍ତୁ',
 );
 
 /** Ossetic (Ирон)
