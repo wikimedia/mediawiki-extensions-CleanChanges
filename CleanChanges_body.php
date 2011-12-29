@@ -77,35 +77,19 @@ class NCL extends EnhancedChangesList {
 	}
 
 	function isLog( $rc ) {
-		if ( $rc->getAttribute( 'rc_namespace ' ) == NS_SPECIAL ) {
-			return 1;
-		} elseif ( $rc->getAttribute( 'rc_type' ) == RC_LOG ) {
+		if ( $rc->getAttribute( 'rc_type' ) == RC_LOG ) {
 			return 2;
 		} else {
 			return 0;
 		}
 	}
 
-	function getLogTitle( $type, $rc ) {
-		if ( $type === 1 ) {
-			$title = $rc->getAttribute( 'rc_title' );
-			list( $specialName, $logtype ) = SpecialPage::resolveAliasWithSubpage( $title );
-
-			if ( $specialName === 'Log' ) {
-				$titleObj = $rc->getTitle();
-				$logname = LogPage::logName( $logtype );
-				return '(' . $this->skin->makeKnownLinkObj( $titleObj, $logname ) . ')';
-			} else {
-				throw new MWException( "Unknown special page name $specialName ($title). Log expected." );
-			}
-		} elseif ( $type === 2 ) {
-			$logtype = $rc->getAttribute( 'rc_log_type' );
-			$logname = LogPage::logName( $logtype );
-			$titleObj = SpecialPage::getTitleFor( 'Log', $logtype );
-			return '(' . $this->skin->makeKnownLinkObj( $titleObj, $logname ) . ')';
-		} else {
-			throw new MWException( 'Unknown type' );
-		}
+	function getLogTitle( $rc ) {
+		$logtype = $rc->getAttribute( 'rc_log_type' );
+		$logpage = new LogPage( $logtype );
+		$logname = $logpage->getName()->escaped();
+		$titleObj = SpecialPage::getTitleFor( 'Log', $logtype );
+		return '(' . $this->skin->makeKnownLinkObj( $titleObj, $logname ) . ')';
 	}
 
 	/**
@@ -130,7 +114,7 @@ class NCL extends EnhancedChangesList {
 
 		$logEntry = $this->isLog( $rc );
 		if( $logEntry ) {
-			$clink = $this->getLogTitle( $logEntry, $rc );
+			$clink = $this->getLogTitle( $rc );
 		} elseif( $rc->unpatrolled && $rc->getAttribute( 'rc_type' ) == RC_NEW ) {
 			# Unpatrolled new page, give rc_id in query
 			$clink = $this->skin->makeKnownLinkObj( $titleObj, '', "rcid={$rc_id}" );
@@ -175,7 +159,7 @@ class NCL extends EnhancedChangesList {
 		# Put accumulated information into the cache, for later display
 		# Page moves go on their own line
 		if ( $logEntry ) {
-			$secureName = $this->getLogTitle( $logEntry, $rc );
+			$secureName = $this->getLogTitle( $rc );
 		} else {
 			$secureName = $titleObj->getPrefixedDBkey();
 		}
