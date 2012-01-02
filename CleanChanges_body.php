@@ -28,8 +28,8 @@ class NCL extends EnhancedChangesList {
 		}
 
 		if ( $list instanceof NCL ) {
-			global $wgOut, $wgExtensionAssetsPath;
-			$wgOut->addScriptFile( "$wgExtensionAssetsPath/CleanChanges/cleanchanges.js" );
+			global $wgOut;
+			$wgOut->addModules( 'ext.cleanchanges' );
 		}
 
 		/* If some list was specified, stop processing */

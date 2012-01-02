@@ -50,3 +50,14 @@ function ccSetupFilters() {
 		$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
 	}
 }
+
+$resourcePaths = array(
+	'localBasePath' => dirname( __FILE__ ),
+	'remoteExtPath' => 'CleanChanges'
+);
+
+// Client-side resource modules
+$wgResourceModules['ext.cleanchanges'] = array(
+	'scripts' => 'cleanchanges.js',
+) + $resourcePaths;
+
