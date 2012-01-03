@@ -425,7 +425,7 @@ $messages['gl'] = array(
 	'cleanchanges-desc' => 'Unha mostra máis compacta da [[Special:RecentChanges|lista de cambios recentes]]',
 	'cleanchanges-language' => 'Lingua:',
 	'cleanchanges-language-na' => 'Todas',
-	'cleanchanges-users' => 'Usuarios (separados por: |):',
+	'cleanchanges-users' => 'Usuarios (separados por |):',
 	'cleanchanges-showuserlinks' => 'Mostrar as ligazóns de usuario',
 );
 
