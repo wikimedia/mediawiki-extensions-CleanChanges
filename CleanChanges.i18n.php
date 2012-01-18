@@ -263,6 +263,13 @@ $messages['de'] = array(
 	'cleanchanges-showuserlinks' => 'Zeige Benutzer-Links',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'cleanchanges-users' => 'Karberi (duri fi: |):',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
