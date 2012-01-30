@@ -8,7 +8,7 @@ if (!defined('MEDIAWIKI')) die();
  * @ingroup Extensions
  *
  * @author Niklas Laxström
- * @copyright Copyright © 2008, Niklas Laxström
+ * @copyright Copyright © 2008-2012, Niklas Laxström
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -26,7 +26,7 @@ $wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Clean Changes',
-	'version' => '2008-10-16',
+	'version' => '2012-01-30',
 	'author' => 'Niklas Laxström',
 	'descriptionmsg' => 'cleanchanges-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:CleanChanges',
