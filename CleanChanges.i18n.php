@@ -1073,7 +1073,7 @@ $messages['sr-ec'] = array(
 	'cleanchanges-language' => 'Језик:',
 	'cleanchanges-language-na' => 'Све',
 	'cleanchanges-users' => 'Корисници (раздв. |):',
-	'cleanchanges-showuserlinks' => 'Покажи корисничке линкове',
+	'cleanchanges-showuserlinks' => 'Прикажи корисничке везе',
 );
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
