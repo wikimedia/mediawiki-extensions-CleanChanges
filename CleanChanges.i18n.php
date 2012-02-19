@@ -896,6 +896,7 @@ $messages['pdc'] = array(
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Leinad
  * @author Masti
  * @author McMonster
@@ -905,7 +906,7 @@ $messages['pdc'] = array(
 $messages['pl'] = array(
 	'cleanchanges-changerightslink' => 'zmień grupy',
 	'cleanchanges-desc' => 'Bardziej zwarta wersja „[[Special:RecentChanges|Ostatnich zmian]]”',
-	'cleanchanges-language' => 'Język',
+	'cleanchanges-language' => 'Język:',
 	'cleanchanges-language-na' => 'Wszystkie',
 	'cleanchanges-users' => 'Użytkownicy (rozdziel znakiem „|”):',
 	'cleanchanges-showuserlinks' => 'Pokaż linki użytkownika',
