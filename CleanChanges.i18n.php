@@ -357,10 +357,16 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Huji
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'cleanchanges-changerightslink' => 'گروه‌های تغییر',
+	'cleanchanges-desc' => 'نمایش فشرده‌تری از [[Special:RecentChanges|فهرست تغییرات اخیر]]',
+	'cleanchanges-language' => 'زبان:',
 	'cleanchanges-language-na' => 'همه',
+	'cleanchanges-users' => 'کاربران (جدا کردن با: |):',
+	'cleanchanges-showuserlinks' => 'نمایش پیوندهای کاربر',
 );
 
 /** Finnish (Suomi)
