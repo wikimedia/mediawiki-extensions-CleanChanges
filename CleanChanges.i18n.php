@@ -33,6 +33,13 @@ It is shown after clicking on the "Show user links"-picture if you are allowed t
 {{Identical|All}}',
 );
 
+/** Ṫuroyo (Ṫuroyo)
+ * @author Ariyo
+ */
+$messages['tru'] = array(
+	'cleanchanges-language' => 'Leşono:',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
