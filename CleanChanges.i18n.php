@@ -756,7 +756,7 @@ $messages['mk'] = array(
  * @author Shijualex
  */
 $messages['ml'] = array(
-	'cleanchanges-changerightslink' => 'ഗ്രൂപ്പുകൾ മാറ്റുക',
+	'cleanchanges-changerightslink' => 'സംഘങ്ങൾ മാറ്റുക',
 	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]] ഒതുക്കമുള്ള പ്രദർശനം',
 	'cleanchanges-language' => 'ഭാഷ:',
 	'cleanchanges-language-na' => 'എല്ലാം',
