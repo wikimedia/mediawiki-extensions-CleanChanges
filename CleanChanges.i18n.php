@@ -463,6 +463,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -471,7 +472,7 @@ $messages['gsw'] = array(
 	'cleanchanges-language' => 'Sproch:',
 	'cleanchanges-language-na' => 'Alli',
 	'cleanchanges-users' => 'Benutzer (Trännzeiche: |):',
-	'cleanchanges-showuserlinks' => 'Zeig Benutzer-Gleicher',
+	'cleanchanges-showuserlinks' => 'Zeig Benutzer-Links',
 );
 
 /** Manx (Gaelg)
