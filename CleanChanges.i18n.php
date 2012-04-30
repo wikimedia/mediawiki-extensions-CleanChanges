@@ -608,11 +608,12 @@ $messages['it'] = array(
  * @author Aotake
  * @author Fryed-peach
  * @author JtFuruhata
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'cleanchanges-changerightslink' => '権限の変更',
 	'cleanchanges-desc' => '[[Special:RecentChanges|最近の更新一覧]]をよりコンパクトに表示する',
-	'cleanchanges-language' => '言語:',
+	'cleanchanges-language' => '言語：',
 	'cleanchanges-language-na' => 'すべて',
 	'cleanchanges-users' => '利用者 (|で区切る):',
 	'cleanchanges-showuserlinks' => '利用者リンクを表示',
