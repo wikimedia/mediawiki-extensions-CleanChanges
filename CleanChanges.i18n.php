@@ -274,6 +274,8 @@ $messages['de'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
+	'cleanchanges-language' => 'Zıwan:',
+	'cleanchanges-language-na' => 'Pêro',
 	'cleanchanges-users' => 'Karberi (duri fi: |):',
 );
 
