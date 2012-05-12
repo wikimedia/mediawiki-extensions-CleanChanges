@@ -412,7 +412,7 @@ $messages['frp'] = array(
 	'cleanchanges-changerightslink' => 'changiér les tropes',
 	'cleanchanges-language' => 'Lengoua :',
 	'cleanchanges-language-na' => 'Tôs',
-	'cleanchanges-users' => 'Utilisators (sèp. per |) :',
+	'cleanchanges-users' => 'Usanciérs (sèp. per |) :',
 	'cleanchanges-showuserlinks' => 'Fâre vêre los lims a l’usanciér',
 );
 
@@ -912,6 +912,14 @@ $messages['pdc'] = array(
 	'cleanchanges-language-na' => 'all',
 );
 
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'cleanchanges-language' => 'Schbrooch:',
+	'cleanchanges-language-na' => 'alle',
+);
+
 /** Polish (Polski)
  * @author BeginaFelicysym
  * @author Leinad
@@ -1195,7 +1203,7 @@ $messages['tg-cyrl'] = array(
 	'cleanchanges-language-na' => 'Ҳама',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1263,7 +1271,7 @@ $messages['ug-arab'] = array(
 	'cleanchanges-language' => 'تىل:',
 );
 
-/** Uyghur (Latin script) (Uyghurche‎)
+/** Uyghur (Latin script) (Uyghurche)
  * @author Jose77
  */
 $messages['ug-latn'] = array(
@@ -1295,7 +1303,7 @@ $messages['vec'] = array(
 	'cleanchanges-showuserlinks' => 'Mostra colegamenti utente',
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
