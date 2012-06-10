@@ -681,6 +681,7 @@ $messages['ksh'] = array(
  * @author George Animal
  */
 $messages['ku-latn'] = array(
+	'cleanchanges-changerightslink' => 'koman biguherîne',
 	'cleanchanges-language' => 'Ziman:',
 	'cleanchanges-language-na' => 'Hemû',
 	'cleanchanges-users' => 'Bikarhêner (Sep: |):',
@@ -1335,6 +1336,18 @@ $messages['vo'] = array(
 	'cleanchanges-language-na' => 'Valiks',
 	'cleanchanges-users' => 'Gebans (teilamal: |):',
 	'cleanchanges-showuserlinks' => 'Jonön gebanayümis',
+);
+
+/** Walloon (walon)
+ * @author Srtxg
+ */
+$messages['wa'] = array(
+	'cleanchanges-changerightslink' => 'candjî les groupes',
+	'cleanchanges-desc' => 'Håynaedje pus rasseré del [[Special:RecentChanges|djivêye des dierins candjmints]]',
+	'cleanchanges-language' => 'Lingaedje:',
+	'cleanchanges-language-na' => 'Tos',
+	'cleanchanges-users' => 'Uzeus (disp. avou |):',
+	'cleanchanges-showuserlinks' => "Mostrer les loyéns d' l' uzeus",
 );
 
 /** Yiddish (ייִדיש)
