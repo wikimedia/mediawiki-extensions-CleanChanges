@@ -104,7 +104,7 @@ $messages['arz'] = array(
 	'cleanchanges-showuserlinks' => 'إظهار وصلات المستخدم',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -117,7 +117,7 @@ $messages['ast'] = array(
 	'cleanchanges-showuserlinks' => "Amosar enllaces d'usuariu",
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Cekli829
  */
 $messages['az'] = array(
@@ -149,7 +149,7 @@ $messages['be-tarask'] = array(
 	'cleanchanges-showuserlinks' => 'Паказваць спасылкі ўдзельнікаў',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  * @author Spiritia
  */
@@ -175,7 +175,7 @@ $messages['bn'] = array(
 	'cleanchanges-showuserlinks' => 'ব্যবহারকারী লিংকগুলো দেখাও',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -187,7 +187,7 @@ $messages['br'] = array(
 	'cleanchanges-showuserlinks' => 'Diskwel liammoù an implijer-mañ',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -199,7 +199,7 @@ $messages['bs'] = array(
 	'cleanchanges-showuserlinks' => 'Prikaži korisničke linkove',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author El libre
  * @author SMP
  * @author Solde
@@ -220,7 +220,7 @@ $messages['ce'] = array(
 	'cleanchanges-language-na' => 'Массо',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Danny B.
  * @author Matěj Grabovský
  */
@@ -245,7 +245,7 @@ $messages['cy'] = array(
 	'cleanchanges-showuserlinks' => 'Dangos cysylltiadau at ddefnyddwyr',
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  */
 $messages['da'] = array(
@@ -291,7 +291,7 @@ $messages['dsb'] = array(
 	'cleanchanges-showuserlinks' => 'Wužywarske wótkaze pokazaś',
 );
 
-/** Ewe (Eʋegbe)
+/** Ewe (eʋegbe)
  * @author Natsubee
  */
 $messages['ee'] = array(
@@ -327,7 +327,7 @@ $messages['eo'] = array(
 	'cleanchanges-showuserlinks' => 'Vidi uzantoj ligiloj',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Sanbec
  */
 $messages['es'] = array(
@@ -339,7 +339,7 @@ $messages['es'] = array(
 	'cleanchanges-showuserlinks' => 'Mostrar enlaces de usuario',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  */
@@ -352,7 +352,7 @@ $messages['et'] = array(
 	'cleanchanges-showuserlinks' => 'Näita kasutajalinke',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  */
@@ -378,7 +378,7 @@ $messages['fa'] = array(
 	'cleanchanges-showuserlinks' => 'نمایش پیوندهای کاربر',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Nike
  * @author Vililikku
  */
@@ -391,7 +391,7 @@ $messages['fi'] = array(
 	'cleanchanges-showuserlinks' => 'Näytä käyttäjälinkit',
 );
 
-/** French (Français)
+/** French (français)
  * @author Grondin
  * @author IAlex
  * @author Verdy p
@@ -405,7 +405,7 @@ $messages['fr'] = array(
 	'cleanchanges-showuserlinks' => 'Afficher les liens de cet utilisateur',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -519,7 +519,7 @@ $messages['hi'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Ex13
  */
 $messages['hr'] = array(
@@ -543,7 +543,7 @@ $messages['hsb'] = array(
 	'cleanchanges-showuserlinks' => 'Wužiwarske wotkazy pokazać',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  */
 $messages['hu'] = array(
@@ -555,7 +555,7 @@ $messages['hu'] = array(
 	'cleanchanges-showuserlinks' => 'Szerkesztőlinkek megjelenítése',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -592,7 +592,7 @@ $messages['ig'] = array(
 	'cleanchanges-showuserlinks' => "Zí jikodo ọ'bànifé",
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author BrokenArrow
  * @author Darth Kule
  * @author Nemo bis
@@ -628,7 +628,7 @@ $messages['jv'] = array(
 	'cleanchanges-changerightslink' => 'owahana grup',
 );
 
-/** Kalaallisut (Kalaallisut)
+/** Kalaallisut (kalaallisut)
  * @author Qaqqalik
  */
 $messages['kl'] = array(
@@ -688,7 +688,7 @@ $messages['ku-latn'] = array(
 	'cleanchanges-showuserlinks' => 'Lînkên bikarhêneran nîşan bide',
 );
 
-/** Cornish (Kernowek)
+/** Cornish (kernowek)
  * @author Kw-Moon
  */
 $messages['kw'] = array(
@@ -720,7 +720,7 @@ $messages['li'] = array(
 	'cleanchanges-showuserlinks' => 'Gebroekersverwiezinge betrachte',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Eitvys200
  */
 $messages['lt'] = array(
@@ -730,7 +730,7 @@ $messages['lt'] = array(
 	'cleanchanges-showuserlinks' => 'Rodyti vartotojo nuorodas',
 );
 
-/** Latgalian (Latgaļu)
+/** Latgalian (latgaļu)
  * @author Dark Eagle
  */
 $messages['ltg'] = array(
@@ -744,7 +744,7 @@ $messages['mhr'] = array(
 	'cleanchanges-language-na' => 'Чыла',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Brest
  */
 $messages['mk'] = array(
@@ -769,7 +769,7 @@ $messages['ml'] = array(
 	'cleanchanges-showuserlinks' => 'ഉപയോക്തൃ കണ്ണികൾ പ്രദർശിപ്പിക്കുക',
 );
 
-/** Mongolian (Монгол)
+/** Mongolian (монгол)
  * @author Chinneeb
  */
 $messages['mn'] = array(
@@ -856,7 +856,7 @@ $messages['nl'] = array(
 	'cleanchanges-showuserlinks' => 'Gebruikersverwijzingen weergeven',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -869,7 +869,7 @@ $messages['nn'] = array(
 	'cleanchanges-showuserlinks' => 'Vis brukarlenkjer',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -921,7 +921,7 @@ $messages['pfl'] = array(
 	'cleanchanges-language-na' => 'alle',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Leinad
  * @author Masti
@@ -962,7 +962,7 @@ $messages['ps'] = array(
 	'cleanchanges-showuserlinks' => 'د کارن تړنې ښکاره کول',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -975,7 +975,7 @@ $messages['pt'] = array(
 	'cleanchanges-showuserlinks' => 'Mostrar links de utilizador',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
  */
 $messages['pt-br'] = array(
@@ -996,7 +996,7 @@ $messages['rif'] = array(
 	'cleanchanges-language-na' => 'Marra',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Minisarm
  * @author Stelistcristi
@@ -1009,7 +1009,7 @@ $messages['ro'] = array(
 	'cleanchanges-showuserlinks' => 'Arată legăturile utilizatorului',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1021,7 +1021,7 @@ $messages['roa-tara'] = array(
 	'cleanchanges-showuserlinks' => "Fa vedè le collagaminde de l'utende",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Ferrer
  * @author Innv
  * @author Александр Сигачёв
@@ -1046,7 +1046,7 @@ $messages['rue'] = array(
 	'cleanchanges-showuserlinks' => 'Указати одказы хоснователя',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1058,14 +1058,14 @@ $messages['sah'] = array(
 	'cleanchanges-showuserlinks' => 'Кыттааччылар сигэлэрин көрдөр',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Aushulz
  */
 $messages['scn'] = array(
 	'cleanchanges-language-na' => 'Tutti',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1077,7 +1077,7 @@ $messages['sk'] = array(
 	'cleanchanges-showuserlinks' => 'Zobrazovať používateľské odkazy',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1089,7 +1089,7 @@ $messages['sl'] = array(
 	'cleanchanges-showuserlinks' => 'Prikaži uporabniške povezave',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -1103,7 +1103,7 @@ $messages['sr-ec'] = array(
 	'cleanchanges-showuserlinks' => 'Прикажи корисничке везе',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  */
@@ -1141,7 +1141,7 @@ $messages['su'] = array(
 	'cleanchanges-showuserlinks' => 'Témbongkeun tumbu pamaké',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Lejonel
  * @author M.M.S.
  * @author Najami
@@ -1187,7 +1187,7 @@ $messages['te'] = array(
 	'cleanchanges-showuserlinks' => 'వాడుకరి లింకులను చూపుము',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
@@ -1195,7 +1195,7 @@ $messages['tet'] = array(
 	'cleanchanges-language-na' => 'Hotu',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1204,7 +1204,7 @@ $messages['tg-cyrl'] = array(
 	'cleanchanges-language-na' => 'Ҳама',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1253,7 +1253,7 @@ $messages['tr'] = array(
 	'cleanchanges-showuserlinks' => 'Kullanıcı bağlantılarını göster',
 );
 
-/** Tatar (Cyrillic script) (Татарча)
+/** Tatar (Cyrillic script) (татарча)
  * @author Рашат Якупов
  */
 $messages['tt-cyrl'] = array(
@@ -1279,7 +1279,7 @@ $messages['ug-latn'] = array(
 	'cleanchanges-language' => 'Til:',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Ahonc
  * @author Prima klasy4na
  */
@@ -1292,7 +1292,7 @@ $messages['uk'] = array(
 	'cleanchanges-showuserlinks' => 'Показувати посилання користувачів',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -1358,7 +1358,7 @@ $messages['yi'] = array(
 	'cleanchanges-language-na' => 'אלע',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Chenxiaoqino
  * @author Chenzw
  * @author Liangent
@@ -1372,7 +1372,7 @@ $messages['zh-hans'] = array(
 	'cleanchanges-showuserlinks' => '显示用户链接',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Alexsh
  * @author Liangent
  * @author Mark85296341
