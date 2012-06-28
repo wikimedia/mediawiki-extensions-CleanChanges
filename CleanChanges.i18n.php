@@ -658,11 +658,15 @@ $messages['kn'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
+	'cleanchanges-changerightslink' => '그룹 바꾸기',
+	'cleanchanges-desc' => '[[Special:RecentChanges|최근 바뀜 목록]]에서 더 간결하게 표시',
 	'cleanchanges-language' => '언어:',
 	'cleanchanges-language-na' => '모두',
 	'cleanchanges-users' => '사용자 (구분선: |):',
+	'cleanchanges-showuserlinks' => '사용자 링크 보기',
 );
 
 /** Colognian (Ripoarisch)
