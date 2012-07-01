@@ -60,7 +60,7 @@ $messages['am'] = array(
 	'cleanchanges-language-na' => 'ሁሉ',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -136,7 +136,7 @@ $messages['ba'] = array(
 	'cleanchanges-showuserlinks' => 'Ҡатнашыусы һылтанмаларын күрһәтергә',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -279,7 +279,7 @@ $messages['diq'] = array(
 	'cleanchanges-users' => 'Karberi (duri fi: |):',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -438,7 +438,7 @@ $messages['ga'] = array(
 	'cleanchanges-users' => 'Úsáideoirí (Sep: |):',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  */
@@ -531,7 +531,7 @@ $messages['hr'] = array(
 	'cleanchanges-showuserlinks' => 'Prikaži poveznice suradnika',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1039,7 +1039,7 @@ $messages['ru'] = array(
 	'cleanchanges-showuserlinks' => 'Показывать ссылки участников',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -1159,7 +1159,7 @@ $messages['sv'] = array(
 	'cleanchanges-showuserlinks' => 'Visa användarlänkar',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Ozi64
  */
 $messages['szl'] = array(
