@@ -124,7 +124,7 @@ $messages['az'] = array(
 	'cleanchanges-language-na' => 'Hamısı',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -213,7 +213,7 @@ $messages['ca'] = array(
 	'cleanchanges-showuserlinks' => "Mostra els enllaços de l'usuari/a",
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -741,7 +741,7 @@ $messages['ltg'] = array(
 	'cleanchanges-language-na' => 'Vysi',
 );
 
-/** Eastern Mari (Олык Марий)
+/** Eastern Mari (олык марий)
  * @author Сай
  */
 $messages['mhr'] = array(
@@ -814,7 +814,7 @@ $messages['mt'] = array(
 	'cleanchanges-showuserlinks' => 'Uri l-ħoloq tal-utent',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -835,8 +835,7 @@ $messages['nah'] = array(
 	'cleanchanges-showuserlinks' => 'Mà monèxti ìnetzòwìlwàn in motekìuhtiàni',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -1308,7 +1307,7 @@ $messages['vec'] = array(
 	'cleanchanges-showuserlinks' => 'Mostra colegamenti utente',
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
