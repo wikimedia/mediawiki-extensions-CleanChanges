@@ -110,7 +110,7 @@ class NCL extends EnhancedChangesList {
 		$time = $wgLang->time( $timestamp, /* adj */ true, /* format */ true );
 
 		# Should patrol-related stuff be shown?
-		$rc->unpatrolled = self::usePatrol() ? !$rc->getAttribute( 'rc_patrolled' ) : false;
+		$rc->unpatrolled = $this->showAsUnpatrolled( $rc );
 
 		$logEntry = $this->isLog( $rc );
 		if( $logEntry ) {
@@ -212,7 +212,7 @@ class NCL extends EnhancedChangesList {
 		global $wgLang;
 
 		# Collate list of users
-		$isnew = $unpatrolled = false;
+		$isnew = false;
 		$userlinks = array();
 		$overrides = array( 'minor' => false, 'bot' => false );
 		foreach( $block as $rcObj ) {
@@ -225,7 +225,7 @@ class NCL extends EnhancedChangesList {
 				$userlinks[$u] = 0;
 			}
 			if( $rcObj->unpatrolled ) {
-				$unpatrolled =  $overrides['patrol'] = true;
+				$overrides['patrol'] = true;
 			}
 
 			$userlinks[$u]++;
@@ -507,9 +507,6 @@ class NCL extends EnhancedChangesList {
 			'minor' => array( 'rc_minor', self::flag( 'minor' ) ),
 			'bot'   => array( 'rc_bot',   self::flag( 'bot' ) ),
 		);
-		if ( self::usePatrol() ) {
-			$map['patrol'] = array( 'rc_patrolled', self::flag( 'unpatrolled' ) );
-		}
 
 		static $nothing = "\xc2\xa0";
 
@@ -518,6 +515,16 @@ class NCL extends EnhancedChangesList {
 			list( $field, $flag ) = $data;
 			$bool = isset($overrides[$item]) ? $overrides[$item] : $rc->getAttribute( $field );
 			$items[] = $bool ? $flag : $nothing;
+		}
+
+		if ( $this->getUser()->useRCPatrol() ) {
+			if ( isset( $overrides['patrol'] ) ) {
+				$items[] = $overrides['patrol'] ? self::flag( 'unpatrolled' ) : $nothing;
+			} elseif ( $this->showAsUnpatrolled( $rc ) ) {
+				$items[] = self::flag( 'unpatrolled' );
+			} else {
+				$items[] = $nothing;
+			}
 		}
 
 		return implode( '', $items );
