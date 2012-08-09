@@ -628,6 +628,15 @@ $messages['jv'] = array(
 	'cleanchanges-changerightslink' => 'owahana grup',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'cleanchanges-changerightslink' => 'ჯგუფების ცვლილება',
+	'cleanchanges-language' => 'ენა:',
+	'cleanchanges-language-na' => 'ყველა',
+);
+
 /** Kalaallisut (kalaallisut)
  * @author Qaqqalik
  */
@@ -1066,6 +1075,14 @@ $messages['sah'] = array(
  */
 $messages['scn'] = array(
 	'cleanchanges-language-na' => 'Tutti',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'cleanchanges-language' => 'භාෂාව:',
+	'cleanchanges-language-na' => 'සියල්ල',
 );
 
 /** Slovak (slovenčina)
