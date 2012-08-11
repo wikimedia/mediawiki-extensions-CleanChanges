@@ -33,7 +33,7 @@ It is shown after clicking on the "Show user links"-picture if you are allowed t
 {{Identical|All}}',
 );
 
-/** Ṫuroyo (Ṫuroyo)
+/** Turoyo (Ṫuroyo)
  * @author Ariyo
  */
 $messages['tru'] = array(
@@ -684,7 +684,7 @@ $messages['ko'] = array(
 $messages['ksh'] = array(
 	'cleanchanges-changerightslink' => 'Jruppe aanpasse',
 	'cleanchanges-desc' => 'Määt en köötere [[Special:RecentChanges|Leß met de {{lcfirst:{{int:Recentchanges}}}}]].',
-	'cleanchanges-language' => 'Shprooch:',
+	'cleanchanges-language' => 'Schprooch:',
 	'cleanchanges-language-na' => 'all',
 	'cleanchanges-users' => 'Metmaacher (donn | dozwesche, wann et zwei udder mieh sen):',
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
