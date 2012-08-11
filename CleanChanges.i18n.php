@@ -819,7 +819,11 @@ $messages['ms'] = array(
  * @author Roderick Mallia
  */
 $messages['mt'] = array(
+	'cleanchanges-changerightslink' => 'biddel il-gruppi',
+	'cleanchanges-desc' => 'Preżentazzjoni iktar kompatta tal-[[Special:RecentChanges|lista tat-tibdil riċenti]]',
 	'cleanchanges-language' => 'Lingwa:',
+	'cleanchanges-language-na' => 'Kollha',
+	'cleanchanges-users' => 'Utenti (Sep: |):',
 	'cleanchanges-showuserlinks' => 'Uri l-ħoloq tal-utent',
 );
 
