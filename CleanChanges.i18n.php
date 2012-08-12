@@ -1085,8 +1085,11 @@ $messages['scn'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'cleanchanges-changerightslink' => 'කාණ්ඩ වෙනස් කරන්න',
 	'cleanchanges-language' => 'භාෂාව:',
 	'cleanchanges-language-na' => 'සියල්ල',
+	'cleanchanges-users' => 'පරිශීලකයන් (වෙන්: |):',
+	'cleanchanges-showuserlinks' => 'පරිශීලක සබැඳි පෙන්වන්න',
 );
 
 /** Slovak (slovenčina)
