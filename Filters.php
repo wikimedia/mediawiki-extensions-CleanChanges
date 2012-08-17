@@ -16,7 +16,7 @@ class CCFilters {
 				$idfilters[] = $id;
 			}
 		}
-		if ( count($idfilters) ) {
+		if ( count( $idfilters ) ) {
 			$dbr = wfGetDB( DB_SLAVE );
 			$conds[] = 'rc_user IN (' . $dbr->makeList( $idfilters ) . ')';
 			$opts->setValue( 'users', $users );
@@ -30,7 +30,7 @@ class CCFilters {
 		global $wgRequest;
 
 		$default = $wgRequest->getVal( 'users', '' );
-		$items['users'] = Xml::inputLabelSep( wfMsg( 'cleanchanges-users') , 'users',
+		$items['users'] = Xml::inputLabelSep( wfMessage( 'cleanchanges-users' )->text(), 'users',
 			'mw-users', 40, $default  );
 		return true;
 	}
@@ -54,7 +54,7 @@ class CCFilters {
 		global $wgRequest;
 		$default = $wgRequest->getVal( 'trailer', '' );
 		global $wgLang;
-		if ( is_callable(array( 'LanguageNames', 'getNames' )) ) {
+		if ( is_callable( array( 'LanguageNames', 'getNames' ) ) ) {
 			$languages = LanguageNames::getNames( $wgLang->getCode(),
 				LanguageNames::FALLBACK_NORMAL,
 				LanguageNames::LIST_MW
@@ -63,9 +63,9 @@ class CCFilters {
 			$languages = Language::getLanguageNames( false );
 		}
 		ksort( $languages );
-		$options = Xml::option( wfMsg( 'cleanchanges-language-na' ), '', $default === '' );
-		foreach( $languages as $code => $name ) {
-			$selected = ("/$code" === $default);
+		$options = Xml::option( wfMessage( 'cleanchanges-language-na' )->text(), '', $default === '' );
+		foreach ( $languages as $code => $name ) {
+			$selected = ( "/$code" === $default );
 			$options .= Xml::option( "$code - $name", "/$code", $selected ) . "\n";
 		}
 		$str =
@@ -73,11 +73,11 @@ class CCFilters {
 			'name' => 'trailer',
 			'class' => 'mw-language-selector',
 			'id' => 'sp-rc-language',
-		)) .
+		) ) .
 		$options .
 		Xml::closeElement( 'select' );
 
-		$items['tailer'] = array( wfMsgHtml( 'cleanchanges-language' ), $str );
+		$items['tailer'] = array( wfMessage( 'cleanchanges-language' )->escaped(), $str );
 		return true;
 	}
 

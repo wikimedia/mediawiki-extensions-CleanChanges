@@ -4,7 +4,6 @@
  * Generate a list of changes using an Enhanced system (use javascript).
  */
 class NCL extends EnhancedChangesList {
-
 	/**
 	 * Determines which version of changes list to provide, or none.
 	 */
@@ -12,14 +11,14 @@ class NCL extends EnhancedChangesList {
 		$list = null;
 
 		/* allow override */
-		global $wgRequest;
-		if ( $wgRequest->getBool('cleanrc') ) {
+		$request = $skin->getRequest();
+		if ( $request->getBool( 'cleanrc' ) ) {
 			$list = new NCL( $skin );
 		}
-		if ( $wgRequest->getBool('newrc') ) {
+		if ( $request->getBool( 'newrc' ) ) {
 			$list = new EnhancedChangesList( $skin );
 		}
-		if ( $wgRequest->getBool('oldrc') ) {
+		if ( $request->getBool( 'oldrc' ) ) {
 			$list = new OldChangesList( $skin );
 		}
 
@@ -28,13 +27,11 @@ class NCL extends EnhancedChangesList {
 		}
 
 		if ( $list instanceof NCL ) {
-			global $wgOut;
-			$wgOut->addModules( 'ext.cleanchanges' );
+			$skin->getOutput()->addModules( 'ext.cleanchanges' );
 		}
 
 		/* If some list was specified, stop processing */
 		return $list === null;
-
 	}
 
 	protected static $userinfo = array();
@@ -56,10 +53,10 @@ class NCL extends EnhancedChangesList {
 	protected $direction = true;
 
 	public function __construct( $skin ) {
-		global $wgLang;
+		$lang = $this->getLanguage();
 		parent::__construct( $skin );
-		$this->direction = !$wgLang->isRTL();
-		$this->dir = $wgLang->getDirMark();
+		$this->direction = !$lang->isRTL();
+		$this->dir = $lang->getDirMark();
 	}
 
 	function beginRecentChangesList() {
@@ -89,15 +86,14 @@ class NCL extends EnhancedChangesList {
 		$logpage = new LogPage( $logtype );
 		$logname = $logpage->getName()->escaped();
 		$titleObj = SpecialPage::getTitleFor( 'Log', $logtype );
-		return '(' . $this->skin->makeKnownLinkObj( $titleObj, $logname ) . ')';
+		$link = Linker::link( $titleObj, $logname );
+		return $this->msg( 'parentheses' )->rawParams( $link )->escaped();
 	}
 
 	/**
 	 * Format a line for enhanced recentchange (aka with javascript and block of lines).
 	 */
 	function recentChangesLine( &$baseRC, $watched = false ) {
-		global $wgLang;
-
 		# Create a specialised object
 		$rc = RCCacheEntry::newFromParent( $baseRC );
 
@@ -106,16 +102,17 @@ class NCL extends EnhancedChangesList {
 		$titleObj = $rc->getTitle();
 		$rc_id = $rc->getAttribute( 'rc_id' );
 
-		$date = $wgLang->date( $timestamp, /* adj */ true, /* format */ true );
-		$time = $wgLang->time( $timestamp, /* adj */ true, /* format */ true );
+		$lang = $this->getLanguage();
+		$date = $lang->date( $timestamp, /* adj */ true, /* format */ true );
+		$time = $lang->time( $timestamp, /* adj */ true, /* format */ true );
 
 		# Should patrol-related stuff be shown?
 		$rc->unpatrolled = $this->showAsUnpatrolled( $rc );
 
 		$logEntry = $this->isLog( $rc );
-		if( $logEntry ) {
+		if ( $logEntry ) {
 			$clink = $this->getLogTitle( $rc );
-		} elseif( $rc->unpatrolled && $rc->getAttribute( 'rc_type' ) == RC_NEW ) {
+		} elseif ( $rc->unpatrolled && $rc->getAttribute( 'rc_type' ) == RC_NEW ) {
 			# Unpatrolled new page, give rc_id in query
 			$clink = $this->skin->makeKnownLinkObj( $titleObj, '', "rcid={$rc_id}" );
 		} else {
@@ -145,14 +142,13 @@ class NCL extends EnhancedChangesList {
 
 		$rc->_watching = $this->numberofWatchingusers( $baseRC->numberofWatchingusers );
 
-
 		# If it's a new day, add the headline and flush the cache
 		$ret = '';
 		if ( $date !== $this->lastdate ) {
 			# Process current cache
 			$ret = $this->recentChangesBlock();
 			$this->rc_cache = array();
-			$ret .= Xml::element('h4', null, $date) . "\n";
+			$ret .= Xml::element( 'h4', null, $date ) . "\n";
 			$this->lastdate = $date;
 		}
 
@@ -175,7 +171,7 @@ class NCL extends EnhancedChangesList {
 		$rc->_lastLink = $this->message['last'];
 		$rc->_histLink = $this->message['hist'];
 
-		if( !$this->isLog( $rc ) ) {
+		if ( !$this->isLog( $rc ) ) {
 			# Make cur, diff and last links
 			$querycur = wfArrayToCGI( array( 'diff' => 0 ) + $rc->_reqCurId + $rc->_reqOldId );
 			$querydiff = wfArrayToCGI( array(
@@ -209,22 +205,20 @@ class NCL extends EnhancedChangesList {
 	 * Enhanced RC group
 	 */
 	function recentChangesBlockGroup( $block ) {
-		global $wgLang;
-
 		# Collate list of users
 		$isnew = false;
 		$userlinks = array();
 		$overrides = array( 'minor' => false, 'bot' => false );
-		foreach( $block as $rcObj ) {
+		foreach ( $block as $rcObj ) {
 			$oldid = $rcObj->mAttribs['rc_last_oldid'];
-			if( $rcObj->mAttribs['rc_new'] ) {
+			if ( $rcObj->mAttribs['rc_new'] ) {
 				$isnew = $overrides['new'] = true;
 			}
 			$u = $rcObj->_user;
-			if( !isset( $userlinks[$u] ) ) {
+			if ( !isset( $userlinks[$u] ) ) {
 				$userlinks[$u] = 0;
 			}
-			if( $rcObj->unpatrolled ) {
+			if ( $rcObj->unpatrolled ) {
 				$overrides['patrol'] = true;
 			}
 
@@ -241,9 +235,9 @@ class NCL extends EnhancedChangesList {
 		$toggleLink = "javascript:toggleVisibilityE('$rci', '$rcm', '$rcl', 'block')";
 		$tl =
 		Xml::tags( 'span', array( 'id' => $rcm ),
-			Xml::tags('a', array( 'href' => $toggleLink ), $this->arrow($this->direction ? 'r' : 'l') ) ) .
+			Xml::tags( 'a', array( 'href' => $toggleLink ), $this->arrow( $this->direction ? 'r' : 'l' ) ) ) .
 		Xml::tags( 'span', array( 'id' => $rcl, 'style' => 'display: none;' ),
-			Xml::tags('a', array( 'href' => $toggleLink ), $this->downArrow() ) );
+			Xml::tags( 'a', array( 'href' => $toggleLink ), $this->downArrow() ) );
 
 		$items[] = $tl . $info;
 
@@ -254,26 +248,24 @@ class NCL extends EnhancedChangesList {
 		$currentRevision = $block[0]->mAttribs['rc_this_oldid'];
 
 		$log = $this->isLog( $block[0] );
-		if( !$log ) {
+		if ( !$log ) {
 			# Changes
-			$n = count($block);
+			$n = count( $block );
 			static $nchanges = array();
 			if ( !isset( $nchanges[$n] ) ) {
-				$nchanges[$n] = wfMsgExt( 'nchanges', array( 'parsemag', 'escape'),
-					$wgLang->formatNum( $n ) );
+				$nchanges[$n] = $this->msg( 'nchanges' )->numParams( $n )->escaped();
 			}
 
 			if ( !$isnew ) {
 				$changes = $this->skin->makeKnownLinkObj( $block[0]->getTitle(),
 					$nchanges[$n],
-					$curIdEq."&diff=$currentRevision&oldid=$oldid" );
+					$curIdEq . "&diff=$currentRevision&oldid=$oldid" );
 			} else {
 				$changes = $nchanges[$n];
 			}
 
-			$size = $this->getCharacterDifference( $block[0], $block[count($block)-1] );
+			$size = $this->getCharacterDifference( $block[0], $block[count( $block ) -1] );
 			$items[] = $this->changeInfo( $changes, $block[0]->_histLink, $size );
-
 		}
 
 		$items[] = $this->userSeparator;
@@ -296,12 +288,12 @@ class NCL extends EnhancedChangesList {
 
 	function subEntries( $block ) {
 		$lines = '';
-		foreach( $block as $rcObj ) {
+		foreach ( $block as $rcObj ) {
 			$items = array();
 			$log = $this->isLog( $rcObj );
 
 			$time = $rcObj->timestamp;
-			if( !$log ) {
+			if ( !$log ) {
 				$time = $this->skin->makeKnownLinkObj( $rcObj->getTitle(),
 					$rcObj->timestamp, wfArrayToCGI( $rcObj->_reqOldId, $rcObj->_reqCurId ) );
 			}
@@ -337,7 +329,7 @@ class NCL extends EnhancedChangesList {
 	}
 
 	protected function changeInfo( $diff, $hist, $size ) {
-		if ( is_int($size) ) {
+		if ( is_int( $size ) ) {
 			$size = $this->wrapCharacterDifference( $size );
 			return "($diff; $hist; $size)";
 		} else {
@@ -375,24 +367,22 @@ class NCL extends EnhancedChangesList {
 		}
 
 		return '<div>' . implode( " {$this->dir}", $items ) . "</div>\n";
-
 	}
 
 	public function getComment( $rc ) {
-		global $wgUser;
 		$comment = $rc->getAttribute( 'rc_comment' );
 		$action = '';
 		if ( $comment === '' ) {
 			return $action;
 		} elseif ( $this->isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
-			$priviledged = $wgUser->isAllowed('deleterevision');
+			$priviledged = $this->getUser()->isAllowed( 'deleterevision' );
 			if ( $priviledged ) {
 				return $action . ' <span class="history-deleted">' . $comment . '</span>';
 			} else {
-				return $action . ' <span class="history-deleted">' . wfMsgHtml( 'rev-deleted-comment' ) . '</span>';
+				return $action . ' <span class="history-deleted">' . $this->msg( 'rev-deleted-comment' )->escaped() . '</span>';
 			}
 		} else {
-			return $action . $this->skin->commentBlock( $comment, $rc->getTitle() );
+			return $action . Linker::commentBlock( $comment, $rc->getTitle() );
 		}
 	}
 
@@ -400,7 +390,7 @@ class NCL extends EnhancedChangesList {
 	 * Enhanced user tool links, with javascript functionality.
 	 */
 	public function userToolLinks( $userId, $userText ) {
-		global $wgUser, $wgDisableAnonTalk;
+		global $wgDisableAnonTalk;
 		$talkable = !( $wgDisableAnonTalk && 0 == $userId );
 
 		/*
@@ -426,47 +416,48 @@ class NCL extends EnhancedChangesList {
 		global $wgStylePath;
 		$image = Xml::element( 'img', array(
 			'src' => $wgStylePath . '/common/images/magnify-clip.png',
-			'alt' => wfMsg( 'cleanchanges-showuserlinks' ),
-			'title' => wfMsg( 'cleanchanges-showuserlinks' ),
+			'alt' => $this->msg( 'cleanchanges-showuserlinks' )->text(),
+			'title' => $this->msg( 'cleanchanges-showuserlinks' )->text(),
 		  'height' => '12'
 			)
 		);
-
 
 		$rci = 'RCUI' . $userindex;
 		$rcl = 'RCUL' . $linkindex;
 		$rcm = 'RCUM' . $linkindex;
 		$toggleLink = "javascript:showUserInfo('wgUserInfo$rci', '$rcl' )";
-		$tl  = Xml::tags('span', array( 'id' => $rcm ),
+		$tl  = Xml::tags( 'span', array( 'id' => $rcm ),
 			Xml::tags( 'a', array( 'href' => $toggleLink ), $image ) );
-		$tl .= Xml::element('span', array( 'id' => $rcl ), ' ' );
+		$tl .= Xml::element( 'span', array( 'id' => $rcl ), ' ' );
 
 		$items = array();
-		if( $talkable ) {
+		if ( $talkable ) {
 			$items[] = $this->skin->userTalkLink( $userId, $userText );
 		}
-		if( $userId ) {
+		if ( $userId ) {
 			$targetPage = SpecialPage::getTitleFor( 'Contributions', $userText );
-			$items[] = $this->skin->makeKnownLinkObj( $targetPage,
-				wfMsgHtml( 'contribslink' ) );
+			$items[] = Linker::linkKnown( $targetPage,
+				$this->msg( 'contribslink' )->escaped() );
 		}
-		if( $wgUser->isAllowed( 'block' ) ) {
+		if ( $this->getUser()->isAllowed( 'block' ) ) {
 			$items[] = $this->skin->blockLink( $userId, $userText );
 		}
-		if( $userId ) {
+		if ( $userId ) {
 			$userrightsPage = new UserrightsPage();
-			if( $userrightsPage->userCanChangeRights( User::newFromId( $userId ) ) ) {
+			if ( $userrightsPage->userCanChangeRights( User::newFromId( $userId ) ) ) {
 				$targetPage = SpecialPage::getTitleFor( 'Userrights', $userText );
-				$items[] = $this->skin->makeKnownLinkObj( $targetPage,
-					wfMsgHtml( 'cleanchanges-changerightslink' ) );
+				$items[] = Linker::linkKnown( $targetPage,
+					$this->msg( 'cleanchanges-changerightslink' )->escaped() );
 			}
 		}
 
-		if( $items ) {
-			global $wgLang;
-			$data = array( "wgUserInfo$rci" => '(' . $wgLang->pipeList( $items ) . ')' );
+		if ( $items ) {
+			$msg = $this->msg( 'parentheses' )
+				->rawParams( $this->getLanguage()->pipeList( $items ) )
+				->escaped();
+			$data = array( "wgUserInfo$rci" => $msg );
 
-			return array($tl, $data);
+			return array( $tl, $data );
 		} else {
 			return '';
 		}
@@ -477,8 +468,6 @@ class NCL extends EnhancedChangesList {
 	 * Example: [Usera; AnotherUser; ActiveUser ‎(2×); Userabc ‎(6×)]
 	 */
 	function makeUserlinks( $userlinks ) {
-		global $wgLang;
-
 		/*
 		 * User with least changes first, and fallback to alphabetical sorting if
 		 * multiple users have same number of changes.
@@ -487,15 +476,16 @@ class NCL extends EnhancedChangesList {
 		asort( $userlinks );
 
 		$users = array();
-		foreach( $userlinks as $userlink => $count) {
+		foreach ( $userlinks as $userlink => $count ) {
 			$text = $userlink;
-			if( $count > 1 ) {
-				$count = $wgLang->formatNum( $count );
-				$text .= "{$wgLang->getDirMark()}×$count";
+			if ( $count > 1 ) {
+				$lang = $this->getLanguage();
+				$count = $lang->formatNum( $count );
+				$text .= "{$lang->getDirMark()}×$count";
 			}
 			array_push( $users, $text );
 		}
-		$text = implode('; ', $users);
+		$text = implode( '; ', $users );
 		return $this->XMLwrapper( 'changedby', "[$text]", 'span', false );
 	}
 
@@ -513,7 +503,7 @@ class NCL extends EnhancedChangesList {
 		$items = array();
 		foreach ( $map as $item => $data ) {
 			list( $field, $flag ) = $data;
-			$bool = isset($overrides[$item]) ? $overrides[$item] : $rc->getAttribute( $field );
+			$bool = isset( $overrides[$item] ) ? $overrides[$item] : $rc->getAttribute( $field );
 			$items[] = $bool ? $flag : $nothing;
 		}
 
@@ -533,8 +523,8 @@ class NCL extends EnhancedChangesList {
 	protected function getCharacterDifference( $new, $old = null ) {
 		if ( $old === null ) $old = $new;
 
-		$newSize = $new->getAttribute('rc_new_len');
-		$oldSize = $old->getAttribute('rc_old_len');
+		$newSize = $new->getAttribute( 'rc_new_len' );
+		$oldSize = $old->getAttribute( 'rc_old_len' );
 		if ( $newSize === null || $oldSize === null ) {
 			return '';
 		}
@@ -543,21 +533,21 @@ class NCL extends EnhancedChangesList {
 	}
 
 	public function wrapCharacterDifference( $szdiff ) {
-		global $wgRCChangedSizeThreshold, $wgLang;
+		global $wgRCChangedSizeThreshold;
 		static $cache = array();
-		if ( !isset($cache[$szdiff]) ) {
+		if ( !isset( $cache[$szdiff] ) ) {
 			$prefix = $szdiff > 0 ? '+' : '';
-			$cache[$szdiff] = wfMsgExt( 'rc-change-size', 'parsemag',
-				$prefix . $wgLang->formatNum( $szdiff )
-			);
+			$cache[$szdiff] = $this->msg( 'rc-change-size',
+				$prefix . $this->getLanguage()->formatNum( $szdiff )
+			)->text();
 		}
 
 		$tag = 'span';
-		if ( abs($szdiff) > abs($wgRCChangedSizeThreshold) ) $tag = 'strong';
+		if ( abs( $szdiff ) > abs( $wgRCChangedSizeThreshold ) ) $tag = 'strong';
 
-		if( $szdiff === 0 ) {
+		if ( $szdiff === 0 ) {
 			return $this->XMLwrapper( 'mw-plusminus-null', $cache[$szdiff], $tag );
-		} elseif( $szdiff > 0 ) {
+		} elseif ( $szdiff > 0 ) {
 			return $this->XMLwrapper( 'mw-plusminus-pos', $cache[$szdiff], $tag );
 		} else {
 			return $this->XMLwrapper( 'mw-plusminus-neg', $cache[$szdiff], $tag );
@@ -571,5 +561,4 @@ class NCL extends EnhancedChangesList {
 			return Xml::tags( $tag, array( 'class' => $class ), $content );
 		}
 	}
-
 }
