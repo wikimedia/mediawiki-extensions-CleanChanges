@@ -344,7 +344,7 @@ $messages['es'] = array(
  * @author Pikne
  */
 $messages['et'] = array(
-	'cleanchanges-changerightslink' => 'muuda gruppe',
+	'cleanchanges-changerightslink' => 'muuda rühmi',
 	'cleanchanges-desc' => 'Kompaktsem ülevaade [[Special:RecentChanges|viimastest muudatustest]]',
 	'cleanchanges-language' => 'Keel:',
 	'cleanchanges-language-na' => 'Kõik',
