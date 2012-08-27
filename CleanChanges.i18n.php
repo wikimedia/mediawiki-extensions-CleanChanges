@@ -15,6 +15,8 @@ $messages['en'] = array(
 	'cleanchanges-language-na'      => 'All',
 	'cleanchanges-users'            => 'Users (Sep: |):',
 	'cleanchanges-showuserlinks'    => 'Show user links',
+	'cleanchanges-rcinfo-2'         => '($1; $2)',
+	'cleanchanges-rcinfo-3'         => '($1; $2; $3)',
 );
 
 /** Message documentation (Message documentation)
@@ -31,6 +33,13 @@ It is shown after clicking on the "Show user links"-picture if you are allowed t
 	'cleanchanges-language-na' => 'Used in the trailer selection of [[Special:RecentChanges]] to not filter on any trailer.
 
 {{Identical|All}}',
+	'cleanchanges-rcinfo-2' => 'Use in enhanced recent changes when CleanChanges is enabled. Parameters:
+* $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
+* $2 is a link to the page history. {{msg-mw|hist}} is used as link text.',
+	'cleanchanges-rcinfo-3' => 'Use in enhanced recent changes when CleanChanges is enabled. Parameters:
+* $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
+* $2 is a link to the page history. {{msg-mw|hist}} is used as link text;
+* $3 is the size change from the oldest revision to the latest revision in the overview.',
 );
 
 /** Turoyo (Ṫuroyo)

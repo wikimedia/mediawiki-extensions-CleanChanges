@@ -7,7 +7,7 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * Determines which version of changes list to provide, or none.
 	 */
-	public static function hook( $user, &$skin, &$list ) {
+	public static function hook( User $user, Skin &$skin, &$list ) {
 		$list = null;
 
 		/* allow override */
@@ -59,7 +59,7 @@ class NCL extends EnhancedChangesList {
 		$this->dir = $lang->getDirMark();
 	}
 
-	function beginRecentChangesList() {
+	public function beginRecentChangesList() {
 		parent::beginRecentChangesList();
 		$dir = $this->direction ? 'ltr' : 'rtl';
 		return
@@ -69,11 +69,11 @@ class NCL extends EnhancedChangesList {
 			);
 	}
 
-	function endRecentChangesList() {
+	public function endRecentChangesList() {
 		return parent::endRecentChangesList() . '</div>';
 	}
 
-	function isLog( $rc ) {
+	protected function isLog( $rc ) {
 		if ( $rc->getAttribute( 'rc_type' ) == RC_LOG ) {
 			return 2;
 		} else {
@@ -81,7 +81,7 @@ class NCL extends EnhancedChangesList {
 		}
 	}
 
-	function getLogTitle( $rc ) {
+	protected function getLogTitle( $rc ) {
 		$logtype = $rc->getAttribute( 'rc_log_type' );
 		$logpage = new LogPage( $logtype );
 		$logname = $logpage->getName()->escaped();
@@ -93,7 +93,7 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * Format a line for enhanced recentchange (aka with javascript and block of lines).
 	 */
-	function recentChangesLine( &$baseRC, $watched = false ) {
+	public function recentChangesLine( &$baseRC, $watched = false ) {
 		# Create a specialised object
 		$rc = RCCacheEntry::newFromParent( $baseRC );
 
@@ -114,9 +114,14 @@ class NCL extends EnhancedChangesList {
 			$clink = $this->getLogTitle( $rc );
 		} elseif ( $rc->unpatrolled && $rc->getAttribute( 'rc_type' ) == RC_NEW ) {
 			# Unpatrolled new page, give rc_id in query
-			$clink = $this->skin->makeKnownLinkObj( $titleObj, '', "rcid={$rc_id}" );
+			$clink = linker::linkKnown(
+				$titleObj,
+				null,
+				array(),
+				array( 'rcid' => $rc_id )
+			);
 		} else {
-			$clink = $this->skin->makeKnownLinkObj( $titleObj );
+			$clink = Linker::linkKnown( $titleObj );
 		}
 
 		$rc->watched   = $watched;
@@ -132,7 +137,7 @@ class NCL extends EnhancedChangesList {
 			$rc->getAttribute( 'rc_user_text' ) );
 		self::$userinfo += $stuff[1];
 
-		$rc->_user = $this->skin->userLink( $rc->getAttribute( 'rc_user' ),
+		$rc->_user = Linker::userLink( $rc->getAttribute( 'rc_user' ),
 			$rc->getAttribute( 'rc_user_text' ) );
 		$rc->_userInfo = $stuff[0];
 
@@ -173,38 +178,37 @@ class NCL extends EnhancedChangesList {
 
 		if ( !$this->isLog( $rc ) ) {
 			# Make cur, diff and last links
-			$querycur = wfArrayToCGI( array( 'diff' => 0 ) + $rc->_reqCurId + $rc->_reqOldId );
-			$querydiff = wfArrayToCGI( array(
+			$querycur = array( 'diff' => 0 ) + $rc->_reqCurId + $rc->_reqOldId;
+			$querydiff = array(
 				'diff'  => $rc->getAttribute( 'rc_this_oldid' ),
 				'oldid' => $rc->getAttribute( 'rc_last_oldid' ),
 				'rcid'  => $rc->unpatrolled ? $rc->getAttribute( 'rc_id' ) : '',
-			) + $rc->_reqCurId );
+			) + $rc->_reqCurId;
 
-			$rc->_curLink = $this->skin->makeKnownLinkObj( $rc->getTitle(),
-					$this->message['cur'], $querycur );
+			$rc->_curLink = Linker::linkKnown( $rc->getTitle(),
+					$this->message['cur'], array(), $querycur );
 
 			if ( $rc->getAttribute( 'rc_type' ) != RC_NEW ) {
-				$rc->_diffLink = $this->skin->makeKnownLinkObj( $rc->getTitle(),
-					$this->message['diff'], $querydiff );
+				$rc->_diffLink = Linker::linkKnown( $rc->getTitle(),
+					$this->message['diff'], array(), $querydiff );
 			}
 
 			if ( $rc->getAttribute( 'rc_last_oldid' ) != 0 ) {
 				// This is not the first revision
-				$rc->_lastLink = $this->skin->makeKnownLinkObj( $rc->getTitle(),
-					$this->message['last'], $querydiff );
+				$rc->_lastLink = Linker::linkKnown( $rc->getTitle(),
+					$this->message['last'], array(), $querydiff );
 			}
 
-			$rc->_histLink = $this->skin->makeKnownLinkObj( $rc->getTitle(),
-				$this->message['hist'],
-				wfArrayToCGI( $rc->_reqCurId, array( 'action' => 'history' ) ) );
-
+			$rc->_histLink = Linker::link( $rc->getTitle(),
+				$this->message['hist'], array(),
+				$rc->_reqCurId + array( 'action' => 'history' ) );
 		}
 	}
 
 	/**
 	 * Enhanced RC group
 	 */
-	function recentChangesBlockGroup( $block ) {
+	protected function recentChangesBlockGroup( $block ) {
 		# Collate list of users
 		$isnew = false;
 		$userlinks = array();
@@ -244,9 +248,6 @@ class NCL extends EnhancedChangesList {
 		# Article link
 		$items[] = $block[0]->link;
 
-		$curIdEq = 'curid=' . $block[0]->mAttribs['rc_cur_id'];
-		$currentRevision = $block[0]->mAttribs['rc_this_oldid'];
-
 		$log = $this->isLog( $block[0] );
 		if ( !$log ) {
 			# Changes
@@ -257,9 +258,16 @@ class NCL extends EnhancedChangesList {
 			}
 
 			if ( !$isnew ) {
-				$changes = $this->skin->makeKnownLinkObj( $block[0]->getTitle(),
+				$changes = Linker::linkKnown(
+					$block[0]->getTitle(),
 					$nchanges[$n],
-					$curIdEq . "&diff=$currentRevision&oldid=$oldid" );
+					array(),
+					array(
+						'curid' => $block[0]->mAttribs['rc_cur_id'],
+						'diff' => $block[0]->mAttribs['rc_this_oldid'],
+						'oldid' => $oldid
+					)
+				);
 			} else {
 				$changes = $nchanges[$n];
 			}
@@ -286,7 +294,7 @@ class NCL extends EnhancedChangesList {
 		return $lines . "\n";
 	}
 
-	function subEntries( $block ) {
+	protected function subEntries( $block ) {
 		$lines = '';
 		foreach ( $block as $rcObj ) {
 			$items = array();
@@ -294,8 +302,12 @@ class NCL extends EnhancedChangesList {
 
 			$time = $rcObj->timestamp;
 			if ( !$log ) {
-				$time = $this->skin->makeKnownLinkObj( $rcObj->getTitle(),
-					$rcObj->timestamp, wfArrayToCGI( $rcObj->_reqOldId, $rcObj->_reqCurId ) );
+				$time = Linker::linkKnown(
+					$rcObj->getTitle(),
+					$rcObj->timestamp,
+					array(),
+					$rcObj->_reqOldId + $rcObj->_reqCurId
+				);
 			}
 
 			$info = $this->getFlags( $rcObj ) . ' ' . $time;
@@ -332,9 +344,9 @@ class NCL extends EnhancedChangesList {
 		if ( is_int( $size ) ) {
 			$size = $this->wrapCharacterDifference( $size );
 			// FIXME: i18n: Hard coded parentheses and spaces.
-			return "($diff; $hist; $size)";
+			return $this->msg( 'cleanchanges-rcinfo-3' )->rawParams( $diff, $hist, $size)->escaped();
 		} else {
-			return "($diff; $hist)";
+			return $this->msg( 'cleanchanges-rcinfo-2' )->rawParams( $diff, $hist )->escaped();
 		}
 	}
 
@@ -342,7 +354,7 @@ class NCL extends EnhancedChangesList {
 	 * Enhanced RC ungrouped line.
 	 * @return string a HTML formated line
 	 */
-	function recentChangesBlockLine( $rcObj ) {
+	protected function recentChangesBlockLine( $rcObj ) {
 		# Flag and Timestamp
 		$info = $this->getFlags( $rcObj ) . ' ' . $rcObj->timestamp;
 		$items[] = $this->spacerArrow() . Xml::tags( 'tt', null, $info );
@@ -441,7 +453,7 @@ class NCL extends EnhancedChangesList {
 				$this->msg( 'contribslink' )->escaped() );
 		}
 		if ( $this->getUser()->isAllowed( 'block' ) ) {
-			$items[] = $this->skin->blockLink( $userId, $userText );
+			$items[] = Linker::blockLink( $userId, $userText );
 		}
 		if ( $userId ) {
 			$userrightsPage = new UserrightsPage();
@@ -468,7 +480,7 @@ class NCL extends EnhancedChangesList {
 	 * Makes aggregated list of contributors for a changes group.
 	 * Example: [Usera; AnotherUser; ActiveUser ‎(2×); Userabc ‎(6×)]
 	 */
-	function makeUserlinks( $userlinks ) {
+	protected function makeUserlinks( $userlinks ) {
 		/*
 		 * User with least changes first, and fallback to alphabetical sorting if
 		 * multiple users have same number of changes.
@@ -490,7 +502,7 @@ class NCL extends EnhancedChangesList {
 		return $this->XMLwrapper( 'changedby', "[$text]", 'span', false );
 	}
 
-	function getFlags( $rc, Array $overrides = null ) {
+	protected function getFlags( $rc, Array $overrides = null ) {
 		// TODO: we assume all characters are of equal width, which they may be not
 		$map = array(
 			# item  =>        field       letter-or-something

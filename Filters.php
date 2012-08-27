@@ -1,7 +1,6 @@
 <?php
 
 class CCFilters {
-
 	public static function user( &$conds, &$tables, &$join_conds, $opts ) {
 		global $wgRequest;
 		$opts->add( 'users', '' );
@@ -80,5 +79,4 @@ class CCFilters {
 		$items['tailer'] = array( wfMessage( 'cleanchanges-language' )->escaped(), $str );
 		return true;
 	}
-
 }
