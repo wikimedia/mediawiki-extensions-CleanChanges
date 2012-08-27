@@ -331,6 +331,7 @@ class NCL extends EnhancedChangesList {
 	protected function changeInfo( $diff, $hist, $size ) {
 		if ( is_int( $size ) ) {
 			$size = $this->wrapCharacterDifference( $size );
+			// FIXME: i18n: Hard coded parentheses and spaces.
 			return "($diff; $hist; $size)";
 		} else {
 			return "($diff; $hist)";
@@ -536,9 +537,10 @@ class NCL extends EnhancedChangesList {
 		global $wgRCChangedSizeThreshold;
 		static $cache = array();
 		if ( !isset( $cache[$szdiff] ) ) {
+			// @todo FIXME: Hard coded text (+).
 			$prefix = $szdiff > 0 ? '+' : '';
-			$cache[$szdiff] = $this->msg( 'rc-change-size',
-				$prefix . $this->getLanguage()->formatNum( $szdiff )
+			$cache[$szdiff] = $prefix . $this->msg( 'rc-change-size',
+				$this->getLanguage()->formatNum( $szdiff )
 			)->text();
 		}
 
