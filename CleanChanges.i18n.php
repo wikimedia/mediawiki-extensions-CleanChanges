@@ -628,6 +628,8 @@ $messages['ja'] = array(
 	'cleanchanges-language-na' => 'すべて',
 	'cleanchanges-users' => '利用者 (|で区切る):',
 	'cleanchanges-showuserlinks' => '利用者リンクを表示',
+	'cleanchanges-rcinfo-2' => '($1; $2)',
+	'cleanchanges-rcinfo-3' => '($1; $2; $3)',
 );
 
 /** Javanese (Basa Jawa)
