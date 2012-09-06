@@ -274,9 +274,9 @@ $messages['de'] = array(
 	'cleanchanges-changerightslink' => 'Gruppen ändern',
 	'cleanchanges-desc' => 'Ermöglicht eine kompaktere Anzeige der [[Special:RecentChanges|letzten Änderungen]]',
 	'cleanchanges-language' => 'Sprache:',
-	'cleanchanges-language-na' => 'alle',
-	'cleanchanges-users' => 'Benutzer (Trennzeichen: |):',
-	'cleanchanges-showuserlinks' => 'Zeige Benutzer-Links',
+	'cleanchanges-language-na' => 'Alle',
+	'cleanchanges-users' => 'Benutzer (Trennzeichen:&nbsp;„|“):',
+	'cleanchanges-showuserlinks' => 'Zeige Benutzerlinks',
 );
 
 /** Zazaki (Zazaki)
