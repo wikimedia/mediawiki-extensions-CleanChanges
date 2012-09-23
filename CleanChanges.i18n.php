@@ -622,11 +622,11 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'cleanchanges-changerightslink' => '権限の変更',
+	'cleanchanges-changerightslink' => '権限を変更',
 	'cleanchanges-desc' => '[[Special:RecentChanges|最近の更新一覧]]をよりコンパクトに表示する',
 	'cleanchanges-language' => '言語:',
 	'cleanchanges-language-na' => 'すべて',
-	'cleanchanges-users' => '利用者 (|で区切る):',
+	'cleanchanges-users' => '利用者 (| で区切る):',
 	'cleanchanges-showuserlinks' => '利用者リンクを表示',
 	'cleanchanges-rcinfo-2' => '($1; $2)',
 	'cleanchanges-rcinfo-3' => '($1; $2; $3)',
