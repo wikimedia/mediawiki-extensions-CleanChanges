@@ -1330,6 +1330,14 @@ $messages['uk'] = array(
 	'cleanchanges-showuserlinks' => 'Показувати посилання користувачів',
 );
 
+/** Uzbek (oʻzbekcha)
+ * @author CoderSI
+ */
+$messages['uz'] = array(
+	'cleanchanges-language' => 'Til:',
+	'cleanchanges-users' => 'Ishtirokchilar (ajratuvchi: |):',
+);
+
 /** vèneto (vèneto)
  * @author Candalua
  */
