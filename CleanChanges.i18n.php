@@ -145,7 +145,7 @@ $messages['ba'] = array(
 	'cleanchanges-showuserlinks' => 'Ҡатнашыусы һылтанмаларын күрһәтергә',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -493,7 +493,7 @@ $messages['gv'] = array(
 	'cleanchanges-language' => 'Çhengey:',
 );
 
-/** Hausa (هَوُسَ) */
+/** Hausa (Hausa) */
 $messages['ha'] = array(
 	'cleanchanges-language-na' => 'Duka',
 );
@@ -701,7 +701,7 @@ $messages['ksh'] = array(
 	'cleanchanges-showuserlinks' => 'Links op Metmaacher zeije',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  */
 $messages['ku-latn'] = array(
@@ -859,7 +859,7 @@ $messages['nah'] = array(
 	'cleanchanges-showuserlinks' => 'Mà monèxti ìnetzòwìlwàn in motekìuhtiàni',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -883,7 +883,7 @@ $messages['nl'] = array(
 	'cleanchanges-showuserlinks' => 'Gebruikersverwijzingen weergeven',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -1127,7 +1127,7 @@ $messages['sl'] = array(
 	'cleanchanges-showuserlinks' => 'Prikaži uporabniške povezave',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -1141,7 +1141,7 @@ $messages['sr-ec'] = array(
 	'cleanchanges-showuserlinks' => 'Прикажи корисничке везе',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  */
@@ -1404,7 +1404,7 @@ $messages['yi'] = array(
 	'cleanchanges-language-na' => 'אלע',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Chenxiaoqino
  * @author Chenzw
  * @author Liangent
@@ -1418,7 +1418,7 @@ $messages['zh-hans'] = array(
 	'cleanchanges-showuserlinks' => '显示用户链接',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Alexsh
  * @author Liangent
  * @author Mark85296341
