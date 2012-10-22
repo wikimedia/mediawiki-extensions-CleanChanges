@@ -42,13 +42,6 @@ It is shown after clicking on the "Show user links"-picture if you are allowed t
 * $3 is the size change from the oldest revision to the latest revision in the overview.',
 );
 
-/** Turoyo (Ṫuroyo)
- * @author Ariyo
- */
-$messages['tru'] = array(
-	'cleanchanges-language' => 'Leşono:',
-);
-
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
@@ -493,7 +486,8 @@ $messages['gv'] = array(
 	'cleanchanges-language' => 'Çhengey:',
 );
 
-/** Hausa (Hausa) */
+/** Hausa (Hausa)
+ */
 $messages['ha'] = array(
 	'cleanchanges-language-na' => 'Duka',
 );
@@ -1291,6 +1285,13 @@ $messages['tr'] = array(
 	'cleanchanges-showuserlinks' => 'Kullanıcı bağlantılarını göster',
 );
 
+/** Turoyo (Ṫuroyo)
+ * @author Ariyo
+ */
+$messages['tru'] = array(
+	'cleanchanges-language' => 'Leşono:',
+);
+
 /** Tatar (Cyrillic script) (татарча)
  * @author Рашат Якупов
  */
@@ -1431,4 +1432,3 @@ $messages['zh-hant'] = array(
 	'cleanchanges-users' => '用戶 (Sep: |):',
 	'cleanchanges-showuserlinks' => '顯示用戶連結',
 );
-
