@@ -1,7 +1,7 @@
 <?php
 
 class CCFilters {
-	public static function user( &$conds, &$tables, &$join_conds, $opts ) {
+	public static function user( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
 		global $wgRequest;
 		$opts->add( 'users', '' );
 		$users = $wgRequest->getVal( 'users' );
@@ -24,7 +24,7 @@ class CCFilters {
 		return true;
 	}
 
-	public static function userForm( &$items, $opts ) {
+	public static function userForm( &$items, FormOptions $opts ) {
 		$opts->consumeValue( 'users' );
 		global $wgRequest;
 
@@ -34,7 +34,7 @@ class CCFilters {
 		return true;
 	}
 
-	public static function trailer( &$conds, &$tables, &$join_conds, $opts ) {
+	public static function trailer( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
 		global $wgRequest;
 		$opts->add( 'trailer', '' );
 		$trailer = $wgRequest->getVal( 'trailer' );
@@ -47,7 +47,7 @@ class CCFilters {
 		return true;
 	}
 
-	public static function trailerForm( &$items, $opts ) {
+	public static function trailerForm( &$items, FormOptions $opts ) {
 		$opts->consumeValue( 'trailer' );
 
 		global $wgRequest;

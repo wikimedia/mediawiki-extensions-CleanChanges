@@ -352,6 +352,7 @@ class NCL extends EnhancedChangesList {
 
 	/**
 	 * Enhanced RC ungrouped line.
+	 * @param RecentChange $rcObj
 	 * @return string a HTML formated line
 	 */
 	protected function recentChangesBlockLine( $rcObj ) {
@@ -503,7 +504,7 @@ class NCL extends EnhancedChangesList {
 	}
 
 	protected function getFlags( $rc, Array $overrides = null ) {
-		// TODO: we assume all characters are of equal width, which they may be not
+		// @todo We assume all characters are of equal width, which they may be not
 		$map = array(
 			# item  =>        field       letter-or-something
 			'new'   => array( 'rc_new',   self::flag( 'newpage' ) ),
@@ -534,7 +535,9 @@ class NCL extends EnhancedChangesList {
 	}
 
 	protected function getCharacterDifference( $new, $old = null ) {
-		if ( $old === null ) $old = $new;
+		if ( $old === null ) {
+			$old = $new;
+		}
 
 		$newSize = $new->getAttribute( 'rc_new_len' );
 		$oldSize = $old->getAttribute( 'rc_old_len' );
@@ -557,7 +560,9 @@ class NCL extends EnhancedChangesList {
 		}
 
 		$tag = 'span';
-		if ( abs( $szdiff ) > abs( $wgRCChangedSizeThreshold ) ) $tag = 'strong';
+		if ( abs( $szdiff ) > abs( $wgRCChangedSizeThreshold ) ) {
+			$tag = 'strong';
+		}
 
 		if ( $szdiff === 0 ) {
 			return $this->XMLwrapper( 'mw-plusminus-null', $cache[$szdiff], $tag );
