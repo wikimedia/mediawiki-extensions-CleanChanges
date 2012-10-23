@@ -231,7 +231,7 @@ class NCL extends EnhancedChangesList {
 
 		# Main line, flags and timestamp
 
-		$info = Xml::tags( 'tt', null,
+		$info = Xml::tags( 'code', null,
 			$this->getFlags( $block[0], $overrides ) . ' ' . $block[0]->timestamp );
 		$rci = 'RCI' . $this->rcCacheIndex;
 		$rcl = 'RCL' . $this->rcCacheIndex;
@@ -311,7 +311,7 @@ class NCL extends EnhancedChangesList {
 			}
 
 			$info = $this->getFlags( $rcObj ) . ' ' . $time;
-			$items[] = $this->spacerArrow() . Xml::tags( 'tt', null, $info );
+			$items[] = $this->spacerArrow() . Xml::tags( 'code', null, $info );
 
 			if ( !$log ) {
 				$cur  = $rcObj->_curLink;
@@ -358,7 +358,7 @@ class NCL extends EnhancedChangesList {
 	protected function recentChangesBlockLine( $rcObj ) {
 		# Flag and Timestamp
 		$info = $this->getFlags( $rcObj ) . ' ' . $rcObj->timestamp;
-		$items[] = $this->spacerArrow() . Xml::tags( 'tt', null, $info );
+		$items[] = $this->spacerArrow() . Xml::tags( 'code', null, $info );
 
 		# Article link
 		$items[] = $rcObj->link;
