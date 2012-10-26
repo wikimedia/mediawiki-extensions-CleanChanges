@@ -274,11 +274,12 @@ $messages['de'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
 	'cleanchanges-language' => 'Zıwan:',
 	'cleanchanges-language-na' => 'Pêro',
-	'cleanchanges-users' => 'Karberi (duri fi: |):',
+	'cleanchanges-users' => 'Karberi (Ciya: |):',
 );
 
 /** Lower Sorbian (dolnoserbski)
