@@ -641,6 +641,7 @@ $messages['ka'] = array(
 	'cleanchanges-changerightslink' => 'ჯგუფების ცვლილება',
 	'cleanchanges-language' => 'ენა:',
 	'cleanchanges-language-na' => 'ყველა',
+	'cleanchanges-users' => 'მომხმარებლები (გამყოფი: |):',
 );
 
 /** Kalaallisut (kalaallisut)
