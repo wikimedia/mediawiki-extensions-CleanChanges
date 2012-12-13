@@ -52,6 +52,9 @@ class CCFilters {
 
 		global $wgRequest;
 		$default = $wgRequest->getVal( 'trailer', '' );
+		/**
+		 * @var Language $wgLang
+		 */
 		global $wgLang;
 		if ( is_callable( array( 'LanguageNames', 'getNames' ) ) ) {
 			$languages = LanguageNames::getNames( $wgLang->getCode(),

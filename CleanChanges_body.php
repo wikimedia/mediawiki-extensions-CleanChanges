@@ -73,15 +73,23 @@ class NCL extends EnhancedChangesList {
 		return parent::endRecentChangesList() . '</div>';
 	}
 
-	protected function isLog( $rc ) {
-		if ( $rc->getAttribute( 'rc_type' ) == RC_LOG ) {
+	/**
+	 * @param RCCacheEntry $rc
+	 * @return int
+	 */
+	protected function isLog( RCCacheEntry $rc = null ) {
+		if ( $rc && $rc->getAttribute( 'rc_type' ) == RC_LOG ) {
 			return 2;
 		} else {
 			return 0;
 		}
 	}
 
-	protected function getLogTitle( $rc ) {
+	/**
+	 * @param RCCacheEntry $rc
+	 * @return string
+	 */
+	protected function getLogTitle( RCCacheEntry $rc ) {
 		$logtype = $rc->getAttribute( 'rc_log_type' );
 		$logpage = new LogPage( $logtype );
 		$logname = $logpage->getName()->escaped();
@@ -91,7 +99,10 @@ class NCL extends EnhancedChangesList {
 	}
 
 	/**
-	 * Format a line for enhanced recentchange (aka with javascript and block of lines).
+	 * Format a line for enhanced recentchange (aka with JavaScript and block of lines).
+	 * @param RecentChange $baseRC
+	 * @param bool $watched
+	 * @return string
 	 */
 	public function recentChangesLine( &$baseRC, $watched = false ) {
 		# Create a specialised object
@@ -169,7 +180,10 @@ class NCL extends EnhancedChangesList {
 		return $ret;
 	}
 
-	protected function makeLinks( $rc ) {
+	/**
+	 * @param RCCacheEntry $rc
+	 */
+	protected function makeLinks( RCCacheEntry $rc ) {
 		/* These will be overriden with actual links below, if applicable */
 		$rc->_curLink  = $this->message['cur'];
 		$rc->_diffLink = $this->message['diff'];
@@ -207,12 +221,15 @@ class NCL extends EnhancedChangesList {
 
 	/**
 	 * Enhanced RC group
+	 * @param RCCacheEntry[] $block
+	 * @return string
 	 */
 	protected function recentChangesBlockGroup( $block ) {
 		# Collate list of users
 		$isnew = false;
 		$userlinks = array();
 		$overrides = array( 'minor' => false, 'bot' => false );
+		$oldid = 0;
 		foreach ( $block as $rcObj ) {
 			$oldid = $rcObj->mAttribs['rc_last_oldid'];
 			if ( $rcObj->mAttribs['rc_new'] ) {
@@ -294,7 +311,11 @@ class NCL extends EnhancedChangesList {
 		return $lines . "\n";
 	}
 
-	protected function subEntries( $block ) {
+	/**
+	 * @param RCCacheEntry[] $block
+	 * @return string
+	 */
+	protected function subEntries( array $block ) {
 		$lines = '';
 		foreach ( $block as $rcObj ) {
 			$items = array();
@@ -340,6 +361,12 @@ class NCL extends EnhancedChangesList {
 		return $lines;
 	}
 
+	/**
+	 * @param string $diff
+	 * @param string $hist
+	 * @param mixed $size
+	 * @return string
+	 */
 	protected function changeInfo( $diff, $hist, $size ) {
 		if ( is_int( $size ) ) {
 			$size = $this->wrapCharacterDifference( $size );
@@ -352,10 +379,10 @@ class NCL extends EnhancedChangesList {
 
 	/**
 	 * Enhanced RC ungrouped line.
-	 * @param RecentChange $rcObj
+	 * @param RCCacheEntry $rcObj
 	 * @return string a HTML formated line
 	 */
-	protected function recentChangesBlockLine( $rcObj ) {
+	protected function recentChangesBlockLine( RCCacheEntry $rcObj = null ) {
 		# Flag and Timestamp
 		$info = $this->getFlags( $rcObj ) . ' ' . $rcObj->timestamp;
 		$items[] = $this->spacerArrow() . Xml::tags( 'code', null, $info );
@@ -383,7 +410,11 @@ class NCL extends EnhancedChangesList {
 		return '<div>' . implode( " {$this->dir}", $items ) . "</div>\n";
 	}
 
-	public function getComment( $rc ) {
+	/**
+	 * @param RCCacheEntry $rc
+	 * @return string
+	 */
+	public function getComment( RCCacheEntry $rc ) {
 		$comment = $rc->getAttribute( 'rc_comment' );
 		$action = '';
 		if ( $comment === '' ) {
@@ -446,7 +477,7 @@ class NCL extends EnhancedChangesList {
 
 		$items = array();
 		if ( $talkable ) {
-			$items[] = $this->skin->userTalkLink( $userId, $userText );
+			$items[] = Linker::userTalkLink( $userId, $userText );
 		}
 		if ( $userId ) {
 			$targetPage = SpecialPage::getTitleFor( 'Contributions', $userText );
@@ -503,7 +534,12 @@ class NCL extends EnhancedChangesList {
 		return $this->XMLwrapper( 'changedby', "[$text]", 'span', false );
 	}
 
-	protected function getFlags( $rc, Array $overrides = null ) {
+	/**
+	 * @param RCCacheEntry $rc
+	 * @param array $overrides
+	 * @return string
+	 */
+	protected function getFlags( $rc, array $overrides = null ) {
 		// @todo We assume all characters are of equal width, which they may be not
 		$map = array(
 			# item  =>        field       letter-or-something
@@ -534,6 +570,11 @@ class NCL extends EnhancedChangesList {
 		return implode( '', $items );
 	}
 
+	/**
+	 * @param RCCacheEntry $new
+	 * @param RCCacheEntry|null $old
+	 * @return mixed
+	 */
 	protected function getCharacterDifference( $new, $old = null ) {
 		if ( $old === null ) {
 			$old = $new;
@@ -542,12 +583,17 @@ class NCL extends EnhancedChangesList {
 		$newSize = $new->getAttribute( 'rc_new_len' );
 		$oldSize = $old->getAttribute( 'rc_old_len' );
 		if ( $newSize === null || $oldSize === null ) {
+			// @todo Return null instead of string here?
 			return '';
 		}
 
 		return $newSize - $oldSize;
 	}
 
+	/**
+	 * @param mixed $szdiff Character difference.
+	 * @return string
+	 */
 	public function wrapCharacterDifference( $szdiff ) {
 		global $wgRCChangedSizeThreshold;
 		static $cache = array();
