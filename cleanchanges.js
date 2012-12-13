@@ -1,11 +1,13 @@
 (function ( mw, $ ) {
-	window.toggleVisibilityE = function ( _levelId, _otherId, _linkId, _type ) {
-		var thisLevel = document.getElementById( _levelId ),
-			otherLevel = document.getElementById( _otherId ),
-			linkLevel = document.getElementById( _linkId );
+	'use strict';
+
+	window.toggleVisibilityE = function ( levelId, otherId, linkId, type ) {
+		var thisLevel = document.getElementById( levelId ),
+			otherLevel = document.getElementById( otherId ),
+			linkLevel = document.getElementById( linkId );
 
 		if ( thisLevel.style.display === 'none' ) {
-			thisLevel.style.display = _type;
+			thisLevel.style.display = type;
 			otherLevel.style.display = 'none';
 			linkLevel.style.display = 'inline';
 		} else {
