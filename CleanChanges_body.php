@@ -382,7 +382,7 @@ class NCL extends EnhancedChangesList {
 	 * @param RCCacheEntry $rcObj
 	 * @return string a HTML formated line
 	 */
-	protected function recentChangesBlockLine( RCCacheEntry $rcObj = null ) {
+	protected function recentChangesBlockLine( $rcObj ) {
 		# Flag and Timestamp
 		$info = $this->getFlags( $rcObj ) . ' ' . $rcObj->timestamp;
 		$items[] = $this->spacerArrow() . Xml::tags( 'code', null, $info );
