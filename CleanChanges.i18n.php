@@ -126,6 +126,13 @@ $messages['az'] = array(
 	'cleanchanges-language-na' => 'Hamısı',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Ebrahimi-amir
+ */
+$messages['azb'] = array(
+	'cleanchanges-users' => 'ایستیفاده‌چی‌لر (آییرماق: |):',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  */
