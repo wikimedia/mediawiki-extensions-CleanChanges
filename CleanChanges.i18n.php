@@ -603,6 +603,14 @@ $messages['ig'] = array(
 	'cleanchanges-showuserlinks' => "Zí jikodo ọ'bànifé",
 );
 
+/** Icelandic (íslenska)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['is'] = array(
+	'cleanchanges-language' => 'Tungumál:',
+	'cleanchanges-language-na' => 'Allir',
+);
+
 /** Italian (italiano)
  * @author BrokenArrow
  * @author Darth Kule
@@ -762,6 +770,13 @@ $messages['lt'] = array(
  */
 $messages['ltg'] = array(
 	'cleanchanges-language-na' => 'Vysi',
+);
+
+/** Latvian (latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'cleanchanges-showuserlinks' => 'Rādīt lietotāja saites',
 );
 
 /** Eastern Mari (олык марий)
