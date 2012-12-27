@@ -1211,6 +1211,14 @@ $messages['sv'] = array(
 	'cleanchanges-showuserlinks' => 'Visa användarlänkar',
 );
 
+/** Swahili (Kiswahili)
+ * @author Stephenwanjau
+ */
+$messages['sw'] = array(
+	'cleanchanges-language' => 'Lugha:',
+	'cleanchanges-language-na' => 'Wote',
+);
+
 /** Silesian (ślůnski)
  * @author Ozi64
  */
