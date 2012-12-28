@@ -128,8 +128,11 @@ $messages['az'] = array(
 
 /** South Azerbaijani (تورکجه)
  * @author Ebrahimi-amir
+ * @author පසිඳු කාවින්ද
  */
 $messages['azb'] = array(
+	'cleanchanges-language' => 'دیل:',
+	'cleanchanges-language-na' => 'بوتون',
 	'cleanchanges-users' => 'ایستیفاده‌چی‌لر (آییرماق: |):',
 );
 
