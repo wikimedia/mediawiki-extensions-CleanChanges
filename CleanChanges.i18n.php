@@ -526,11 +526,14 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
 	'cleanchanges-changerightslink' => 'ग्रुप बदलें',
 	'cleanchanges-desc' => '[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें',
+	'cleanchanges-language' => 'भाषा:',
+	'cleanchanges-language-na' => 'सभी',
 );
 
 /** Croatian (hrvatski)
@@ -901,7 +904,7 @@ $messages['nl'] = array(
 	'cleanchanges-language' => 'Taal:',
 	'cleanchanges-language-na' => 'Alle talen',
 	'cleanchanges-users' => 'Gebruikers (scheidingsteken "|"):',
-	'cleanchanges-showuserlinks' => 'Gebruikersverwijzingen weergeven',
+	'cleanchanges-showuserlinks' => 'Gebruikerskoppelingen weergeven',
 );
 
 /** Norwegian Nynorsk (norsk (nynorsk)‎)
