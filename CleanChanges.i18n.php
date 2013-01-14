@@ -24,6 +24,7 @@ $messages['en'] = array(
  * @author Jon Harald Søby
  * @author Meno25
  * @author Purodha
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'cleanchanges-changerightslink' => 'Link text for a link in the recent changes page to manage user rights for a user.
@@ -33,10 +34,12 @@ It is shown after clicking on the "Show user links"-picture if you are allowed t
 	'cleanchanges-language-na' => 'Used in the trailer selection of [[Special:RecentChanges]] to not filter on any trailer.
 
 {{Identical|All}}',
-	'cleanchanges-rcinfo-2' => 'Use in enhanced recent changes when CleanChanges is enabled. Parameters:
+	'cleanchanges-rcinfo-2' => '{{Optional}}
+Use in enhanced recent changes when CleanChanges is enabled. Parameters:
 * $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
 * $2 is a link to the page history. {{msg-mw|hist}} is used as link text.',
-	'cleanchanges-rcinfo-3' => 'Use in enhanced recent changes when CleanChanges is enabled. Parameters:
+	'cleanchanges-rcinfo-3' => '{{Optional}}
+Use in enhanced recent changes when CleanChanges is enabled. Parameters:
 * $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
 * $2 is a link to the page history. {{msg-mw|hist}} is used as link text;
 * $3 is the size change from the oldest revision to the latest revision in the overview.',
