@@ -666,6 +666,8 @@ $messages['ka'] = array(
 	'cleanchanges-language' => 'ენა:',
 	'cleanchanges-language-na' => 'ყველა',
 	'cleanchanges-users' => 'მომხმარებლები (გამყოფი: |):',
+	'cleanchanges-rcinfo-2' => '($1; $2)',
+	'cleanchanges-rcinfo-3' => '($1; $2; $3)',
 );
 
 /** Kalaallisut (kalaallisut)
