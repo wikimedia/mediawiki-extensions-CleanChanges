@@ -1043,6 +1043,13 @@ $messages['pt-br'] = array(
 	'cleanchanges-showuserlinks' => 'Mostrar ligações de utilizador',
 );
 
+/** Quechua (Runa Simi)
+ * @author AlimanRuna
+ */
+$messages['qu'] = array(
+	'cleanchanges-language-na' => 'Tukuy',
+);
+
 /** Tarifit (Tarifit)
  * @author Aryaz
  * @author Jose77
