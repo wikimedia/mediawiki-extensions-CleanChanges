@@ -34,6 +34,13 @@ It is shown after clicking on the "Show user links"-picture if you are allowed t
 	'cleanchanges-language-na' => 'Used in the trailer selection of [[Special:RecentChanges]] to not filter on any trailer.
 
 {{Identical|All}}',
+	'cleanchanges-users' => 'Used as label for "Users" input box.
+
+"Sep: |" stands for "Separate with |" or "|-separated".',
+	'cleanchanges-showuserlinks' => 'Used as HTML <code>alt=</code> and <code>title=</code> attribute for HTML <code><nowiki><img></nowiki></code> tag for <code>magnify-clip.png</code>.
+
+The image is used as link text.
+The link is an action link to show/hide User Info.',
 	'cleanchanges-rcinfo-2' => '{{Optional}}
 Use in enhanced recent changes when CleanChanges is enabled. Parameters:
 * $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
