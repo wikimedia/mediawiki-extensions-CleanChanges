@@ -907,6 +907,15 @@ $messages['nb'] = array(
 	'cleanchanges-showuserlinks' => 'Vis brukerlenker',
 );
 
+/** Low German (Plattdüütsch)
+ * @author Joachim Mos
+ */
+$messages['nds'] = array(
+	'cleanchanges-language' => 'Spraak:',
+	'cleanchanges-language-na' => 'All',
+	'cleanchanges-users' => 'Brukers (Sep: |):',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  */
