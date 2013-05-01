@@ -1049,6 +1049,7 @@ $messages['pt'] = array(
 
 /** Brazilian Portuguese (português do Brasil)
  * @author Eduardo.mps
+ * @author Luckas
  */
 $messages['pt-br'] = array(
 	'cleanchanges-changerightslink' => 'alterar grupos',
@@ -1056,7 +1057,7 @@ $messages['pt-br'] = array(
 	'cleanchanges-language' => 'Língua:',
 	'cleanchanges-language-na' => 'Todas',
 	'cleanchanges-users' => 'Utilizadores (Sep: |):',
-	'cleanchanges-showuserlinks' => 'Mostrar ligações de utilizador',
+	'cleanchanges-showuserlinks' => 'Mostrar links de usuário',
 );
 
 /** Quechua (Runa Simi)
