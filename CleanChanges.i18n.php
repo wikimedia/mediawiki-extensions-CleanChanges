@@ -897,7 +897,7 @@ $messages['nah'] = array(
 	'cleanchanges-showuserlinks' => 'Mà monèxti ìnetzòwìlwàn in motekìuhtiàni',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -930,7 +930,7 @@ $messages['nl'] = array(
 	'cleanchanges-showuserlinks' => 'Gebruikerskoppelingen weergeven',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Harald Khan
  * @author Njardarlogar
  */
@@ -955,7 +955,7 @@ $messages['oc'] = array(
 	'cleanchanges-showuserlinks' => "Afichar los ligams d'aqueste utilizaire",
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Jnanaranjan Sahu
  * @author Odisha1
  */
