@@ -237,8 +237,10 @@ $messages['ca'] = array(
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
+	'cleanchanges-language' => 'Мотт:',
 	'cleanchanges-language-na' => 'Массо',
 );
 
