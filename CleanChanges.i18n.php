@@ -240,6 +240,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'cleanchanges-desc' => 'Алсамо тIеIовдан гайтар [[Special:RecentChanges|керла нисдаршан список]]',
 	'cleanchanges-language' => 'Мотт:',
 	'cleanchanges-language-na' => 'Массо',
 );
