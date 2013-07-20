@@ -258,6 +258,13 @@ $messages['cs'] = array(
 	'cleanchanges-showuserlinks' => 'Ukázat uživatelské odkazy',
 );
 
+/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+ * @author ОйЛ
+ */
+$messages['cu'] = array(
+	'cleanchanges-language' => 'ѩꙁꙑкъ :',
+);
+
 /** Welsh (Cymraeg)
  * @author Lloffiwr
  */
