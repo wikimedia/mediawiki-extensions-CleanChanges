@@ -158,6 +158,18 @@ $messages['ba'] = array(
 	'cleanchanges-showuserlinks' => 'Ҡатнашыусы һылтанмаларын күрһәтергә',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'cleanchanges-changerightslink' => 'ribayan an mga grupo',
+	'cleanchanges-desc' => 'Mas masidsidong pagpapahiling kan [[Special:RecentChanges|listahan kan dae pa sana nahahaloy na mga kaliwatan]]',
+	'cleanchanges-language' => 'Lengguwahe:',
+	'cleanchanges-language-na' => 'Gabos',
+	'cleanchanges-users' => 'Mga Paragamit (Pagsuhayon:|):',
+	'cleanchanges-showuserlinks' => 'Ipahiling an kasugpunan nin paragamit',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
