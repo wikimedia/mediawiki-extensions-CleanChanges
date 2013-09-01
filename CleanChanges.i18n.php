@@ -43,13 +43,13 @@ The image is used as link text.
 The link is an action link to show/hide User Info.',
 	'cleanchanges-rcinfo-2' => '{{Optional}}
 Use in enhanced recent changes when CleanChanges is enabled. Parameters:
-* $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
-* $2 is a link to the page history. {{msg-mw|hist}} is used as link text.',
+* $1 - the number of changes in the overview with {{msg-mw|Nchanges}} used as link text or a diff link with {{msg-mw|Diff}} as link text
+* $2 - a link to the page history. {{msg-mw|Hist}} is used as link text',
 	'cleanchanges-rcinfo-3' => '{{Optional}}
 Use in enhanced recent changes when CleanChanges is enabled. Parameters:
-* $1 is the number of changes in the overview with {{msg-mw|nchanges}} used as link text or a diff link with {{msg-mw|diff}} as link text;
-* $2 is a link to the page history. {{msg-mw|hist}} is used as link text;
-* $3 is the size change from the oldest revision to the latest revision in the overview.',
+* $1 - the number of changes in the overview with {{msg-mw|Nchanges}} used as link text or a diff link with {{msg-mw|Diff}} as link text
+* $2 - a link to the page history. {{msg-mw|Hist}} is used as link text
+* $3 - the size change from the oldest revision to the latest revision in the overview',
 );
 
 /** Afrikaans (Afrikaans)
