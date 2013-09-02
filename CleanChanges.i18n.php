@@ -349,13 +349,14 @@ $messages['ee'] = array(
  * @author Consta
  * @author Crazymadlover
  * @author Omnipaedista
+ * @author Protnet
  */
 $messages['el'] = array(
 	'cleanchanges-changerightslink' => 'αλλαγή ομάδων',
 	'cleanchanges-desc' => 'Πιο συμπαγής προβολή της [[Special:RecentChanges|λίστας προσφάτων αλλαγών]]',
 	'cleanchanges-language' => 'Γλώσσα:',
 	'cleanchanges-language-na' => 'Όλες',
-	'cleanchanges-users' => 'Χρήστες (Διαχωρ.: |):',
+	'cleanchanges-users' => 'Χρήστες (διαχωρισμένοι με |):',
 	'cleanchanges-showuserlinks' => 'Προβολή συνδέσμων χρήστη',
 );
 
