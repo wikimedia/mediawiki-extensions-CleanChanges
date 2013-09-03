@@ -36,6 +36,10 @@ class NCL extends EnhancedChangesList {
 
 	protected static $userinfo = array();
 
+	/**
+	 * @param $vars array
+	 * @return bool
+	 */
 	public static function addScriptVariables( &$vars ) {
 		$vars += self::$userinfo;
 		return true;
@@ -52,6 +56,9 @@ class NCL extends EnhancedChangesList {
 	 */
 	protected $direction = true;
 
+	/**
+	 * @param IContextSource|Skin $skin
+	 */
 	public function __construct( $skin ) {
 		$lang = $this->getLanguage();
 		parent::__construct( $skin );
@@ -59,6 +66,9 @@ class NCL extends EnhancedChangesList {
 		$this->dir = $lang->getDirMark();
 	}
 
+	/**
+	 * @return String
+	 */
 	public function beginRecentChangesList() {
 		parent::beginRecentChangesList();
 		$dir = $this->direction ? 'ltr' : 'rtl';
@@ -69,6 +79,9 @@ class NCL extends EnhancedChangesList {
 			);
 	}
 
+	/**
+	 * @return string
+	 */
 	public function endRecentChangesList() {
 		return parent::endRecentChangesList() . '</div>';
 	}
@@ -80,9 +93,8 @@ class NCL extends EnhancedChangesList {
 	protected function isLog( RCCacheEntry $rc = null ) {
 		if ( $rc && $rc->getAttribute( 'rc_type' ) == RC_LOG ) {
 			return 2;
-		} else {
-			return 0;
 		}
+		return 0;
 	}
 
 	/**
@@ -215,7 +227,8 @@ class NCL extends EnhancedChangesList {
 
 			$rc->_histLink = Linker::link( $rc->getTitle(),
 				$this->message['hist'], array(),
-				$rc->_reqCurId + array( 'action' => 'history' ) );
+				$rc->_reqCurId + array( 'action' => 'history' )
+			);
 		}
 	}
 
@@ -423,12 +436,10 @@ class NCL extends EnhancedChangesList {
 			$priviledged = $this->getUser()->isAllowed( 'deleterevision' );
 			if ( $priviledged ) {
 				return $action . ' <span class="history-deleted">' . $comment . '</span>';
-			} else {
-				return $action . ' <span class="history-deleted">' . $this->msg( 'rev-deleted-comment' )->escaped() . '</span>';
 			}
-		} else {
-			return $action . Linker::commentBlock( $comment, $rc->getTitle() );
+			return $action . ' <span class="history-deleted">' . $this->msg( 'rev-deleted-comment' )->escaped() . '</span>';
 		}
+		return $action . Linker::commentBlock( $comment, $rc->getTitle() );
 	}
 
 	/**
@@ -456,7 +467,6 @@ class NCL extends EnhancedChangesList {
 			$users[] = $userText;
 			$userindex = count( $users ) -1;
 		}
-
 
 		global $wgStylePath;
 		$image = Xml::element( 'img', array(
@@ -614,16 +624,21 @@ class NCL extends EnhancedChangesList {
 			return $this->XMLwrapper( 'mw-plusminus-null', $cache[$szdiff], $tag );
 		} elseif ( $szdiff > 0 ) {
 			return $this->XMLwrapper( 'mw-plusminus-pos', $cache[$szdiff], $tag );
-		} else {
-			return $this->XMLwrapper( 'mw-plusminus-neg', $cache[$szdiff], $tag );
 		}
+		return $this->XMLwrapper( 'mw-plusminus-neg', $cache[$szdiff], $tag );
 	}
 
+	/**
+	 * @param $class
+	 * @param $content
+	 * @param string $tag
+	 * @param bool $escape
+	 * @return string
+	 */
 	protected function XMLwrapper( $class, $content, $tag = 'span', $escape = true ) {
 		if ( $escape ) {
 			return Xml::element( $tag, array( 'class' => $class ), $content );
-		} else {
-			return Xml::tags( $tag, array( 'class' => $class ), $content );
 		}
+		return Xml::tags( $tag, array( 'class' => $class ), $content );
 	}
 }

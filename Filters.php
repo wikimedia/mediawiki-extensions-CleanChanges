@@ -1,11 +1,21 @@
 <?php
 
 class CCFilters {
+
+	/**
+	 * @param array $conds
+	 * @param array $tables
+	 * @param array $join_conds
+	 * @param FormOptions $opts
+	 * @return bool
+	 */
 	public static function user( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
 		global $wgRequest;
 		$opts->add( 'users', '' );
 		$users = $wgRequest->getVal( 'users' );
-		if ( $users === null ) return true;
+		if ( $users === null ) {
+			return true;
+		}
 
 		$idfilters = array();
 		$userArr = explode( '|', $users );
@@ -24,6 +34,11 @@ class CCFilters {
 		return true;
 	}
 
+	/**
+	 * @param $items array
+	 * @param $opts FormOptions
+	 * @return bool
+	 */
 	public static function userForm( &$items, FormOptions $opts ) {
 		$opts->consumeValue( 'users' );
 		global $wgRequest;
@@ -34,6 +49,13 @@ class CCFilters {
 		return true;
 	}
 
+	/**
+	 * @param array $conds
+	 * @param array $tables
+	 * @param array $join_conds
+	 * @param FormOptions $opts
+	 * @return bool
+	 */
 	public static function trailer( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
 		global $wgRequest;
 		$opts->add( 'trailer', '' );
@@ -47,6 +69,11 @@ class CCFilters {
 		return true;
 	}
 
+	/**
+	 * @param array $items
+	 * @param FormOptions $opts
+	 * @return bool
+	 */
 	public static function trailerForm( &$items, FormOptions $opts ) {
 		$opts->consumeValue( 'trailer' );
 
