@@ -969,7 +969,7 @@ $messages['nn'] = array(
  */
 $messages['oc'] = array(
 	'cleanchanges-changerightslink' => 'càmbia los gropes',
-	'cleanchanges-desc' => "Mai d'afichatge compacte de la [[Special:RecentChanges|tièra dels darrièrs cambiaments]]",
+	'cleanchanges-desc' => "Mai d'afichatge compacte de la [[Special:RecentChanges|lista dels darrièrs cambiaments]]",
 	'cleanchanges-language' => 'Lenga :',
 	'cleanchanges-language-na' => 'Totes',
 	'cleanchanges-users' => 'Utilizaires (sep. per |) :',
