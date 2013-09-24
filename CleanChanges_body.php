@@ -156,13 +156,24 @@ class NCL extends EnhancedChangesList {
 		$rc->_reqOldId = array( 'oldid' => $rc->getAttribute( 'rc_this_oldid' ) );
 		$this->makeLinks( $rc );
 
-		$stuff = $this->userToolLinks( $rc->getAttribute( 'rc_user' ),
-			$rc->getAttribute( 'rc_user_text' ) );
-		self::$userinfo += $stuff[1];
-
-		$rc->_user = Linker::userLink( $rc->getAttribute( 'rc_user' ),
-			$rc->getAttribute( 'rc_user_text' ) );
-		$rc->_userInfo = $stuff[0];
+		// Make user links
+		if ( $this->isDeleted( $rc, Revision::DELETED_USER ) ) {
+			$rc->_user = ' <span class="history-deleted">' . $this->msg( 'rev-deleted-user' )->escaped() . '</span>';
+			$rc->_userInfo = '';
+			self::$userinfo += array();
+		} else {
+			$rc->_user = Linker::userLink(
+				$rc->getAttribute( 'rc_user' ),
+				$rc->getAttribute( 'rc_user_text' )
+			);
+			$stuff = $this->userToolLinks(
+				$rc->getAttribute( 'rc_user' ),
+				$rc->getAttribute( 'rc_user_text' )
+			);
+			// TODO: userToolLinks can return ''
+			self::$userinfo += $stuff[1];
+			$rc->_userInfo = $stuff[0];
+		}
 
 		if ( !$this->isLog( $rc ) ) {
 			$rc->_comment = $this->getComment( $rc );
@@ -444,6 +455,11 @@ class NCL extends EnhancedChangesList {
 
 	/**
 	 * Enhanced user tool links, with javascript functionality.
+	 * @param int $userId user id, 0 for anons
+	 * @param string $userText username
+	 * @return array|string Either an array of html and array of messages, or ''
+	 *	[0]: html span and links to user tools
+	 * 	[1]: array of escaped message strings
 	 */
 	public function userToolLinks( $userId, $userText ) {
 		global $wgDisableAnonTalk;
