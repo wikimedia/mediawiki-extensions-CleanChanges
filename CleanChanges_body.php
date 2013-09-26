@@ -435,7 +435,7 @@ class NCL extends EnhancedChangesList {
 		} elseif ( $this->isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
 			$priviledged = $this->getUser()->isAllowed( 'deleterevision' );
 			if ( $priviledged ) {
-				return $action . ' <span class="history-deleted">' . $comment . '</span>';
+				return $action . ' <span class="history-deleted">' . Linker::formatComment( $comment ) . '</span>';
 			}
 			return $action . ' <span class="history-deleted">' . $this->msg( 'rev-deleted-comment' )->escaped() . '</span>';
 		}
