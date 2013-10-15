@@ -412,6 +412,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Huji
  * @author Mjbmr
  */
@@ -422,6 +423,8 @@ $messages['fa'] = array(
 	'cleanchanges-language-na' => 'همه',
 	'cleanchanges-users' => 'کاربران (جدا کردن با: |):',
 	'cleanchanges-showuserlinks' => 'نمایش پیوندهای کاربر',
+	'cleanchanges-rcinfo-2' => '($1؛ $2)',
+	'cleanchanges-rcinfo-3' => '($1؛ $2؛ $3)',
 );
 
 /** Finnish (suomi)
