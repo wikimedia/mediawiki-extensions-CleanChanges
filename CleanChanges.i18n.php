@@ -291,9 +291,10 @@ $messages['cy'] = array(
 
 /** Danish (dansk)
  * @author Byrial
+ * @author Christian List
  */
 $messages['da'] = array(
-	'cleanchanges-changerightslink' => 'ændr grupper',
+	'cleanchanges-changerightslink' => 'ændre grupper',
 	'cleanchanges-desc' => 'Mere kompakt visning af [[Special:RecentChanges|seneste ændringer]]',
 	'cleanchanges-language' => 'Sprog:',
 	'cleanchanges-language-na' => 'Alle',
