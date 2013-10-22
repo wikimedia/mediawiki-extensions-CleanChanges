@@ -704,6 +704,16 @@ $messages['ka'] = array(
 	'cleanchanges-rcinfo-3' => '($1; $2; $3)',
 );
 
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
+ * @author Arystanbek
+ */
+$messages['kk-cyrl'] = array(
+	'cleanchanges-changerightslink' => 'Топтарды өзгерту',
+	'cleanchanges-language' => 'Тіл:',
+	'cleanchanges-language-na' => 'Барлығы',
+	'cleanchanges-showuserlinks' => 'Қатысушы сілтемелерін көрсету',
+);
+
 /** Kalaallisut (kalaallisut)
  * @author Qaqqalik
  */
@@ -1091,6 +1101,7 @@ $messages['pt-br'] = array(
  * @author AlimanRuna
  */
 $messages['qu'] = array(
+	'cleanchanges-language' => 'Rimay:',
 	'cleanchanges-language-na' => 'Tukuy',
 );
 
