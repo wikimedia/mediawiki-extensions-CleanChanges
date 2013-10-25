@@ -877,12 +877,15 @@ $messages['mn'] = array(
 /** Marathi (मराठी)
  * @author Kaustubh
  * @author Mahitgar
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'cleanchanges-changerightslink' => 'गट बदला',
 	'cleanchanges-desc' => '[[Special:RecentChanges|अलीकडील बदल यादीचे]] संक्षिप्त रुपात दर्शन',
 	'cleanchanges-language' => 'भाषा:',
 	'cleanchanges-language-na' => 'सर्व',
+	'cleanchanges-users' => 'सदस्य (Sep: |):',
+	'cleanchanges-showuserlinks' => 'सदस्य दुवे दाखवा',
 );
 
 /** Malay (Bahasa Melayu)
