@@ -294,7 +294,7 @@ $messages['cy'] = array(
  * @author Christian List
  */
 $messages['da'] = array(
-	'cleanchanges-changerightslink' => 'ændre grupper',
+	'cleanchanges-changerightslink' => 'ændr grupper',
 	'cleanchanges-desc' => 'Mere kompakt visning af [[Special:RecentChanges|seneste ændringer]]',
 	'cleanchanges-language' => 'Sprog:',
 	'cleanchanges-language-na' => 'Alle',
@@ -862,7 +862,7 @@ $messages['ml'] = array(
 	'cleanchanges-desc' => '[[Special:RecentChanges|പുതിയ മാറ്റങ്ങളുടെ പട്ടികയുടെ]] ഒതുക്കമുള്ള പ്രദർശനം',
 	'cleanchanges-language' => 'ഭാഷ:',
 	'cleanchanges-language-na' => 'എല്ലാം',
-	'cleanchanges-users' => 'ഉപയോക്താക്കൾ (Sep: |)',
+	'cleanchanges-users' => 'ഉപയോക്താക്കൾ (പിരിക്കാൻ: |)',
 	'cleanchanges-showuserlinks' => 'ഉപയോക്തൃ കണ്ണികൾ പ്രദർശിപ്പിക്കുക',
 );
 
