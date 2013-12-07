@@ -257,7 +257,7 @@ $messages['ce'] = array(
 	'cleanchanges-language-na' => 'Массо',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Danny B.
  * @author Matěj Grabovský
  */
@@ -270,7 +270,7 @@ $messages['cs'] = array(
 	'cleanchanges-showuserlinks' => 'Ukázat uživatelské odkazy',
 );
 
-/** Church Slavic (словѣ́ньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
+/** Church Slavic (словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ)
  * @author ОйЛ
  */
 $messages['cu'] = array(
