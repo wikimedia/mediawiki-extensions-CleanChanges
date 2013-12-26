@@ -83,7 +83,7 @@ class NCL extends EnhancedChangesList {
 	 * @return string
 	 */
 	public function endRecentChangesList() {
-		return parent::endRecentChangesList() . '</div>';
+		return $this->recentChangesBlock() . '</div>';
 	}
 
 	/**
