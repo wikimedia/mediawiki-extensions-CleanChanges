@@ -748,7 +748,7 @@ $messages['kn'] = array(
  */
 $messages['ko'] = array(
 	'cleanchanges-changerightslink' => '그룹 바꾸기',
-	'cleanchanges-desc' => '[[Special:RecentChanges|최근 바뀜 목록]]에서 더 간결하게 표시',
+	'cleanchanges-desc' => '[[Special:RecentChanges|최근 바뀜 목록]]을 더 조밀하게 보이기',
 	'cleanchanges-language' => '언어:',
 	'cleanchanges-language-na' => '모두',
 	'cleanchanges-users' => '사용자 (구분선: |):',
@@ -1511,6 +1511,13 @@ $messages['wa'] = array(
 $messages['yi'] = array(
 	'cleanchanges-language' => 'שפראך:',
 	'cleanchanges-language-na' => 'אלע',
+);
+
+/** Yoruba (Yorùbá)
+ * @author Demmy
+ */
+$messages['yo'] = array(
+	'cleanchanges-language-na' => 'Gbogbo wọn',
 );
 
 /** Simplified Chinese (中文（简体）‎)
