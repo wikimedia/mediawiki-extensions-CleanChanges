@@ -1,0 +1,5 @@
+== CleanChanges 2013.12 ==
+Released at 2013-12-31.
+
+* Bug 58439: Fix Monobook skin by removing extra </div> creating invalid HTML.
+* Localization updates.
