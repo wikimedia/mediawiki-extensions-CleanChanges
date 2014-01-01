@@ -298,7 +298,7 @@ $messages['da'] = array(
 	'cleanchanges-desc' => 'Mere kompakt visning af [[Special:RecentChanges|seneste ændringer]]',
 	'cleanchanges-language' => 'Sprog:',
 	'cleanchanges-language-na' => 'Alle',
-	'cleanchanges-users' => 'Brugere (adskil med |)',
+	'cleanchanges-users' => 'Brugere (adskil med |):',
 	'cleanchanges-showuserlinks' => 'Vis brugerhenvisninger',
 );
 
