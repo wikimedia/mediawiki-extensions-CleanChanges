@@ -811,6 +811,13 @@ $messages['li'] = array(
 	'cleanchanges-showuserlinks' => 'Gebroekersverwiezinge betrachte',
 );
 
+/** لوری (لوری)
+ * @author Bonevarluri
+ */
+$messages['lrc'] = array(
+	'cleanchanges-language' => 'زون:',
+);
+
 /** Lithuanian (lietuvių)
  * @author Eitvys200
  */
