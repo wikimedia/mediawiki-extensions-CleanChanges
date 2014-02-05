@@ -454,6 +454,8 @@ $messages['fr'] = array(
 	'cleanchanges-language-na' => 'Tous',
 	'cleanchanges-users' => 'Utilisateurs (sép. par |) :',
 	'cleanchanges-showuserlinks' => 'Afficher les liens de cet utilisateur',
+	'cleanchanges-rcinfo-2' => '($1 ; $2)',
+	'cleanchanges-rcinfo-3' => '($1 ; $2 ; $3)',
 );
 
 /** Franco-Provençal (arpetan)
