@@ -255,6 +255,7 @@ $messages['ce'] = array(
 	'cleanchanges-desc' => 'Алсамо тIеIовдан гайтар [[Special:RecentChanges|керла нисдаршан список]]',
 	'cleanchanges-language' => 'Мотт:',
 	'cleanchanges-language-na' => 'Массо',
+	'cleanchanges-users' => 'Декъашхой (буькъарг: |):',
 	'cleanchanges-showuserlinks' => 'Декъашхойн хьажорагаш гойту',
 );
 
