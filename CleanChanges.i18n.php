@@ -546,10 +546,14 @@ $messages['ha'] = array(
 
 /** Hawaiian (Hawai`i)
  * @author Kalani
+ * @author Kolonahe
  */
 $messages['haw'] = array(
+	'cleanchanges-changerightslink' => 'hoʻololi hui',
 	'cleanchanges-language' => 'ʻŌlelo:',
 	'cleanchanges-language-na' => 'Apau',
+	'cleanchanges-users' => 'Mea hoʻohana (hoʻokaʻawale ʻia: |):',
+	'cleanchanges-showuserlinks' => 'Hōʻike i nā loulou mea hoʻohana',
 );
 
 /** Hebrew (עברית)
