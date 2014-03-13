@@ -551,7 +551,7 @@ $messages['ha'] = array(
 $messages['haw'] = array(
 	'cleanchanges-changerightslink' => 'hoʻololi hui',
 	'cleanchanges-language' => 'ʻŌlelo:',
-	'cleanchanges-language-na' => 'Apau',
+	'cleanchanges-language-na' => 'Nā mea apau',
 	'cleanchanges-users' => 'Mea hoʻohana (hoʻokaʻawale ʻia: |):',
 	'cleanchanges-showuserlinks' => 'Hōʻike i nā loulou mea hoʻohana',
 );
