@@ -252,6 +252,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'cleanchanges-changerightslink' => 'хийца тобанаш',
 	'cleanchanges-desc' => 'Алсамо тIеIовдан гайтар [[Special:RecentChanges|керла нисдаршан список]]',
 	'cleanchanges-language' => 'Мотт:',
 	'cleanchanges-language-na' => 'Массо',
@@ -1001,7 +1002,7 @@ $messages['nn'] = array(
  */
 $messages['oc'] = array(
 	'cleanchanges-changerightslink' => 'càmbia los gropes',
-	'cleanchanges-desc' => "Mai d'afichatge compacte de la [[Special:RecentChanges|lista dels darrièrs cambiaments]]",
+	'cleanchanges-desc' => 'Afichatge mai compacte de la [[Special:RecentChanges|lista dels darrièrs cambiaments]]',
 	'cleanchanges-language' => 'Lenga :',
 	'cleanchanges-language-na' => 'Totes',
 	'cleanchanges-users' => 'Utilizaires (sep. per |) :',
