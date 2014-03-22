@@ -532,6 +532,14 @@ $messages['gsw'] = array(
 	'cleanchanges-showuserlinks' => 'Zeig Benutzer-Links',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author KartikMistry
+ */
+$messages['gu'] = array(
+	'cleanchanges-language' => 'ભાષા:',
+	'cleanchanges-language-na' => 'બધું',
+);
+
 /** Manx (Gaelg)
  * @author MacTire02
  */
