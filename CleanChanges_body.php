@@ -528,12 +528,13 @@ class NCL extends EnhancedChangesList {
 			$userindex = count( $users ) -1;
 		}
 
-		global $wgStylePath;
+		global $wgExtensionAssetsPath;
 		$image = Xml::element( 'img', array(
-			'src' => $wgStylePath . '/common/images/magnify-clip.png',
+			'src' => $wgExtensionAssetsPath . '/CleanChanges/images/showuserlinks.png',
 			'alt' => $this->msg( 'cleanchanges-showuserlinks' )->text(),
 			'title' => $this->msg( 'cleanchanges-showuserlinks' )->text(),
-		  'height' => '12'
+			'width' => '15',
+			'height' => '11',
 			)
 		);
 
