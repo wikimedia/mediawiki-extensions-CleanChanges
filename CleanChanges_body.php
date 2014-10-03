@@ -10,6 +10,10 @@ class NCL extends EnhancedChangesList {
 	public static function hook( User $user, Skin &$skin, &$list ) {
 		$list = null;
 
+		if ( defined( 'ULS_VERSION' ) ) {
+			$skin->getOutput()->addModules( 'ext.cleanchanges.uls' );
+		}
+
 		/* allow override */
 		$request = $skin->getRequest();
 		if ( $request->getBool( 'cleanrc' ) ) {

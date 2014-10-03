@@ -18,6 +18,8 @@ $wgMessagesDirs['CleanChanges'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['CleanChanges'] = "$dir/CleanChanges.i18n.php";
 $wgAutoloadClasses['NCL'] =  "$dir/CleanChanges_body.php";
 
+require_once __DIR__ . '/Resources.php';
+
 /* Hook into code */
 $wgHooks['FetchChangesList'][] = 'NCL::hook';
 $wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
@@ -50,13 +52,3 @@ function ccSetupFilters() {
 		$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
 	}
 }
-
-$resourcePaths = array(
-	'localBasePath' => __DIR__,
-	'remoteExtPath' => 'CleanChanges'
-);
-
-// Client-side resource modules
-$wgResourceModules['ext.cleanchanges'] = array(
-	'scripts' => 'cleanchanges.js',
-) + $resourcePaths;
