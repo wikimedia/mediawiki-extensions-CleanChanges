@@ -52,7 +52,7 @@
 	}
 
 	$( document ).ready( function () {
-		mw.loader.using( 'ext.uls.mediawiki' ).done( function () {
+		mw.loader.using( 'ext.uls.mediawiki', function () {
 			useULS( $( '#sp-rc-language' ) );
 		} );
 	} );
