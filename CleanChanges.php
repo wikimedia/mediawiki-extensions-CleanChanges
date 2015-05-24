@@ -1,5 +1,18 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) die();
+if ( function_exists( 'wfLoadExtension' ) ) {
+	wfLoadExtension( 'CleanChanges' );
+	// Keep i18n globals so mergeMessageFileList.php doesn't break
+	$wgMessagesDirs['CleanChanges'] = __DIR__ . '/i18n';
+	/* wfWarn(
+		'Deprecated PHP entry point used for CleanChanges extension. Please use wfLoadExtension instead, ' .
+		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
+	); */
+	return;
+}
+/**
+ * Setup for pre-1.25 wikis. Make sure this is kept in sync with extension.json
+ */
+
 /**
  * An extension to show a nice compact changes list and few extra filters for
  * Special:RecentChanges.php
