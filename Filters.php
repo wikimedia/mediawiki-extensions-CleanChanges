@@ -10,7 +10,12 @@ class CCFilters {
 	 * @return bool
 	 */
 	public static function user( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
-		global $wgRequest;
+		global $wgRequest, $wgCCUserFilter;
+
+		if ( !$wgCCUserFilter ) {
+			return true;
+		}
+
 		$opts->add( 'users', '' );
 		$users = $wgRequest->getVal( 'users' );
 		if ( $users === null ) {
@@ -40,8 +45,13 @@ class CCFilters {
 	 * @return bool
 	 */
 	public static function userForm( &$items, FormOptions $opts ) {
+		global $wgRequest, $wgCCUserFilter;
+
+		if ( !$wgCCUserFilter ) {
+			return true;
+		}
+
 		$opts->consumeValue( 'users' );
-		global $wgRequest;
 
 		$default = $wgRequest->getVal( 'users', '' );
 		$items['users'] = Xml::inputLabelSep( wfMessage( 'cleanchanges-users' )->text(), 'users',
@@ -57,7 +67,12 @@ class CCFilters {
 	 * @return bool
 	 */
 	public static function trailer( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
-		global $wgRequest;
+		global $wgRequest, $wgCCTrailerFilter;
+
+		if ( !$wgCCTrailerFilter ) {
+			return true;
+		}
+
 		$opts->add( 'trailer', '' );
 		$trailer = $wgRequest->getVal( 'trailer' );
 		if ( $trailer === null ) return true;
@@ -75,14 +90,19 @@ class CCFilters {
 	 * @return bool
 	 */
 	public static function trailerForm( &$items, FormOptions $opts ) {
-		$opts->consumeValue( 'trailer' );
-
-		global $wgRequest;
-		$default = $wgRequest->getVal( 'trailer', '' );
 		/**
 		 * @var Language $wgLang
 		 */
-		global $wgLang;
+		global $wgLang, $wgRequest, $wgCCTrailerFilter;
+
+		if ( !$wgCCTrailerFilter ) {
+			return true;
+		}
+
+		$opts->consumeValue( 'trailer' );
+
+		$default = $wgRequest->getVal( 'trailer', '' );
+
 		if ( is_callable( array( 'LanguageNames', 'getNames' ) ) ) {
 			$languages = LanguageNames::getNames( $wgLang->getCode(),
 				LanguageNames::FALLBACK_NORMAL,

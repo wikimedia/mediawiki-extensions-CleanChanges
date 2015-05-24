@@ -23,6 +23,11 @@ require_once __DIR__ . '/Resources.php';
 /* Hook into code */
 $wgHooks['FetchChangesList'][] = 'NCL::hook';
 $wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
+$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::user';
+$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
+$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::trailer';
+$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
+
 
 /* Extension information */
 $wgExtensionCredits['other'][] = array(
@@ -38,18 +43,4 @@ $wgExtensionCredits['other'][] = array(
 $wgCCUserFilter = true;
 $wgCCTrailerFilter = false;
 
-$wgExtensionFunctions[] = 'ccSetupFilters';
 $wgAutoloadClasses['CCFilters'] = "$dir/Filters.php";
-
-function ccSetupFilters() {
-	global $wgCCUserFilter, $wgCCTrailerFilter, $wgHooks;
-
-	if ( $wgCCUserFilter ) {
-		$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::user';
-		$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
-	}
-	if ( $wgCCTrailerFilter ) {
-		$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::trailer';
-		$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
-	}
-}
