@@ -12,23 +12,6 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-/* Set up messages and includes */
-$dir = __DIR__;
-$wgMessagesDirs['CleanChanges'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['CleanChanges'] = "$dir/CleanChanges.i18n.php";
-$wgAutoloadClasses['NCL'] =  "$dir/CleanChanges_body.php";
-
-require_once __DIR__ . '/Resources.php';
-
-/* Hook into code */
-$wgHooks['FetchChangesList'][] = 'NCL::hook';
-$wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
-$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::user';
-$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
-$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::trailer';
-$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
-
-
 /* Extension information */
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
@@ -40,7 +23,20 @@ $wgExtensionCredits['other'][] = array(
 	'license-name' => 'GPL-2.0+',
 );
 
+/* Set up messages and includes */
+$wgMessagesDirs['CleanChanges'] = __DIR__ . '/i18n';
+$wgAutoloadClasses['NCL'] =  __DIR__ . "/CleanChanges_body.php";
+$wgAutoloadClasses['CCFilters'] = __DIR__ . "/Filters.php";
+
+require_once __DIR__ . '/Resources.php';
+
+/* Hook into code */
+$wgHooks['FetchChangesList'][] = 'NCL::hook';
+$wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
+$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::user';
+$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
+$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::trailer';
+$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
+
 $wgCCUserFilter = true;
 $wgCCTrailerFilter = false;
-
-$wgAutoloadClasses['CCFilters'] = "$dir/Filters.php";
