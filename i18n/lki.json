@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hosseinblue"
+		]
+	},
+	"cleanchanges-changerightslink": "گروه‌های تغییر",
+	"cleanchanges-desc": "نمایش فشرده‌تری از [[Special:RecentChanges|فهرست تغییرات اخیر]]",
+	"cleanchanges-language": ":زوون",
+	"cleanchanges-language-na": "کۆل",
+	"cleanchanges-users": "کاربران (جدا کردن با: |):",
+	"cleanchanges-showuserlinks": "نمایش پیوندهای کاربر"
+}
