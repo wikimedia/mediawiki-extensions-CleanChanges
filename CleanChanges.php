@@ -29,7 +29,7 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Clean Changes',
-	'version' => '2014-12-29',
+	'version' => '[https://www.mediawiki.org/wiki/MLEB MLEB 2016.01]',
 	'author' => 'Niklas Laxström',
 	'descriptionmsg' => 'cleanchanges-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:CleanChanges',
