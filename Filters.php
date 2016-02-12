@@ -54,9 +54,13 @@ class CCFilters {
 		$opts->consumeValue( 'users' );
 
 		$default = $wgRequest->getVal( 'users', '' );
-		$items['users'] = Xml::inputLabelSep( wfMessage( 'cleanchanges-users' )->text(), 'users',
-			'mw-users', 40, $default  );
-		return;
+		$items['users'] = Xml::inputLabelSep(
+			wfMessage( 'cleanchanges-users' )->text(),
+			'users',
+			'mw-users',
+			40,
+			$default
+		);
 	}
 
 	/**

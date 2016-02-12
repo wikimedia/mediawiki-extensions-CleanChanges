@@ -162,7 +162,9 @@ class NCL extends EnhancedChangesList {
 
 		// Make user links
 		if ( $this->isDeleted( $rc, Revision::DELETED_USER ) ) {
-			$rc->_user = ' <span class="history-deleted">' . $this->msg( 'rev-deleted-user' )->escaped() . '</span>';
+			$rc->_user = ' <span class="history-deleted">' .
+				$this->msg( 'rev-deleted-user' )->escaped() .
+				'</span>';
 			$rc->_userInfo = '';
 			self::$userinfo += array();
 		} else {
@@ -284,7 +286,8 @@ class NCL extends EnhancedChangesList {
 		$toggleLink = "javascript:toggleVisibilityE('$rci', '$rcm', '$rcl', 'block')";
 		$tl =
 		Xml::tags( 'span', array( 'id' => $rcm ),
-			Xml::tags( 'a', array( 'href' => $toggleLink ), $this->arrow( $this->direction ? 'r' : 'l' ) ) ) .
+			Xml::tags( 'a', array( 'href' => $toggleLink ),
+				$this->arrow( $this->direction ? 'r' : 'l' ) ) ) .
 		Xml::tags( 'span', array( 'id' => $rcl, 'style' => 'display: none;' ),
 			Xml::tags( 'a', array( 'href' => $toggleLink ), $this->downArrow() ) );
 
@@ -327,7 +330,7 @@ class NCL extends EnhancedChangesList {
 		$items[] = $this->makeUserlinks( $userlinks );
 		$items[] = $block[0]->_watching;
 
-		$lines = Xml::tags( 'div', null, implode( " {$this->dir}", $items ) ) . "\n" ;
+		$lines = Xml::tags( 'div', null, implode( " {$this->dir}", $items ) ) . "\n";
 
 		# Sub-entries
 		$lines .= Xml::tags( 'div',
@@ -348,11 +351,17 @@ class NCL extends EnhancedChangesList {
 	 */
 	protected function arrow( $dir, $alt = '', $title = '' ) {
 		global $wgExtensionAssetsPath;
-		$encUrl = htmlspecialchars( $wgExtensionAssetsPath . '/CleanChanges/images/Arr_' . $dir . '.png' );
-		$encAlt = htmlspecialchars( $alt );
-		$encTitle = htmlspecialchars( $title );
 
-		return "<img src=\"$encUrl\" width=\"12\" height=\"12\" alt=\"$encAlt\" title=\"$encTitle\" />";
+		return Html::element(
+			'img',
+			array(
+				'src' => "$wgExtensionAssetsPath/CleanChanges/images/Arr_$dir.png",
+				'width' => 12,
+				'height' => 12,
+				'alt' => $alt,
+				'title' => $title,
+			)
+		);
 	}
 
 	/**
@@ -443,7 +452,7 @@ class NCL extends EnhancedChangesList {
 		if ( is_int( $size ) ) {
 			$size = $this->wrapCharacterDifference( $size );
 			// FIXME: i18n: Hard coded parentheses and spaces.
-			return $this->msg( 'cleanchanges-rcinfo-3' )->rawParams( $diff, $hist, $size)->escaped();
+			return $this->msg( 'cleanchanges-rcinfo-3' )->rawParams( $diff, $hist, $size )->escaped();
 		} else {
 			return $this->msg( 'cleanchanges-rcinfo-2' )->rawParams( $diff, $hist )->escaped();
 		}
@@ -494,9 +503,13 @@ class NCL extends EnhancedChangesList {
 		} elseif ( $this->isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
 			$priviledged = $this->getUser()->isAllowed( 'deleterevision' );
 			if ( $priviledged ) {
-				return $action . ' <span class="history-deleted">' . Linker::formatComment( $comment ) . '</span>';
+				return $action . ' <span class="history-deleted">' .
+					Linker::formatComment( $comment ) .
+					'</span>';
 			}
-			return $action . ' <span class="history-deleted">' . $this->msg( 'rev-deleted-comment' )->escaped() . '</span>';
+			return $action . ' <span class="history-deleted">' .
+				$this->msg( 'rev-deleted-comment' )->escaped() .
+				'</span>';
 		}
 		return $action . Linker::commentBlock( $comment, $rc->getTitle() );
 	}

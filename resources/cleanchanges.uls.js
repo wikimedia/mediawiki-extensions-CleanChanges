@@ -1,4 +1,4 @@
-/**
+/*!
  *
  * @author Niklas Laxström
  * @license GPL-2.0+
@@ -15,7 +15,6 @@
 		$clear = $( '<span>' )
 			.text( 'X' )
 			.addClass( 'ext-cc-language-selector__clear' );
-
 
 		$trigger.hide().after(
 			$( '<span>' )
