@@ -21,7 +21,6 @@ if ( function_exists( 'wfLoadExtension' ) ) {
  * @ingroup Extensions
  *
  * @author Niklas Laxström
- * @copyright Copyright © 2008-2012, Niklas Laxström
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -29,7 +28,7 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Clean Changes',
-	'version' => '2014-12-29',
+	'version' => '2016-02-12',
 	'author' => 'Niklas Laxström',
 	'descriptionmsg' => 'cleanchanges-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:CleanChanges',
@@ -46,9 +45,9 @@ require_once __DIR__ . '/Resources.php';
 /* Hook into code */
 $wgHooks['FetchChangesList'][] = 'NCL::hook';
 $wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
-$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::user';
+$wgHooks['ChangesListSpecialPageQuery'][] = 'CCFilters::user';
 $wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
-$wgHooks['SpecialRecentChangesQuery'][] = 'CCFilters::trailer';
+$wgHooks['ChangesListSpecialPageQuery'][] = 'CCFilters::trailer';
 $wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
 
 $wgCCUserFilter = true;

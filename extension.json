@@ -1,6 +1,6 @@
 {
 	"name": "Clean Changes",
-	"version": "2014-12-29",
+	"version": "2016-02-12",
 	"author": "Niklas Laxström",
 	"url": "https://www.mediawiki.org/wiki/Extension:CleanChanges",
 	"descriptionmsg": "cleanchanges-desc",
@@ -21,7 +21,7 @@
 		"MakeGlobalVariablesScript": [
 			"NCL::addScriptVariables"
 		],
-		"SpecialRecentChangesQuery": [
+		"ChangesListSpecialPageQuery": [
 			"CCFilters::user",
 			"CCFilters::trailer"
 		],

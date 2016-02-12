@@ -3,23 +3,27 @@
 class CCFilters {
 
 	/**
-	 * @param array $conds
-	 * @param array $tables
-	 * @param array $join_conds
-	 * @param FormOptions $opts
-	 * @return bool
+	 * Hook: ChangesListSpecialPageQuery
 	 */
-	public static function user( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
+	public static function user(
+		$name,
+		&$tables,
+		&$fields,
+		&$conds,
+		&$query_options,
+		&$join_conds,
+		FormOptions $opts
+	) {
 		global $wgRequest, $wgCCUserFilter;
 
 		if ( !$wgCCUserFilter ) {
-			return true;
+			return;
 		}
 
 		$opts->add( 'users', '' );
 		$users = $wgRequest->getVal( 'users' );
 		if ( $users === null ) {
-			return true;
+			return;
 		}
 
 		$idfilters = array();
@@ -35,20 +39,16 @@ class CCFilters {
 			$conds[] = 'rc_user IN (' . $dbr->makeList( $idfilters ) . ')';
 			$opts->setValue( 'users', $users );
 		}
-
-		return true;
 	}
 
 	/**
-	 * @param $items array
-	 * @param $opts FormOptions
-	 * @return bool
+	 * Hook: SpecialRecentChangesPanel
 	 */
 	public static function userForm( &$items, FormOptions $opts ) {
 		global $wgRequest, $wgCCUserFilter;
 
 		if ( !$wgCCUserFilter ) {
-			return true;
+			return;
 		}
 
 		$opts->consumeValue( 'users' );
@@ -56,38 +56,40 @@ class CCFilters {
 		$default = $wgRequest->getVal( 'users', '' );
 		$items['users'] = Xml::inputLabelSep( wfMessage( 'cleanchanges-users' )->text(), 'users',
 			'mw-users', 40, $default  );
-		return true;
+		return;
 	}
 
 	/**
-	 * @param array $conds
-	 * @param array $tables
-	 * @param array $join_conds
-	 * @param FormOptions $opts
-	 * @return bool
+	 * Hook: ChangesListSpecialPageQuery
 	 */
-	public static function trailer( &$conds, &$tables, &$join_conds, FormOptions $opts ) {
+	public static function trailer(
+		$name,
+		&$tables,
+		&$fields,
+		&$conds,
+		&$query_options,
+		&$join_conds,
+		FormOptions $opts
+	) {
 		global $wgRequest, $wgCCTrailerFilter;
 
 		if ( !$wgCCTrailerFilter ) {
-			return true;
+			return;
 		}
 
 		$opts->add( 'trailer', '' );
 		$trailer = $wgRequest->getVal( 'trailer' );
-		if ( $trailer === null ) return true;
+		if ( $trailer === null ) {
+			return;
+		}
 
 		$dbr = wfGetDB( DB_SLAVE );
 		$conds[] = 'rc_title ' . $dbr->buildLike( $dbr->anyString(), $trailer );
 		$opts->setValue( 'trailer', $trailer );
-
-		return true;
 	}
 
 	/**
-	 * @param array $items
-	 * @param FormOptions $opts
-	 * @return bool
+	 * Hook: SpecialRecentChangesPanel
 	 */
 	public static function trailerForm( &$items, FormOptions $opts ) {
 		/**
@@ -96,7 +98,7 @@ class CCFilters {
 		global $wgLang, $wgRequest, $wgCCTrailerFilter;
 
 		if ( !$wgCCTrailerFilter ) {
-			return true;
+			return;
 		}
 
 		$opts->consumeValue( 'trailer' );
@@ -127,6 +129,5 @@ class CCFilters {
 		Xml::closeElement( 'select' );
 
 		$items['tailer'] = array( wfMessage( 'cleanchanges-language' )->escaped(), $str );
-		return true;
 	}
 }
