@@ -8,47 +8,6 @@ if ( function_exists( 'wfLoadExtension' ) ) {
 		'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
 	); */
 	return;
+} else {
+	die( 'This version of the CleanChanges extension requires MediaWiki 1.25+' );
 }
-/**
- * Setup for pre-1.25 wikis. Make sure this is kept in sync with extension.json
- */
-
-/**
- * An extension to show a nice compact changes list and few extra filters for
- * Special:RecentChanges.php
- *
- * @file
- * @ingroup Extensions
- *
- * @author Niklas Laxström
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
- */
-
-/* Extension information */
-$wgExtensionCredits['other'][] = array(
-	'path' => __FILE__,
-	'name' => 'Clean Changes',
-	'version' => '2016-02-12',
-	'author' => 'Niklas Laxström',
-	'descriptionmsg' => 'cleanchanges-desc',
-	'url' => 'https://www.mediawiki.org/wiki/Extension:CleanChanges',
-	'license-name' => 'GPL-2.0+',
-);
-
-/* Set up messages and includes */
-$wgMessagesDirs['CleanChanges'] = __DIR__ . '/i18n';
-$wgAutoloadClasses['NCL'] =  __DIR__ . "/CleanChanges_body.php";
-$wgAutoloadClasses['CCFilters'] = __DIR__ . "/Filters.php";
-
-require_once __DIR__ . '/Resources.php';
-
-/* Hook into code */
-$wgHooks['FetchChangesList'][] = 'NCL::hook';
-$wgHooks['MakeGlobalVariablesScript'][] = 'NCL::addScriptVariables';
-$wgHooks['ChangesListSpecialPageQuery'][] = 'CCFilters::user';
-$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::userForm';
-$wgHooks['ChangesListSpecialPageQuery'][] = 'CCFilters::trailer';
-$wgHooks['SpecialRecentChangesPanel'][] = 'CCFilters::trailerForm';
-
-$wgCCUserFilter = true;
-$wgCCTrailerFilter = false;
