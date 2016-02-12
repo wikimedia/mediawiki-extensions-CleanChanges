@@ -1,4 +1,4 @@
-(function ( mw, $ ) {
+( function ( mw, $ ) {
 	'use strict';
 
 	window.toggleVisibilityE = function ( levelId, otherId, linkId, type ) {

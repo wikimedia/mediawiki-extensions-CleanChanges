@@ -4,8 +4,17 @@
 	"description": "More compact display of recent changes lists",
 	"homepage": "https://www.mediawiki.org/wiki/Extension:CleanChanges",
 	"license": "GPL-2.0+",
-
 	"require": {
 		"composer/installers": "*"
+	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.9.2",
+		"mediawiki/mediawiki-codesniffer": "0.5.1"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor",
+			"phpcs -p -s"
+		]
 	}
 }
