@@ -38,7 +38,7 @@ class NCL extends EnhancedChangesList {
 		return $list === null;
 	}
 
-	protected static $userinfo = array();
+	protected static $userinfo = [];
 
 	/**
 	 * @param $vars array
@@ -79,7 +79,7 @@ class NCL extends EnhancedChangesList {
 		return
 			Xml::openElement(
 				'div',
-				array( 'style' => "direction: $dir" )
+				[ 'style' => "direction: $dir" ]
 			);
 	}
 
@@ -144,8 +144,8 @@ class NCL extends EnhancedChangesList {
 			$clink = linker::linkKnown(
 				$titleObj,
 				null,
-				array(),
-				array( 'rcid' => $rc_id )
+				[],
+				[ 'rcid' => $rc_id ]
 			);
 		} else {
 			$clink = Linker::linkKnown( $titleObj );
@@ -156,8 +156,8 @@ class NCL extends EnhancedChangesList {
 		$rc->timestamp = $time;
 		$rc->numberofWatchingusers = $baseRC->numberofWatchingusers;
 
-		$rc->_reqCurId = array( 'curid' => $rc->getAttribute( 'rc_cur_id' ) );
-		$rc->_reqOldId = array( 'oldid' => $rc->getAttribute( 'rc_this_oldid' ) );
+		$rc->_reqCurId = [ 'curid' => $rc->getAttribute( 'rc_cur_id' ) ];
+		$rc->_reqOldId = [ 'oldid' => $rc->getAttribute( 'rc_this_oldid' ) ];
 		$this->makeLinks( $rc );
 
 		// Make user links
@@ -166,7 +166,7 @@ class NCL extends EnhancedChangesList {
 				$this->msg( 'rev-deleted-user' )->escaped() .
 				'</span>';
 			$rc->_userInfo = '';
-			self::$userinfo += array();
+			self::$userinfo += [];
 		} else {
 			$rc->_user = Linker::userLink(
 				$rc->getAttribute( 'rc_user' ),
@@ -192,7 +192,7 @@ class NCL extends EnhancedChangesList {
 		if ( $date !== $this->lastdate ) {
 			# Process current cache
 			$ret = $this->recentChangesBlock();
-			$this->rc_cache = array();
+			$this->rc_cache = [];
 			$ret .= Xml::element( 'h4', null, $date ) . "\n";
 			$this->lastdate = $date;
 		}
@@ -221,30 +221,30 @@ class NCL extends EnhancedChangesList {
 
 		if ( !$this->isLog( $rc ) ) {
 			# Make cur, diff and last links
-			$querycur = array( 'diff' => 0 ) + $rc->_reqCurId + $rc->_reqOldId;
-			$querydiff = array(
+			$querycur = [ 'diff' => 0 ] + $rc->_reqCurId + $rc->_reqOldId;
+			$querydiff = [
 				'diff'  => $rc->getAttribute( 'rc_this_oldid' ),
 				'oldid' => $rc->getAttribute( 'rc_last_oldid' ),
 				'rcid'  => $rc->unpatrolled ? $rc->getAttribute( 'rc_id' ) : '',
-			) + $rc->_reqCurId;
+			] + $rc->_reqCurId;
 
 			$rc->_curLink = Linker::linkKnown( $rc->getTitle(),
-					$this->message['cur'], array(), $querycur );
+					$this->message['cur'], [], $querycur );
 
 			if ( $rc->getAttribute( 'rc_type' ) != RC_NEW ) {
 				$rc->_diffLink = Linker::linkKnown( $rc->getTitle(),
-					$this->message['diff'], array(), $querydiff );
+					$this->message['diff'], [], $querydiff );
 			}
 
 			if ( $rc->getAttribute( 'rc_last_oldid' ) != 0 ) {
 				// This is not the first revision
 				$rc->_lastLink = Linker::linkKnown( $rc->getTitle(),
-					$this->message['last'], array(), $querydiff );
+					$this->message['last'], [], $querydiff );
 			}
 
 			$rc->_histLink = Linker::link( $rc->getTitle(),
-				$this->message['hist'], array(),
-				$rc->_reqCurId + array( 'action' => 'history' )
+				$this->message['hist'], [],
+				$rc->_reqCurId + [ 'action' => 'history' ]
 			);
 		}
 	}
@@ -257,8 +257,8 @@ class NCL extends EnhancedChangesList {
 	protected function recentChangesBlockGroup( $block ) {
 		# Collate list of users
 		$isnew = false;
-		$userlinks = array();
-		$overrides = array( 'minor' => false, 'bot' => false );
+		$userlinks = [];
+		$overrides = [ 'minor' => false, 'bot' => false ];
 		$oldid = 0;
 		foreach ( $block as $rcObj ) {
 			$oldid = $rcObj->mAttribs['rc_last_oldid'];
@@ -285,11 +285,11 @@ class NCL extends EnhancedChangesList {
 		$rcm = 'RCM' . $this->rcCacheIndex;
 		$toggleLink = "javascript:toggleVisibilityE('$rci', '$rcm', '$rcl', 'block')";
 		$tl =
-		Xml::tags( 'span', array( 'id' => $rcm ),
-			Xml::tags( 'a', array( 'href' => $toggleLink ),
+		Xml::tags( 'span', [ 'id' => $rcm ],
+			Xml::tags( 'a', [ 'href' => $toggleLink ],
 				$this->arrow( $this->direction ? 'r' : 'l' ) ) ) .
-		Xml::tags( 'span', array( 'id' => $rcl, 'style' => 'display: none;' ),
-			Xml::tags( 'a', array( 'href' => $toggleLink ), $this->downArrow() ) );
+		Xml::tags( 'span', [ 'id' => $rcl, 'style' => 'display: none;' ],
+			Xml::tags( 'a', [ 'href' => $toggleLink ], $this->downArrow() ) );
 
 		$items[] = $tl . $info;
 
@@ -300,7 +300,7 @@ class NCL extends EnhancedChangesList {
 		if ( !$log ) {
 			# Changes
 			$n = count( $block );
-			static $nchanges = array();
+			static $nchanges = [];
 			if ( !isset( $nchanges[$n] ) ) {
 				$nchanges[$n] = $this->msg( 'nchanges' )->numParams( $n )->escaped();
 			}
@@ -309,12 +309,12 @@ class NCL extends EnhancedChangesList {
 				$changes = Linker::linkKnown(
 					$block[0]->getTitle(),
 					$nchanges[$n],
-					array(),
-					array(
+					[],
+					[
 						'curid' => $block[0]->mAttribs['rc_cur_id'],
 						'diff' => $block[0]->mAttribs['rc_this_oldid'],
 						'oldid' => $oldid
-					)
+					]
 				);
 			} else {
 				$changes = $nchanges[$n];
@@ -334,7 +334,7 @@ class NCL extends EnhancedChangesList {
 
 		# Sub-entries
 		$lines .= Xml::tags( 'div',
-			array( 'id' => $rci, 'style' => 'display: none;' ),
+			[ 'id' => $rci, 'style' => 'display: none;' ],
 			$this->subEntries( $block )
 		) . "\n";
 
@@ -354,13 +354,13 @@ class NCL extends EnhancedChangesList {
 
 		return Html::element(
 			'img',
-			array(
+			[
 				'src' => "$wgExtensionAssetsPath/CleanChanges/images/Arr_$dir.png",
 				'width' => 12,
 				'height' => 12,
 				'alt' => $alt,
 				'title' => $title,
-			)
+			]
 		);
 	}
 
@@ -399,7 +399,7 @@ class NCL extends EnhancedChangesList {
 	protected function subEntries( array $block ) {
 		$lines = '';
 		foreach ( $block as $rcObj ) {
-			$items = array();
+			$items = [];
 			$log = $this->isLog( $rcObj );
 
 			$time = $rcObj->timestamp;
@@ -407,7 +407,7 @@ class NCL extends EnhancedChangesList {
 				$time = Linker::linkKnown(
 					$rcObj->getTitle(),
 					$rcObj->timestamp,
-					array(),
+					[],
 					$rcObj->_reqOldId + $rcObj->_reqCurId
 				);
 			}
@@ -538,7 +538,7 @@ class NCL extends EnhancedChangesList {
 		static $linkindex = 0;
 		$linkindex++;
 
-		static $users = array();
+		static $users = [];
 		$userindex = array_search( $userText, $users, true );
 		if ( $userindex === false ) {
 			$users[] = $userText;
@@ -546,24 +546,24 @@ class NCL extends EnhancedChangesList {
 		}
 
 		global $wgExtensionAssetsPath;
-		$image = Xml::element( 'img', array(
+		$image = Xml::element( 'img', [
 			'src' => $wgExtensionAssetsPath . '/CleanChanges/images/showuserlinks.png',
 			'alt' => $this->msg( 'cleanchanges-showuserlinks' )->text(),
 			'title' => $this->msg( 'cleanchanges-showuserlinks' )->text(),
 			'width' => '15',
 			'height' => '11',
-			)
+			]
 		);
 
 		$rci = 'RCUI' . $userindex;
 		$rcl = 'RCUL' . $linkindex;
 		$rcm = 'RCUM' . $linkindex;
 		$toggleLink = "javascript:showUserInfo('wgUserInfo$rci', '$rcl' )";
-		$tl  = Xml::tags( 'span', array( 'id' => $rcm ),
-			Xml::tags( 'a', array( 'href' => $toggleLink ), $image ) );
-		$tl .= Xml::element( 'span', array( 'id' => $rcl ), ' ' );
+		$tl  = Xml::tags( 'span', [ 'id' => $rcm ],
+			Xml::tags( 'a', [ 'href' => $toggleLink ], $image ) );
+		$tl .= Xml::element( 'span', [ 'id' => $rcl ], ' ' );
 
-		$items = array();
+		$items = [];
 		if ( $talkable ) {
 			$items[] = Linker::userTalkLink( $userId, $userText );
 		}
@@ -588,9 +588,9 @@ class NCL extends EnhancedChangesList {
 			$msg = $this->msg( 'parentheses' )
 				->rawParams( $this->getLanguage()->pipeList( $items ) )
 				->escaped();
-			$data = array( "wgUserInfo$rci" => $msg );
+			$data = [ "wgUserInfo$rci" => $msg ];
 
-			return array( $tl, $data );
+			return [ $tl, $data ];
 		} else {
 			return '';
 		}
@@ -608,7 +608,7 @@ class NCL extends EnhancedChangesList {
 		krsort( $userlinks );
 		asort( $userlinks );
 
-		$users = array();
+		$users = [];
 		foreach ( $userlinks as $userlink => $count ) {
 			$text = $userlink;
 			if ( $count > 1 ) {
@@ -629,16 +629,16 @@ class NCL extends EnhancedChangesList {
 	 */
 	protected function getFlags( $rc, array $overrides = null ) {
 		// @todo We assume all characters are of equal width, which they may be not
-		$map = array(
+		$map = [
 			# item  =>        field       letter-or-something
-			'new'   => array( 'rc_new',   self::flag( 'newpage' ) ),
-			'minor' => array( 'rc_minor', self::flag( 'minor' ) ),
-			'bot'   => array( 'rc_bot',   self::flag( 'bot' ) ),
-		);
+			'new'   => [ 'rc_new',   self::flag( 'newpage' ) ],
+			'minor' => [ 'rc_minor', self::flag( 'minor' ) ],
+			'bot'   => [ 'rc_bot',   self::flag( 'bot' ) ],
+		];
 
 		static $nothing = "\xc2\xa0";
 
-		$items = array();
+		$items = [];
 		foreach ( $map as $item => $data ) {
 			list( $field, $flag ) = $data;
 			$bool = isset( $overrides[$item] ) ? $overrides[$item] : $rc->getAttribute( $field );
@@ -684,7 +684,7 @@ class NCL extends EnhancedChangesList {
 	 */
 	public function wrapCharacterDifference( $szdiff ) {
 		global $wgRCChangedSizeThreshold;
-		static $cache = array();
+		static $cache = [];
 		if ( !isset( $cache[$szdiff] ) ) {
 			// @todo FIXME: Hard coded text (+).
 			$prefix = $szdiff > 0 ? '+' : '';
@@ -715,8 +715,8 @@ class NCL extends EnhancedChangesList {
 	 */
 	protected function XMLwrapper( $class, $content, $tag = 'span', $escape = true ) {
 		if ( $escape ) {
-			return Xml::element( $tag, array( 'class' => $class ), $content );
+			return Xml::element( $tag, [ 'class' => $class ], $content );
 		}
-		return Xml::tags( $tag, array( 'class' => $class ), $content );
+		return Xml::tags( $tag, [ 'class' => $class ], $content );
 	}
 }

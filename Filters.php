@@ -26,7 +26,7 @@ class CCFilters {
 			return;
 		}
 
-		$idfilters = array();
+		$idfilters = [];
 		$userArr = explode( '|', $users );
 		foreach ( $userArr as $u ) {
 			$id = User::idFromName( $u );
@@ -109,7 +109,7 @@ class CCFilters {
 
 		$default = $wgRequest->getVal( 'trailer', '' );
 
-		if ( is_callable( array( 'LanguageNames', 'getNames' ) ) ) {
+		if ( is_callable( [ 'LanguageNames', 'getNames' ] ) ) {
 			$languages = LanguageNames::getNames( $wgLang->getCode(),
 				LanguageNames::FALLBACK_NORMAL,
 				LanguageNames::LIST_MW
@@ -124,14 +124,14 @@ class CCFilters {
 			$options .= Xml::option( "$code - $name", "/$code", $selected ) . "\n";
 		}
 		$str =
-		Xml::openElement( 'select', array(
+		Xml::openElement( 'select', [
 			'name' => 'trailer',
 			'class' => 'mw-language-selector',
 			'id' => 'sp-rc-language',
-		) ) .
+		] ) .
 		$options .
 		Xml::closeElement( 'select' );
 
-		$items['tailer'] = array( wfMessage( 'cleanchanges-language' )->escaped(), $str );
+		$items['tailer'] = [ wfMessage( 'cleanchanges-language' )->escaped(), $str ];
 	}
 }
