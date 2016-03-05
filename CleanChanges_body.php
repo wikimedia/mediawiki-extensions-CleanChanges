@@ -389,7 +389,7 @@ class NCL extends EnhancedChangesList {
 	 * @return string HTML "<img>" tag
 	 */
 	protected function spacerArrow() {
-		return $this->arrow( '', codepointToUtf8( 0xa0 ) ); // non-breaking space
+		return $this->arrow( '', UtfNormal\Utils::codepointToUtf8( 0xa0 ) ); // non-breaking space
 	}
 
 	/**

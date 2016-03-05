@@ -115,7 +115,7 @@ class CCFilters {
 				LanguageNames::LIST_MW
 			);
 		} else {
-			$languages = Language::getLanguageNames( false );
+			$languages = Language::fetchLanguageNames( null, 'mw' );
 		}
 		ksort( $languages );
 		$options = Xml::option( wfMessage( 'cleanchanges-language-na' )->text(), '', $default === '' );
