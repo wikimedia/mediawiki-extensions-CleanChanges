@@ -161,7 +161,7 @@ class NCL extends EnhancedChangesList {
 		$this->makeLinks( $rc );
 
 		// Make user links
-		if ( $this->isDeleted( $rc, Revision::DELETED_USER ) ) {
+		if ( self::isDeleted( $rc, Revision::DELETED_USER ) ) {
 			$rc->_user = ' <span class="history-deleted">' .
 				$this->msg( 'rev-deleted-user' )->escaped() .
 				'</span>';
@@ -500,7 +500,7 @@ class NCL extends EnhancedChangesList {
 		$action = '';
 		if ( $comment === '' ) {
 			return $action;
-		} elseif ( $this->isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
+		} elseif ( self::isDeleted( $rc, LogPage::DELETED_COMMENT ) ) {
 			$priviledged = $this->getUser()->isAllowed( 'deleterevision' );
 			if ( $priviledged ) {
 				return $action . ' <span class="history-deleted">' .
