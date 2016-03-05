@@ -7,7 +7,7 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * Determines which version of changes list to provide, or none.
 	 */
-	public static function hook( User $user, Skin &$skin, &$list ) {
+	public static function hook( User $user, Skin $skin, &$list ) {
 		$list = null;
 
 		if ( defined( 'ULS_VERSION' ) ) {
