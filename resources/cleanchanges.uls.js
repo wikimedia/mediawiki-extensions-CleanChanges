@@ -51,8 +51,12 @@
 	}
 
 	$( document ).ready( function () {
-		mw.loader.using( 'ext.uls.mediawiki', function () {
-			useULS( $( '#sp-rc-language' ) );
-		} );
+		var $trigger = $( '#sp-rc-language' );
+
+		if ( $trigger.length ) {
+			mw.loader.using( 'ext.uls.mediawiki', function () {
+				useULS( $trigger );
+			} );
+		}
 	} );
 }( jQuery, mediaWiki ) );
