@@ -283,13 +283,19 @@ class NCL extends EnhancedChangesList {
 		$rci = 'RCI' . $this->rcCacheIndex;
 		$rcl = 'RCL' . $this->rcCacheIndex;
 		$rcm = 'RCM' . $this->rcCacheIndex;
-		$toggleLink = "javascript:toggleVisibilityE('$rci', '$rcm', '$rcl', 'block')";
+		$linkAttribs = [
+			'data-mw-cleanchanges-level' => $rci,
+			'data-mw-cleanchanges-other' => $rcm,
+			'data-mw-cleanchanges-link' => $rcl,
+			'href' => '#',
+			'class' => 'mw-cleanchanges-showblock'
+		];
 		$tl =
 		Xml::tags( 'span', [ 'id' => $rcm ],
-			Xml::tags( 'a', [ 'href' => $toggleLink ],
+			Xml::tags( 'a', $linkAttribs,
 				$this->arrow( $this->direction ? 'r' : 'l' ) ) ) .
 		Xml::tags( 'span', [ 'id' => $rcl, 'style' => 'display: none;' ],
-			Xml::tags( 'a', [ 'href' => $toggleLink ], $this->downArrow() ) );
+			Xml::tags( 'a', $linkAttribs, $this->downArrow() ) );
 
 		$items[] = $tl . $info;
 
@@ -558,9 +564,15 @@ class NCL extends EnhancedChangesList {
 		$rci = 'RCUI' . $userindex;
 		$rcl = 'RCUL' . $linkindex;
 		$rcm = 'RCUM' . $linkindex;
-		$toggleLink = "javascript:showUserInfo('wgUserInfo$rci', '$rcl' )";
+		$linkAttribs = [
+			'href' => '#',
+			'class' => 'mw-cleanchanges-showuserinfo',
+			'data-mw-userinfo-id' => $rci,
+			'data-mw-userinfo-target' => $rcl
+		];
 		$tl  = Xml::tags( 'span', [ 'id' => $rcm ],
-			Xml::tags( 'a', [ 'href' => $toggleLink ], $image ) );
+			Xml::tags( 'a', $linkAttribs, $image )
+		);
 		$tl .= Xml::element( 'span', [ 'id' => $rcl ], ' ' );
 
 		$items = [];
