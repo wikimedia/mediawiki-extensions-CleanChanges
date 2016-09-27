@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Fluence",
-			"Teòtlalili"
+			"Teòtlalili",
+			"Akapochtli"
 		]
 	},
 	"cleanchanges-changerightslink": "tlátlasèntlàlìlpátlalòs",
 	"cleanchanges-desc": "Monèxtìs okachi tepitòn in [[Special:RecentChanges|welok tlapátlalli pàmitl]]",
-	"cleanchanges-language": "Tlâtòlli:",
+	"cleanchanges-language": "Tlahtolli:",
 	"cleanchanges-language-na": "Mochtìn",
-	"cleanchanges-users": "Motekìuhtiànimë (Sep: |):",
+	"cleanchanges-users": "Tekitinimeh (Sep: |):",
 	"cleanchanges-showuserlinks": "Mà monèxti ìnetzòwìlwàn in motekìuhtiàni"
 }
