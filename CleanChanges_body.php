@@ -8,9 +8,11 @@ class NCL extends EnhancedChangesList {
 	 * Determines which version of changes list to provide, or none.
 	 */
 	public static function hook( User $user, Skin $skin, &$list ) {
+		global $wgCCTrailerFilter;
+
 		$list = null;
 
-		if ( defined( 'ULS_VERSION' ) ) {
+		if ( $wgCCTrailerFilter && defined( 'ULS_VERSION' ) ) {
 			$skin->getOutput()->addModules( 'ext.cleanchanges.uls' );
 		}
 
