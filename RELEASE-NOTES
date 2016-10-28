@@ -1,0 +1,5 @@
+== CleanChanges 2016.10 ==
+Released at 2016-10-28.
+
+=== Noteworthy changes ===
+* Niklas Laxström fixed a minor issue causing unnecessary code to load on certain configurations. T146476
