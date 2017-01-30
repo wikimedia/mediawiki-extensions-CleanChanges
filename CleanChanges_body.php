@@ -122,7 +122,7 @@ class NCL extends EnhancedChangesList {
 	 * @param bool $watched
 	 * @return string
 	 */
-	public function recentChangesLine( &$baseRC, $watched = false ) {
+	public function recentChangesLine( &$baseRC, $watched = false, $linenumber = null ) {
 		# Create a specialised object
 		$rc = RCCacheEntry::newFromParent( $baseRC );
 
