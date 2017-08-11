@@ -328,7 +328,7 @@ class NCL extends EnhancedChangesList {
 				$changes = $nchanges[$n];
 			}
 
-			$size = $this->getCharacterDifference( $block[0], $block[count( $block ) -1] );
+			$size = $this->getCharacterDifference( $block[0], $block[count( $block ) - 1] );
 			$items[] = $this->changeInfo( $changes, $block[0]->_histLink, $size );
 		}
 
@@ -550,7 +550,7 @@ class NCL extends EnhancedChangesList {
 		$userindex = array_search( $userText, $users, true );
 		if ( $userindex === false ) {
 			$users[] = $userText;
-			$userindex = count( $users ) -1;
+			$userindex = count( $users ) - 1;
 		}
 
 		global $wgExtensionAssetsPath;
