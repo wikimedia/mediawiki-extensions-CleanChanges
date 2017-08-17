@@ -289,7 +289,8 @@ class NCL extends EnhancedChangesList {
 			'data-mw-cleanchanges-level' => $rci,
 			'data-mw-cleanchanges-other' => $rcm,
 			'data-mw-cleanchanges-link' => $rcl,
-			'href' => '#',
+			'tabindex' => '0',
+			'role' => 'button',
 			'class' => 'mw-cleanchanges-showblock'
 		];
 		$tl =
@@ -567,7 +568,8 @@ class NCL extends EnhancedChangesList {
 		$rcl = 'RCUL' . $linkindex;
 		$rcm = 'RCUM' . $linkindex;
 		$linkAttribs = [
-			'href' => '#',
+			'tabindex' => '0',
+			'role' => 'button',
 			'class' => 'mw-cleanchanges-showuserinfo',
 			'data-mw-userinfo-id' => $rci,
 			'data-mw-userinfo-target' => $rcl
