@@ -50,7 +50,7 @@
 		} );
 	}
 
-	$( document ).ready( function () {
+	$( function () {
 		var $trigger = $( '#sp-rc-language' );
 
 		if ( $trigger.length ) {
