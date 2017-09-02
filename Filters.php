@@ -35,7 +35,7 @@ class CCFilters {
 			}
 		}
 		if ( count( $idfilters ) ) {
-			$dbr = wfGetDB( DB_SLAVE );
+			$dbr = wfGetDB( DB_REPLICA );
 			$conds[] = 'rc_user IN (' . $dbr->makeList( $idfilters ) . ')';
 			$opts->setValue( 'users', $users );
 		}
@@ -87,7 +87,7 @@ class CCFilters {
 			return;
 		}
 
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$conds[] = 'rc_title ' . $dbr->buildLike( $dbr->anyString(), $trailer );
 		$opts->setValue( 'trailer', $trailer );
 	}
