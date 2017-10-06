@@ -4,6 +4,13 @@ class CCFilters {
 
 	/**
 	 * Hook: ChangesListSpecialPageQuery
+	 * @param string $name
+	 * @param array &$tables
+	 * @param array &$fields
+	 * @param array &$conds
+	 * @param array &$query_options
+	 * @param array &$join_conds
+	 * @param FormOptions $opts
 	 */
 	public static function user(
 		$name,
@@ -43,6 +50,8 @@ class CCFilters {
 
 	/**
 	 * Hook: SpecialRecentChangesPanel
+	 * @param array &$items
+	 * @param FormOptions $opts
 	 */
 	public static function userForm( &$items, FormOptions $opts ) {
 		global $wgRequest, $wgCCUserFilter;
@@ -65,6 +74,13 @@ class CCFilters {
 
 	/**
 	 * Hook: ChangesListSpecialPageQuery
+	 * @param string $name
+	 * @param array &$tables
+	 * @param array &$fields
+	 * @param array &$conds
+	 * @param array &$query_options
+	 * @param array &$join_conds
+	 * @param FormOptions $opts
 	 */
 	public static function trailer(
 		$name,
@@ -94,6 +110,8 @@ class CCFilters {
 
 	/**
 	 * Hook: SpecialRecentChangesPanel
+	 * @param array &$items
+	 * @param FormOptions $opts
 	 */
 	public static function trailerForm( &$items, FormOptions $opts ) {
 		/**

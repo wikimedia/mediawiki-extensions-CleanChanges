@@ -6,6 +6,10 @@
 class NCL extends EnhancedChangesList {
 	/**
 	 * Determines which version of changes list to provide, or none.
+	 * @param User $user
+	 * @param Skin $skin
+	 * @param array &$list
+	 * @return bool
 	 */
 	public static function hook( User $user, Skin $skin, &$list ) {
 		global $wgCCTrailerFilter;
@@ -43,7 +47,7 @@ class NCL extends EnhancedChangesList {
 	protected static $userinfo = [];
 
 	/**
-	 * @param $vars array
+	 * @param array &$vars
 	 * @return bool
 	 */
 	public static function addScriptVariables( &$vars ) {
@@ -118,8 +122,9 @@ class NCL extends EnhancedChangesList {
 
 	/**
 	 * Format a line for enhanced recentchange (aka with JavaScript and block of lines).
-	 * @param RecentChange $baseRC
+	 * @param RecentChange &$baseRC
 	 * @param bool $watched
+	 * @param int $linenumber
 	 * @return string
 	 */
 	public function recentChangesLine( &$baseRC, $watched = false, $linenumber = null ) {
@@ -615,6 +620,8 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * Makes aggregated list of contributors for a changes group.
 	 * Example: [Usera; AnotherUser; ActiveUser ‎(2×); Userabc ‎(6×)]
+	 * @param array $userlinks
+	 * @return string
 	 */
 	protected function makeUserlinks( $userlinks ) {
 		/*
@@ -723,8 +730,8 @@ class NCL extends EnhancedChangesList {
 	}
 
 	/**
-	 * @param $class
-	 * @param $content
+	 * @param string $class
+	 * @param string $content
 	 * @param string $tag
 	 * @param bool $escape
 	 * @return string
