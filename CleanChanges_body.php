@@ -533,7 +533,7 @@ class NCL extends EnhancedChangesList {
 	 * @param int $userId user id, 0 for anons
 	 * @param string $userText username
 	 * @return array|string Either an array of html and array of messages, or ''
-	 *	[0]: html span and links to user tools
+	 * 	[0]: html span and links to user tools
 	 * 	[1]: array of escaped message strings
 	 */
 	public function userToolLinks( $userId, $userText ) {
