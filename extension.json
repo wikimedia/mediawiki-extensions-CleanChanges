@@ -1,6 +1,6 @@
 {
 	"name": "Clean Changes",
-	"version": "2017-10-30",
+	"version": "2017-11-09",
 	"author": "Niklas Laxström",
 	"url": "https://www.mediawiki.org/wiki/Extension:CleanChanges",
 	"descriptionmsg": "cleanchanges-desc",
@@ -12,7 +12,8 @@
 	},
 	"config": {
 		"CCTrailerFilter": false,
-		"CCUserFilter": true
+		"CCUserFilter": true,
+		"CCFiltersOnly": false
 	},
 	"Hooks": {
 		"FetchChangesList": [

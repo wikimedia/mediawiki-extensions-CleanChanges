@@ -12,12 +12,16 @@ class NCL extends EnhancedChangesList {
 	 * @return bool
 	 */
 	public static function hook( User $user, Skin $skin, &$list ) {
-		global $wgCCTrailerFilter;
+		global $wgCCTrailerFilter, $wgCCFiltersOnly;
 
 		$list = null;
 
 		if ( $wgCCTrailerFilter && defined( 'ULS_VERSION' ) ) {
 			$skin->getOutput()->addModules( 'ext.cleanchanges.uls' );
+		}
+
+		if ( $wgCCFiltersOnly ) {
+			return;
 		}
 
 		/* allow override */
