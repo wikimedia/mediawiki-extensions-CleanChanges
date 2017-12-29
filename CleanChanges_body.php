@@ -86,8 +86,7 @@ class NCL extends EnhancedChangesList {
 	public function beginRecentChangesList() {
 		parent::beginRecentChangesList();
 		$dir = $this->direction ? 'ltr' : 'rtl';
-		return
-			Xml::openElement(
+		return Xml::openElement(
 				'div',
 				[ 'style' => "direction: $dir" ]
 			);
