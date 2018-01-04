@@ -4,7 +4,7 @@
 	"author": "Niklas Laxström",
 	"url": "https://www.mediawiki.org/wiki/Extension:CleanChanges",
 	"descriptionmsg": "cleanchanges-desc",
-	"license-name": "GPL-2.0+",
+	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"AutoloadClasses": {
 		"NCL": "CleanChanges_body.php",
