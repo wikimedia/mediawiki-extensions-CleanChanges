@@ -1,0 +1,6 @@
+== CleanChanges 2018.01 ==
+Released at 2018-01-30.
+
+=== Noteworthy changes ===
+* Added wgCCFiltersOnly to disable "clean changes" (which has issues with new recent changes interface) while keeping filters available.
+* Localisation and maintenance updates.
