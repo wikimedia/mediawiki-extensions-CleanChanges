@@ -33,17 +33,19 @@ class CCFilters {
 			return;
 		}
 
-		$idfilters = [];
-		$userArr = explode( '|', $users );
-		foreach ( $userArr as $u ) {
-			$id = User::idFromName( $u );
-			if ( $id !== null ) {
-				$idfilters[] = $id;
-			}
-		}
-		if ( count( $idfilters ) ) {
+		$userArr = UserArray::newFromNames( explode( '|', $users ) );
+		if ( $userArr->count() ) {
 			$dbr = wfGetDB( DB_REPLICA );
-			$conds[] = 'rc_user IN (' . $dbr->makeList( $idfilters ) . ')';
+			if ( class_exists( 'ActorMigration' ) ) {
+				$conds[] = ActorMigration::newMigration()
+					->getWhere( $dbr, 'rc_user', iterator_to_array( $userArr ) )['conds'];
+			} else {
+				$ids = [];
+				foreach ( $userArr as $user ) {
+					$ids[] = $user->getId();
+				}
+				$conds['rc_user'] = $ids;
+			}
 			$opts->setValue( 'users', $users );
 		}
 	}
