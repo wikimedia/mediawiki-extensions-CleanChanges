@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/cleanchanges",
+	"name": "mediawiki/clean-changes",
 	"type": "mediawiki-extension",
 	"description": "More compact display of recent changes lists",
 	"homepage": "https://www.mediawiki.org/wiki/Extension:CleanChanges",
