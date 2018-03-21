@@ -46,6 +46,7 @@
 				$trigger.val( '/' + language );
 				update( language );
 			},
+			ulsPurpose: 'clean-changes',
 			quickList: mw.uls.getFrequentLanguageList
 		} );
 	}
