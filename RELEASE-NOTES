@@ -1,0 +1,5 @@
+== CleanChanges 2018.07 ==
+Released at 2018-07-10.
+
+=== Noteworthy changes ===
+* * Enable CCFiltersOnly by default. [https://translatewiki.net/wiki/Special:Gadgets/export/HoverPopTools Gadget] can be use as replacement.
