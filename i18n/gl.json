@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Alma",
-			"Toliño"
+			"Toliño",
+			"Elisardojm"
 		]
 	},
 	"cleanchanges-changerightslink": "mudar grupos",
@@ -10,5 +11,5 @@
 	"cleanchanges-language": "Lingua:",
 	"cleanchanges-language-na": "Todas",
 	"cleanchanges-users": "Usuarios (separados por |):",
-	"cleanchanges-showuserlinks": "Mostrar as ligazóns de usuario"
+	"cleanchanges-showuserlinks": "Amosar as ligazóns de usuario"
 }
