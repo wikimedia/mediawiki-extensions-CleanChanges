@@ -271,8 +271,8 @@ class NCL extends EnhancedChangesList {
 		$overrides = [ 'minor' => false, 'bot' => false ];
 		$oldid = 0;
 		foreach ( $block as $rcObj ) {
-			$oldid = $rcObj->mAttribs['rc_last_oldid'];
-			if ( $rcObj->mAttribs['rc_new'] ) {
+			$oldid = $rcObj->getAttribute( 'rc_last_oldid' );
+			if ( $rcObj->getAttribute( 'rc_new' ) ) {
 				$isnew = $overrides['new'] = true;
 			}
 			$u = $rcObj->_user;
@@ -328,8 +328,8 @@ class NCL extends EnhancedChangesList {
 					$nchanges[$n],
 					[],
 					[
-						'curid' => $block[0]->mAttribs['rc_cur_id'],
-						'diff' => $block[0]->mAttribs['rc_this_oldid'],
+						'curid' => $block[0]->getAttribute( 'rc_cur_id' ),
+						'diff' => $block[0]->getAttribute( 'rc_this_oldid' ),
 						'oldid' => $oldid
 					]
 				);
