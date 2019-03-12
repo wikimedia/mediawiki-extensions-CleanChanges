@@ -667,7 +667,7 @@ class NCL extends EnhancedChangesList {
 		$items = [];
 		foreach ( $map as $item => $data ) {
 			list( $field, $flag ) = $data;
-			$bool = isset( $overrides[$item] ) ? $overrides[$item] : $rc->getAttribute( $field );
+			$bool = $overrides[$item] ?? $rc->getAttribute( $field );
 			$items[] = $bool ? $flag : $nothing;
 		}
 
