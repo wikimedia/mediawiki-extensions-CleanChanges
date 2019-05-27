@@ -21,7 +21,7 @@ class NCL extends EnhancedChangesList {
 		}
 
 		if ( $wgCCFiltersOnly ) {
-			return;
+			return true;
 		}
 
 		/* allow override */
