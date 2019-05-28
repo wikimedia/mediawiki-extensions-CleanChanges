@@ -71,6 +71,12 @@ class NCL extends EnhancedChangesList {
 	protected $direction = true;
 
 	/**
+	 * Text direction mark (LRM or RLM)
+	 * @var string
+	 */
+	protected $dir;
+
+	/**
 	 * @param IContextSource|Skin $skin
 	 */
 	public function __construct( $skin ) {
