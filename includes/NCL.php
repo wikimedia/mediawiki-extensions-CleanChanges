@@ -314,7 +314,7 @@ class NCL extends EnhancedChangesList {
 		Xml::tags( 'span', [ 'id' => $rcl, 'style' => 'display: none;' ],
 			Xml::tags( 'a', $linkAttribs, $this->downArrow() ) );
 
-		$items[] = $tl . $info;
+		$items = [ $tl . $info ];
 
 		# Article link
 		$items[] = $block[0]->link;
@@ -489,7 +489,7 @@ class NCL extends EnhancedChangesList {
 	protected function recentChangesBlockLine( $rcObj ) {
 		# Flag and Timestamp
 		$info = $this->getFlags( $rcObj ) . ' ' . $rcObj->timestamp;
-		$items[] = $this->spacerArrow() . Xml::tags( 'code', null, $info );
+		$items = [ $this->spacerArrow() . Xml::tags( 'code', null, $info ) ];
 
 		# Article link
 		$items[] = $rcObj->link;
