@@ -431,6 +431,7 @@ class NCL extends EnhancedChangesList {
 					$rcObj->getTitle(),
 					$rcObj->timestamp,
 					[],
+					/** @phan-suppress-next-line PhanTypeMismatchArgument */
 					$rcObj->_reqOldId + $rcObj->_reqCurId
 				);
 			}
