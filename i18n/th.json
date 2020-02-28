@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Octahedron80"
+			"Octahedron80",
+			"Aefgh39622"
 		]
 	},
-	"cleanchanges-language-na": "ทั้งหมด"
+	"cleanchanges-changerightslink": "เปลี่ยนแปลงกลุ่ม",
+	"cleanchanges-desc": "การแสดงผล[[Special:RecentChanges|รายการเปลี่ยนแปลงล่าสุด]]ที่กะทัดรัดมากขึ้น",
+	"cleanchanges-language": "ภาษา:",
+	"cleanchanges-language-na": "ทั้งหมด",
+	"cleanchanges-users": "ผู้ใช้ (คั่นด้วย: |):",
+	"cleanchanges-showuserlinks": "แสดงลิงก์ผู้ใช้"
 }
