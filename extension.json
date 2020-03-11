@@ -16,12 +16,8 @@
 		"CCFiltersOnly": true
 	},
 	"Hooks": {
-		"FetchChangesList": [
-			"NCL::hook"
-		],
-		"MakeGlobalVariablesScript": [
-			"NCL::addScriptVariables"
-		],
+		"FetchChangesList": "NCL::hook",
+		"MakeGlobalVariablesScript": "NCL::addScriptVariables",
 		"ChangesListSpecialPageQuery": [
 			"CCFilters::user",
 			"CCFilters::trailer"
