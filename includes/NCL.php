@@ -184,6 +184,7 @@ class NCL extends EnhancedChangesList {
 			$rc->_userInfo = '';
 			self::$userinfo += [];
 		} else {
+			// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 			$rc->_user = Linker::userLink(
 				$rc->getAttribute( 'rc_user' ),
 				$rc->getAttribute( 'rc_user_text' )
@@ -429,7 +430,7 @@ class NCL extends EnhancedChangesList {
 			if ( !$log ) {
 				$time = Linker::linkKnown(
 					$rcObj->getTitle(),
-					$rcObj->timestamp,
+					htmlspecialchars( $rcObj->timestamp ),
 					[],
 					/** @phan-suppress-next-line PhanTypeMismatchArgument */
 					$rcObj->_reqOldId + $rcObj->_reqCurId
