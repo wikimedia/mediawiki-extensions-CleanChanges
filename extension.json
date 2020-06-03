@@ -7,17 +7,14 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"AutoloadClasses": {
-		"NCL": "includes/NCL.php",
 		"CCFilters": "includes/CCFilters.php"
 	},
 	"config": {
 		"CCTrailerFilter": false,
-		"CCUserFilter": true,
-		"CCFiltersOnly": true
+		"CCUserFilter": true
 	},
 	"Hooks": {
-		"FetchChangesList": "NCL::hook",
-		"MakeGlobalVariablesScript": "NCL::addScriptVariables",
+		"FetchChangesList": "CCFilters::hook",
 		"ChangesListSpecialPageQuery": [
 			"CCFilters::user",
 			"CCFilters::trailer"
@@ -33,9 +30,6 @@
 		]
 	},
 	"ResourceModules": {
-		"ext.cleanchanges": {
-			"scripts": "resources/cleanchanges.js"
-		},
 		"ext.cleanchanges.uls": {
 			"scripts": "resources/cleanchanges.uls.js",
 			"styles": "resources/cleanchanges.uls.css"
