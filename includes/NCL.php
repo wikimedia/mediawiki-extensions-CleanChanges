@@ -87,7 +87,7 @@ class NCL extends EnhancedChangesList {
 	}
 
 	/**
-	 * @return String
+	 * @return string
 	 */
 	public function beginRecentChangesList() {
 		parent::beginRecentChangesList();
