@@ -549,7 +549,7 @@ class NCL extends EnhancedChangesList {
 	 */
 	public function userToolLinks( $userId, $userText ) {
 		global $wgDisableAnonTalk;
-		$talkable = !( $wgDisableAnonTalk && 0 == $userId );
+		$talkable = !( $wgDisableAnonTalk && $userId == 0 );
 
 		/*
 		 * Assign each different user a running id. This is used to show user tool
