@@ -184,7 +184,6 @@ class NCL extends EnhancedChangesList {
 			$rc->_userInfo = '';
 			self::$userinfo += [];
 		} else {
-			// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 			$rc->_user = Linker::userLink(
 				$rc->getAttribute( 'rc_user' ),
 				$rc->getAttribute( 'rc_user_text' )
