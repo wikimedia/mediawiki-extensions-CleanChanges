@@ -48,6 +48,7 @@ class NCL extends EnhancedChangesList {
 		return $list === null;
 	}
 
+	/** @var array */
 	protected static $userinfo = [];
 
 	/**
@@ -60,13 +61,13 @@ class NCL extends EnhancedChangesList {
 	}
 
 	/**
-	 * String that comes between page details and the user details. By default
+	 * @var string String that comes between page details and the user details. By default
 	 * only larger space.
 	 */
 	protected $userSeparator = "\xc2\xa0 \xc2\xa0";
 
 	/**
-	 * Text direction, true for ltr and false for rtl
+	 * @var bool Text direction, true for ltr and false for rtl
 	 */
 	protected $direction = true;
 
@@ -469,7 +470,7 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * @param string $diff
 	 * @param string $hist
-	 * @param mixed $size
+	 * @param int|string $size
 	 * @return string
 	 */
 	protected function changeInfo( $diff, $hist, $size ) {
@@ -630,7 +631,7 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * Makes aggregated list of contributors for a changes group.
 	 * Example: [Usera; AnotherUser; ActiveUser ‎(2×); Userabc ‎(6×)]
-	 * @param array $userlinks
+	 * @param int[] $userlinks
 	 * @return string
 	 */
 	protected function makeUserlinks( $userlinks ) {
@@ -694,7 +695,7 @@ class NCL extends EnhancedChangesList {
 	/**
 	 * @param RCCacheEntry $new
 	 * @param RCCacheEntry|null $old
-	 * @return mixed
+	 * @return int|string
 	 */
 	protected function getCharacterDifference( $new, $old = null ) {
 		if ( $old === null ) {
@@ -712,7 +713,7 @@ class NCL extends EnhancedChangesList {
 	}
 
 	/**
-	 * @param mixed $szdiff Character difference.
+	 * @param int $szdiff Character difference.
 	 * @return string
 	 */
 	public function wrapCharacterDifference( $szdiff ) {
