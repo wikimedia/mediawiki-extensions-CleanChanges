@@ -154,4 +154,17 @@ class CCFilters {
 
 		$items['tailer'] = [ wfMessage( 'cleanchanges-language' )->escaped(), $str ];
 	}
+
+	/**
+	 * Hook: FetchChangesList
+	 * @param User $user
+	 * @param Skin $skin
+	 */
+	public static function hook( User $user, Skin $skin ): void {
+		global $wgCCTrailerFilter;
+
+		if ( $wgCCTrailerFilter && defined( 'ULS_VERSION' ) ) {
+			$skin->getOutput()->addModules( 'ext.cleanchanges.uls' );
+		}
+	}
 }
