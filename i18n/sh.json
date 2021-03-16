@@ -4,10 +4,8 @@
 			"Vlad5250"
 		]
 	},
-	"cleanchanges-changerightslink": "promijena grupa",
 	"cleanchanges-desc": "Kompaktniji prikaz [[Special:RecentChanges|nedavnih promjena]]",
 	"cleanchanges-language": "Jezik:",
 	"cleanchanges-language-na": "Svi",
-	"cleanchanges-users": "Korisnici (razdjeljivač: |):",
-	"cleanchanges-showuserlinks": "Prikaži korisničke linkove"
+	"cleanchanges-users": "Korisnici (razdjeljivač: |):"
 }

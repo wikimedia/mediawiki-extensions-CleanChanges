@@ -6,10 +6,8 @@
 			"Toliño"
 		]
 	},
-	"cleanchanges-changerightslink": "mudar grupos",
 	"cleanchanges-desc": "Unha presentación máis compacta da [[Special:RecentChanges|lista de cambios recentes]]",
 	"cleanchanges-language": "Lingua:",
 	"cleanchanges-language-na": "Todas",
-	"cleanchanges-users": "Usuarios (separados por |):",
-	"cleanchanges-showuserlinks": "Amosar as ligazóns de usuario"
+	"cleanchanges-users": "Usuarios (separados por |):"
 }

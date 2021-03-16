@@ -5,10 +5,8 @@
 			"Rancher"
 		]
 	},
-	"cleanchanges-changerightslink": "promeni grupe",
 	"cleanchanges-desc": "Kompaktniji prikaz spiska [[Special:RecentChanges|skorašnjih izmena]]",
 	"cleanchanges-language": "Jezik:",
 	"cleanchanges-language-na": "Sve",
-	"cleanchanges-users": "Korisnici (razdv. |):",
-	"cleanchanges-showuserlinks": "Pokaži korisničke linkove"
+	"cleanchanges-users": "Korisnici (razdv. |):"
 }

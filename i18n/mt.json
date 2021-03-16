@@ -5,10 +5,8 @@
 			"Roderick Mallia"
 		]
 	},
-	"cleanchanges-changerightslink": "biddel il-gruppi",
 	"cleanchanges-desc": "Preżentazzjoni iktar kompatta tal-[[Special:RecentChanges|lista tat-tibdil riċenti]]",
 	"cleanchanges-language": "Lingwa:",
 	"cleanchanges-language-na": "Kollha",
-	"cleanchanges-users": "Utenti (Sep: |):",
-	"cleanchanges-showuserlinks": "Uri l-ħoloq tal-utent"
+	"cleanchanges-users": "Utenti (Sep: |):"
 }

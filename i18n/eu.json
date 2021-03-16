@@ -5,10 +5,8 @@
 			"Kobazulo"
 		]
 	},
-	"cleanchanges-changerightslink": "taldeak aldatu",
 	"cleanchanges-desc": "Bistaratze trinkoagoa [[Special:RecentChanges|aldaketa berrien zerrendarako]]",
 	"cleanchanges-language": "Hizkuntza:",
 	"cleanchanges-language-na": "Guztiak",
-	"cleanchanges-users": "Erabiltzaileak (\"|\" ikurrarekin bereizirik)",
-	"cleanchanges-showuserlinks": "Erabiltzaileen estekak erakutsi"
+	"cleanchanges-users": "Erabiltzaileak (\"|\" ikurrarekin bereizirik)"
 }

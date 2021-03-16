@@ -5,10 +5,8 @@
 			"Als-Holder"
 		]
 	},
-	"cleanchanges-changerightslink": "Gruppen ändere",
 	"cleanchanges-desc": "Kompakteri Aazeig vu dr [[Special:RecentChanges|letschten Änderige]]",
 	"cleanchanges-language": "Sproch:",
 	"cleanchanges-language-na": "Alli",
-	"cleanchanges-users": "Benutzer (Trännzeiche: |):",
-	"cleanchanges-showuserlinks": "Zeig Benutzer-Links"
+	"cleanchanges-users": "Benutzer (Trännzeiche: |):"
 }

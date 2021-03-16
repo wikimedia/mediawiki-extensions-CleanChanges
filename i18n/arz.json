@@ -5,10 +5,8 @@
 			"Ouda"
 		]
 	},
-	"cleanchanges-changerightslink": "تغيير المجموعات",
 	"cleanchanges-desc": "عرض أكثر ضغطا ل [[Special:RecentChanges|قائمة أحدث التغييرات]]",
 	"cleanchanges-language": "اللغة:",
 	"cleanchanges-language-na": "الكل",
-	"cleanchanges-users": "المستخدمون (للفصل: |):",
-	"cleanchanges-showuserlinks": "إظهار وصلات المستخدم"
+	"cleanchanges-users": "المستخدمون (للفصل: |):"
 }

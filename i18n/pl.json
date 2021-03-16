@@ -11,10 +11,8 @@
 			"Wpedzich"
 		]
 	},
-	"cleanchanges-changerightslink": "zmień grupy",
 	"cleanchanges-desc": "Bardziej zwarta wersja [[Special:RecentChanges|ostatnich zmian]]",
 	"cleanchanges-language": "Język:",
 	"cleanchanges-language-na": "Wszystkie",
-	"cleanchanges-users": "Użytkownicy (rozdziel znakiem „|”):",
-	"cleanchanges-showuserlinks": "Pokaż linki użytkownika"
+	"cleanchanges-users": "Użytkownicy (rozdziel znakiem „|”):"
 }

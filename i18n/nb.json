@@ -5,10 +5,8 @@
 			"Nghtwlkr"
 		]
 	},
-	"cleanchanges-changerightslink": "endre grupper",
 	"cleanchanges-desc": "Mer kompakt visning av [[Special:RecentChanges|siste endringer]]",
 	"cleanchanges-language": "Språk:",
 	"cleanchanges-language-na": "Alle",
-	"cleanchanges-users": "Brukere (separer med |):",
-	"cleanchanges-showuserlinks": "Vis brukerlenker"
+	"cleanchanges-users": "Brukere (separer med |):"
 }

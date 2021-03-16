@@ -5,10 +5,8 @@
 			"Eleassar"
 		]
 	},
-	"cleanchanges-changerightslink": "spremeni skupine",
 	"cleanchanges-desc": "Bolj strnjen prikaz [[Special:RecentChanges|seznama zadnjih sprememb]]",
 	"cleanchanges-language": "Jezik:",
 	"cleanchanges-language-na": "Vse",
-	"cleanchanges-users": "Uporabniki (ločilo: |):",
-	"cleanchanges-showuserlinks": "Prikaži uporabniške povezave"
+	"cleanchanges-users": "Uporabniki (ločilo: |):"
 }

@@ -5,11 +5,8 @@
 			"David1010"
 		]
 	},
-	"cleanchanges-changerightslink": "ჯგუფების ცვლილება",
 	"cleanchanges-desc": "[[Special:RecentChanges|ბოლო ცვლილებების სიის]] უფრო კომპაქტური ჩვენება",
 	"cleanchanges-language": "ენა:",
 	"cleanchanges-language-na": "ყველა",
-	"cleanchanges-users": "მომხმარებლები (გამყოფი: |):",
-	"cleanchanges-rcinfo-2": "($1; $2)",
-	"cleanchanges-rcinfo-3": "($1; $2; $3)"
+	"cleanchanges-users": "მომხმარებლები (გამყოფი: |):"
 }

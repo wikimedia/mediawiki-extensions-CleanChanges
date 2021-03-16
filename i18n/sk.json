@@ -4,10 +4,8 @@
 			"Helix84"
 		]
 	},
-	"cleanchanges-changerightslink": "zmeniť skupiny",
 	"cleanchanges-desc": "Kompaktnejšie zobrazenie [[Special:RecentChanges|zoznamu posledných úprav]]",
 	"cleanchanges-language": "Jazyk:",
 	"cleanchanges-language-na": "Všetky",
-	"cleanchanges-users": "Používatelia (Oddeľ: „|”):",
-	"cleanchanges-showuserlinks": "Zobrazovať používateľské odkazy"
+	"cleanchanges-users": "Používatelia (Oddeľ: „|”):"
 }
