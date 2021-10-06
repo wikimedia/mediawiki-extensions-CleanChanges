@@ -35,17 +35,7 @@ class CCFilters {
 
 		$userArr = UserArray::newFromNames( explode( '|', $users ) );
 		if ( $userArr->count() ) {
-			$dbr = wfGetDB( DB_REPLICA );
-			if ( class_exists( 'ActorMigration' ) ) {
-				$conds[] = ActorMigration::newMigration()
-					->getWhere( $dbr, 'rc_user', iterator_to_array( $userArr ) )['conds'];
-			} else {
-				$ids = [];
-				foreach ( $userArr as $user ) {
-					$ids[] = $user->getId();
-				}
-				$conds['rc_user'] = $ids;
-			}
+			$conds['actor_name'] = iterator_to_array( $userArr );
 			$opts->setValue( 'users', $users );
 		}
 	}
