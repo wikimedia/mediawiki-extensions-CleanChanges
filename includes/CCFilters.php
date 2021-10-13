@@ -33,11 +33,16 @@ class CCFilters {
 			return;
 		}
 
-		$userArr = UserArray::newFromNames( explode( '|', $users ) );
+		$rawUserArr = explode( '|', $users );
+		$userArr = UserArray::newFromNames( $rawUserArr );
 		if ( $userArr->count() ) {
 			$conds['actor_name'] = iterator_to_array( $userArr );
-			$opts->setValue( 'users', $users );
+		} else {
+			// Unknown user, make the query return no result.
+			$conds['actor_name'] = $rawUserArr;
 		}
+
+		$opts->setValue( 'users', $users );
 	}
 
 	/**
