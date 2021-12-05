@@ -1,5 +1,8 @@
 <?php
 
+use MediaWiki\Languages\LanguageNameUtils;
+use MediaWiki\MediaWikiServices;
+
 class CCFilters {
 
 	/**
@@ -124,13 +127,15 @@ class CCFilters {
 
 		$default = $wgRequest->getVal( 'trailer', '' );
 
-		if ( is_callable( [ 'LanguageNames', 'getNames' ] ) ) {
+		if ( is_callable( [ LanguageNames::class, 'getNames' ] ) ) {
+			// cldr extension
 			$languages = LanguageNames::getNames( $wgLang->getCode(),
 				LanguageNames::FALLBACK_NORMAL,
 				LanguageNames::LIST_MW
 			);
 		} else {
-			$languages = Language::fetchLanguageNames( null, 'mw' );
+			$languages = MediaWikiServices::getInstance()->getLanguageNameUtils()
+				->getLanguageNames( LanguageNameUtils::AUTONYMS, LanguageNameUtils::DEFINED );
 		}
 		ksort( $languages );
 		$options = Xml::option( wfMessage( 'cleanchanges-language-na' )->text(), '', $default === '' );
