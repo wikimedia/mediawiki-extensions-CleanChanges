@@ -9,10 +9,11 @@
 			"Liangent",
 			"Mark85296341",
 			"Sanmosa",
+			"Winston Sung",
 			"Xiplus"
 		]
 	},
-	"cleanchanges-desc": "更精簡的顯示[[Special:RecentChanges|最近變更清單]]",
+	"cleanchanges-desc": "更精簡的顯示[[Special:RecentChanges|近期變更清單]]",
 	"cleanchanges-language": "語言：",
 	"cleanchanges-language-na": "全部",
 	"cleanchanges-users": "使用者 (分隔: |):"
