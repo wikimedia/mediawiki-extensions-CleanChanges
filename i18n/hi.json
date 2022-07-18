@@ -3,13 +3,14 @@
 		"authors": [
 			"Ansumang",
 			"Innocentbunny",
-			"Kaustubh"
+			"Kaustubh",
+			"Saurmandal"
 		]
 	},
 	"cleanchanges-changerightslink": "ग्रुप बदलें",
-	"cleanchanges-desc": "[[Special:RecentChanges|हाल में हुए बदलाव]] संक्षिप्त रूपमें दर्शायें",
+	"cleanchanges-desc": "[[Special:RecentChanges|हाल में हुए बदलावों]] की एक अधिक कॉम्पैक्ट दिखावट",
 	"cleanchanges-language": "भाषा:",
 	"cleanchanges-language-na": "सभी",
-	"cleanchanges-users": "उपयोक्तागण (\"|\" से विभक्त)",
+	"cleanchanges-users": "सदस्य ('|' से अलग करें):",
 	"cleanchanges-showuserlinks": "उपयोक्ता कड़ियाँ दिखाएँ"
 }
