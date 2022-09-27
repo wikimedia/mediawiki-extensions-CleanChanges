@@ -32,7 +32,7 @@ class CCFilters {
 
 		$opts->add( 'users', '' );
 		$users = $wgRequest->getVal( 'users' );
-		if ( $users === null ) {
+		if ( $users === null || $users === '' ) {
 			return;
 		}
 
