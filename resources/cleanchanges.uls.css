@@ -3,7 +3,7 @@
 	color: #0645ad;
 }
 
-.ext-cc-language-selector__trigger:after {
+.ext-cc-language-selector__trigger::after {
 	display: inline-block;
 	margin-left: 4px;
 	content: '';
