@@ -6,11 +6,12 @@
 			"Liangent",
 			"Liuxinyu970226",
 			"Xiaomingyan",
-			"NekoCharm"
+			"NekoCharm",
+			"Lakejason0"
 		]
 	},
 	"cleanchanges-desc": "更简洁的显示[[Special:RecentChanges|最近更改列表]]",
 	"cleanchanges-language": "语言：",
 	"cleanchanges-language-na": "所有",
-	"cleanchanges-users": "用户（分隔符：|）："
+	"cleanchanges-users": "用户（用“|”分隔）："
 }
