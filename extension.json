@@ -7,7 +7,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.34.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"AutoloadClasses": {
 		"CCFilters": "includes/CCFilters.php"
@@ -17,15 +17,14 @@
 		"CCUserFilter": true
 	},
 	"Hooks": {
-		"FetchChangesList": "CCFilters::hook",
-		"ChangesListSpecialPageQuery": [
-			"CCFilters::user",
-			"CCFilters::trailer"
-		],
-		"SpecialRecentChangesPanel": [
-			"CCFilters::userForm",
-			"CCFilters::trailerForm"
-		]
+		"FetchChangesList": "main",
+		"ChangesListSpecialPageQuery": "main",
+		"SpecialRecentChangesPanel": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "CCFilters"
+		}
 	},
 	"MessagesDirs": {
 		"CleanChanges": [

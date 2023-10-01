@@ -1,9 +1,41 @@
 <?php
 
+use MediaWiki\Hook\FetchChangesListHook;
+use MediaWiki\Hook\SpecialRecentChangesPanelHook;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
 
-class CCFilters {
+class CCFilters implements
+	FetchChangesListHook,
+	ChangesListSpecialPageQueryHook,
+	SpecialRecentChangesPanelHook
+{
+
+	/**
+	 * @param string $name
+	 * @param array &$tables
+	 * @param array &$fields
+	 * @param array &$conds
+	 * @param array &$query_options
+	 * @param array &$join_conds
+	 * @param FormOptions $opts
+	 */
+	public function onChangesListSpecialPageQuery(
+		$name, &$tables, &$fields, &$conds, &$query_options, &$join_conds, $opts
+	) {
+		self::user( $name, $tables, $fields, $conds, $query_options, $join_conds, $opts );
+		self::trailer( $name, $tables, $fields, $conds, $query_options, $join_conds, $opts );
+	}
+
+	/**
+	 * @param array &$extraOpts Array of added items, to which can be added
+	 * @param FormOptions $opts FormOptions for this request
+	 */
+	public function onSpecialRecentChangesPanel( &$extraOpts, $opts ) {
+		self::userForm( $extraOpts, $opts );
+		self::trailerForm( $extraOpts, $opts );
+	}
 
 	/**
 	 * Hook: ChangesListSpecialPageQuery
@@ -159,8 +191,10 @@ class CCFilters {
 	 * Hook: FetchChangesList
 	 * @param User $user
 	 * @param Skin $skin
+	 * @param ChangesList|null &$list
+	 * @param ChangesListFilterGroup[] $groups
 	 */
-	public static function hook( User $user, Skin $skin ): void {
+	public function onFetchChangesList( $user, $skin, &$list, $groups ): void {
 		global $wgCCTrailerFilter;
 
 		if ( $wgCCTrailerFilter && defined( 'ULS_VERSION' ) ) {
