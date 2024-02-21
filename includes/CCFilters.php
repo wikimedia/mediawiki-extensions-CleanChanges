@@ -135,7 +135,7 @@ class CCFilters implements
 			return;
 		}
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$conds[] = 'rc_title ' . $dbr->buildLike( $dbr->anyString(), $trailer );
 		$opts->setValue( 'trailer', $trailer );
 	}
