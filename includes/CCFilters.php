@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Extension\CLDR\LanguageNames;
 use MediaWiki\Hook\FetchChangesListHook;
 use MediaWiki\Hook\SpecialRecentChangesPanelHook;
 use MediaWiki\Languages\LanguageNameUtils;
