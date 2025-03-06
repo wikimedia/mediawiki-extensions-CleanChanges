@@ -3,6 +3,7 @@
 use MediaWiki\Extension\CLDR\LanguageNames;
 use MediaWiki\Hook\FetchChangesListHook;
 use MediaWiki\Hook\SpecialRecentChangesPanelHook;
+use MediaWiki\Html\FormOptions;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
