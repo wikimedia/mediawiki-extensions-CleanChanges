@@ -7,7 +7,7 @@
 	'use strict';
 
 	function useULS( $trigger ) {
-		var update, $selected, $clear, $button = $( '<span>' );
+		let update, $selected, $clear, $button = $( '<span>' );
 
 		$button
 			.addClass( 'ext-cc-language-selector__trigger' );
@@ -51,11 +51,11 @@
 		} );
 	}
 
-	$( function () {
-		var $trigger = $( '#sp-rc-language' );
+	$( () => {
+		const $trigger = $( '#sp-rc-language' );
 
 		if ( $trigger.length ) {
-			mw.loader.using( 'ext.uls.mediawiki', function () {
+			mw.loader.using( 'ext.uls.mediawiki', () => {
 				useULS( $trigger );
 			} );
 		}
