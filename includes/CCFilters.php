@@ -4,6 +4,7 @@ use MediaWiki\Extension\CLDR\LanguageNames;
 use MediaWiki\Hook\FetchChangesListHook;
 use MediaWiki\Hook\SpecialRecentChangesPanelHook;
 use MediaWiki\Html\FormOptions;
+use MediaWiki\Html\Html;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
@@ -97,13 +98,18 @@ class CCFilters implements
 		$opts->consumeValue( 'users' );
 
 		$default = $wgRequest->getVal( 'users', '' );
-		$items['users'] = Xml::inputLabelSep(
-			wfMessage( 'cleanchanges-users' )->text(),
-			'users',
-			'mw-users',
-			40,
-			$default
-		);
+		$items['users'] = [
+			Html::label(
+				wfMessage( 'cleanchanges-users' )->text(),
+				'mw-users',
+			),
+			Html::input(
+				'users',
+				$default,
+				'text',
+				[ 'size' => 40, 'id' => 'mw-users' ]
+			)
+		];
 	}
 
 	/**
