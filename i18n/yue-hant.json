@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"JeffreyKim"
+		]
+	},
+	"cleanchanges-desc": "更緊湊啲嘅[[Special:RecentChanges|最近變更清單]]嘅顯示",
+	"cleanchanges-language": "語言：",
+	"cleanchanges-language-na": "全部",
+	"cleanchanges-users": "用戶(九月: |):"
+}
