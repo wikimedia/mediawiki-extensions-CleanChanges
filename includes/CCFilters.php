@@ -7,6 +7,7 @@ use MediaWiki\Html\FormOptions;
 use MediaWiki\Html\Html;
 use MediaWiki\Languages\LanguageNameUtils;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\RecentChanges\ChangesListFilterGroupContainer;
 use MediaWiki\SpecialPage\Hook\ChangesListSpecialPageQueryHook;
 
 class CCFilters implements
@@ -200,7 +201,7 @@ class CCFilters implements
 	 * @param User $user
 	 * @param Skin $skin
 	 * @param ChangesList|null &$list
-	 * @param ChangesListFilterGroup[] $groups
+	 * @param ChangesListFilterGroupContainer $groups
 	 */
 	public function onFetchChangesList( $user, $skin, &$list, $groups ): void {
 		global $wgCCTrailerFilter;
