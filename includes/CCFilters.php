@@ -179,19 +179,26 @@ class CCFilters implements
 				->getLanguageNames( LanguageNameUtils::AUTONYMS, LanguageNameUtils::DEFINED );
 		}
 		ksort( $languages );
-		$options = Xml::option( wfMessage( 'cleanchanges-language-na' )->text(), '', $default === '' );
+		$options = Html::element(
+			'option',
+			[ 'value' => '', 'selected' => $default === '' ],
+			wfMessage( 'cleanchanges-language-na' )->text()
+		);
 		foreach ( $languages as $code => $name ) {
-			$selected = ( "/$code" === $default );
-			$options .= Xml::option( "$code - $name", "/$code", $selected ) . "\n";
+			$options .= Html::element(
+				'option',
+				[ 'value' => "/$code", 'selected' => $default === "/$code" ],
+				"$code - $name"
+			) . "\n";
 		}
 		$str =
-		Xml::openElement( 'select', [
+		Html::openElement( 'select', [
 			'name' => 'trailer',
 			'class' => 'mw-language-selector',
 			'id' => 'sp-rc-language',
 		] ) .
 		$options .
-		Xml::closeElement( 'select' );
+		Html::closeElement( 'select' );
 
 		$items['tailer'] = [ wfMessage( 'cleanchanges-language' )->escaped(), $str ];
 	}
